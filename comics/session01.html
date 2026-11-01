@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chaos Brigade #1 — Marigold's Inn</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#0d0d0d;color:#fff;font-family:'Comic Sans MS','Chalkboard SE',Georgia,serif}
+header{text-align:center;padding:18px}header h1{margin:0;font-size:2.2rem;letter-spacing:.08em}header h1 span{color:#ffd76a}header p{opacity:.65}
+.page{max-width:1200px;margin:0 auto;padding:10px;display:grid;gap:10px}
+.row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:800px){.row3,.row2{grid-template-columns:1fr}}
+.panel{position:relative;background:#000;border:4px solid #000;overflow:hidden;min-height:320px}
+.panel img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(1.05)}
+.loc{position:absolute;top:0;left:0;background:#f5eeda;color:#111;font-weight:bold;font-size:.8rem;padding:4px 10px;letter-spacing:.05em;border-right:3px solid #000;border-bottom:3px solid #000;z-index:3}
+.bub{position:absolute;background:#fff;color:#111;border:2px solid #000;border-radius:14px;padding:6px 10px;font-size:.82rem;line-height:1.25;max-width:44%;z-index:2;box-shadow:2px 2px 0 #000}
+.bub:after{content:'';position:absolute;width:12px;height:12px;background:#fff;border-right:2px solid #000;border-bottom:2px solid #000;transform:rotate(45deg)}
+.bub.tl{top:34px;left:8px}.bub.tl:after{bottom:-8px;left:24px}
+.bub.tr{top:34px;right:8px}.bub.tr:after{bottom:-8px;right:24px}
+.bub.bl{bottom:8px;left:8px}.bub.bl:after{top:-8px;left:24px;transform:rotate(225deg)}
+.bub.br{bottom:8px;right:8px}.bub.br:after{top:-8px;right:24px;transform:rotate(225deg)}
+.think{border-style:dashed;border-radius:22px}
+.sfx{position:absolute;background:#b3261e;color:#fff;font-weight:bold;padding:2px 10px;border:2px solid #000;transform:rotate(-6deg);z-index:2}
+.endcard{background:#f5eeda;color:#111;padding:20px;text-align:center;border:4px solid #000}
+.endcard h2{margin:0 0 8px;letter-spacing:.1em}
+footer{text-align:center;opacity:.5;padding:20px;font-size:.8rem}
+</style>
+</head>
+<body>
+<header><h1>THE CHAOS <span>BRIGADE</span></h1><p>#1 — Marigold's Inn, Neverwinter · Flux2 panels + transcript dialogue</p></header>
+<div class="page">
+<div class="row3">
+<div class="panel"><div class="loc">MARIGOLD'S INN...</div><img src="../sessions/session01/panel1_tavern.png"><div class="bub tl">That guy clearly knows something.</div><div class="bub br">Slew of opportunities for parties like yours!</div></div>
+<div class="panel"><div class="loc">DARK &amp; MYSTERIOUS...</div><img src="../sessions/session01/panel2_biggins.png"><div class="bub tr">Just going for the motif. Something to pass the time.</div></div>
+<div class="panel"><div class="loc">OUTSIDE — UNPAID BILL...</div><img src="../sessions/session01/panel3_sammy.png"><div class="sfx" style="top:40px;left:10px">THIEVES!!</div><div class="bub br">Sam — always overreacts. Two gold!</div></div>
+</div>
+<div class="row3">
+<div class="panel"><div class="loc">THE PERSUASION...</div><img src="../sessions/session01/panel4_rocketcandy.png"><div class="bub tl">Former nobility here. These are my friends. We're good.</div></div>
+<div class="panel"><div class="loc">GOOD &amp; READY — SHAKEDOWN...</div><img src="../sessions/session01/panel5_chip.png"><div class="bub tl">Double for your bear. 40 gold!</div><div class="bub br think">Tie them up. Out back.</div></div>
+<div class="panel"><div class="loc">THE MANSION...</div><img src="../sessions/session01/panel6_filvenar.png"><div class="bub tl">Nice decorator, eh?</div><div class="bub tr">Pretend you have taste. [4 psychic]</div><div class="bub bl">Finally — take my quest. Sit.</div></div>
+</div>
+<div class="endcard"><h2>THE CHAOS BRIGADE</h2>No plan is simple. No path is direct.<br>No tab goes unpaid.<br><br><b>ADVENTURE CONTINUES...</b></div>
+</div>
+<footer>Session 1 · transcript dialogue + narration in bubbles · Flux2 Dev fp8mixed @ 10.13.37.88</footer>
+</body>
+</html>
