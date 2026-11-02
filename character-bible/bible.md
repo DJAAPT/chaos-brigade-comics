@@ -19,10 +19,12 @@ Default expression: lips sealed closed with a barely perceptible asymmetric lift
 Guild mark: geometric diamond tattoo (gallery/Objects/The_Tattoo.png) on forearm — include only when plot-relevant.
 
 ### Rocketcandy — Male Human Paladin (Andrew). Lost nobility of Corlinn Hill (Neverwinter county), raised in Waterdeep, inherits only a title.
-`adult male human paladin, short brown hair light stubble, shining plate armor with gold phoenix/eagle crest on chest, red cape, exactly two arms`
+`adult male human paladin, short brown hair light stubble, shining plate armor with gold phoenix/eagle crest on chest, red cape, exactly two arms, holding a heavy battle-worn steel battleaxe with a plain wide scarred blade, no gaudy ornamentation`
+Approved identity ref (2026-11-02, Flux3 Klein): `character-bible/approved_rocketcandy_reference.png` — copy this face; face, expression, and axe approved in the Flux3 v2 portrait.
 Refs: gallery/Scenes/City_Guards.png is CORRUPT guard look-alike — do NOT copy its helm/plume for Rocketcandy except crest shape. Gallery/Objects/Rocketcandy_Plot_Armor.png = his armor ref — use it.
-NEVER: extra arms, female, modern clothes.
+NEVER: extra arms, female, modern clothes, helm, plume, gaudy gold-decorated battleaxe.
 Weapon: +3 battleaxe (signature — sheet + transcript axe-to-face). Faith: Bahamut. Oath of the Open Sea. Props: signet ring, holy symbol.
+Default expression: confident composed noble bearing — calm, lawful-good certainty.
 
 ### Keechwah — Male Tiefling Warlock (Aaron). MALE, no wings.
 `adult male tiefling warlock, deep red skin, long curly black hair, goatee, large curved horns, glowing purple eyes, male facial features, dark blue/gold robes, gold jewelry, NO wings`
