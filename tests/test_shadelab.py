@@ -20,9 +20,10 @@ SHADE_CHUNK = (
     "rolled sleeves, scuffed brown leather vest, belt dagger at hips"
 )
 SCALED_CLAUSE = (
-    "full-size adult human features scaled down uniformly to half size, same proportions as a "
-    "grown man, small rounded human ears, no pointed ears, no elf ears, no large ears, "
-    "no protruding ears"
+    "full-size adult human features scaled down uniformly, exactly the same head-to-body and "
+    "ear-to-head proportions as a full-size grown man, small ears lying close to the head, "
+    "small rounded human ears, no pointed ears, no elf ears, no large ears, no protruding ears, "
+    "no oversized head, no chibi or doll-like proportions"
 )
 
 
