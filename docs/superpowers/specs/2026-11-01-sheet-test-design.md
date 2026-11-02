@@ -304,3 +304,50 @@ blocks, roster of six. Layout: `character-bible/sheet-test/arm_c/`
 `workflows/sheettest_c_<slug>.json`; builder gains `--frame` (default =
 Arm B frame, byte-identical round-2 behavior); runner parameters reused.
 Arm A (`img/`) and Arm B (`arm_b/`) are never written by round 3.
+
+## Shade Lab directive (single-character wording experiment, awaiting doc approval)
+
+Human verdict on Arm C: most characters good; **Shade still wrong** —
+weird face with elf ears. Canon: halflings have ordinary human features
+at half size (a full-size adult with every feature scaled down
+uniformly). Door ruler declined — feature sizes read clearly enough.
+
+**Root cause recorded:** the arm blocks carry the chunk's positive
+"ears small and rounded" but never the bible NEVER-list bans; "halfling"
+triggers the model's pointy-ear prior. Fix = explicit guards in Shade's
+block (chunk stays verbatim; additions around it, established pattern),
+reusing the bible's NEVER wording:
+
+> …belt dagger at hips, **full-size adult human features scaled down
+> uniformly to half size, same proportions as a grown man, small rounded
+> human ears, no pointed ears, no elf ears, no large ears, no protruding
+> ears,** exactly two arms
+
+**Batch (human-approved):** one revised block × **4 seeds** —
+`424242` (control: identical to Arm C's Shade seed, so wording is the
+only delta), `424243` (documented +1 re-roll), `777001`, `314159`
+(independent seeds already used in this repo's workflow history).
+
+**Layout:** `character-bible/sheet-test/shade-lab/`
+(`descriptions.md` single `## Shade (shade_s0)`-style block source,
+`prompts.json` with four entries keyed `shade_s0..shade_s3` carrying
+their own `seed` values, `img/shade_s<N>.png`); workflows
+`workflows/shadelab_shade_s<N>.json`.
+
+**Plumbing changes (production defaults stay byte-identical):**
+- `build_sheet_workflows.build_one` gains `seed=None` → defaults to the
+  current constant; main passes each entry's own `seed` (arms' entries
+  all say 424242, so arm outputs stay byte-identical — parity tests pin it).
+- Runner's "exactly six" setup guard relaxes to "at least one" (the arms'
+  completeness contract lives in `verify_sheettest`'s exact-roster gate,
+  unchanged).
+- `verify_sheettest` gains optional `--roster` (default = the six arm
+  slugs, byte-identical default behavior); lab verifies with its four
+  keys.
+- Lab build via a small `scripts/build_shadelab.py` reusing
+  `build_arm_b`'s frame/addendum/parser constants; production builders
+  otherwise untouched.
+
+**Success check:** all four lab images show ordinary human ears on a
+scaled-down adult — especially the `424242` control versus Arm C's Shade
+(same seed, wording is the only delta). Arms A/B/C stay frozen.
