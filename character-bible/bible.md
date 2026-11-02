@@ -57,7 +57,9 @@ Default expression: blunt and direct — a man of action, steady gaze, never sof
 
 ### Lilly — Adult woman early 20s (NOT a child)
 `adult young woman early 20s, curly voluminous red hair, freckles, white ruffled shirt, red corset laced gold, cream skirt, brown boots, thigh dagger + rapier with mother-of-pearl handle`
+Approved identity ref (2026-11-02, Flux3 Klein): `character-bible/approved_lilly_reference.png` — copy this face; adult likeness approved in the Flux3 v1 portrait.
 Refs: gallery/NPCs/Lilly.png (LOCKED), Keechwah_and_Lilly_bonding.png. NEVER: child, little girl, schoolgirl.
+Default expression: warm and confident — friendly, self-assured young woman.
 
 ### Water Bear — Owlbear, ONE creature
 `single owlbear creature, massive grizzly bear body with coarse brown fur and bear paws with claws, head REPLACED by owl head with round eyes and hooked beak and feathered ruff, no wings, no second head, no separate owl`
@@ -65,7 +67,10 @@ NEVER: bear holding owl, two heads, wings, white snowy owl alone, bear head + ow
 
 ### Biggins Aulswim — Lilly's protector, ex-Talons of Justice assassin
 `tall adult human man in his 40s, slicked gray-streaked dark hair, sharp cheekbones, blue eyes, black three-piece suit with long coat, white shirt black tie, white gloves, pocket-watch chain, holding bloody dagger when hunting`
+Approved identity ref (2026-11-02, Flux3 Klein): `character-bible/approved_biggins_reference.png` — copy this face; clean reference has no dagger, hunting variant adds it.
 Ref: gallery/NPCs/Biggans_Aulswim.png (note filename typo Biggans). NOT old gentleman, NOT apothecary. First appears Session 2.
+NEVER: beard, hooded cloak, kindly shopkeeper look (that is the apothecary — keep them distinct).
+Default expression: cold and composed — professional ex-assassin calm.
 
 ### Apothecary owner (S1 hooded figure) — NOT Biggins
 `kindly older gentleman, gray beard, dark hooded cloak, cob pipe` — fun-loving shopkeeper, owns local apothecary. Keep distinct from Biggins.
