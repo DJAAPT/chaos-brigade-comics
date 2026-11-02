@@ -33,15 +33,17 @@ ARM_B_BLOCK = (
     "gold jewelry, NO wings, sharply pointed canines, a thick tiefling tail behind him, "
     "exactly two arms"
 )
-# Batch 13: horn color pinned — both approved refs show bronze-brown bone
-# horns; leaving color open drifted to gold (r13) and red across batches
-BATCH13_BLOCK = (
+# Batch 14: horn posture — batch-13 verdict splits the defects (k01 splayed
+# wide, k04 oversized). Posture is word-addressable, size is not (canon says
+# "large"), so upright side-by-side goes in; k04's size is seed noise unless
+# it recurs under the new posture.
+BATCH14_BLOCK = (
     "adult male tiefling warlock, warm bronze-tan skin with a faint red cast, "
-    "long curly black hair, goatee, large curved bronze-brown horns rising from the "
-    "crown of his skull with bases buried deep in his thick curly hair, solid matte "
-    "purple eyes with no visible sclera or pupil, male facial features, "
-    "dark blue/gold robes, gold jewelry, NO wings, sharply pointed canines, "
-    "a thick tiefling tail behind him, exactly two arms"
+    "long curly black hair, goatee, large curved bronze-brown horns rising upright "
+    "side by side from the crown of his skull with bases buried deep in his thick "
+    "curly hair, solid matte purple eyes with no visible sclera or pupil, "
+    "male facial features, dark blue/gold robes, gold jewelry, NO wings, "
+    "sharply pointed canines, a thick tiefling tail behind him, exactly two arms"
 )
 
 
@@ -54,7 +56,7 @@ class TestKeechwahLabDescriptions(unittest.TestCase):
 
     def test_baseline_block_is_arm_b_verbatim(self):
         text, sources = self.load_block()
-        self.assertEqual(text, BATCH13_BLOCK, "batch-13 block must carry bronze-brown horns")
+        self.assertEqual(text, BATCH14_BLOCK, "batch-14 block must carry upright side-by-side horns")
         self.assertIn("character-bible/Sheets/Keechwah.pdf", sources)
         self.assertIn(KEECHWAH_URL, sources)
         self.assertTrue(any("bible.md locked chunks" in s for s in sources))

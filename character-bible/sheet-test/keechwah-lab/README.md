@@ -25,6 +25,7 @@ overwrite — every generation snapshots to `batches/batch<N>/` with its
 | batch11 | 20-seed survey on the batch-10 block (master list seed 20261107, disjoint from all prior) — keeper/eye read | keechwah_r01–r20 |
 | batch12 | Replication survey: frozen batch-10 wording × 20 new seeds (master list 20261108) — pass bar is a keeper rate near batch 11's | keechwah_r01–r20 (new ladder) |
 | batch13 | Horn color pinned from both approved refs: `large curved bronze-brown horns` (open color drifted to gold/red); burial + matte + skin frozen | same k01–k04 |
+| batch14 | Horn posture: `rising upright side by side` (batch-13 verdict split the defects — k01 splayed wide, k04 oversized; posture is word-addressable, size is not) | same k01–k04 |
 
 ## Verdicts
 
@@ -32,6 +33,32 @@ overwrite — every generation snapshots to `batches/batch<N>/` with its
   really good. Two defects: horns look tacked-on rather than grown, and
   the red still needs to go lighter. Batch 4 takes skin first, horns next
   (one variable per batch).
+- Batch 4 (human verdict): better, k03 still a little too red — reads
+  seed-specific, not wording. Skin locked at the bronze-tan cast.
+- Batch 5 (human verdict 2026-11-02): k03 has the best horns of the batch
+  (seed 777001 again), rest look off — wording proven on one seed, survey
+  next for hit rate + keepers.
+- Batch 6 (human verdict): keepers r10 (seed 1342234658) + r13 — won by
+  burying the horns in the hair; gallery ref confirms the mechanism.
+- Batch 8 (human verdict 2026-11-02): keepers r07 (1743082206) + r10
+  (106986660). New defect: eyes must read solid single-color, NOT
+  glowing — normal eye shape, one color, no sclera/pupil split (canon).
+  Batch 9 fixes the finish, keeps the hue.
+- Batch 9 (human verdict 2026-11-02): k03 best overall (eyes + decent
+  horns); k02 liked but the glow survives as purple spill onto the face
+  around the eye, not in the eye itself; k01/k04 horns bad. Batch 10
+  targets the finish with `matte`.
+- Batch 10 (human verdict): k03 best of the bunch, right mix of
+  everything — surveying the batch-10 wording 20 wide next.
+- Batch 11 (agent review, CORRECTED by human): true keepers r07 + r10
+  only; r13 demoted on gold horns. Horn color unspecified anywhere —
+  batch 13 pins bronze-brown from both approved refs.
+- Batch 12 (human verdict 2026-11-02): standout r07 (1826299574), many
+  bad — replication did not hold; wording not yet stable.
+- Batch 13 (human verdict 2026-11-02): k02 + k03 good; k04's horns too
+  large (size unspecified anywhere — seed noise unless it recurs);
+  k01's horns split wide apart (posture). Batch 14 takes posture:
+  upright + side-by-side.
 - Batch 4 (human verdict): better, k03 still a little too red — reads
   seed-specific, not wording. Skin locked at the bronze-tan cast.
 - Batch 5 (human verdict 2026-11-02): k03 has the best horns of the batch
