@@ -27,7 +27,8 @@ overwrite — every generation snapshots to `batches/batch<N>/` with its
 | batch13 | Horn color pinned from both approved refs: `large curved bronze-brown horns` (open color drifted to gold/red); burial + matte + skin frozen | same k01–k04 |
 | batch14 | Horn posture: `rising upright side by side` (batch-13 verdict split the defects — k01 splayed wide, k04 oversized; posture is word-addressable, size is not) | same k01–k04 |
 | batch15 | 20-seed survey on the batch-14 block (master list seed 20261109, disjoint from all prior) — hunting k03's horns + k04's eyes in one frame | keechwah_r01–r20 |
-| batch16 | Geometry over anatomy: `solid matte purple spheres instead of eyes` (batch-15 verdict - horns done via survey, eyes need work everywhere) | same k01-k04 |
+| batch16 | Geometry over anatomy: `solid matte purple spheres instead of eyes` (batch-15 verdict — horns done via survey, eyes need work everywhere) | same k01–k04 |
+| batch16 verdict (agent review 2026-11-02) | Backfire: literal glowing orbs — bug eyes on all four (worst k03, plus sleeveless wardrobe drift there). Removing the word "eyes" also removed eyelids/shape context that made eyes read as eyes. Lesson: the eye APPARATUS (lids, almond shape) is load-bearing; only the iris fill wants replacing. | — |
 
 ## Verdicts
 
