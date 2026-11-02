@@ -33,15 +33,16 @@ ARM_B_BLOCK = (
     "gold jewelry, NO wings, sharply pointed canines, a thick tiefling tail behind him, "
     "exactly two arms"
 )
-# Batch 16: geometry over anatomy — batch-15 verdict says horns are done
-# but eyes need work everywhere. Stop asking for eyes (which trigger the
-# sclera/pupil/glow machinery) and ask for spheres in the sockets instead.
-BATCH16_BLOCK = (
+# Batch 17: keep the apparatus, replace the fill — batch-16 proved the word
+# "eyes" supplies eyelids/shape (orbs without them read as bugs). Narrow
+# almond eyes under heavy lids, iris fill solid matte purple.
+BATCH17_BLOCK = (
     "adult male tiefling warlock, warm bronze-tan skin with a faint red cast, "
     "long curly black hair, goatee, large curved bronze-brown horns rising upright "
     "side by side from the crown of his skull with bases buried deep in his thick "
-    "curly hair, solid matte purple spheres instead of eyes with no visible sclera "
-    "or pupil, male facial features, dark blue/gold robes, gold jewelry, NO wings, "
+    "curly hair, narrow almond-shaped human eyes under heavy eyelids, solid matte "
+    "purple irises filling the entire visible eye with no visible sclera or pupil, "
+    "male facial features, dark blue/gold robes, gold jewelry, NO wings, "
     "sharply pointed canines, a thick tiefling tail behind him, exactly two arms"
 )
 
@@ -55,7 +56,7 @@ class TestKeechwahLabDescriptions(unittest.TestCase):
 
     def test_baseline_block_is_arm_b_verbatim(self):
         text, sources = self.load_block()
-        self.assertEqual(text, BATCH16_BLOCK, "batch-16 block must carry spheres-instead-of-eyes")
+        self.assertEqual(text, BATCH17_BLOCK, "batch-17 block must carry lidded eyes with iris fill")
         self.assertIn("character-bible/Sheets/Keechwah.pdf", sources)
         self.assertIn(KEECHWAH_URL, sources)
         self.assertTrue(any("bible.md locked chunks" in s for s in sources))
