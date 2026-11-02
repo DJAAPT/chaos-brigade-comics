@@ -101,7 +101,8 @@ def parse(sources_dir: str, out_path: str) -> dict:
             print(f"missing cached page: {path} (run --fetch first)", file=sys.stderr)
             sys.exit(3)
 
-        soup = BeautifulSoup(open(path, "rb").read(), "html.parser")
+        with open(path, "rb") as f:
+            soup = BeautifulSoup(f.read(), "html.parser")
         h1 = soup.find("h1")
         if h1 is None:
             print(f"no <h1> in {path}", file=sys.stderr)
