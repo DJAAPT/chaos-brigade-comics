@@ -23,6 +23,7 @@ overwrite — every generation snapshots to `batches/batch<N>/` with its
 | batch9 | Solid-not-glowing eyes: `glowing purple` → `solid purple eyes with no visible sclera or pupil`, hue kept (canon fix, batch-8 keepers r07/r10) | same k01–k04 |
 | batch10 | Matte finish: batch-9 verdict showed the glow surviving as purple spill onto the face, so `matte` joins as a positive finish word | same k01–k04 |
 | batch11 | 20-seed survey on the batch-10 block (master list seed 20261107, disjoint from all prior) — keeper/eye read | keechwah_r01–r20 |
+| batch12 | Replication survey: frozen batch-10 wording × 20 new seeds (master list 20261108) — pass bar is a keeper rate near batch 11's | keechwah_r01–r20 (new ladder) |
 
 ## Verdicts
 

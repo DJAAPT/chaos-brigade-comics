@@ -7,14 +7,14 @@
     "species_sources": {
       "7-tiefling": "https://www.dndbeyond.com/species/7-tiefling"
     },
-    "seed": 1633385816,
+    "seed": 1406108277,
     "model_hashes": {
       "unet_name": "flux3-image-klein-nvfp4.safetensors",
       "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
     },
     "workflow": "workflows/base_flux3.json",
     "output": "img/keechwah_r01.png",
-    "timestamp": "2026-11-02T19:29:48Z"
+    "timestamp": "2026-11-02T20:22:10Z"
   },
   "keechwah_r02": {
     "character": "keechwah_r02",
@@ -24,14 +24,14 @@
     "species_sources": {
       "7-tiefling": "https://www.dndbeyond.com/species/7-tiefling"
     },
-    "seed": 1896296497,
+    "seed": 1935188101,
     "model_hashes": {
       "unet_name": "flux3-image-klein-nvfp4.safetensors",
       "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
     },
     "workflow": "workflows/base_flux3.json",
     "output": "img/keechwah_r02.png",
-    "timestamp": "2026-11-02T19:29:53Z"
+    "timestamp": "2026-11-02T20:22:16Z"
   },
   "keechwah_r03": {
     "character": "keechwah_r03",
@@ -41,14 +41,14 @@
     "species_sources": {
       "7-tiefling": "https://www.dndbeyond.com/species/7-tiefling"
     },
-    "seed": 147045042,
+    "seed": 958164400,
     "model_hashes": {
       "unet_name": "flux3-image-klein-nvfp4.safetensors",
       "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
     },
     "workflow": "workflows/base_flux3.json",
     "output": "img/keechwah_r03.png",
-    "timestamp": "2026-11-02T19:29:58Z"
+    "timestamp": "2026-11-02T20:22:21Z"
   },
   "keechwah_r04": {
     "character": "keechwah_r04",
@@ -58,14 +58,14 @@
     "species_sources": {
       "7-tiefling": "https://www.dndbeyond.com/species/7-tiefling"
     },
-    "seed": 643751515,
+    "seed": 1280771783,
     "model_hashes": {
       "unet_name": "flux3-image-klein-nvfp4.safetensors",
       "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
     },
     "workflow": "workflows/base_flux3.json",
     "output": "img/keechwah_r04.png",
-    "timestamp": "2026-11-02T19:30:03Z"
+    "timestamp": "2026-11-02T20:22:26Z"
   },
   "keechwah_r05": {
     "character": "keechwah_r05",
@@ -75,14 +75,14 @@
     "species_sources": {
       "7-tiefling": "https://www.dndbeyond.com/species/7-tiefling"
     },
-    "seed": 1341463657,
+    "seed": 1656590404,
     "model_hashes": {
       "unet_name": "flux3-image-klein-nvfp4.safetensors",
       "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
     },
     "workflow": "workflows/base_flux3.json",
     "output": "img/keechwah_r05.png",
-    "timestamp": "2026-11-02T19:30:09Z"
+    "timestamp": "2026-11-02T20:22:31Z"
   },
   "keechwah_r06": {
     "character": "keechwah_r06",
@@ -92,14 +92,14 @@
     "species_sources": {
       "7-tiefling": "https://www.dndbeyond.com/species/7-tiefling"
     },
-    "seed": 1047308988,
+    "seed": 63317726,
     "model_hashes": {
       "unet_name": "flux3-image-klein-nvfp4.safetensors",
       "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
     },
     "workflow": "workflows/base_flux3.json",
     "output": "img/keechwah_r06.png",
-    "timestamp": "2026-11-02T19:30:14Z"
+    "timestamp": "2026-11-02T20:22:36Z"
   },
   "keechwah_r07": {
     "character": "keechwah_r07",
@@ -109,14 +109,14 @@
     "species_sources": {
       "7-tiefling": "https://www.dndbeyond.com/species/7-tiefling"
     },
-    "seed": 934369354,
+    "seed": 1826299574,
     "model_hashes": {
       "unet_name": "flux3-image-klein-nvfp4.safetensors",
       "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
     },
     "workflow": "workflows/base_flux3.json",
     "output": "img/keechwah_r07.png",
-    "timestamp": "2026-11-02T19:30:19Z"
+    "timestamp": "2026-11-02T20:22:41Z"
   },
   "keechwah_r08": {
     "character": "keechwah_r08",
@@ -126,14 +126,14 @@
     "species_sources": {
       "7-tiefling": "https://www.dndbeyond.com/species/7-tiefling"
     },
-    "seed": 306505002,
+    "seed": 348566033,
     "model_hashes": {
       "unet_name": "flux3-image-klein-nvfp4.safetensors",
       "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
     },
     "workflow": "workflows/base_flux3.json",
     "output": "img/keechwah_r08.png",
-    "timestamp": "2026-11-02T19:30:24Z"
+    "timestamp": "2026-11-02T20:22:47Z"
   },
   "keechwah_r09": {
     "character": "keechwah_r09",
@@ -143,14 +143,14 @@
     "species_sources": {
       "7-tiefling": "https://www.dndbeyond.com/species/7-tiefling"
     },
-    "seed": 1337546782,
+    "seed": 1824074319,
     "model_hashes": {
       "unet_name": "flux3-image-klein-nvfp4.safetensors",
       "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
     },
     "workflow": "workflows/base_flux3.json",
     "output": "img/keechwah_r09.png",
-    "timestamp": "2026-11-02T19:30:29Z"
+    "timestamp": "2026-11-02T20:22:52Z"
   },
   "keechwah_r10": {
     "character": "keechwah_r10",
@@ -160,14 +160,14 @@
     "species_sources": {
       "7-tiefling": "https://www.dndbeyond.com/species/7-tiefling"
     },
-    "seed": 277584464,
+    "seed": 468796370,
     "model_hashes": {
       "unet_name": "flux3-image-klein-nvfp4.safetensors",
       "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
     },
     "workflow": "workflows/base_flux3.json",
     "output": "img/keechwah_r10.png",
-    "timestamp": "2026-11-02T19:30:34Z"
+    "timestamp": "2026-11-02T20:22:57Z"
   },
   "keechwah_r11": {
     "character": "keechwah_r11",
@@ -177,14 +177,14 @@
     "species_sources": {
       "7-tiefling": "https://www.dndbeyond.com/species/7-tiefling"
     },
-    "seed": 646116916,
+    "seed": 2540324,
     "model_hashes": {
       "unet_name": "flux3-image-klein-nvfp4.safetensors",
       "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
     },
     "workflow": "workflows/base_flux3.json",
     "output": "img/keechwah_r11.png",
-    "timestamp": "2026-11-02T19:30:40Z"
+    "timestamp": "2026-11-02T20:23:02Z"
   },
   "keechwah_r12": {
     "character": "keechwah_r12",
@@ -194,14 +194,14 @@
     "species_sources": {
       "7-tiefling": "https://www.dndbeyond.com/species/7-tiefling"
     },
-    "seed": 915739076,
+    "seed": 1604147991,
     "model_hashes": {
       "unet_name": "flux3-image-klein-nvfp4.safetensors",
       "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
     },
     "workflow": "workflows/base_flux3.json",
     "output": "img/keechwah_r12.png",
-    "timestamp": "2026-11-02T19:30:45Z"
+    "timestamp": "2026-11-02T20:23:07Z"
   },
   "keechwah_r13": {
     "character": "keechwah_r13",
@@ -211,14 +211,14 @@
     "species_sources": {
       "7-tiefling": "https://www.dndbeyond.com/species/7-tiefling"
     },
-    "seed": 1720663727,
+    "seed": 1276494064,
     "model_hashes": {
       "unet_name": "flux3-image-klein-nvfp4.safetensors",
       "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
     },
     "workflow": "workflows/base_flux3.json",
     "output": "img/keechwah_r13.png",
-    "timestamp": "2026-11-02T19:30:50Z"
+    "timestamp": "2026-11-02T20:23:12Z"
   },
   "keechwah_r14": {
     "character": "keechwah_r14",
@@ -228,14 +228,14 @@
     "species_sources": {
       "7-tiefling": "https://www.dndbeyond.com/species/7-tiefling"
     },
-    "seed": 322208716,
+    "seed": 1733420755,
     "model_hashes": {
       "unet_name": "flux3-image-klein-nvfp4.safetensors",
       "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
     },
     "workflow": "workflows/base_flux3.json",
     "output": "img/keechwah_r14.png",
-    "timestamp": "2026-11-02T19:30:55Z"
+    "timestamp": "2026-11-02T20:23:18Z"
   },
   "keechwah_r15": {
     "character": "keechwah_r15",
@@ -245,14 +245,14 @@
     "species_sources": {
       "7-tiefling": "https://www.dndbeyond.com/species/7-tiefling"
     },
-    "seed": 1214765465,
+    "seed": 2006587816,
     "model_hashes": {
       "unet_name": "flux3-image-klein-nvfp4.safetensors",
       "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
     },
     "workflow": "workflows/base_flux3.json",
     "output": "img/keechwah_r15.png",
-    "timestamp": "2026-11-02T19:31:00Z"
+    "timestamp": "2026-11-02T20:23:23Z"
   },
   "keechwah_r16": {
     "character": "keechwah_r16",
@@ -262,14 +262,14 @@
     "species_sources": {
       "7-tiefling": "https://www.dndbeyond.com/species/7-tiefling"
     },
-    "seed": 802848500,
+    "seed": 353548685,
     "model_hashes": {
       "unet_name": "flux3-image-klein-nvfp4.safetensors",
       "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
     },
     "workflow": "workflows/base_flux3.json",
     "output": "img/keechwah_r16.png",
-    "timestamp": "2026-11-02T19:31:06Z"
+    "timestamp": "2026-11-02T20:23:28Z"
   },
   "keechwah_r17": {
     "character": "keechwah_r17",
@@ -279,14 +279,14 @@
     "species_sources": {
       "7-tiefling": "https://www.dndbeyond.com/species/7-tiefling"
     },
-    "seed": 1422637043,
+    "seed": 1131429002,
     "model_hashes": {
       "unet_name": "flux3-image-klein-nvfp4.safetensors",
       "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
     },
     "workflow": "workflows/base_flux3.json",
     "output": "img/keechwah_r17.png",
-    "timestamp": "2026-11-02T19:31:11Z"
+    "timestamp": "2026-11-02T20:23:33Z"
   },
   "keechwah_r18": {
     "character": "keechwah_r18",
@@ -296,14 +296,14 @@
     "species_sources": {
       "7-tiefling": "https://www.dndbeyond.com/species/7-tiefling"
     },
-    "seed": 718924425,
+    "seed": 1608960320,
     "model_hashes": {
       "unet_name": "flux3-image-klein-nvfp4.safetensors",
       "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
     },
     "workflow": "workflows/base_flux3.json",
     "output": "img/keechwah_r18.png",
-    "timestamp": "2026-11-02T19:31:16Z"
+    "timestamp": "2026-11-02T20:23:38Z"
   },
   "keechwah_r19": {
     "character": "keechwah_r19",
@@ -313,14 +313,14 @@
     "species_sources": {
       "7-tiefling": "https://www.dndbeyond.com/species/7-tiefling"
     },
-    "seed": 1013100406,
+    "seed": 1826456803,
     "model_hashes": {
       "unet_name": "flux3-image-klein-nvfp4.safetensors",
       "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
     },
     "workflow": "workflows/base_flux3.json",
     "output": "img/keechwah_r19.png",
-    "timestamp": "2026-11-02T19:31:21Z"
+    "timestamp": "2026-11-02T20:23:44Z"
   },
   "keechwah_r20": {
     "character": "keechwah_r20",
@@ -330,13 +330,13 @@
     "species_sources": {
       "7-tiefling": "https://www.dndbeyond.com/species/7-tiefling"
     },
-    "seed": 1238507056,
+    "seed": 325867,
     "model_hashes": {
       "unet_name": "flux3-image-klein-nvfp4.safetensors",
       "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
     },
     "workflow": "workflows/base_flux3.json",
     "output": "img/keechwah_r20.png",
-    "timestamp": "2026-11-02T19:31:26Z"
+    "timestamp": "2026-11-02T20:23:49Z"
   }
 }
