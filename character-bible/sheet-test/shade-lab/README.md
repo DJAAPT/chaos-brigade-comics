@@ -35,7 +35,11 @@ reads much better (head still large), s3 still HUGE head + toddler
 despite facial hair — identity language fixed age on 3/4, size on 2/4.
 **Batch 12 breakthrough: no huge ears on any of the four, heads better
 sized across the board — silencing the species + ear words beat ten
-batches of adjectives, placement, ratios, and bans.**
+batches of adjectives, placement, ratios, and bans. Agent review of
+batch 12: ears stay tucked in all four (no sideways protrusions); but
+s2/s4/s6 now read as full-size men — smallness did NOT survive the
+silence except on s5, which reads short-statured adult (closest to a
+halfling yet). The species word was load-bearing for scale after all.**
 Batch 5 `shade_s2` (seed 777001): head size AND ears both good — **lab
 winner and locked base**. All other seeds still show oversized ears;
 s3 (314159) bad in every batch — retired as a hostile seed, not a
