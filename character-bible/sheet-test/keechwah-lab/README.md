@@ -30,6 +30,8 @@ overwrite — every generation snapshots to `batches/batch<N>/` with its
 | batch16 | Geometry over anatomy: `solid matte purple spheres instead of eyes` (batch-15 verdict — horns done via survey, eyes need work everywhere) | same k01–k04 |
 | batch16 verdict (agent review 2026-11-02) | Backfire: literal glowing orbs — bug eyes on all four (worst k03, plus sleeveless wardrobe drift there). Removing the word "eyes" also removed eyelids/shape context that made eyes read as eyes. Lesson: the eye APPARATUS (lids, almond shape) is load-bearing; only the iris fill wants replacing. | — |
 | batch17 | Lidded eyes with iris fill: apparatus kept, only the fill replaced (batch-16 lesson) | same k01-k04 |
+| batch17 verdict (agent review 2026-11-02) | Lids fixed the orbs everywhere - no bug eyes on any of the four. Purple held on k01/k03/k04, failed on k02 (blue-gray eyes). k04 best full package (lidded purple eyes, rooted bronze horns, closed robe, goatee, tail). k03 good face but bare-chest drift again. | - |
+| batch17 verdict (human 2026-11-02) | k04 closest but the only one that kept purple - k01-k03 tossed the entire iris replacement (normal/dark eyes). Purple itself is seed-fragile, not just the finish. Batch 18 surveys the batch-17 block 20 wide for purple-holders. | - |
 
 ## Verdicts
 
