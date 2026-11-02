@@ -24,7 +24,7 @@ SLUG_RACE = {
     "chip": "Human", "gulgrim": "Hill Dwarf", "keechwah": "Tiefling",
     "rocketcandy": "Human", "shade": "Halfling", "vadania": "Wood Elf",
 }
-MECHANICS_RE = re.compile(r"\b(Stealth|Saving Throw|Armor Class|Hit Points|Proficiency|\+\d+)\b")
+MECHANICS_RE = re.compile(r"\b(Stealth|Saving Throw|Armor Class|Hit Points|Proficiency)\b|\w+ \+\d+")
 FORBIDDEN_TOKENS = ["bible.md", "refs/", "gallery"]
 
 
@@ -61,6 +61,15 @@ class TestBuildSheetBible(unittest.TestCase):
         for slug, entry in self.load().items():
             m = MECHANICS_RE.search(entry["prompt"])
             self.assertIsNone(m, f"{slug} mechanics leaked: {m.group(0) if m else None!r}")
+
+    def test_mechanics_pattern_catches_stat_forms(self):
+        # stat-style modifiers must be detectable (any skill, not just the named terms)
+        self.assertIsNotNone(MECHANICS_RE.search("made an Acrobatics +6 check"))
+        self.assertIsNotNone(MECHANICS_RE.search("proficient in Stealth +6"))
+        self.assertIsNotNone(MECHANICS_RE.search("Armor Class 16, Hit Points 44"))
+        # enchanted item names are content the plan REQUIRES in prompts (Plate, +2),
+        # and list joiners place them after ", " — they must not trip the filter
+        self.assertIsNone(MECHANICS_RE.search("equipment: Plate, +2, Battleaxe, +3"))
 
     def test_no_local_reference_reads(self):
         for path in glob.glob("scripts/*.py"):
