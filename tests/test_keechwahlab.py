@@ -11,6 +11,13 @@ LAB_DESC = os.path.join(LAB_DIR, "descriptions.md")
 LAB_PROMPTS = os.path.join(LAB_DIR, "prompts.json")
 KEYS = [f"keechwah_k{i:02d}" for i in range(1, 5)]
 SEEDS = [424242, 424243, 777001, 424244]
+# Batch 3 ladder: 20-seed survey on the batch-2 block (master list seed
+# 20261104, verified disjoint from all previously used seeds)
+BATCH3_KEYS = [f"keechwah_r{i:02d}" for i in range(1, 21)]
+BATCH3_SEEDS = [897846952, 1387151110, 1592631768, 2142219592, 86866103, 979432203,
+                1663594182, 27984743, 316266079, 1964552273, 1613333945, 121713292,
+                1925297279, 688212631, 2023830113, 1027863760, 495423124, 1227329441,
+                1250510708, 913730685]
 KEECHWAH_URL = RACE_URL[SLUG_RACE["keechwah"]]
 ARM_B_BLOCK = (
     "adult male tiefling warlock, deep red skin, long curly black hair, goatee, "
@@ -49,13 +56,13 @@ class TestKeechwahLabPrompts(unittest.TestCase):
 
     def test_lab_prompts_schema(self):
         prompts = self.load_prompts()
-        self.assertEqual(list(prompts), KEYS)
+        self.assertEqual(list(prompts), BATCH3_KEYS, "lab keys must be the batch-3 survey ladder in order")
         text, _ = TestKeechwahLabDescriptions().load_block()
-        for i, key in enumerate(KEYS):
+        for i, key in enumerate(BATCH3_KEYS):
             entry = prompts[key]
             self.assertEqual(list(entry.keys()), PROMPT_KEYS, f"{key} key mismatch")
             self.assertEqual(entry["arm"], "C")
-            self.assertEqual(entry["seed"], SEEDS[i], f"{key} seed mismatch")
+            self.assertEqual(entry["seed"], BATCH3_SEEDS[i], f"{key} seed mismatch")
             self.assertEqual(entry["frame"], FRAME_C)
             self.assertEqual(entry["prompt"], f"{FRAME_C} {ADDENDUM} {text}", f"{key} not exact composition")
             self.assertIn(entry["output"], (None, f"img/{key}.png"))
@@ -66,9 +73,9 @@ class TestKeechwahLabPrompts(unittest.TestCase):
 
         stems = [os.path.splitext(os.path.basename(p))[0] for p in _glob.glob("workflows/keechwahlab_*.json")]
         found = {s.removeprefix("keechwahlab_") for s in stems}
-        self.assertEqual(found, set(KEYS), f"lab workflow set mismatch: {found}")
+        self.assertEqual(found, set(BATCH3_KEYS), f"lab workflow set mismatch: {found}")
         prompts = self.load_prompts()
-        for key in KEYS:
+        for key in BATCH3_KEYS:
             with open(f"workflows/keechwahlab_{key}.json", encoding="utf-8") as f:
                 g = json.load(f)
             seeds = [n["inputs"][k] for n in g.values() for k in ("seed", "noise_seed") if k in n.get("inputs", {})]
