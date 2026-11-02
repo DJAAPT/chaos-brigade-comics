@@ -146,28 +146,28 @@
   {
     "panel": "panel42_shakedown.png",
     "image": "panel42_shakedown.png",
-    "workflow": "flux3_s1_p42.json",
-    "seed": 20261103,
+    "workflow": "flux3_s1_p42m.json",
+    "seed": 6161616161,
     "model": "flux3-image-klein-nvfp4.safetensors",
-    "portrait_ref": "multiref_chip.png",
+    "portrait_ref": "multiref_roland.png",
     "prompt": "photorealistic scene, inside a cluttered general store at the counter: three city guards in plain steel armor cornering Chip, adult male human druid with brown skin, wild long white hair and white beard, green and brown fur garb, one guard holding a sword up under his chin, Chip raising his hands defensively, a worried middle-aged male shop proprietor watching from behind the counter, warm lamplight, distinct people, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
   },
   {
     "panel": "panel43_pan.png",
     "image": "panel43_pan.png",
-    "workflow": "flux3_s1_p43.json",
-    "seed": 20261103,
+    "workflow": "flux3_s1_p43m.json",
+    "seed": 6262626262,
     "model": "flux3-image-klein-nvfp4.safetensors",
-    "portrait_ref": "multiref_chip.png",
+    "portrait_ref": "multiref_roland.png",
     "prompt": "photorealistic action scene inside a general store: a middle-aged male shop proprietor swinging a heavy cast-iron pan mid-swing behind two city guards who are dropping unconscious, a third guard turning around still gripping the wrist of Chip, adult male human druid with brown skin, wild long white hair and white beard, green and brown fur garb, motion energy, warm lamplight, distinct people, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
   },
   {
     "panel": "panel44_hogtied.png",
     "image": "panel44_hogtied.png",
-    "workflow": "flux3_s1_p44.json",
-    "seed": 774411009988,
+    "workflow": "flux3_s1_p44m.json",
+    "seed": 6363636363,
     "model": "flux3-image-klein-nvfp4.safetensors",
-    "portrait_ref": "multiref_chip.png",
+    "portrait_ref": "multiref_roland.png",
     "prompt": "photorealistic scene in a dark shop cellar with crates and barrels: three unconscious city guards in steel armor and helmets lying in a neat side-by-side row on the floor, thick rope tied around all three of them together, each guard clearly separate with exactly two arms and exactly two legs in correct human anatomy, six arms and six legs total across the row, no extra limbs, no missing limbs, no fused bodies, Chip, adult male human druid with brown skin, wild long white hair and white beard, green and brown fur garb, stands completely free with no ropes on him beside a big male shop proprietor who points accusingly at the tied guards, lantern light, distinct people, no duplicates, adult faces, no children, photorealistic, highly detailed"
   },
   {
@@ -209,10 +209,10 @@
   {
     "panel": "panel55_apothecary.png",
     "image": "panel55_apothecary.png",
-    "workflow": "flux3_s1_p55.json",
-    "seed": 1857761984156622644,
+    "workflow": "flux3_s1_p55m.json",
+    "seed": 6464646464,
     "model": "flux3-image-klein-nvfp4.safetensors",
-    "portrait_ref": null,
+    "portrait_ref": "multiref_thumba.png",
     "prompt": "cinematic fantasy film still, inside a colorful cluttered apothecary shop with jars and a playing broadcast stone: Chip, a tall adult male human druid with brown skin, wild long white hair and white beard, green and brown fur garb, stepping through the door with a paper note in hand, greeted by a giddy sprightly older male shop owner bouncing with joy, warm lamplight, two distinct people, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
   }
 ]

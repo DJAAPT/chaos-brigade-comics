@@ -75,6 +75,18 @@ NEVER: beard, hooded cloak, kindly shopkeeper look (that is the apothecary — k
 Default expression: cold and composed — professional ex-assassin calm.
 Behavior (transcript canon): coiled stillness — moves effortlessly, appraising eyes, often already where events happen (opens doors before arrivals); snoot and insult are performance, menace is real. Talon hook-and-claw tattoos inside both forearms (distinct from the guard diamond sigils — Rocketcandy recognizes the order). Casts spells (Hold Person witnessed). Parental devotion to Lilly; magical protection pact with Gulgrim. Unflappable dignity under indignity; dry menace toward threats, playful precision at home.
 
+### Roland — Male shopkeeper, owns the Good & Ready general store (recurring NPC)
+`tired middle-aged male shopkeeper in his 50s, balding with receding salt-and-pepper hair, deep wear lines and laugh lines, tired bags under his eyes, plain common clothes with shop apron`
+Approved identity ref (2026-11-03, Flux3 Klein): `character-bible/approved_roland_reference.png` — copy this face.
+Knows the guild tax firsthand (40% take, 18 months); tells the party to get out of town. Pan-wielder (BONK). Free restock for Chip.
+Default expression: weary warmth — a good man ground down, still kind.
+
+### Thumba — Male apothecary, proprietor of Colorful Creations (recurring NPC)
+`warm theatrical middle-aged gentleman apothecary, neat gray-streaked hair, clever twinkling eyes, fine embroidered robes with alchemical stains and vial-stuffed pockets`
+Approved identity ref (2026-11-03, Flux3 Klein): `character-bible/approved_thumba_reference.png` — copy this face.
+Brews memory potions; morphed Chip's map with sand (reverse instructions); owed a favor (broadcasting stone); hood-and-theme-music persona. P5.5's owner IS Thumba (transcript canon).
+Default expression: delighted showmanship — loves an audience, loves his hood.
+
 ### Apothecary owner (S1 hooded figure) — NOT Biggins
 `kindly older gentleman, gray beard, dark hooded cloak, cob pipe` — fun-loving shopkeeper who owns a local apothecary. Keep distinct from Biggins.
 Two apothecaries in Neverwinter (transcript canon, user-confirmed 2026-11-03): this hooded gentleman ≠ Thumba, proprietor of Colorful Creations (Chip's favor-holder, theme-music quest giver). The proprietor's "find Thumba" contact and the P5.5 owner are the SAME man. Spelling: Thumba.
