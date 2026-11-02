@@ -1,0 +1,119 @@
+[
+  {
+    "panel": "s2e1_map.png",
+    "image": "s2e1_map.png",
+    "workflow": "flux3_s2e1.json",
+    "seed": 7171717171,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": "multiref_thumba.png",
+    "prompt": "photorealistic scene inside a cluttered apothecary workshop with a simmering cauldron, shelves of herbs and creature parts: Thumba, a warm theatrical middle-aged gentleman apothecary with gray-streaked hair in embroidered robes with vial-stuffed pockets, sprinkling glowing sand from his fingers over a hand-drawn map on the table as the ink lines visibly shift and morph, Chip, a tall adult male human druid with brown skin, wild long white hair and white beard, green and brown fur garb, leaning in and watching intently, warm lamplight, two distinct people, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "s2e2_audience.png",
+    "image": "s2e2_audience.png",
+    "workflow": "flux3_s2e2.json",
+    "seed": 9292929292,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": "multiref_lilly.png",
+    "prompt": "photorealistic scene on a mansion back porch with ocean view and pergola: Lilly, a young adult woman with voluminous curly red hair and freckles in a silk shirt with red corset, leaning over a large unrolled coastline map on a table and pointing at it excitedly while speaking; beside her stands Rocketcandy, a tall human paladin man with short brown hair in shining plate armor, listening with a shrewd narrowed-eyed expression; behind them Biggins the butler with slicked gray-streaked hair holds the door open, watching with cool stillness; the rest of the party is present in the room just out of frame; warm daylight, three distinct grown adults, no duplicates, no conflation, each exactly two arms, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "s2e3_refusal.png",
+    "image": "s2e3_refusal.png",
+    "workflow": "flux3_s2e3.json",
+    "seed": 9393939393,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": "multiref_biggins.png",
+    "prompt": "photorealistic scene in an opulent mansion sitting room: Biggins, a tall man in his 40s with slicked gray-streaked dark hair and sharp cheekbones in a butler uniform, standing composed with one hand raised making a firm offer, facing Gulgrim, a short bald dwarf cleric with white beard and heavy furs who questions him with an open gesture, and Vadania, a tall male elf ranger with brown hair and small pointed ears standing with defiant crossed arms and a bitter glare, warm lamplight, three distinct grown adults, no duplicates, no conflation, each exactly two arms, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "s2e4_pact.png",
+    "image": "s2e4_pact.png",
+    "workflow": "flux3_s2e4.json",
+    "seed": 9494949494,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": "multiref_biggins.png",
+    "prompt": "dramatic close-up photograph, shallow depth of field: Biggins, a tall man in his 40s with slicked gray-streaked dark hair in a butler uniform, grasping the forearm of Gulgrim, a short bald dwarf cleric barely half his height with long white beard and heavy furs, looking up at him, in a solemn pact handshake, faint magical glow and wisps of arcane energy curling around their clasped arms, opulent mansion interior blurred behind, tension and gravity, adult faces, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "s2e5a_gift.png",
+    "image": "s2e5a_gift.png",
+    "workflow": "flux3_s2e5a.json",
+    "seed": 9595959595,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "photorealistic scene on a sunny mansion back patio: Gulgrim, a short bald dwarf cleric with white beard and heavy furs, handing a small dagger to Lilly, a young adult woman with voluminous curly red hair who receives it with explosive wide-eyed delight, both standing, Biggins the butler with slicked gray-streaked hair watching calmly in the background, warm daylight, three distinct grown adults, no duplicates, each exactly two arms, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "s2e5b_catch.png",
+    "image": "s2e5b_catch.png",
+    "workflow": "flux3_s2e5b.json",
+    "seed": 9696969696,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "photorealistic action freeze-frame on a stone mansion patio with ocean beyond, FANTASY setting, period clothing only, no modern clothes: Biggins, a tall man in his 40s with slicked gray-streaked dark hair wearing a black butler uniform with white gloves, having moved impossibly fast to catch a lunging SMALL dagger with a short blade by the bare steel, a little knife not a sword, a thin trickle of blood running down from his gripping hand, Lilly a young woman with voluminous curly red hair in corset and skirt frozen mid-lunge behind the blade, Gulgrim a short bald dwarf cleric with white beard and heavy furs recoiling back, motion energy, warm daylight, three distinct grown adults, no duplicates, each exactly two arms, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "s2e6_plea.png",
+    "image": "s2e6_plea.png",
+    "workflow": "flux3_s2e6.json",
+    "seed": 9797979797,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": "multiref_biggins.png",
+    "prompt": "photorealistic scene on a mansion patio at golden hour: Gulgrim, a short bald dwarf cleric with white beard and heavy furs, speaking earnestly with one hand raised to Biggins, a tall man in his 40s with slicked gray-streaked dark hair in a butler uniform who listens with a stern unreadable face and a bandaged hand, behind them Lilly a young woman with voluminous curly red hair in corset and skirt twirls a second small dagger playfully, period fantasy clothing, no modern blazer, no modern jacket, warm light, three distinct grown adults, no duplicates, each exactly two arms, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "s2e7_favor.png",
+    "image": "s2e7_favor.png",
+    "workflow": "flux3_s2e7.json",
+    "seed": 9898989898,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": "multiref_thumba.png",
+    "prompt": "photorealistic scene inside a cluttered apothecary workshop at dusk: Thumba, a warm theatrical middle-aged gentleman apothecary with gray-streaked hair in embroidered robes, pressing a smooth oval palm-sized stone into the hand of Chip, a tall adult male human druid with brown skin, wild long white hair and white beard, green and brown fur garb, Chip studying the stone with arcane curiosity, a hooded dark cloak hanging on a coat rack behind them, warm lamplight, two distinct grown adults, no duplicates, each exactly two arms, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "s2e8_drinks.png",
+    "image": "s2e8_drinks.png",
+    "workflow": "flux3_s2e8.json",
+    "seed": 9999999999,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": "multiref_roland.png",
+    "prompt": "photorealistic warm scene inside a general store: Roland, a tired middle-aged male shopkeeper with balding salt-and-pepper hair in a shop apron, sitting at a table laughing heartily with three city guards in plain steel armor who laugh along holding mugs, camaraderie and relief, shelves of goods behind, warm lamplight, four distinct grown men, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "s2e9a_boot.png",
+    "image": "s2e9a_boot.png",
+    "workflow": "flux3_s2e9a.json",
+    "seed": 1010101010,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": "multiref_biggins.png",
+    "prompt": "tasteful photorealistic scene in a mansion sitting room, camera framing above the knee only: Lilly, a young adult woman with curly red hair, sitting and pulling on a tall leather boot while a small dagger lies beside her, a thin trickle of blood on her boot from a small cut, Gulgrim, a short bald dwarf cleric with white beard wearing his heavy furs, kneeling beside her with glowing healing hands extended toward the cut, Biggins the butler watching in the background, warm lamplight, three distinct grown adults, no duplicates, each exactly two arms, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "s2e9b_armory.png",
+    "image": "s2e9b_armory.png",
+    "workflow": "flux3_s2e9b.json",
+    "seed": 1111111111,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": "multiref_lilly.png",
+    "prompt": "photorealistic scene inside a mansion armory room: a tall ornate wardrobe standing open revealing gleaming enchanted armor and fine weapons with a faint magical shimmer, Lilly a young woman with curly red hair in corset reaching up excitedly toward a perfect glove, Gulgrim the short bald dwarf in heavy furs and Biggins the butler with slicked gray-streaked hair watching behind her, warm lamplight, three distinct grown adults, no duplicates, each exactly two arms, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "s2e10a_hug.png",
+    "image": "s2e10a_hug.png",
+    "workflow": "flux3_s2e10a.json",
+    "seed": 1212121212,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": "multiref_biggins.png",
+    "prompt": "photorealistic emotional scene at a mansion door in evening light: Biggins, a tall man in his 40s with slicked gray-streaked dark hair in a butler uniform, kneeling to hug Lilly, a young woman with curly red hair with an oversized rucksack twice her size, a single tear running down his cheek, survival advice warmth, Gulgrim the short bald dwarf cleric with long white beard and heavy furs watching behind, a grown adult man, no children present besides the three named figures, no strangers, no one else in the scene, three distinct grown adults, no duplicates, each exactly two arms, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "s2e10b_hand.png",
+    "image": "s2e10b_hand.png",
+    "workflow": "flux3_s2e10b.json",
+    "seed": 1313131313,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": "multiref_biggins.png",
+    "prompt": "photorealistic tense close-up at a mansion door in evening light: Biggins, a tall man with slicked gray-streaked dark hair in a butler uniform, pressing his open hand firmly against the chest armor of Gulgrim, a short bald dwarf cleric with long white beard wearing heavy furs and cleric garb, no plate armor, looking down at the hand with narrowed suspicious eyes, unspoken warning, two distinct grown adults, no duplicates, each exactly two arms, no children, photorealistic, highly detailed"
+  }
+]
