@@ -55,7 +55,9 @@ def parse_descriptions(path: str) -> dict:
     return blocks
 
 
-def build_entry(slug: str, block: dict, model_hashes: dict, timestamp: str) -> dict:
+def build_entry(
+    slug: str, block: dict, model_hashes: dict, timestamp: str, frame: str = FRAME, arm: str = "B"
+) -> dict:
     species_url = next(
         (s for s in block["sources"] if s.startswith("https://www.dndbeyond.com/species/")), None
     )
@@ -64,9 +66,9 @@ def build_entry(slug: str, block: dict, model_hashes: dict, timestamp: str) -> d
         sys.exit(2)
     entry = {
         "character": slug,
-        "arm": "B",
-        "prompt": f"{FRAME} {ADDENDUM} {block['text']}",
-        "frame": FRAME,
+        "arm": arm,
+        "prompt": f"{frame} {ADDENDUM} {block['text']}",
+        "frame": frame,
         "species_sources": {species_url.rsplit("/", 1)[-1]: species_url},
         "seed": SEED,
         "model_hashes": model_hashes,
@@ -83,6 +85,8 @@ def main() -> None:
     parser.add_argument("--descriptions", required=True, help="authored descriptions.md")
     parser.add_argument("--out-dir", required=True, help="arm_b output dir")
     parser.add_argument("--model-path", required=True, help="local flux3 unet file to hash")
+    parser.add_argument("--frame", default=FRAME, help="frame sentence (default = Arm B frame)")
+    parser.add_argument("--arm", default="B", help='arm label for prompts.json (default "B")')
     args = parser.parse_args()
 
     blocks = parse_descriptions(args.descriptions)
@@ -96,7 +100,8 @@ def main() -> None:
     model_hashes = {"unet_name": UNet_NAME, "sha256": sha256_of(args.model_path)}
     timestamp = datetime.now(timezone.utc).isoformat(timespec="seconds")
     entries = {
-        slug: build_entry(slug, blocks[slug], model_hashes, timestamp) for slug in sorted(blocks)
+        slug: build_entry(slug, blocks[slug], model_hashes, timestamp, frame=args.frame, arm=args.arm)
+        for slug in sorted(blocks)
     }
 
     os.makedirs(args.out_dir, exist_ok=True)

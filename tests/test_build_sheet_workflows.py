@@ -16,8 +16,9 @@ def wf_path(slug):
 class TestBuildSheetWorkflows(unittest.TestCase):
     def test_exactly_six(self):
         stems = [os.path.splitext(os.path.basename(p))[0] for p in glob.glob("workflows/sheettest_*.json")]
-        # round-1 family only — the sheettest_b_ (Arm B) files are checked by their own tests
-        found = {s.removeprefix("sheettest_") for s in stems if not s.startswith("sheettest_b_")}
+        # round-1 family only: its slugs contain no underscore; the arm_b_/arm_c_
+        # families (sheettest_b_<slug>, sheettest_c_<slug>) have their own tests
+        found = {s.removeprefix("sheettest_") for s in stems if "_" not in s.removeprefix("sheettest_")}
         self.assertEqual(found, SLUGS, f"workflow set mismatch: {found}")
 
     def test_arm_b_family_exactly_six(self):
@@ -44,6 +45,15 @@ class TestBuildSheetWorkflows(unittest.TestCase):
         graph = build_one(base, "some prompt", "shade", prefix="sheettest_b_")
         saves = [n for n in graph.values() if n["class_type"] == "SaveImage"]
         self.assertEqual(saves[0]["inputs"]["filename_prefix"], "sheettest_b_shade")
+
+    def test_arm_c_family_exactly_six(self):
+        stems = [os.path.splitext(os.path.basename(p))[0] for p in glob.glob("workflows/sheettest_c_*.json")]
+        found = {s.removeprefix("sheettest_c_") for s in stems}
+        self.assertEqual(found, SLUGS, f"Arm C workflow set mismatch: {found}")
+        with open("workflows/sheettest_c_shade.json", encoding="utf-8") as f:
+            g = json.load(f)
+        saves = [n for n in g.values() if n["class_type"] == "SaveImage"]
+        self.assertEqual(saves[0]["inputs"]["filename_prefix"], "sheettest_c_shade")
 
     def test_round1_defaults_untouched(self):
         # The default CLI must reproduce round-1 workflows byte-for-byte in a
