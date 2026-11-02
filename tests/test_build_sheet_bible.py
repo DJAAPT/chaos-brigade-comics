@@ -78,7 +78,8 @@ class TestBuildSheetBible(unittest.TestCase):
             self.assertEqual(entry["arm"], "A")
             self.assertEqual(entry["seed"], SEED)
             self.assertEqual(entry["frame"], FRAME)
-            self.assertIsNone(entry["output"])
+            # null before a run, the recorded path after (Task 6 fills it)
+            self.assertIn(entry["output"], (None, f"img/{slug}.png"), f"{slug} output not null-or-recorded")
             self.assertEqual(
                 list(entry["species_sources"].values()), [RACE_URL[SLUG_RACE[slug]]],
                 f"{slug} species source mismatch",
