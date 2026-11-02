@@ -21,6 +21,7 @@ Score each 10-min transcript chunk 0-3 on funny/epic/fail/plot. Keep chunks scor
 `[global style] + [bible block for each character present] + [action] + [location] + [composition] + [no duplicates, exactly two arms, adult faces]`
 
 Always append character-bible anti-conflation footer.
+If any character, outfit, object, or scene detail needed for a panel has no bible entry: STOP and ask the user before generating — never invent (bible: "ASK, DON'T GUESS").
 Always log: session id, panel #, prompt, seed, model versions, output file.
 
 ## Comic text
