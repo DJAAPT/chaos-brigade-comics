@@ -9,6 +9,15 @@
     "prompt": "cinematic fantasy film still, Neverwinter city docks in warm daylight, ships and market stalls behind: Rocketcandy, tall human paladin man, short brown hair light stubble, shining plate armor with gold phoenix crest on chest, red cape, confident composed bearing, clasping forearms in brotherly greeting with a corrupt city guard wearing an ornate helm with red plume, red cape, gold crest, the guard's inner wrist turned toward viewer showing a geometric diamond sigil tattoo close-up and clearly visible; to the side watches Shade, a halfling rogue man barely 3 feet tall, his head reaching only to Rocketcandy's waist, clearly half Rocketcandy's height, lean build, messy shaggy dark brown hair covering his ears, worn dark linen shirt, scuffed brown leather vest, sly knowing expression, eyes fixed on the tattoo; three distinct people, no duplicates, no conflation, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
   },
   {
+    "panel": "panel0b_gate.png",
+    "image": "panel0b_gate.png",
+    "workflow": "flux3_s1_docksgate.json",
+    "seed": 8181818181,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "cinematic fantasy film still, Neverwinter city gate in warm daylight, ships masts behind: a corrupt city guard in ornate helm with red plume and red cape thrusting an open demanding hand toward the viewer collecting entry tax, gold coins visible in his palm, a geometric diamond sigil tattoo on his inner wrist, adventurers with packs waiting in line behind, morning bustle, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+  },
+  {
     "panel": "panel1_tavern.png",
     "image": "panel1_tavern.png",
     "workflow": "flux3_p1_retest.json",
