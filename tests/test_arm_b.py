@@ -1,3 +1,4 @@
+import json
 import os
 import re
 import unittest
@@ -71,6 +72,64 @@ class TestArmBDescriptions(unittest.TestCase):
         for slug, block in self.load_blocks().items():
             m = MECHANICS_RE.search(block["text"])
             self.assertIsNone(m, f"{slug} mechanics leaked: {m.group(0) if m else None!r}")
+
+
+FRAME = "solo full-body portrait of a single character, plain background"
+ADDENDUM = "standing neutral pose, both arms clearly visible, no shield, nothing held across the body"
+PROMPTS_B = "character-bible/sheet-test/arm_b/prompts.json"
+
+
+class TestArmBPrompts(unittest.TestCase):
+    def load_prompts(self):
+        self.assertTrue(os.path.exists(PROMPTS_B), "arm_b/prompts.json missing (run build_arm_b first)")
+        with open(PROMPTS_B, encoding="utf-8") as f:
+            return json.load(f)
+
+    def test_prompts_schema(self):
+        from tests.test_build_sheet_bible import PROMPT_KEYS
+
+        prompts = self.load_prompts()
+        self.assertEqual(set(prompts), SLUGS)
+        for slug, entry in prompts.items():
+            self.assertEqual(list(entry.keys()), PROMPT_KEYS, f"{slug} key mismatch")
+            self.assertEqual(entry["arm"], "B")
+            self.assertEqual(entry["seed"], 424242)
+            self.assertEqual(entry["frame"], FRAME)
+            self.assertTrue(entry["prompt"].startswith(FRAME + " " + ADDENDUM), f"{slug} frame/addendum order")
+            self.assertIsNone(entry["output"])
+            self.assertEqual(entry["workflow"], "workflows/base_flux3.json")
+
+    def test_prompt_is_exact_composition(self):
+        # prompt == frame + addendum + authored block, verbatim — proves the
+        # Task-1 block bans carry into the built prompts unchanged
+        blocks = parse_descriptions(DESCRIPTIONS)
+        for slug, entry in self.load_prompts().items():
+            expected = f"{FRAME} {ADDENDUM} {blocks[slug]['text']}"
+            self.assertEqual(entry["prompt"], expected, f"{slug} prompt is not the exact composition")
+
+    def test_composition_and_win_phrases(self):
+        for slug, entry in self.load_prompts().items():
+            prompt = entry["prompt"]
+            # the plan's shield ban, minus the addendum's own negation sentence
+            remainder = prompt.replace(ADDENDUM, "")
+            self.assertNotRegex(remainder, r"(?i)shield", f"{slug} prompt mentions a shield outside the addendum")
+            self.assertRegex(prompt, r"(?i)exactly two arms", f"{slug} missing exactly two arms")
+            m = MECHANICS_RE.search(remainder)
+            self.assertIsNone(m, f"{slug} mechanics leaked: {m.group(0) if m else None!r}")
+        shade = self.load_prompts()["shade"]["prompt"]
+        self.assertRegex(shade, r"(?i)adult")
+        self.assertRegex(shade, r"(?i)not a child")
+        self.assertRegex(self.load_prompts()["keechwah"]["prompt"], r"(?i)no wings")
+
+    def test_sources_match_blocks(self):
+        blocks = parse_descriptions(DESCRIPTIONS)
+        for slug, entry in self.load_prompts().items():
+            species_url = next(
+                (s for s in blocks[slug]["sources"] if s.startswith("https://www.dndbeyond.com/species/")),
+                None,
+            )
+            self.assertIsNotNone(species_url, f"{slug} block has no species URL")
+            self.assertEqual(list(entry["species_sources"].values()), [species_url], f"{slug} source mismatch")
 
 
 if __name__ == "__main__":

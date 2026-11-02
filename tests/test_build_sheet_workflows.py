@@ -15,11 +15,35 @@ def wf_path(slug):
 
 class TestBuildSheetWorkflows(unittest.TestCase):
     def test_exactly_six(self):
-        found = {
-            os.path.splitext(os.path.basename(p))[0].removeprefix("sheettest_")
-            for p in glob.glob("workflows/sheettest_*.json")
-        }
+        stems = [os.path.splitext(os.path.basename(p))[0] for p in glob.glob("workflows/sheettest_*.json")]
+        # round-1 family only — the sheettest_b_ (Arm B) files are checked by their own tests
+        found = {s.removeprefix("sheettest_") for s in stems if not s.startswith("sheettest_b_")}
         self.assertEqual(found, SLUGS, f"workflow set mismatch: {found}")
+
+    def test_arm_b_family_exactly_six(self):
+        stems = [os.path.splitext(os.path.basename(p))[0] for p in glob.glob("workflows/sheettest_b_*.json")]
+        found = {s.removeprefix("sheettest_b_") for s in stems}
+        self.assertEqual(found, SLUGS, f"Arm B workflow set mismatch: {found}")
+
+    def test_default_prefix_round1_unchanged(self):
+        # Regression guard: build_one without the new prefix argument must
+        # keep round-1 behavior byte-identical (filename_prefix sheettest_<slug>).
+        from scripts.build_sheet_workflows import build_one
+
+        with open(BASE, encoding="utf-8") as f:
+            base = json.load(f)
+        graph = build_one(base, "some prompt", "shade")
+        saves = [n for n in graph.values() if n["class_type"] == "SaveImage"]
+        self.assertEqual(saves[0]["inputs"]["filename_prefix"], "sheettest_shade")
+
+    def test_prefixed_build_uses_given_prefix(self):
+        from scripts.build_sheet_workflows import build_one
+
+        with open(BASE, encoding="utf-8") as f:
+            base = json.load(f)
+        graph = build_one(base, "some prompt", "shade", prefix="sheettest_b_")
+        saves = [n for n in graph.values() if n["class_type"] == "SaveImage"]
+        self.assertEqual(saves[0]["inputs"]["filename_prefix"], "sheettest_b_shade")
 
     def test_prompt_swap_and_untouched_graph(self):
         files = glob.glob("workflows/sheettest_*.json")

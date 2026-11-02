@@ -15,7 +15,7 @@ SEED = 424242
 SENTINEL = "{{PROMPT}}"
 
 
-def build_one(base, prompt, slug):
+def build_one(base, prompt, slug, prefix="sheettest_"):
     graph = copy.deepcopy(base)
 
     prompt_nodes = [
@@ -32,7 +32,7 @@ def build_one(base, prompt, slug):
     if len(save_nodes) != 1:
         print(f"expected exactly one SaveImage node, found {len(save_nodes)}", file=sys.stderr)
         sys.exit(2)
-    graph[save_nodes[0]]["inputs"]["filename_prefix"] = f"sheettest_{slug}"
+    graph[save_nodes[0]]["inputs"]["filename_prefix"] = f"{prefix}{slug}"
 
     for node in graph.values():
         inputs = node.get("inputs", {})
@@ -47,6 +47,7 @@ def main():
     parser.add_argument("--base", required=True, help="pinned base workflow JSON")
     parser.add_argument("--prompts", required=True, help="prompts.json from the sheet bible build")
     parser.add_argument("--out-dir", required=True, help="directory for per-character workflows")
+    parser.add_argument("--prefix", default="sheettest_", help="output filename/SaveImage prefix (round-1 default)")
     args = parser.parse_args()
 
     with open(args.base, encoding="utf-8") as f:
@@ -56,8 +57,8 @@ def main():
 
     os.makedirs(args.out_dir, exist_ok=True)
     for slug in sorted(prompts):
-        graph = build_one(base, prompts[slug]["prompt"], slug)
-        out_path = os.path.join(args.out_dir, f"sheettest_{slug}.json")
+        graph = build_one(base, prompts[slug]["prompt"], slug, prefix=args.prefix)
+        out_path = os.path.join(args.out_dir, f"{args.prefix}{slug}.json")
         with open(out_path, "w", encoding="utf-8") as f:
             json.dump(graph, f, indent=2, ensure_ascii=False)
             f.write("\n")
