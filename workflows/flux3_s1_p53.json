@@ -39,7 +39,7 @@
         "2",
         0
       ],
-      "text": "cinematic fantasy film still, dim opulent interior: Keechwah, a male tiefling warlock with deep red skin, long curly black hair, goatee, large curved horns and glowing purple eyes, wearing dark blue robes with gold trim, staring at his own empty outstretched hand in dismay as faint purple wisps dissolve away, his companions watching worriedly behind him, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+      "text": "cinematic fantasy film still, dim opulent interior: Keechwah, a male tiefling warlock with deep red skin, long curly black hair, goatee, large curved horns and glowing purple eyes, wearing dark blue robes with gold trim, staring at his own empty outstretched hand in dismay as faint purple wisps dissolve away; behind him stand exactly three worried watchers and nobody else: Rocketcandy the human paladin in plate armor, Gulgrim the short bald dwarf cleric with white beard, and Biggins the butler with slicked gray-streaked hair; an empty dim room otherwise, no strangers, no one else present, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
     }
   },
   "5": {
@@ -65,7 +65,7 @@
         "1",
         0
       ],
-      "seed": 1857761984156622644,
+      "seed": 7171717171,
       "steps": 15,
       "cfg": 1.0,
       "sampler_name": "er_sde",
