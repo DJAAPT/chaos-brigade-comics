@@ -60,6 +60,8 @@ Default expression: blunt and direct — a man of action, steady gaze, never sof
 Approved identity ref (2026-11-02, Flux3 Klein): `character-bible/approved_lilly_reference.png` — copy this face; adult likeness approved in the Flux3 v1 portrait.
 Refs: gallery/NPCs/Lilly.png (LOCKED), Keechwah_and_Lilly_bonding.png. NEVER: child, little girl, schoolgirl.
 Default expression: warm and confident — friendly, self-assured young woman.
+Behavior (transcript canon): sheltered manor upbringing — wide-eyed wonder at everything new, physical exuberance (hugs, skipping, door-crashing enthusiasm), blurts endless questions, brave resolve underneath. As Filvenar: regal pose stretched over giddy core — the mask visibly slips when excited.
+Undercover as Lady Filvenar in Session 1 (hair braided, corset + trousers disguise — same face).
 
 ### Water Bear — Owlbear, ONE creature
 `single owlbear creature, massive grizzly bear body with coarse brown fur and bear paws with claws, head REPLACED by owl head with round eyes and hooked beak and feathered ruff, walking on all fours like a bear, no wings, no second head, no separate owl`
@@ -68,15 +70,17 @@ NEVER: bear holding owl, two heads, wings, white snowy owl alone, bear head + ow
 ### Biggins Aulswim — Lilly's protector, ex-Talons of Justice assassin
 `tall adult human man in his 40s, slicked gray-streaked dark hair, sharp cheekbones, blue eyes, black three-piece suit with long coat, white shirt black tie, white gloves, pocket-watch chain, holding bloody dagger when hunting`
 Approved identity ref (2026-11-02, Flux3 Klein): `character-bible/approved_biggins_reference.png` — copy this face; clean reference has no dagger, hunting variant adds it.
-Ref: gallery/NPCs/Biggans_Aulswim.png (note filename typo Biggans). NOT old gentleman, NOT apothecary. First appears Session 2.
+Ref: gallery/NPCs/Biggans_Aulswim.png (note filename typo Biggans). NOT old gentleman, NOT apothecary. Undercover as the mansion butler throughout Session 1 (butler attire, same face — the party doesn't know); first met openly in Session 2.
 NEVER: beard, hooded cloak, kindly shopkeeper look (that is the apothecary — keep them distinct).
 Default expression: cold and composed — professional ex-assassin calm.
+Behavior (transcript canon): coiled stillness — moves effortlessly, appraising eyes, often already where events happen (opens doors before arrivals); snoot and insult are performance, menace is real. Talon hook-and-claw tattoos inside both forearms (distinct from the guard diamond sigils — Rocketcandy recognizes the order). Casts spells (Hold Person witnessed). Parental devotion to Lilly; magical protection pact with Gulgrim. Unflappable dignity under indignity; dry menace toward threats, playful precision at home.
 
 ### Apothecary owner (S1 hooded figure) — NOT Biggins
 `kindly older gentleman, gray beard, dark hooded cloak, cob pipe` — fun-loving shopkeeper, owns local apothecary. Keep distinct from Biggins.
 
-### Lady Filvenar
-`adult woman, fire-red Celtic-knot braid to mid-back, gray eyes, pirate shirt + tight corset, trousers, ready stance`
+### Lady Filvenar — IS Lilly in disguise (Session 1, user canon)
+`adult woman, fire-red hair in a Celtic-knot braid to mid-back, gray eyes, pirate shirt + tight corset, trousers, ready stance — same face as Lilly (curly red hair, freckles)`
+Use Lilly's approved face; the braid and gray eyes are the disguise.
 
 ### Lady Elara Veyne
 Ref gallery/NPCs/Lady_Elara_Veyne.png: `mature noblewoman dark hair updo, blue/silver court gown with lion crest, sapphire jewelry, throne room` — use ref image, do not freestyle.
