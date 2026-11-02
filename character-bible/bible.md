@@ -65,7 +65,7 @@ Undercover as Lady Filvenar in Session 1 (hair braided, corset + trousers disgui
 
 ### Water Bear — Owlbear, ONE creature
 `single owlbear creature, massive grizzly bear body with coarse brown fur and bear paws with claws, head REPLACED by owl head with round eyes and hooked beak and feathered ruff, walking on all fours like a bear, no wings, no second head, no separate owl`
-NEVER: bear holding owl, two heads, wings, white snowy owl alone, bear head + owl head side by side, standing upright on hind legs like a human (rears up only momentarily).
+NEVER: bear holding owl, two heads, wings, white snowy owl alone, bear head + owl head side by side, standing upright on hind legs like a human (rears up only momentarily), named Albert (S1 line was a slip, ignored per user 2026-11-03).
 
 ### Biggins Aulswim — Lilly's protector, ex-Talons of Justice assassin
 `tall adult human man in his 40s, slicked gray-streaked dark hair, sharp cheekbones, blue eyes, black three-piece suit with long coat, white shirt black tie, white gloves, pocket-watch chain, holding bloody dagger when hunting`
@@ -76,7 +76,8 @@ Default expression: cold and composed — professional ex-assassin calm.
 Behavior (transcript canon): coiled stillness — moves effortlessly, appraising eyes, often already where events happen (opens doors before arrivals); snoot and insult are performance, menace is real. Talon hook-and-claw tattoos inside both forearms (distinct from the guard diamond sigils — Rocketcandy recognizes the order). Casts spells (Hold Person witnessed). Parental devotion to Lilly; magical protection pact with Gulgrim. Unflappable dignity under indignity; dry menace toward threats, playful precision at home.
 
 ### Apothecary owner (S1 hooded figure) — NOT Biggins
-`kindly older gentleman, gray beard, dark hooded cloak, cob pipe` — fun-loving shopkeeper, owns local apothecary. Keep distinct from Biggins.
+`kindly older gentleman, gray beard, dark hooded cloak, cob pipe` — fun-loving shopkeeper who owns a local apothecary. Keep distinct from Biggins.
+Three separate people (user canon 2026-11-03): this hooded gentleman ≠ the Colorful Creations owner (P5.5) ≠ Thumba (the proprietor's contact). Do not merge them.
 
 ### Lady Filvenar — IS Lilly in disguise (Session 1, user canon)
 `adult woman, fire-red hair in a Celtic-knot braid to mid-back, gray eyes, pirate shirt + tight corset, trousers, ready stance — same face as Lilly (curly red hair, freckles)`

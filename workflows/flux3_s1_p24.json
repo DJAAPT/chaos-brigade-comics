@@ -39,7 +39,7 @@
         "2",
         0
       ],
-      "text": "cinematic fantasy film still, tavern doorway bursting open with motion: six adventurers hurrying out of Marigolds Inn, all six must be visible with Shade the short halfling prominent at the front left (Shade: short halfling rogue man, a fully grown adult man in his mid-20s with a mature masculine jaw and light stubble despite his 3-foot stature, clearly an adult not a child, messy dark brown hair, brown leather vest, subtle sly closed-mouth expression; Rocketcandy: human paladin man with short brown hair in plate armor with gold phoenix crest and red cape; Keechwah: male tiefling with deep red skin, long curly BLACK hair and large curved horns, wearing dark blue robes with gold trim covering his torso, fully robed, no bare chest; Gulgrim: short bald dwarf cleric with long white beard and heavy furs; Chip: tall human druid man with brown skin and long white hair; Vadania: MALE wood elf ranger with long brown hair, masculine stubble and green cloak), Marigold the short halfling innkeeper barely 3 feet tall, clearly half the height of the adventurers, waving goodbye in the doorway, empty mugs left on a table inside, a male cook in apron (Sammy) noticing from the kitchen, warm indoor light spilling into daylight, no duplicates, no conflation, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+      "text": "cinematic fantasy film still, tavern doorway bursting open with motion: six adventurers hurrying out of Marigolds Inn, all six must be visible with Shade the short halfling rogue prominent at the front left (Shade: short halfling rogue man, a fully grown adult man in his mid-20s with a mature masculine jaw and light stubble despite his 3-foot stature, clearly an adult not a child, messy dark brown hair, brown leather vest; Rocketcandy: human paladin man with short brown hair in plate armor with gold phoenix crest and red cape; Keechwah: male tiefling with deep red skin, long curly BLACK hair and large curved horns, wearing dark blue robes with gold trim covering his torso; Gulgrim: short bald dwarf cleric with long white beard and heavy furs; Vadania: MALE wood elf ranger with long brown hair, masculine stubble and green cloak; Marigold: short halfling woman barely 3 feet tall waving goodbye in the doorway; Sammy: adult male cook in apron noticing from the kitchen; five adventurers plus Marigold plus Sammy and NOBODY else, no white-haired druid anywhere, no children anywhere, every figure a grown adult daylight, distinct people, no duplicates, no conflation, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
     }
   },
   "5": {
@@ -65,7 +65,7 @@
         "1",
         0
       ],
-      "seed": 1857761984156622644,
+      "seed": 3131313131,
       "steps": 15,
       "cfg": 1.0,
       "sampler_name": "er_sde",

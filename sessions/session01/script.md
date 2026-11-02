@@ -1,6 +1,7 @@
 # Session 1 — Full Comic Script v1 (draft for edit)
 Source: sessions/session01/transcript.txt (69a905e, 69k chars)
 Style: approved S1P1 v7 + character-bible/bible.md. 5 pages, 20 panels. Narration + trimmed transcript dialogue.
+CANON (user 2026-11-03): Chip is OFF ON HIS OWN all session (solo thread P4.1–P4.4 + P5.5 apothecary). He appears in NO party scene — not the tavern, not the job board, not the chase, not the mansion. Five-strong party everywhere else.
 
 ## PAGE 1 — MARIGOLD'S INN
 **P1.1 — ESTABLISH.** Warm tavern interior, Marigold's Inn sign. Party around table eating/drinking.

@@ -39,7 +39,7 @@
         "2",
         0
       ],
-      "text": "cinematic fantasy film still, exterior of an opulent gated marble mansion with a peacock in the front yard: a snooty butler with slicked gray-streaked dark hair, sharp cheekbones and blue eyes, wearing a butler uniform, holding the door; before him stand exactly six adventurers, all clearly grown adults, no children anywhere: (1) Rocketcandy, tall human paladin man with short brown hair and light stubble, shining plate armor with gold phoenix crest, red cape; (2) Keechwah, MALE tiefling warlock with deep red skin, long curly black hair, goatee, large curved horns, masculine features, dark blue robes; (3) Gulgrim, short bald dwarf cleric with long white beard and heavy furs, warhammer; (4) Chip, tall adult human druid man with brown skin, wild long white hair and white beard, fur garb; (5) Vadania, MALE wood elf ranger with long brown hair, masculine jaw stubble and green cloak, holding a bow; (6) Shade, short halfling rogue, a fully grown adult man with a mature masculine jaw and light stubble despite his small stature, messy dark brown hair, brown leather vest; daylight, seven distinct grown people total, no duplicates, no conflation, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+      "text": "cinematic fantasy film still, exterior of an opulent gated marble mansion with a peacock in the front yard: a snooty butler with slicked gray-streaked dark hair, sharp cheekbones and blue eyes, wearing a butler uniform, holding the door; before him stand exactly six people approaching the door, all six must be visible: a snooty butler with slicked gray-streaked dark hair, sharp cheekbones and blue eyes, wearing a butler uniform, holding the door; Rocketcandy, tall human paladin man with short brown hair and light stubble, shining plate armor with gold phoenix crest, red cape; Keechwah, MALE tiefling warlock with deep red skin, long curly black hair, goatee, large curved horns, masculine features, dark blue robes; Gulgrim, short bald dwarf cleric with long white beard and heavy furs, warhammer; Vadania, MALE wood elf ranger with long brown hair, masculine jaw stubble and green cloak, holding a bow; Shade, short halfling rogue, a fully grown adult man with a mature masculine jaw and light stubble despite his small stature, messy dark brown hair, brown leather vest; these six and NOBODY else, no white-haired druid anywhere, no children anywhere, every figure a grown adult daylight, seven distinct grown people total, no duplicates, no conflation, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
     }
   },
   "5": {
@@ -65,7 +65,7 @@
         "1",
         0
       ],
-      "seed": 5151515151,
+      "seed": 5252525252,
       "steps": 15,
       "cfg": 1.0,
       "sampler_name": "er_sde",
