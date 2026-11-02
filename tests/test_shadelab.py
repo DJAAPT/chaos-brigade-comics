@@ -21,7 +21,8 @@ SHADE_CHUNK = (
 )
 SCALED_CLAUSE = (
     "full-size adult human features scaled down uniformly, exactly the same head-to-body and "
-    "ear-to-head proportions as a full-size grown man, small rounded human ears mostly tucked "
+    "ear-to-head proportions as a full-size grown man, head one-seventh of total body height, "
+    "small adult head, small rounded human ears mostly tucked "
     "under his hair, lying flat against the sides of his head below eye level, no pointed tips, "
     "no elf ears, no large ears, no protruding ears, no oversized head, no chibi or doll-like proportions"
 )
