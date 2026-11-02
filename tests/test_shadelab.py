@@ -12,10 +12,13 @@ LAB_PROMPTS = os.path.join(LAB_DIR, "prompts.json")
 LAB_WORKFLOW_DIR = "workflows"
 SEEDS = [424242, 424243, 777001, 314159]
 KEYS = [f"shade_s{i}" for i in range(4)]
-# Batch 13 ladder: species word restored on the batch-12 seeds (same keys,
-# so batch 12 vs 13 reads the halfling-word question cleanly)
-BATCH13_KEYS = ["shade_s2", "shade_s4", "shade_s5", "shade_s6"]
-BATCH13_SEEDS = [777001, 1857761984156622644, 6120004243239096470, 8620240391160718909]
+# Batch 14 ladder: final-wording survey — batch-13 block × 20 fresh seeds
+# (master list seed 20261103, verified disjoint from all previously used seeds)
+BATCH14_KEYS = [f"shade_q{i:02d}" for i in range(1, 21)]
+BATCH14_SEEDS = [384141608, 616724241, 696322872, 700341537, 833950483, 573788978,
+                 234877992, 1090595737, 491515759, 765864709, 1944744121, 812945263,
+                 1395696223, 769604098, 1342414823, 1378152451, 1953674389, 1459593063,
+                 1947757209, 880671433]
 SHADE_URL = RACE_URL[SLUG_RACE["shade"]]
 SHADE_CHUNK = (
     "young adult halfling man, mid-20s, mature adult face, lean build, messy shaggy dark brown "
@@ -83,13 +86,13 @@ class TestShadeLabPrompts(unittest.TestCase):
 
     def test_lab_prompts_schema(self):
         prompts = self.load_prompts()
-        self.assertEqual(list(prompts), BATCH13_KEYS, "lab keys must be the batch-13 ladder in order")
+        self.assertEqual(list(prompts), BATCH14_KEYS, "lab keys must be the batch-14 ladder in order")
         _, sources = TestShadeLabDescriptions().load_block()
-        for i, key in enumerate(BATCH13_KEYS):
+        for i, key in enumerate(BATCH14_KEYS):
             entry = prompts[key]
             self.assertEqual(list(entry.keys()), PROMPT_KEYS, f"{key} key mismatch")
             self.assertEqual(entry["arm"], "C")
-            self.assertEqual(entry["seed"], BATCH13_SEEDS[i], f"{key} seed mismatch")
+            self.assertEqual(entry["seed"], BATCH14_SEEDS[i], f"{key} seed mismatch")
             self.assertEqual(entry["frame"], FRAME_C)
             self.assertTrue(entry["prompt"].startswith(FRAME_C + " " + ADDENDUM), f"{key} frame/addendum order")
             self.assertIn(entry["output"], (None, f"img/{key}.png"), f"{key} output not null-or-recorded")
@@ -155,9 +158,9 @@ class TestShadeLabPrompts(unittest.TestCase):
 
         stems = [os.path.splitext(os.path.basename(p))[0] for p in _glob.glob("workflows/shadelab_*.json")]
         found = {s.removeprefix("shadelab_") for s in stems}
-        self.assertEqual(found, set(BATCH13_KEYS), f"lab workflow set mismatch: {found}")
+        self.assertEqual(found, set(BATCH14_KEYS), f"lab workflow set mismatch: {found}")
         prompts = self.load_prompts() if os.path.exists(LAB_PROMPTS) else None
-        for key in BATCH13_KEYS:
+        for key in BATCH14_KEYS:
             with open(f"workflows/shadelab_{key}.json", encoding="utf-8") as f:
                 g = json.load(f)
             seeds = [n["inputs"][k] for n in g.values() for k in ("seed", "noise_seed") if k in n.get("inputs", {})]
