@@ -23,7 +23,8 @@ the batch commit); only the latest set lives in `workflows/`.
 | batch9 | _(this commit)_ | 20-seed survey on the ban-free block (master list seed 20261102): hit-rate read on the best wording so far | shade_r01–r20 (fixed random list in `tests/test_shadelab.py`) |
 | batch10 | `5ce6e45` | Gemini-merge additions (species skin, sideburns, tighter ear phrasing), ban-free kept, on batch-6 seeds — s2 is a three-way control (batches 6/8/10 wording × seed 777001) | shade_s2/s4/s5/s6 |
 | batch11 | `cf73594` | Ear-silence test: added clause names no ears (only the locked chunk may); hair-covering carries the constraint | same s2/s4/s5/s6 |
-| batch12 | _(this commit)_ | Halfling/ear-silence stress test (human-approved chunk deviation): locked chunk surgically edited — "halfling" out, ear phrases → hair-side wording; no `halfling`/`ear(s)` words anywhere | same s2/s4/s5/s6 |
+| batch12 | _(this commit)_ | Halfling/ear-silence stress test (human-approved chunk deviation): locked chunk surgically edited - "halfling" out, ear phrases → hair-side wording; no `halfling`/`ear(s)` words anywhere | same s2/s4/s5/s6 |
+| batch13 | _(this commit)_ | Separability test: species word restored (`young adult halfling man`), ears stay silent — decides whether `halfling` is safe to keep | same s2/s4/s5/s6 |
 | batch10 verdict (human + agent review, 2026-11-02) | s2 best again (adult proportions, outfit right) but ears still protrude sideways; s4 reads teen/child; s5 still baby-giant-head; s6 grew a full beard against "no beard" and dropped the gray studio backdrop for white — ear wording moved nothing in any of the four | — |
 
 Human verdicts so far: batch 2 `shade_s2` closest on head size; ears still
