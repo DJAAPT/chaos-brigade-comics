@@ -1,8 +1,11 @@
 """Completion gate for the sheet-test run.
 
-complete() is True only when every prompts.json entry has a recorded
-output and its PNG exists at 1344x768. The CLI prints a table and
-exits 0 on COMPLETE, else lists what is missing/mismatched and exits 1.
+complete() is True only when the prompts.json roster is exactly the six
+sheet-test characters, every entry records output == img/<slug>.png, and
+every one of those six PNGs exists at 1344x768. The CLI runs the same
+validator: it prints a table and exits 0 on COMPLETE, else lists what is
+missing/mismatched and exits 1. There is no path where a partial,
+duplicated, or wrong-roster run certifies as complete.
 """
 import argparse
 import json
@@ -11,6 +14,7 @@ import struct
 import sys
 
 EXPECTED_DIMS = (1344, 768)
+ROSTER = ("chip", "gulgrim", "keechwah", "rocketcandy", "shade", "vadania")
 
 
 def parse_ihdr(path: str) -> tuple:
@@ -22,21 +26,41 @@ def parse_ihdr(path: str) -> tuple:
     return struct.unpack(">II", header[16:24])
 
 
-def complete(prompts: dict, img_dir: str) -> bool:
-    """True when all six entries have outputs pointing at correct PNGs."""
-    for entry in prompts.values():
-        output = entry.get("output")
+def problems(prompts: dict, img_dir: str) -> list:
+    """Every reason this run is not complete (empty list == COMPLETE)."""
+    found = []
+    if set(prompts) != set(ROSTER):
+        missing = sorted(set(ROSTER) - set(prompts))
+        extra = sorted(set(prompts) - set(ROSTER))
+        found.append(f"roster mismatch — missing: {missing or 'none'}, unexpected: {extra or 'none'}")
+        return found
+
+    for slug in ROSTER:
+        output = prompts[slug].get("output")
+        expected = f"img/{slug}.png"
         if not output:
-            return False
+            found.append(f"{slug}: output not recorded")
+            continue
+        if output != expected:
+            found.append(f"{slug}: output {output!r} != {expected!r}")
+            continue
         path = os.path.join(img_dir, os.path.basename(output))
         if not os.path.exists(path):
-            return False
+            found.append(f"{slug}: missing file {path}")
+            continue
         try:
-            if parse_ihdr(path) != EXPECTED_DIMS:
-                return False
-        except ValueError:
-            return False
-    return True
+            dims = parse_ihdr(path)
+        except ValueError as exc:
+            found.append(f"{slug}: {exc}")
+            continue
+        if dims != EXPECTED_DIMS:
+            found.append(f"{slug}: dims {dims[0]}x{dims[1]} != {EXPECTED_DIMS[0]}x{EXPECTED_DIMS[1]}")
+    return found
+
+
+def complete(prompts: dict, img_dir: str) -> bool:
+    """True only for the full six-character run with correct recorded PNGs."""
+    return not problems(prompts, img_dir)
 
 
 def main() -> None:
@@ -48,34 +72,16 @@ def main() -> None:
     with open(args.prompts, encoding="utf-8") as f:
         prompts = json.load(f)
 
-    problems = []
-    for slug in sorted(prompts):
-        entry = prompts[slug]
-        output = entry.get("output")
-        if not output:
-            problems.append(f"{slug}: output not recorded")
-            continue
-        path = os.path.join(args.img, os.path.basename(output))
-        if not os.path.exists(path):
-            problems.append(f"{slug}: missing file {path}")
-            continue
-        try:
-            dims = parse_ihdr(path)
-        except ValueError as exc:
-            problems.append(f"{slug}: {exc}")
-            continue
-        if dims != EXPECTED_DIMS:
-            problems.append(f"{slug}: dims {dims[0]}x{dims[1]} != {EXPECTED_DIMS[0]}x{EXPECTED_DIMS[1]}")
-
-    if problems:
+    issues = problems(prompts, args.img)
+    if issues:
         print("INCOMPLETE")
-        for line in problems:
+        for line in issues:
             print(f"  - {line}")
         sys.exit(1)
 
     print("COMPLETE")
     print(f"{'character':<14} {'output':<24} {'dims':<10}")
-    for slug in sorted(prompts):
+    for slug in ROSTER:
         path = os.path.join(args.img, os.path.basename(prompts[slug]["output"]))
         w, h = parse_ihdr(path)
         print(f"{slug:<14} {prompts[slug]['output']:<24} {w}x{h}")

@@ -93,6 +93,45 @@ class TestVerifySheettest(ImportGuard):
             prompts["chip"]["output"] = None
             self.assertFalse(mod.complete(prompts, tmp))
 
+    def test_complete_rejects_empty_and_partial_rosters(self):
+        mod = self.import_module("scripts.verify_sheettest", "scripts/verify_sheettest.py")
+        with tempfile.TemporaryDirectory() as tmp:
+            self.assertFalse(mod.complete({}, tmp), "empty roster must never be complete")
+            four = {s: dict(output=f"img/{s}.png") for s in SLUGS[:4]}
+            for s in SLUGS[:4]:
+                make_png(os.path.join(tmp, f"{s}.png"))
+            self.assertFalse(mod.complete(four, tmp), "four-entry roster must never be complete")
+
+    def test_complete_rejects_wrong_roster(self):
+        mod = self.import_module("scripts.verify_sheettest", "scripts/verify_sheettest.py")
+        with tempfile.TemporaryDirectory() as tmp:
+            prompts = base_prompts()
+            prompts["biggins"] = prompts.pop("shade")
+            prompts["biggins"]["output"] = "img/biggins.png"
+            for slug in SLUGS:
+                make_png(os.path.join(tmp, f"{slug}.png"))
+            make_png(os.path.join(tmp, "biggins.png"))
+            self.assertFalse(mod.complete(prompts, tmp), "roster other than the six must never be complete")
+
+    def test_complete_rejects_shared_output(self):
+        mod = self.import_module("scripts.verify_sheettest", "scripts/verify_sheettest.py")
+        with tempfile.TemporaryDirectory() as tmp:
+            prompts = base_prompts()
+            for slug in SLUGS:
+                make_png(os.path.join(tmp, f"{slug}.png"))
+                prompts[slug]["output"] = "img/chip.png"  # every entry points at chip's file
+            make_png(os.path.join(tmp, "chip.png"))
+            self.assertFalse(mod.complete(prompts, tmp), "shared/duplicated outputs must never be complete")
+
+    def test_complete_requires_output_path_per_slug(self):
+        mod = self.import_module("scripts.verify_sheettest", "scripts/verify_sheettest.py")
+        with tempfile.TemporaryDirectory() as tmp:
+            prompts = base_prompts()
+            for slug in SLUGS:
+                make_png(os.path.join(tmp, f"{slug}.png"))
+            prompts["shade"]["output"] = "img/chip.png"
+            self.assertFalse(mod.complete(prompts, tmp), "output path not matching its slug must fail")
+
 
 if __name__ == "__main__":
     unittest.main()
