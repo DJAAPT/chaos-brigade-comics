@@ -42,7 +42,24 @@ def main() -> None:
     parser.add_argument("--descriptions", required=True, help="lab descriptions.md with one shade block")
     parser.add_argument("--out-dir", required=True, help="shade-lab output dir")
     parser.add_argument("--model-path", required=True, help="local flux3 unet file to hash")
+    parser.add_argument(
+        "--seeds", type=int, nargs="+", default=None,
+        help="seed ladder (default: the original four-seed ladder)",
+    )
+    parser.add_argument(
+        "--keys", nargs="+", default=None,
+        help="entry keys matching --seeds (default: shade_s0..)",
+    )
     args = parser.parse_args()
+
+    seeds = tuple(args.seeds) if args.seeds is not None else SEEDS
+    keys = tuple(args.keys) if args.keys is not None else tuple(f"shade_s{i}" for i in range(len(seeds)))
+    if len(keys) != len(seeds):
+        print(f"--keys ({len(keys)}) and --seeds ({len(seeds)}) must match in length", file=sys.stderr)
+        sys.exit(2)
+    if len(set(keys)) != len(keys):
+        print(f"--keys must be unique, got {list(keys)}", file=sys.stderr)
+        sys.exit(2)
 
     blocks = parse_descriptions(args.descriptions)
     if set(blocks) != {"shade"}:
@@ -65,7 +82,7 @@ def main() -> None:
     prompt = f"{FRAME_C} {ADDENDUM} {block['text']}"
 
     entries = {}
-    for key, seed in zip(KEYS, SEEDS):
+    for key, seed in zip(keys, seeds):
         entry = {
             "character": key,
             "arm": "C",

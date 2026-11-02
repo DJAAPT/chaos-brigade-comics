@@ -1,38 +1,4 @@
 {
-  "shade_s0": {
-    "character": "shade_s0",
-    "arm": "C",
-    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body young adult halfling man, mid-20s, mature adult face, lean build, messy shaggy dark brown hair falling over and covering his ears, ears small and rounded beneath it, light stubble, no beard, warm brown eyes, subtle sly closed-mouth expression, worn dark linen shirt with rolled sleeves, scuffed brown leather vest, belt dagger at hips, small adult stature about three feet tall, NOT a baby, NOT a toddler, NOT a child, full-size adult human features scaled down uniformly, exactly the same head-to-body and ear-to-head proportions as a full-size grown man, he is a full-grown man who happens to stand three feet tall, enlarged to six feet he would be indistinguishable from an ordinary human man, small adult head, small rounded human ears mostly tucked under his hair, lying flat against the sides of his head below eye level, no pointed tips, no elf ears, no large ears, no protruding ears, no oversized head, no chibi or doll-like proportions, exactly two arms",
-    "frame": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background",
-    "species_sources": {
-      "14-halfling": "https://www.dndbeyond.com/species/14-halfling"
-    },
-    "seed": 424242,
-    "model_hashes": {
-      "unet_name": "flux3-image-klein-nvfp4.safetensors",
-      "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
-    },
-    "workflow": "workflows/base_flux3.json",
-    "output": "img/shade_s0.png",
-    "timestamp": "2026-11-02T14:41:43Z"
-  },
-  "shade_s1": {
-    "character": "shade_s1",
-    "arm": "C",
-    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body young adult halfling man, mid-20s, mature adult face, lean build, messy shaggy dark brown hair falling over and covering his ears, ears small and rounded beneath it, light stubble, no beard, warm brown eyes, subtle sly closed-mouth expression, worn dark linen shirt with rolled sleeves, scuffed brown leather vest, belt dagger at hips, small adult stature about three feet tall, NOT a baby, NOT a toddler, NOT a child, full-size adult human features scaled down uniformly, exactly the same head-to-body and ear-to-head proportions as a full-size grown man, he is a full-grown man who happens to stand three feet tall, enlarged to six feet he would be indistinguishable from an ordinary human man, small adult head, small rounded human ears mostly tucked under his hair, lying flat against the sides of his head below eye level, no pointed tips, no elf ears, no large ears, no protruding ears, no oversized head, no chibi or doll-like proportions, exactly two arms",
-    "frame": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background",
-    "species_sources": {
-      "14-halfling": "https://www.dndbeyond.com/species/14-halfling"
-    },
-    "seed": 424243,
-    "model_hashes": {
-      "unet_name": "flux3-image-klein-nvfp4.safetensors",
-      "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
-    },
-    "workflow": "workflows/base_flux3.json",
-    "output": "img/shade_s1.png",
-    "timestamp": "2026-11-02T14:41:48Z"
-  },
   "shade_s2": {
     "character": "shade_s2",
     "arm": "C",
@@ -48,23 +14,57 @@
     },
     "workflow": "workflows/base_flux3.json",
     "output": "img/shade_s2.png",
-    "timestamp": "2026-11-02T14:41:53Z"
+    "timestamp": "2026-11-02T14:49:48Z"
   },
-  "shade_s3": {
-    "character": "shade_s3",
+  "shade_s4": {
+    "character": "shade_s4",
     "arm": "C",
     "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body young adult halfling man, mid-20s, mature adult face, lean build, messy shaggy dark brown hair falling over and covering his ears, ears small and rounded beneath it, light stubble, no beard, warm brown eyes, subtle sly closed-mouth expression, worn dark linen shirt with rolled sleeves, scuffed brown leather vest, belt dagger at hips, small adult stature about three feet tall, NOT a baby, NOT a toddler, NOT a child, full-size adult human features scaled down uniformly, exactly the same head-to-body and ear-to-head proportions as a full-size grown man, he is a full-grown man who happens to stand three feet tall, enlarged to six feet he would be indistinguishable from an ordinary human man, small adult head, small rounded human ears mostly tucked under his hair, lying flat against the sides of his head below eye level, no pointed tips, no elf ears, no large ears, no protruding ears, no oversized head, no chibi or doll-like proportions, exactly two arms",
     "frame": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background",
     "species_sources": {
       "14-halfling": "https://www.dndbeyond.com/species/14-halfling"
     },
-    "seed": 314159,
+    "seed": 1857761984156622644,
     "model_hashes": {
       "unet_name": "flux3-image-klein-nvfp4.safetensors",
       "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
     },
     "workflow": "workflows/base_flux3.json",
-    "output": "img/shade_s3.png",
-    "timestamp": "2026-11-02T14:41:58Z"
+    "output": "img/shade_s4.png",
+    "timestamp": "2026-11-02T14:49:53Z"
+  },
+  "shade_s5": {
+    "character": "shade_s5",
+    "arm": "C",
+    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body young adult halfling man, mid-20s, mature adult face, lean build, messy shaggy dark brown hair falling over and covering his ears, ears small and rounded beneath it, light stubble, no beard, warm brown eyes, subtle sly closed-mouth expression, worn dark linen shirt with rolled sleeves, scuffed brown leather vest, belt dagger at hips, small adult stature about three feet tall, NOT a baby, NOT a toddler, NOT a child, full-size adult human features scaled down uniformly, exactly the same head-to-body and ear-to-head proportions as a full-size grown man, he is a full-grown man who happens to stand three feet tall, enlarged to six feet he would be indistinguishable from an ordinary human man, small adult head, small rounded human ears mostly tucked under his hair, lying flat against the sides of his head below eye level, no pointed tips, no elf ears, no large ears, no protruding ears, no oversized head, no chibi or doll-like proportions, exactly two arms",
+    "frame": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background",
+    "species_sources": {
+      "14-halfling": "https://www.dndbeyond.com/species/14-halfling"
+    },
+    "seed": 6120004243239096470,
+    "model_hashes": {
+      "unet_name": "flux3-image-klein-nvfp4.safetensors",
+      "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
+    },
+    "workflow": "workflows/base_flux3.json",
+    "output": "img/shade_s5.png",
+    "timestamp": "2026-11-02T14:49:58Z"
+  },
+  "shade_s6": {
+    "character": "shade_s6",
+    "arm": "C",
+    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body young adult halfling man, mid-20s, mature adult face, lean build, messy shaggy dark brown hair falling over and covering his ears, ears small and rounded beneath it, light stubble, no beard, warm brown eyes, subtle sly closed-mouth expression, worn dark linen shirt with rolled sleeves, scuffed brown leather vest, belt dagger at hips, small adult stature about three feet tall, NOT a baby, NOT a toddler, NOT a child, full-size adult human features scaled down uniformly, exactly the same head-to-body and ear-to-head proportions as a full-size grown man, he is a full-grown man who happens to stand three feet tall, enlarged to six feet he would be indistinguishable from an ordinary human man, small adult head, small rounded human ears mostly tucked under his hair, lying flat against the sides of his head below eye level, no pointed tips, no elf ears, no large ears, no protruding ears, no oversized head, no chibi or doll-like proportions, exactly two arms",
+    "frame": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background",
+    "species_sources": {
+      "14-halfling": "https://www.dndbeyond.com/species/14-halfling"
+    },
+    "seed": 8620240391160718909,
+    "model_hashes": {
+      "unet_name": "flux3-image-klein-nvfp4.safetensors",
+      "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
+    },
+    "workflow": "workflows/base_flux3.json",
+    "output": "img/shade_s6.png",
+    "timestamp": "2026-11-02T14:50:04Z"
   }
 }

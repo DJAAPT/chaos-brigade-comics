@@ -17,6 +17,7 @@ the batch commit); only the latest set lives in `workflows/`.
 | batch3 | `3339e44` | Ear-placement clause: ears tucked under hair, flat, below eye level, "no pointed tips" | same four |
 | batch4 | _(this commit)_ | Head-ratio anchor: "head one-seventh of total body height, small adult head" — pass criterion is correct head size on **all four seeds**, not just s2 | same four |
 | batch5 | _(this commit)_ | Identity over measurement: dead 1:7 ratio swapped for counterfactual ("full-grown man who happens to stand three feet tall, enlarged to six feet indistinguishable from an ordinary human man") + explicit NOT a baby / NOT a toddler bans (batch 4's s3 was a baby with a giant head) | same four |
+| batch6 | _(this commit)_ | Seed generalization, wording frozen at batch 5: s2 control (777001) + three historic S1 seeds; s2 re-render hash-identical to batch 5 = pipeline deterministic | shade_s2, shade_s4/5/6 (1857761984156622644, 6120004243239096470, 8620240391160718909) |
 
 Human verdicts so far: batch 2 `shade_s2` closest on head size; ears still
 sticking out through batch 3. Batch 4: explicit 1:7 ratio changed nothing —
