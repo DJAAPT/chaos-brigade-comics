@@ -34,6 +34,6 @@ Always log: session id, panel #, prompt, seed, model versions, output file.
 `scripts/new-session.ps1 -SessionId <id>` does:
 1. read transcript, chunk, score (LLM or keyword + manual review for v1)
 2. write `sessions/<id>/plan.json`
-3. generate Flux JSONs from bible + plan (reuse `workflows/base_flux2.json`)
+3. generate Flux JSONs from bible + plan (reuse `workflows/base_flux3.json`)
 4. submit to 10.13.37.88:8188, poll, download to `sessions/<id>/`
 5. emit `comics/<id>.html` multipanel with narration + quotes

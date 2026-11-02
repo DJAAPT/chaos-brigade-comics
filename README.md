@@ -1,11 +1,11 @@
 # Chaos Brigade Comics Pipeline
-Remote ComfyUI: http://10.13.37.88:8188 (Flux2 Dev fp8mixed, 5070 Ti)
-Base workflow: Flux2 text-to-image 1344x768, VAE flux2-vae, CLIP mistral fp8.
+ComfyUI: http://10.13.37.88:8188 — this machine's LAN IP (http://127.0.0.1:8188 works too) (Flux3 Image Klein nvfp4, 5070 Ti)
+Base workflow: workflows/base_flux3.json — Flux3 Image Klein text-to-image 1344x768, unet flux3-image-klein-nvfp4, CLIP qwen3vl_4b (type flux3), VAE flux2-vae, 15 steps / cfg 1.0 / er_sde / simple.
 
 ## Stages
 1. **Character bible** — `character-bible/bible.md` (LOCKED, update only with approval)
 2. **Scene director** — `scene-director/director.md` + `sessions/<id>/plan.json`
-3. **Flux 2 generation** — `generate/` + `workflows/` (pinned JSON, seed log)
+3. **Flux 3 generation** — `generate/` + `workflows/` (pinned JSON, seed log)
 4. **Refinement** — re-roll bad limbs/duplicates, face detail pass (manual for v1)
 5. **Comic production** — `comics/<id>.html` multipanel, narration + transcript quotes
 
