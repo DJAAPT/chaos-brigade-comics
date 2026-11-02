@@ -22,6 +22,7 @@ overwrite — every generation snapshots to `batches/batch<N>/` with its
 | batch8 | 20-seed survey on the batch-7 block (master list seed 20261106, disjoint from all prior) — keeper/horn read | keechwah_r01–r20 |
 | batch9 | Solid-not-glowing eyes: `glowing purple` → `solid purple eyes with no visible sclera or pupil`, hue kept (canon fix, batch-8 keepers r07/r10) | same k01–k04 |
 | batch10 | Matte finish: batch-9 verdict showed the glow surviving as purple spill onto the face, so `matte` joins as a positive finish word | same k01–k04 |
+| batch11 | 20-seed survey on the batch-10 block (master list seed 20261107, disjoint from all prior) — keeper/eye read | keechwah_r01–r20 |
 
 ## Verdicts
 
