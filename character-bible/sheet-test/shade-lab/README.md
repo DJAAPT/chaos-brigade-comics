@@ -19,6 +19,10 @@ the batch commit); only the latest set lives in `workflows/`.
 Human verdicts so far: batch 2 `shade_s2` closest on head size; ears still
 sticking out through batch 3.
 
+**Locked base going forward (human, 2026-11-02): `shade_s2`, seed 777001 —
+best head proportions in every batch. Future Shade iterations run on this
+seed; wording carries forward from the latest batch unless noted.**
+
 ## Comparing batches
 
 Same key across batches = same seed = wording-only delta
