@@ -11,13 +11,13 @@ LAB_DESC = os.path.join(LAB_DIR, "descriptions.md")
 LAB_PROMPTS = os.path.join(LAB_DIR, "prompts.json")
 KEYS = [f"keechwah_k{i:02d}" for i in range(1, 5)]
 SEEDS = [424242, 424243, 777001, 424244]
-# Batch 6 ladder: 20-seed survey on the batch-5 block (master list seed
-# 20261105, verified disjoint from all previously used seeds)
-BATCH6_KEYS = [f"keechwah_r{i:02d}" for i in range(1, 21)]
-BATCH6_SEEDS = [552830877, 648655267, 422035164, 1761674982, 729454402, 1819679304,
-                1275567273, 731620070, 1959001081, 1342234658, 792120332, 730621735,
-                114543239, 1319299462, 1152315787, 1449114899, 206960085, 2084635009,
-                290107592, 2051182405]
+# Batch 8 ladder: 20-seed survey on the batch-7 block (master list seed
+# 20261106, verified disjoint from all previously used seeds)
+BATCH8_KEYS = [f"keechwah_r{i:02d}" for i in range(1, 21)]
+BATCH8_SEEDS = [207578373, 379423095, 573735355, 1009661775, 32798082, 1396165372,
+                1743082206, 1196334409, 49842577, 106986660, 486104843, 923721497,
+                1170968495, 589641034, 735621821, 1327882988, 572851880, 1455889268,
+                10931824, 1040178266]
 # Batch 3 ladder: 20-seed survey on the batch-2 block (master list seed
 # 20261104, verified disjoint from all previously used seeds)
 BATCH3_KEYS = [f"keechwah_r{i:02d}" for i in range(1, 21)]
@@ -66,13 +66,13 @@ class TestKeechwahLabPrompts(unittest.TestCase):
 
     def test_lab_prompts_schema(self):
         prompts = self.load_prompts()
-        self.assertEqual(list(prompts), KEYS, "lab keys must be the four-key ladder in order")
+        self.assertEqual(list(prompts), BATCH8_KEYS, "lab keys must be the batch-8 survey ladder in order")
         text, _ = TestKeechwahLabDescriptions().load_block()
-        for i, key in enumerate(KEYS):
+        for i, key in enumerate(BATCH8_KEYS):
             entry = prompts[key]
             self.assertEqual(list(entry.keys()), PROMPT_KEYS, f"{key} key mismatch")
             self.assertEqual(entry["arm"], "C")
-            self.assertEqual(entry["seed"], SEEDS[i], f"{key} seed mismatch")
+            self.assertEqual(entry["seed"], BATCH8_SEEDS[i], f"{key} seed mismatch")
             self.assertEqual(entry["frame"], FRAME_C)
             self.assertEqual(entry["prompt"], f"{FRAME_C} {ADDENDUM} {text}", f"{key} not exact composition")
             self.assertIn(entry["output"], (None, f"img/{key}.png"))
@@ -83,9 +83,9 @@ class TestKeechwahLabPrompts(unittest.TestCase):
 
         stems = [os.path.splitext(os.path.basename(p))[0] for p in _glob.glob("workflows/keechwahlab_*.json")]
         found = {s.removeprefix("keechwahlab_") for s in stems}
-        self.assertEqual(found, set(KEYS), f"lab workflow set mismatch: {found}")
+        self.assertEqual(found, set(BATCH8_KEYS), f"lab workflow set mismatch: {found}")
         prompts = self.load_prompts()
-        for key in KEYS:
+        for key in BATCH8_KEYS:
             with open(f"workflows/keechwahlab_{key}.json", encoding="utf-8") as f:
                 g = json.load(f)
             seeds = [n["inputs"][k] for n in g.values() for k in ("seed", "noise_seed") if k in n.get("inputs", {})]

@@ -19,6 +19,7 @@ overwrite — every generation snapshots to `batches/batch<N>/` with its
 | batch5 | Horns grown, not stuck on: `large curved horns growing naturally from his temples and emerging through his hair` (batch-4 skin held, k03's leftover red reads seed-specific) | same k01–k04 |
 | batch6 | 20-seed survey on the batch-5 block (master list seed 20261105, disjoint from all prior) — keeper/horn read | keechwah_r01–r20 |
 | batch7 | Burial made explicit from the gallery ref: `rising from the crown of his skull with bases buried deep in his thick curly hair` (keepers r10/r13 won by accident of this; rest of ref look NOT adopted) | same k01–k04 |
+| batch8 | 20-seed survey on the batch-7 block (master list seed 20261106, disjoint from all prior) — keeper/horn read | keechwah_r01–r20 |
 
 ## Verdicts
 
