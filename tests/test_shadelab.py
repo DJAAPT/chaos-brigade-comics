@@ -94,6 +94,12 @@ class TestShadeLabPrompts(unittest.TestCase):
             n["inputs"][k] for n in graph_default.values() for k in ("seed", "noise_seed") if k in n.get("inputs", {})
         ]
         self.assertEqual(set(seeds_default), {424242}, "default seed must stay 424242")
+        # explicit None must coalesce to the default too (never write null into a graph)
+        graph_none = build_one(base, "some prompt", "x", seed=None)
+        seeds_none = [
+            n["inputs"][k] for n in graph_none.values() for k in ("seed", "noise_seed") if k in n.get("inputs", {})
+        ]
+        self.assertEqual(set(seeds_none), {424242}, "explicit seed=None must fall back to 424242")
 
     def test_lab_workflows_family(self):
         import glob as _glob

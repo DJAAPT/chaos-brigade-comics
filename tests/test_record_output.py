@@ -133,6 +133,16 @@ class TestVerifySheettest(ImportGuard):
             prompts["shade_s2"]["output"] = None
             self.assertFalse(mod.complete(prompts, tmp, roster=roster), "missing output must fail lab gate")
 
+    def test_empty_roster_never_certifies(self):
+        # same false-positive class as round 1's Critical: an empty run must
+        # never be complete, however the roster is spelled
+        mod = self.import_module("scripts.verify_sheettest", "scripts/verify_sheettest.py")
+        with tempfile.TemporaryDirectory() as tmp:
+            self.assertFalse(mod.complete({}, tmp, roster=()), "empty prompts + empty roster must fail")
+            self.assertFalse(mod.complete({}, tmp), "empty prompts on default roster must fail")
+            issues = mod.problems({}, tmp, roster=())
+            self.assertTrue(issues and any("roster" in i for i in issues), "empty roster must yield a roster problem")
+
     def test_complete_rejects_shared_output(self):
         mod = self.import_module("scripts.verify_sheettest", "scripts/verify_sheettest.py")
         with tempfile.TemporaryDirectory() as tmp:

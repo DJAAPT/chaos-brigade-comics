@@ -29,6 +29,9 @@ def parse_ihdr(path: str) -> tuple:
 def problems(prompts: dict, img_dir: str, roster: tuple = ROSTER) -> list:
     """Every reason this run is not complete (empty list == COMPLETE)."""
     found = []
+    if not roster:
+        found.append("roster is empty — an empty run can never be complete")
+        return found
     if set(prompts) != set(roster):
         missing = sorted(set(roster) - set(prompts))
         extra = sorted(set(prompts) - set(roster))
@@ -72,6 +75,8 @@ def main() -> None:
         help="expected slugs (default: the six arm characters)",
     )
     args = parser.parse_args()
+    if args.roster is not None and len(args.roster) == 0:
+        parser.error("--roster requires at least one slug (empty rosters are never valid)")
 
     with open(args.prompts, encoding="utf-8") as f:
         prompts = json.load(f)

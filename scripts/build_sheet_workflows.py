@@ -15,7 +15,9 @@ SEED = 424242
 SENTINEL = "{{PROMPT}}"
 
 
-def build_one(base, prompt, slug, prefix="sheettest_", seed=SEED):
+def build_one(base, prompt, slug, prefix="sheettest_", seed=None):
+    if seed is None:
+        seed = SEED
     graph = copy.deepcopy(base)
 
     prompt_nodes = [
