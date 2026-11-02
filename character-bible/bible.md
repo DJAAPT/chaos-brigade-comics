@@ -11,9 +11,11 @@ Global suffix (append to EVERY prompt):
 
 ## LOCKED PROMPT CHUNKS (copy verbatim)
 
-### Shade — Male Halfling Rogue (St3v3D/David). SHORT adult man, NOT child.
-`adult halfling man, short stature, grown man in his 30s, light stubble, brown hair, leather rogue armor, dual daggers at hips`
-Refs: gallery/Scenes/Shade_joins_the_guild.png (tattoo scene, adult face), Shade_and_Brother_Sean.png, St3v3D_Chaos_Brigade.png (front, small size). NEVER: child, boy, teen, hobbit feet.
+### Shade — Male Halfling Rogue (St3v3D/David). Young adult halfling man, NOT child, NOT elderly.
+`young adult halfling man, mid-20s, mature adult face, lean build, messy shaggy dark brown hair, light stubble, no beard, warm brown eyes, guarded watchful expression, human ears with rounded lobes, worn dark linen shirt with rolled sleeves, scuffed brown leather vest, belt dagger at hips`
+Approved identity ref (2026-11-01): `character-bible/approved_shade_reference.png` — copy this face for any new Shade portrait; other gallery refs show pointed ears or wrong builds, face is secondary to this one.
+NEVER: child, boy, teen, elderly, gray hair, white hair, beard, wrinkles, pointed ears, elf ears, hobbit feet, bare feet, blond hair, big friendly smile by default.
+Default expression: guarded, watchful, quietly assessing — keep-to-himself thief, not the outgoing one.
 Guild mark: geometric diamond tattoo (gallery/Objects/The_Tattoo.png) on forearm — include only when plot-relevant.
 
 ### Rocketcandy — Male Human Paladin (Andrew). Former Neverwinter nobility.
