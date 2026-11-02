@@ -1,0 +1,422 @@
+{
+  "chip": {
+    "name": "Chip",
+    "race": "Human",
+    "class_level": "Druid 5",
+    "background": "Sage",
+    "alignment": "Neutral Good",
+    "faith": "(no sheet text)",
+    "physical": {
+      "gender": "Male",
+      "age": "35",
+      "height": "5'11\"",
+      "weight": "172",
+      "hair": "Brown",
+      "skin": "White",
+      "eyes": "Brown"
+    },
+    "appearance": {
+      "text": "The material culture and physical characteristics of humans can change wildly from region to region.",
+      "boilerplate": true
+    },
+    "backstory": {
+      "text": "You spent years learning the lore of the multiverse. You scoured manuscripts, studied scrolls, and listened to the greatest experts on the subjects that interest you. Your efforts have made you a master in the field of astronomy.",
+      "boilerplate": true
+    },
+    "ideals": {
+      "text": "No Limits. Nothing should fetter the infinite possibility inherent in all existence.",
+      "boilerplate": false
+    },
+    "bonds": {
+      "text": "My life’s work is a series of tomes related to astronomy and it's interaction with nature.",
+      "boilerplate": false
+    },
+    "flaws": {
+      "text": "I speak without really thinking through my words, invariably insulting others.  \nLast to act, wait until no one else has ideas to finally contribute.",
+      "boilerplate": false
+    },
+    "personality": null,
+    "equipment": [
+      "Druids Shield",
+      "Druids  Quarterstaff",
+      "Leather",
+      "Star Map, Crystal",
+      "Dagger",
+      "Ink (1 ounce bottle)",
+      "Backpack",
+      "Clothes, Common",
+      "Pouch",
+      "Small Knife",
+      "Elixir of Health",
+      "Quarterstaff",
+      "Dart",
+      "Bedroll",
+      "Mess Kit",
+      "Potion of Healing",
+      "Rations (1 day)",
+      "Rope, Hempen (50 feet)",
+      "Tinderbox",
+      "Torch",
+      "Waterskin",
+      "Pearl",
+      "Obsidian",
+      "pocket sand",
+      "pocket dust",
+      "powdered iron",
+      "Oak Bark",
+      "Sprig of Mistletoe",
+      "pocket sand",
+      "Star Map, Crystal",
+      "pocket dust",
+      "powdered iron",
+      "Oak Bark"
+    ],
+    "weapons": [
+      "Druids  Quarterstaff",
+      "Starry Wisp",
+      "Ray of Frost",
+      "Shillelagh",
+      "Unarmed Strike"
+    ]
+  },
+  "gulgrim": {
+    "name": "Gulgrim Frozenboots",
+    "race": "Hill Dwarf",
+    "class_level": "Cleric 5",
+    "background": "Soldier",
+    "alignment": "Neutral Good",
+    "faith": "Marthammor Duin",
+    "physical": {
+      "gender": "(no sheet text)",
+      "age": "(no sheet text)",
+      "height": "(no sheet text)",
+      "weight": "(no sheet text)",
+      "hair": "(no sheet text)",
+      "skin": "(no sheet text)",
+      "eyes": "(no sheet text)"
+    },
+    "appearance": null,
+    "backstory": {
+      "text": "You trained as a soldier on the island of Mintarn and joined a mer\u0002cenary company. You traveled to the city of Neverwinter with your company to serve in both the army and city watch. Over time, you grew disillusioned with many of your fellow soldiers. They seemed to enjoy their authority at the expense of the people they’re supposed to protect. \n\nRecently you’ve had dreams of a shadow creeping across the sea like a shroud, swallowing an island in darkness. Though you dismissed the dreams at first, you began to hear a voice calling you to stand against death’s endless hunger. Certain of your deity’s wishes, you resigned your post and set out on your quest.",
+      "boilerplate": false
+    },
+    "ideals": null,
+    "bonds": null,
+    "flaws": null,
+    "personality": null,
+    "equipment": [
+      "Shield",
+      "Chain Mail",
+      "Handaxe",
+      "Mace",
+      "Backpack",
+      "Clothes, Common",
+      "Pouch",
+      "Holy Symbol",
+      "Obsidian Chunk",
+      "Biggins manor key",
+      "Bedroll",
+      "Mess Kit",
+      "Rations (1 day)",
+      "Rope, Hempen (50 feet)",
+      "Tinderbox",
+      "Torch",
+      "Waterskin",
+      "Obsidian Chunk",
+      "Biggins manor key"
+    ],
+    "weapons": [
+      "Handaxe",
+      "Mace",
+      "Unarmed Strike"
+    ]
+  },
+  "keechwah": {
+    "name": "Keechwah",
+    "race": "Tiefling",
+    "class_level": "Warlock 5",
+    "background": "Sage",
+    "alignment": "Chaotic Neutral",
+    "faith": "(no sheet text)",
+    "physical": {
+      "gender": "(no sheet text)",
+      "age": "(no sheet text)",
+      "height": "(no sheet text)",
+      "weight": "(no sheet text)",
+      "hair": "(no sheet text)",
+      "skin": "(no sheet text)",
+      "eyes": "(no sheet text)"
+    },
+    "appearance": null,
+    "backstory": {
+      "text": "You spent years learning the lore of the multiverse. You scoured manuscripts, studied scrolls, and listened to the greatest experts on the subjects that interest you. Your efforts have made you a master researcher.",
+      "boilerplate": true
+    },
+    "ideals": {
+      "text": "Knowledge. The path to power and self-improvement is through knowledge. \n\nSelf-Improvement. The goal of a life of study is the",
+      "boilerplate": false
+    },
+    "bonds": {
+      "text": "I sold my soul for knowledge. I hope to do great deeds and win it back.",
+      "boilerplate": false
+    },
+    "flaws": {
+      "text": "Unlocking an ancient mystery is worth the price of a civilization.",
+      "boilerplate": false
+    },
+    "personality": null,
+    "equipment": [
+      "Potion of Healing",
+      "Spell Scroll (Level 2)",
+      "Leather",
+      "Dagger",
+      "Dagger",
+      "Handaxe",
+      "Sickle",
+      "Crossbow, Light",
+      "Crossbow Bolts",
+      "Backpack",
+      "Clothes, Common",
+      "Pouch",
+      "Orb",
+      "Pearl",
+      "Potion of Healing (Greater)",
+      "Elixir of Health",
+      "Potion of Healing",
+      "Potion of Healing",
+      "Lute",
+      "Lightning Struck Wood",
+      "Book",
+      "Ink (1 ounce bottle)",
+      "Ink Pen",
+      "Parchment (one sheet)",
+      "Little Bag of Sand",
+      "Small Knife",
+      "Lute",
+      "Lightning Struck Wood"
+    ],
+    "weapons": [
+      "Crossbow, Light",
+      "Dagger",
+      "Handaxe",
+      "Chill Touch",
+      "Fire Bolt",
+      "Unarmed Strike"
+    ]
+  },
+  "rocketcandy": {
+    "name": "Rocketcandy",
+    "race": "Human",
+    "class_level": "Paladin 5",
+    "background": "Noble",
+    "alignment": "Lawful Good",
+    "faith": "Bahamut, the Platinum Dragon",
+    "physical": {
+      "gender": "(no sheet text)",
+      "age": "(no sheet text)",
+      "height": "(no sheet text)",
+      "weight": "(no sheet text)",
+      "hair": "(no sheet text)",
+      "skin": "(no sheet text)",
+      "eyes": "(no sheet text)"
+    },
+    "appearance": null,
+    "backstory": {
+      "text": "Your family is no stranger to wealth, power, and privilege. In the glory days of Neverwinter, your parents ruled the county of Corlinn Hill, located in the hills northeast of the city. But Mount Hotenow erupted thirty years ago, devastating Neverwinter and erasing Corlinn Hill. Instead of growing up on an estate, you were raised in a small townhouse in Waterdeep. As an adult, you stand to inherit only a title. \n\nSince swearing your oath to Bahamut, you’ve returned to Neverwinter and have been a champion to those who are overlooked by the institutions that exist to protect them. Recently, your resolve has been shaken by corruption in the city guard and ruling aristocrats.",
+      "boilerplate": false
+    },
+    "ideals": null,
+    "bonds": null,
+    "flaws": null,
+    "personality": null,
+    "equipment": [
+      "Plate, +2",
+      "Battleaxe, +3",
+      "Shield",
+      "Chain Mail",
+      "Wine Bottle",
+      "Javelin",
+      "Backpack",
+      "Clothes, Fine",
+      "Signet Ring",
+      "Torch",
+      "Holy Symbol",
+      "Bedroll",
+      "Mess Kit",
+      "Rations (1 day)",
+      "Rope, Hempen (50 feet)",
+      "Tinderbox",
+      "Torch",
+      "Waterskin",
+      "Potion of Healing (Greater)",
+      "Potion of Lightning Resistance",
+      "Potion of Healing",
+      "Ruby Morel",
+      "Bedroll",
+      "Mess Kit",
+      "Rations (1 day)",
+      "Rope, Hempen (50 feet)",
+      "Tinderbox",
+      "Waterskin",
+      "Bomb",
+      "Pearl",
+      "Wine Bottle",
+      "Ruby Morel"
+    ],
+    "weapons": [
+      "Battleaxe, +3",
+      "Javelin",
+      "Unarmed Strike"
+    ]
+  },
+  "shade": {
+    "name": "Shade",
+    "race": "Halfling",
+    "class_level": "Rogue 5",
+    "background": "Criminal",
+    "alignment": "(no sheet text)",
+    "faith": "(no sheet text)",
+    "physical": {
+      "gender": "(no sheet text)",
+      "age": "(no sheet text)",
+      "height": "(no sheet text)",
+      "weight": "(no sheet text)",
+      "hair": "(no sheet text)",
+      "skin": "(no sheet text)",
+      "eyes": "(no sheet text)"
+    },
+    "appearance": null,
+    "backstory": {
+      "text": "Born in a quiet halfling village, you were always too curious for your own good. Locks were puzzles to be solved, and secrets were treasures to be uncovered. That curiosity eventually led you into the city’s underbelly, where you learned the arts of disguise, deception, and the quick hand of a thief. For a time, you worked as a spy-for-hire, slipping through shadows and gathering secrets for coin. But after a job went wrong — a mark discovered, a friend betrayed, a secret stolen too well — you had to disappear. Now you travel under a new name, smiling and joking like the world’s on your side, but always watching from the corner of the room. Whether your past will catch up to you or not is uncertain, but until then, you’re content to slip through the world as the party’s unseen shadow.",
+      "boilerplate": false
+    },
+    "ideals": null,
+    "bonds": null,
+    "flaws": null,
+    "personality": null,
+    "equipment": [
+      "Potion of Healing (Greater)",
+      "Shortbow, +2",
+      "Potion of Healing",
+      "Cloak of Distant Shadows",
+      "Leather",
+      "1-pound silver bars",
+      "Boots of Elvenkind",
+      "turquoise stones",
+      "Windspore mushroom",
+      "Empty potion bottle",
+      "sewing kit",
+      "1 yard black fabric",
+      "3 yard 1\" minitar leather strap",
+      "black thread",
+      "green thread",
+      "ruby powder",
+      "Dagger",
+      "Shortbow",
+      "Shortsword",
+      "Bullseye Lantern",
+      "Thieves' Tools",
+      "Rapier",
+      "Pearl",
+      "Bottle, Glass",
+      "1-pound silver bars",
+      "Boots of Elvenkind",
+      "turquoise stones",
+      "Windspore mushroom",
+      "Empty potion bottle",
+      "sewing kit",
+      "1 yard black fabric",
+      "3 yard 1\" minitar leather strap",
+      "black thread",
+      "green thread",
+      "ruby powder",
+      "Very Normal Rock",
+      "Blank Form",
+      "Chicken Feathers",
+      "Shovel-Related Documentation",
+      "Very Important Letter",
+      "Suspicious Note"
+    ],
+    "weapons": [
+      "Dagger",
+      "Rapier",
+      "Shortbow, +2",
+      "Shortsword",
+      "Unarmed Strike"
+    ]
+  },
+  "vadania": {
+    "name": "Vadania Amakiir",
+    "race": "Wood Elf",
+    "class_level": "Ranger 5",
+    "background": "Folk Hero",
+    "alignment": "Neutral",
+    "faith": "(no sheet text)",
+    "physical": {
+      "gender": "(no sheet text)",
+      "age": "(no sheet text)",
+      "height": "(no sheet text)",
+      "weight": "(no sheet text)",
+      "hair": "(no sheet text)",
+      "skin": "(no sheet text)",
+      "eyes": "(no sheet text)"
+    },
+    "appearance": {
+      "text": "Wood elves’ skin tends to be copperish in hue, sometimes with traces of green. Their hair tends toward browns and blacks, but it is occasionally blond or copper-colored. Their eyes are green, brown, or hazel.",
+      "boilerplate": true
+    },
+    "backstory": {
+      "text": "Early Life — The Greenwood Son \nVadania was born beneath the emerald canopy of an ancient forest settlement known as Tel’Quessiriel, a quiet wood elf enclave hidden where the trees grow impossibly tall, and the light falls in soft green-gold shafts. The Amakiir family were wardens of the outer glades — not nobles, not warriors of renown, but trusted guardians of the balance between civilization and wild. \nHis mother, Lethariel, was a healer who spoke to plants as if they were old friends. \nHis father, Thalion Amakiir, taught Vadania how to read broken twigs like pages in a book. \n\nFrom childhood, Vadania preferred the hush of the wild to village chatter. He could track deer before he could braid his own hair. By 40 (barely adolescence for an elf), he could loose two arrows before most could draw one. \n\nHe believed his life would always be this simple: \n\t•\tGuard the borders. \n\t•\tProtect the herd paths. \n\t•\tReturn home to warm lamplight and laughter. \n\nHe was wrong. \n\nThe Night of Cinders \nThe bandits did not come like fools crashing through the brush.  They came guided.  Someone knew the old paths. Someone knew the watch rotations. Someone knew where the alarm glyphs were weakest.  Vadania was on the western ridge when the first smoke rose. \nBy the time he returned, the village was ash and screaming. These were not starving highwaymen — they carried alchemist’s fire, iron nets, and silvered blades. They hunted elves specifically. \n\nHe found he father among the fallen, still clutching a snapped bowstring. His mother’s healing satchel lay torn and blood-soaked.  Vadania survived because he was away.  That truth claws at he still.",
+      "boilerplate": false
+    },
+    "ideals": {
+      "text": "Sincerity. There’s no good in pretending to be something I’m not.",
+      "boilerplate": false
+    },
+    "bonds": {
+      "text": "I wish my childhood sweetheart had come with me to pursue my destiny.",
+      "boilerplate": false
+    },
+    "flaws": {
+      "text": "I’m convinced of the significance of my destiny, and blind to my shortcomings and the risk of failure.",
+      "boilerplate": false
+    },
+    "personality": null,
+    "equipment": [
+      "Monster Hunter’s Longbow, +1",
+      "Leather",
+      "Shortsword",
+      "Shortsword",
+      "Arrows",
+      "Backpack",
+      "Clothes, Common",
+      "Pot, Iron",
+      "Pouch",
+      "Shovel",
+      "Potion of Healing",
+      "Obsidian",
+      "Key from dragon",
+      "anti-toxin",
+      "Wheel lever",
+      "Bedroll",
+      "Mess Kit",
+      "Potion of Healing",
+      "Rations (1 day)",
+      "Rope, Hempen (50 feet)",
+      "Tinderbox",
+      "Torch",
+      "Waterskin",
+      "Woodcarver's Tools",
+      "Pearl",
+      "Obsidian",
+      "Key from dragon",
+      "anti-toxin",
+      "Wheel lever"
+    ],
+    "weapons": [
+      "Shortsword",
+      "Shortsword",
+      "Unarmed Strike"
+    ]
+  }
+}
