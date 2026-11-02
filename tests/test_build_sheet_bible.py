@@ -105,6 +105,13 @@ class TestBuildSheetBible(unittest.TestCase):
             self.assertIn(entry["prompt"], md, f"{slug} prompt not mirrored in sheet-bible.md")
             self.assertIn(f"({slug})", md)
 
+    def test_species_noise_not_in_prompts(self):
+        # species chrome and setting lore must never reach a generated prompt
+        for slug, entry in self.load().items():
+            self.assertNotIn("Basic Rules (", entry["prompt"], f"{slug} prompt has source-line chrome")
+            self.assertNotIn("Faer", entry["prompt"], f"{slug} prompt has setting lore")
+            self.assertNotIn("Greyhawk", entry["prompt"], f"{slug} prompt has setting lore")
+
 
 if __name__ == "__main__":
     unittest.main()
