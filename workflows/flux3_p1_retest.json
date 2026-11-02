@@ -1,0 +1,128 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Flux3 Klein"
+    },
+    "inputs": {
+      "unet_name": "flux3-image-klein-nvfp4.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Text encoder"
+    },
+    "inputs": {
+      "clip_name": "qwen3vl_4b_int8_convrot.safetensors",
+      "type": "flux3",
+      "device": "default"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "VAE"
+    },
+    "inputs": {
+      "vae_name": "flux2-vae.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Prompt verbatim from approved ref"
+    },
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "text": "cinematic fantasy film still, warm tavern interior with a wooden Marigolds Inn sign on the wall, six DIFFERENT adventurers sitting around a round wooden table eating and drinking in warm candlelight, seated from left to right in this exact order, six separate people, do not merge anyone: (1) Shade, short halfling rogue man, lean build, messy shaggy dark brown hair covering his ears, light stubble, worn dark linen shirt, scuffed brown leather vest, sly closed-mouth expression; (2) Rocketcandy, tall human paladin man, short brown hair light stubble, shining plate armor with gold phoenix crest, red cape, confident composed bearing; (3) Keechwah, tall male tiefling warlock, deep red skin, long curly black hair, goatee, large curved horns, glowing purple eyes, dark blue robes with gold trim, no wings, secretive intense expression; (4) Gulgrim, a SHORT DWARF cleric with a completely bald head, short but BROAD and SOLID and HEAVY, big barrel chest and thick arms, clearly bigger and heavier than Shade the slim halfling though shorter than the humans, broad long white beard, heavy furs, large round shield with holy rune leaning at his side, warhammer, steadfast resolute expression, he is a dwarf NOT a human, do not draw him tiny; (5) Chip, a TALL human druid man much taller than the dwarf next to him, brown skin, wild long flowing white head-hair and white beard, green and brown fur garb, straight wooden quarterstaff with crystal upright behind him, awkward earnest expression, he is a human NOT a dwarf; (6) Vadania, tall wood elf ranger man, long brown hair, green eyes, pointed ears, masculine stubble, green cloak, longbow on his back, blunt direct expression; plus Marigold the female innkeeper standing behind the table holding a tray, warm welcoming smile, plain brown dress; Gulgrim the dwarf and Chip the human are two different people sitting next to each other, never merged, no duplicates, no conflation, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+    }
+  },
+  "5": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Negative (unused)"
+    },
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "text": ""
+    }
+  },
+  "8": {
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "Sample"
+    },
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "seed": 1857761984156622644,
+      "steps": 15,
+      "cfg": 1.0,
+      "sampler_name": "er_sde",
+      "scheduler": "simple",
+      "positive": [
+        "4",
+        0
+      ],
+      "negative": [
+        "5",
+        0
+      ],
+      "latent_image": [
+        "13",
+        0
+      ],
+      "denoise": 1.0
+    }
+  },
+  "13": {
+    "class_type": "EmptyFlux2LatentImage",
+    "_meta": {
+      "title": "1344x768"
+    },
+    "inputs": {
+      "width": 1344,
+      "height": 768,
+      "batch_size": 1
+    }
+  },
+  "9": {
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "Decode"
+    },
+    "inputs": {
+      "samples": [
+        "8",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "10": {
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save"
+    },
+    "inputs": {
+      "images": [
+        "9",
+        0
+      ],
+      "filename_prefix": "flux3_p1_retest"
+    }
+  }
+}
