@@ -18,6 +18,7 @@ overwrite — every generation snapshots to `batches/batch<N>/` with its
 | batch4 | One step lighter still: `warm bronze-tan skin with a faint red cast` (batch 3 verdict: all tiefling, none great; horns tacked-on, red still heavy) | same k01–k04 |
 | batch5 | Horns grown, not stuck on: `large curved horns growing naturally from his temples and emerging through his hair` (batch-4 skin held, k03's leftover red reads seed-specific) | same k01–k04 |
 | batch6 | 20-seed survey on the batch-5 block (master list seed 20261105, disjoint from all prior) — keeper/horn read | keechwah_r01–r20 |
+| batch7 | Burial made explicit from the gallery ref: `rising from the crown of his skull with bases buried deep in his thick curly hair` (keepers r10/r13 won by accident of this; rest of ref look NOT adopted) | same k01–k04 |
 
 ## Verdicts
 
@@ -25,6 +26,16 @@ overwrite — every generation snapshots to `batches/batch<N>/` with its
   really good. Two defects: horns look tacked-on rather than grown, and
   the red still needs to go lighter. Batch 4 takes skin first, horns next
   (one variable per batch).
+- Batch 4 (human verdict): better, k03 still a little too red — reads
+  seed-specific, not wording. Skin locked at the bronze-tan cast.
+- Batch 5 (human verdict 2026-11-02): k03 has the best horns of the batch
+  (seed 777001 again), rest look off — wording proven on one seed, survey
+  next for hit rate + keepers.
+- Batch 6 (human verdict 2026-11-02): keepers r10 + r13 — won by burying
+  the horns in the hair. Gallery ref `Keechwah_and_Lilly_bonding.png`
+  confirms the target: horns rising from the crown with bases swallowed
+  by the hair mass, horn + hair reading as one structure (rest of that
+  image's look NOT adopted). Batch 7 makes the burial explicit.
 - Batch 4 (human verdict): better, k03 still a little too red — reads
   seed-specific, not wording. Skin locked at the bronze-tan cast.
 - Batch 5 (human verdict 2026-11-02): k03 has the best horns of the batch
