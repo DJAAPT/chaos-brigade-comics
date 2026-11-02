@@ -18,7 +18,9 @@ the batch commit); only the latest set lives in `workflows/`.
 | batch4 | _(this commit)_ | Head-ratio anchor: "head one-seventh of total body height, small adult head" — pass criterion is correct head size on **all four seeds**, not just s2 | same four |
 
 Human verdicts so far: batch 2 `shade_s2` closest on head size; ears still
-sticking out through batch 3.
+sticking out through batch 3. Batch 4: explicit 1:7 ratio changed nothing —
+s2 still the only correct head size (s3 terrible) — numeric ratios don't
+move this model; head-size wins remain seed lottery so far.
 
 **Locked base going forward (human, 2026-11-02): `shade_s2`, seed 777001 —
 best head proportions in every batch. Future Shade iterations run on this
