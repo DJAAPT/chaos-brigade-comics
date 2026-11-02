@@ -21,6 +21,7 @@ the batch commit); only the latest set lives in `workflows/`.
 | batch7 | _(this commit)_ | Ear-anatomy positives from the Gemini consult (pinned-flat skull, zero flair, small skull, sleek proportions), bans KEPT — isolates the new positives | same s2/s4/s5/s6 |
 | batch8 | _(this commit)_ | Ban-strip test of Gemini's backfire claim: block-level NOT/no bans removed (chunk "no beard" + addendum "no shield" stay: verbatim + frame contract) — decisive pair vs batch 7, same seeds | same s2/s4/s5/s6 |
 | batch9 | _(this commit)_ | 20-seed survey on the ban-free block (master list seed 20261102): hit-rate read on the best wording so far | shade_r01–r20 (fixed random list in `tests/test_shadelab.py`) |
+| batch10 | _(this commit)_ | Gemini-merge additions (species skin, sideburns, tighter ear phrasing), ban-free kept, on batch-6 seeds — s2 is a three-way control (batches 6/8/10 wording × seed 777001) | shade_s2/s4/s5/s6 |
 
 Human verdicts so far: batch 2 `shade_s2` closest on head size; ears still
 sticking out through batch 3. Batch 4: explicit 1:7 ratio changed nothing —
