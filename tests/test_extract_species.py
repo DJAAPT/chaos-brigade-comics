@@ -48,6 +48,31 @@ class TestExtractSpecies(unittest.TestCase):
         self.assertNotIn("glared", tiefling["physical"])
         self.assertNotIn("Yer late", species["13-dwarf"]["physical"])
 
+    def test_no_source_line_boilerplate(self):
+        # DDB prints a "Basic Rules (2014)" attribution paragraph into
+        # subrace sections; it is UI chrome, never prompt material.
+        for slug, entry in self.load_species().items():
+            blob = self.all_text(entry)
+            self.assertNotIn("Basic Rules (", blob, f"{slug} carries source-line chrome")
+
+    def test_subrace_sections_free_of_setting_lore(self):
+        # Spec drops history/culture/lore: subrace sections keep only their
+        # trait sentence, not setting geography (Faerun/Krynn/Greyhawk...).
+        species = self.load_species()
+        for page, key in [("13-dwarf", "Hill Dwarf"), ("3-elf", "Wood Elf")]:
+            for name, value in species[page]["sections"].items():
+                if key in name:
+                    for lore in ["Faer", "Krynn", "Greyhawk", "Dragonlance", "Forgotten Realms", "This category includes"]:
+                        self.assertNotIn(lore, value, f"{page}/{name} kept setting lore {lore!r}")
+
+    def test_stature_openers_present(self):
+        # The species description-chapter openers (stature prose) must be in
+        # physical: these paragraphs carry the most visual build info.
+        species = self.load_species()
+        self.assertIn("broad and compact", species["13-dwarf"]["physical"])
+        self.assertIn("slightly shorter than humans", species["3-elf"]["physical"])
+        self.assertIn("Standing about 3 feet tall", species["14-halfling"]["physical"])
+
 
 if __name__ == "__main__":
     unittest.main()

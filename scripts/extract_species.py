@@ -30,18 +30,25 @@ USER_AGENT = (
 )
 MIN_FETCH_BYTES = 50_000
 
-SKIP_MARKERS = re.compile(r"Rollback|Posted \w+ \d|Names:")
+SKIP_MARKERS = re.compile(r"Rollback|Posted \w+ \d|Names:|Basic Rules \(\d{4}\)")
 PHYS_HEADING = re.compile(r"description|appearance|bloodline|physique", re.I)
 AGE_SIZE_HEADING = re.compile(r"^(Age|Size)$", re.I)
-APPEARANCE_KEYWORDS = [
-    "horn", "horns", "skin", "hair", "eyes", "teeth", "tusks", "beard",
-    "ears", "tail", "fur", "feathers", "claws", "height", "build",
-    "snout", "scales", "lips", "nose",
-]
-KEYWORD_RE = re.compile(
-    r"\b(" + "|".join(re.escape(k) for k in APPEARANCE_KEYWORDS) + r")\b", re.I
+# Official description chapters per page: the paragraphs under these headings
+# are the species physique prose (stature/skin/build openers). Selection is
+# heading-grounded — the old >=2-keyword sweep swallowed setting/ethnicity
+# lore wherever body words co-occurred (reviewer's finding, reproduced).
+CHAPTER_HEADINGS = {
+    "7-tiefling": ("Infernal Bloodline",),
+    "13-dwarf": ("Short and Stout",),
+    "3-elf": ("Slender and Graceful",),
+    "14-halfling": ("Small and Practical",),
+    "1-human": ("A Broad Spectrum",),
+}
+# Setting-lore sentences are dropped from section text (spec drops
+# history/culture/lore; subrace sections keep their trait sentence only).
+LORE_SENTENCE_RE = re.compile(
+    r"(?i)Faer[uû]n|Krynn|Greyhawk|Dragonlance|Forgotten Realms|This category includes"
 )
-MIN_KEYWORD_HITS = 2
 
 
 def fetch(sources_dir: str) -> None:
@@ -101,6 +108,7 @@ def parse(sources_dir: str, out_path: str) -> dict:
             sys.exit(3)
 
         url = PAGES[slug]
+        chapters = CHAPTER_HEADINGS.get(slug, ())
         physical_parts, age_size_parts = [], []
         sections = {}
         current_heading = None
@@ -121,10 +129,11 @@ def parse(sources_dir: str, out_path: str) -> dict:
             text = el.get_text(" ", strip=True)
             if not text or SKIP_MARKERS.search(text):
                 continue
-            keywords_hit = len(set(KEYWORD_RE.findall(text))) >= MIN_KEYWORD_HITS
             if current_heading is not None and AGE_SIZE_HEADING.match(current_heading):
                 age_size_parts.append(text)
-            elif (current_heading is not None and PHYS_HEADING.search(current_heading)) or keywords_hit:
+            elif current_heading is not None and (
+                PHYS_HEADING.search(current_heading) or current_heading in chapters
+            ):
                 physical_parts.append(text)
             if current_key is not None:
                 sections[current_key].append(text)
@@ -133,9 +142,17 @@ def parse(sources_dir: str, out_path: str) -> dict:
             "url": url,
             "physical": " ".join(physical_parts),
             "age_size": " ".join(age_size_parts),
-            "sections": {k: " ".join(v) for k, v in sections.items()},
+            "sections": {
+                k: _strip_lore_sentences(" ".join(v)) for k, v in sections.items()
+            },
         }
     return result
+
+
+def _strip_lore_sentences(text: str) -> str:
+    """Drop sentences carrying setting/lore proper nouns; keep the rest."""
+    kept = [s for s in re.split(r"(?<=[.!?])\s+", text) if not LORE_SENTENCE_RE.search(s)]
+    return " ".join(kept)
 
 
 def main() -> None:
