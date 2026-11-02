@@ -91,7 +91,12 @@ Ref gallery/NPCs/Lady_Elara_Veyne.png: `mature noblewoman dark hair updo, blue/s
 Corrupt: `ornate helm with red plume, red cape, gold phoenix crest, geometric diamond forearm tattoo (gallery/Objects/The_Tattoo.png), star above tattoo = leader`. Clean guards: plain steel, NO tattoo. Ref gallery/NPCs/City_Guards.png = corrupt look.
 
 ### Marigold / Sammy
-Marigold: female innkeeper, warm, tray. Sammy: adult male cook in apron, menu/label in hand, loud. NEVER gender-swap Sammy, NEVER make Lilly the screamer in S1P3.
+### Marigold — Female Halfling Innkeeper, owns Marigold's Inn (recurring NPC)
+`middle-aged halfling woman innkeeper in her 40s, barely 3 feet tall, tiny curly brown hair, warm rosy happy face with laugh lines, plain brown working dress with apron, serving tray`
+Approved identity ref (2026-11-02, Flux3 Klein): `character-bible/approved_marigold_reference.png` — copy this face; adult likeness approved in the Flux3 v1 portrait.
+NEVER: child, young woman, tall human woman (she is a 3ft halfling — state it in every panel), barmaid looks that copy Lilly or Vadania.
+Sammy: adult male cook in apron, menu/label in hand, loud. NEVER gender-swap Sammy, NEVER make Lilly the screamer in S1P3.
+Default expression: warm and welcoming — beaming hostess, hands full.
 
 ## Party sheet facts (canon — character-bible/Sheets/*.pdf, user-approved 2026-11-01)
 Non-visual canon for direction, dialogue, and props. Sheet-vs-gallery conflicts resolved by user: Chip white hair (sheet wins), Gulgrim warhammer (bible wins over sheet's mace), Vadania brown hair + green eyes (sheet wins over gallery blonde), Rocketcandy nobility precision adopted.
