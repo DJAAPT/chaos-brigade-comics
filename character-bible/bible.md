@@ -62,8 +62,8 @@ Refs: gallery/NPCs/Lilly.png (LOCKED), Keechwah_and_Lilly_bonding.png. NEVER: ch
 Default expression: warm and confident — friendly, self-assured young woman.
 
 ### Water Bear — Owlbear, ONE creature
-`single owlbear creature, massive grizzly bear body with coarse brown fur and bear paws with claws, head REPLACED by owl head with round eyes and hooked beak and feathered ruff, no wings, no second head, no separate owl`
-NEVER: bear holding owl, two heads, wings, white snowy owl alone, bear head + owl head side by side.
+`single owlbear creature, massive grizzly bear body with coarse brown fur and bear paws with claws, head REPLACED by owl head with round eyes and hooked beak and feathered ruff, walking on all fours like a bear, no wings, no second head, no separate owl`
+NEVER: bear holding owl, two heads, wings, white snowy owl alone, bear head + owl head side by side, standing upright on hind legs like a human (rears up only momentarily).
 
 ### Biggins Aulswim — Lilly's protector, ex-Talons of Justice assassin
 `tall adult human man in his 40s, slicked gray-streaked dark hair, sharp cheekbones, blue eyes, black three-piece suit with long coat, white shirt black tie, white gloves, pocket-watch chain, holding bloody dagger when hunting`
