@@ -28,8 +28,7 @@ SCALED_CLAUSE = (
     "stand three feet tall, enlarged to six feet he would be indistinguishable from an ordinary "
     "human man, small adult head, small low-profile human ears pinned flat against the skull, "
     "tucked beneath his hair below eye level, zero ear flair, small skull structure, sleek adult "
-    "facial proportions, no pointed tips, no elf ears, no large ears, no protruding ears, "
-    "no oversized head, no chibi or doll-like proportions"
+    "facial proportions"
 )
 
 
@@ -48,8 +47,14 @@ class TestShadeLabDescriptions(unittest.TestCase):
         self.assertLess(text.index(SHADE_CHUNK), text.index(SCALED_CLAUSE))
         self.assertLess(text.index(SCALED_CLAUSE), text.index("exactly two arms"))
         self.assertEqual(text.count("exactly two arms"), 1)
-        self.assertRegex(text, r"(?i)not a baby", "batch 4 showed a baby read — must be banned")
-        self.assertRegex(text, r"(?i)not a toddler", "batch 4 showed a toddler read — must be banned")
+        # batch 8: Gemini backfire test — no ban words anywhere in the added
+        # clause (chunk-internal "no beard" stays: locked verbatim; the frame
+        # addendum's "no shield" stays: frame contract, disclosed)
+        for ban in ("NOT a baby", "NOT a toddler", "NOT a child", "no pointed tips",
+                    "no elf ears", "no large ears", "no protruding ears",
+                    "no oversized head", "no chibi"):
+            self.assertNotIn(ban, text.split("belt dagger at hips,")[1],
+                             f"batch-8 block must not contain ban {ban!r}")
         self.assertNotRegex(text, r"(?i)shield")
         self.assertIn(f"character-bible/Sheets/Shade.pdf", sources)
         self.assertIn(SHADE_URL, sources)
