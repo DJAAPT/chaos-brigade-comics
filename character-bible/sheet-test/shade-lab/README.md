@@ -59,6 +59,12 @@ wording still the lever.
 Batch 7 vs 8 (same seeds, bans present vs stripped): batch 8 not worse,
 not much better — **bans retired as useless, not harmful; ban-free
 wording (batch-8 block) is the base going forward**.
+Batch 14 (final-wording survey, human verdict 2026-11-02): WAY better
+than where the lab started — keepers q02 (616724241), q07 (234877992),
+q13 (1395696223), q17 (1953674389), q19 (1947757209). 5 of 20 on
+strictly better base material than batch 9's 5.
+**Lab outcome: batch-13/14 block is Shade's pinned wording; approved
+seed pool is 777001 + the five batch-14 keepers.**
 
 **Locked base going forward (human, 2026-11-02): `shade_s2`, seed 777001 —
 best head proportions in every batch. Future Shade iterations run on this
