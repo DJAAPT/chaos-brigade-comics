@@ -1,0 +1,128 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Flux3 Klein"
+    },
+    "inputs": {
+      "unet_name": "flux3-image-klein-nvfp4.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Text encoder"
+    },
+    "inputs": {
+      "clip_name": "qwen3vl_4b_int8_convrot.safetensors",
+      "type": "flux3",
+      "device": "default"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "VAE"
+    },
+    "inputs": {
+      "vae_name": "flux2-vae.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Prompt verbatim from approved ref"
+    },
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "text": "solo full-body portrait of a single character, plain background Dwarven skin ranges from deep brown to a paler hue tinged with red, but the most common shades are light brown or deep tan, like certain tones of earth. Their hair, worn long but in simple styles, is usually black, gray, or brown, though paler dwarves often have red hair. Male dwarves value their beards highly and groom them carefully. Dwarves mature at the same rate as humans, but they’re considered young until they reach the age of 50. On average, they live about 350 years. Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium. Basic Rules (2014) As a hill dwarf, you have keen senses, deep intuition, and remarkable resilience. The gold dwarves of Faerûn in their mighty southern kingdom are hill dwarves, as are the exiled Neidar and the debased Klar of Krynn in the Dragonlance setting. Hill Dwarf, Cleric 5, Soldier, Shield, Chain Mail, Handaxe, Mace, Backpack, Clothes, Common, Pouch, Holy Symbol, Obsidian Chunk, Biggins manor key, Bedroll, Mess Kit, Rations (1 day), Rope, Hempen (50 feet), Tinderbox, Torch, Waterskin, Obsidian Chunk, Biggins manor key, Handaxe, Mace, Unarmed Strike, You trained as a soldier on the island of Mintarn and joined a mer\u0002cenary company. You traveled to the city of Neverwinter with your company to serve in both the army and city watch. Over time, you grew disillusioned with many of your fellow soldiers. They seemed to enjoy their authority at the expense of the people they’re supposed to protect. \n\nRecently you’ve had dreams of a shadow creeping across the sea like a shroud, swallowing an island in darkness. Though you dismissed the dreams at first, you began to hear a voice calling you to stand against death’s endless hunger. Certain of your deity’s wishes, you resigned your post and set out on your quest."
+    }
+  },
+  "5": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Negative (unused)"
+    },
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "text": ""
+    }
+  },
+  "8": {
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "Sample"
+    },
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "seed": 424242,
+      "steps": 15,
+      "cfg": 1.0,
+      "sampler_name": "er_sde",
+      "scheduler": "simple",
+      "positive": [
+        "4",
+        0
+      ],
+      "negative": [
+        "5",
+        0
+      ],
+      "latent_image": [
+        "13",
+        0
+      ],
+      "denoise": 1.0
+    }
+  },
+  "13": {
+    "class_type": "EmptyFlux2LatentImage",
+    "_meta": {
+      "title": "1344x768"
+    },
+    "inputs": {
+      "width": 1344,
+      "height": 768,
+      "batch_size": 1
+    }
+  },
+  "9": {
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "Decode"
+    },
+    "inputs": {
+      "samples": [
+        "8",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "10": {
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save"
+    },
+    "inputs": {
+      "images": [
+        "9",
+        0
+      ],
+      "filename_prefix": "sheettest_gulgrim"
+    }
+  }
+}
