@@ -32,13 +32,14 @@ ARM_B_BLOCK = (
     "gold jewelry, NO wings, sharply pointed canines, a thick tiefling tail behind him, "
     "exactly two arms"
 )
-# Batch 9: solid-not-glowing eyes — batch-8 verdict pins the finish fault
-# while keeping the bible-approved purple hue
-BATCH9_BLOCK = (
+# Batch 10: matte finish — batch-9 verdict shows the glow surviving as
+# purple spill onto the face around the eye, so the finish needs a
+# positive matte word, not just the absence of "glowing"
+BATCH10_BLOCK = (
     "adult male tiefling warlock, warm bronze-tan skin with a faint red cast, "
     "long curly black hair, goatee, large curved horns rising from the crown of his "
-    "skull with bases buried deep in his thick curly hair, solid purple eyes with "
-    "no visible sclera or pupil, male facial features, dark blue/gold robes, "
+    "skull with bases buried deep in his thick curly hair, solid matte purple eyes "
+    "with no visible sclera or pupil, male facial features, dark blue/gold robes, "
     "gold jewelry, NO wings, sharply pointed canines, "
     "a thick tiefling tail behind him, exactly two arms"
 )
@@ -53,7 +54,7 @@ class TestKeechwahLabDescriptions(unittest.TestCase):
 
     def test_baseline_block_is_arm_b_verbatim(self):
         text, sources = self.load_block()
-        self.assertEqual(text, BATCH9_BLOCK, "batch-9 block must carry solid-not-glowing eyes")
+        self.assertEqual(text, BATCH10_BLOCK, "batch-10 block must carry the matte eye finish")
         self.assertNotIn("glowing", text, "glow must be gone from the eyes")
         self.assertIn("character-bible/Sheets/Keechwah.pdf", sources)
         self.assertIn(KEECHWAH_URL, sources)

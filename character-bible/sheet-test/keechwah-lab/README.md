@@ -21,6 +21,7 @@ overwrite — every generation snapshots to `batches/batch<N>/` with its
 | batch7 | Burial made explicit from the gallery ref: `rising from the crown of his skull with bases buried deep in his thick curly hair` (keepers r10/r13 won by accident of this; rest of ref look NOT adopted) | same k01–k04 |
 | batch8 | 20-seed survey on the batch-7 block (master list seed 20261106, disjoint from all prior) — keeper/horn read | keechwah_r01–r20 |
 | batch9 | Solid-not-glowing eyes: `glowing purple` → `solid purple eyes with no visible sclera or pupil`, hue kept (canon fix, batch-8 keepers r07/r10) | same k01–k04 |
+| batch10 | Matte finish: batch-9 verdict showed the glow surviving as purple spill onto the face, so `matte` joins as a positive finish word | same k01–k04 |
 
 ## Verdicts
 
@@ -28,6 +29,21 @@ overwrite — every generation snapshots to `batches/batch<N>/` with its
   really good. Two defects: horns look tacked-on rather than grown, and
   the red still needs to go lighter. Batch 4 takes skin first, horns next
   (one variable per batch).
+- Batch 4 (human verdict): better, k03 still a little too red — reads
+  seed-specific, not wording. Skin locked at the bronze-tan cast.
+- Batch 5 (human verdict 2026-11-02): k03 has the best horns of the batch
+  (seed 777001 again), rest look off — wording proven on one seed, survey
+  next for hit rate + keepers.
+- Batch 6 (human verdict): keepers r10 (seed 1342234658) + r13 — won by
+  burying the horns in the hair; gallery ref confirms the mechanism.
+- Batch 8 (human verdict 2026-11-02): keepers r07 (1743082206) + r10
+  (106986660). New defect: eyes must read solid single-color, NOT
+  glowing — normal eye shape, one color, no sclera/pupil split (canon).
+  Batch 9 fixes the finish, keeps the hue.
+- Batch 9 (human verdict 2026-11-02): k03 best overall (eyes + decent
+  horns); k02 liked but the glow survives as purple spill onto the face
+  around the eye, not in the eye itself; k01/k04 horns bad. Batch 10
+  targets the finish with `matte`.
 - Batch 4 (human verdict): better, k03 still a little too red — reads
   seed-specific, not wording. Skin locked at the bronze-tan cast.
 - Batch 5 (human verdict 2026-11-02): k03 has the best horns of the batch
