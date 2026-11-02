@@ -42,7 +42,7 @@ Gear: Holy Symbol + Biggins manor key (plot item), Mason's tools. Soldier backgr
 Default expression: steadfast and resolute — stern veteran soldier-cleric, no smile.
 
 ### Chip — Male Human Druid (Josh)
-`adult male human druid, wild long white hair and white beard, green/brown fur garb, holding wooden staff (HE holds it, never Vadania)`
+`adult male human druid, brown skin, wild long white hair and white beard, brown eyes, green/brown fur garb, holding wooden staff (HE holds it, never Vadania)`
 NEVER: give staff to Vadania, merge with Vadania, bat on shoulder (Celeste rarely pictured), brown hair or beard (canon is white per sheet).
 Expression: awkward observer — blurts insults without thinking, last to speak. Prop: his quarterstaff has the crystal Star Map slotted into it (Circle of the Stars).
 
