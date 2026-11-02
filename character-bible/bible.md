@@ -97,6 +97,9 @@ Non-visual canon for direction, dialogue, and props. Sheet-vs-gallery conflicts 
 - **Rocketcandy**: Paladin 5, Human, Noble (lost Corlinn Hill — erased by Mount Hotenow), Lawful Good, faith Bahamut, Oath of the Open Sea (Marine Layer, Fury of the Tides). +3 battleaxe, Plate +2, signet ring. Draconic, Dwarvish, Giant; Sentinel feat.
 - **Vadania**: Ranger 5, Wood Elf, Folk Hero, Neutral, Hunter (Horde Breaker), favored enemy Giants, favored terrain Mountain. Monster Hunter's Longbow +1, twin shortswords. Action over theory, blunt sincerity. Backstory: Night of Cinders (organized bandits burned his enclave, parents killed). Elvish, Giant; Woodcarver's Tools.
 
+## Scale reference (approved 2026-11-02, Flux3 Klein)
+`character-bible/approved_lineup_reference.png` — all six party members side by side with name placards. Use for relative heights in group panels: Shade (halfling, Small, ~3 ft) is clearly the smallest; Gulgrim (dwarf, Medium, ~4-5 ft) is short and stocky but a full head-plus taller than Shade; Chip (5'11"), Rocketcandy, Keechwah, and Vadania (6'2") stand tall together. Dwarf-taller-than-halfling is 5e canon (PHB: halflings ~3 ft, dwarves 4-5 ft), confirmed on both sheets (Shade Small, Gulgrim Medium) — never draw them the same height.
+
 ## Panel composition rules (anti-drift)
 - Max 4 named characters per image. Split crowds into 2 panels.
 - Name holders: `Chip holding wooden staff`, `Vadania holding longbow`, `Rocketcandy exactly two arms`.
