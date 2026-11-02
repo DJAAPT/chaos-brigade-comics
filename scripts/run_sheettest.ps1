@@ -5,14 +5,15 @@ param(
     [Alias('Host')]
     [string]$HostName = '10.13.37.88',
     [int]$Port = 8188,
-    [int]$TimeoutSec = 300
+    [int]$TimeoutSec = 300,
+    [string]$PromptsPath = 'character-bible/sheet-test/prompts.json',
+    [string]$ImgDir = 'character-bible/sheet-test/img',
+    [string]$WorkflowPrefix = 'sheettest_'
 )
 
 $ErrorActionPreference = 'Stop'
 $base = "http://${HostName}:${Port}"
 $wfDir = 'workflows'
-$imgDir = 'character-bible/sheet-test/img'
-$promptsPath = 'character-bible/sheet-test/prompts.json'
 
 $slugs = ((Get-Content $promptsPath -Raw | ConvertFrom-Json).PSObject.Properties.Name) | Sort-Object
 if ($slugs.Count -ne 6) {
@@ -35,7 +36,7 @@ try {
 New-Item -ItemType Directory -Force -Path $imgDir | Out-Null
 
 foreach ($slug in $slugs) {
-    $wfPath = Join-Path $wfDir "sheettest_$slug.json"
+    $wfPath = Join-Path $wfDir "$WorkflowPrefix$slug.json"
     if (-not (Test-Path $wfPath)) { Write-Host "FAILED ${slug}: missing $wfPath"; exit 1 }
     $graph = Get-Content $wfPath -Raw | ConvertFrom-Json
     $body = @{ prompt = $graph; client_id = "sheet-test-$slug" } | ConvertTo-Json -Depth 64

@@ -96,7 +96,8 @@ class TestArmBPrompts(unittest.TestCase):
             self.assertEqual(entry["seed"], 424242)
             self.assertEqual(entry["frame"], FRAME)
             self.assertTrue(entry["prompt"].startswith(FRAME + " " + ADDENDUM), f"{slug} frame/addendum order")
-            self.assertIsNone(entry["output"])
+            # null before a run, the recorded path after (the runner fills it)
+            self.assertIn(entry["output"], (None, f"img/{slug}.png"), f"{slug} output not null-or-recorded")
             self.assertEqual(entry["workflow"], "workflows/base_flux3.json")
 
     def test_prompt_is_exact_composition(self):
