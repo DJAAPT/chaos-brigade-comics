@@ -12,10 +12,10 @@ Global suffix (append to EVERY prompt):
 ## LOCKED PROMPT CHUNKS (copy verbatim)
 
 ### Shade — Male Halfling Rogue (St3v3D/David). Young adult halfling man, NOT child, NOT elderly.
-`young adult halfling man, mid-20s, mature adult face, lean build, messy shaggy dark brown hair, light stubble, no beard, warm brown eyes, guarded watchful expression, human ears with rounded lobes, worn dark linen shirt with rolled sleeves, scuffed brown leather vest, belt dagger at hips`
-Approved identity ref (2026-11-01): `character-bible/approved_shade_reference.png` — copy this face for any new Shade portrait; other gallery refs show pointed ears or wrong builds, face is secondary to this one.
-NEVER: child, boy, teen, elderly, gray hair, white hair, beard, wrinkles, pointed ears, elf ears, hobbit feet, bare feet, blond hair, big friendly smile by default.
-Default expression: guarded, watchful, quietly assessing — keep-to-himself thief, not the outgoing one.
+`young adult halfling man, mid-20s, mature adult face, lean build, messy shaggy dark brown hair falling over and covering his ears, ears small and rounded beneath it, light stubble, no beard, warm brown eyes, subtle sly closed-mouth expression, worn dark linen shirt with rolled sleeves, scuffed brown leather vest, belt dagger at hips`
+Approved identity ref (2026-11-01, Flux3 Klein): `character-bible/approved_shade_reference.png` — copy this face for any new Shade portrait; other gallery refs show pointed ears or wrong builds, face is secondary to this one.
+NEVER: child, boy, teen, elderly, gray hair, white hair, beard, wrinkles, pointed ears, elf ears, large ears, protruding ears, hobbit feet, bare feet, blond hair, big friendly smile by default.
+Default expression: lips sealed closed with a barely perceptible asymmetric lift on one side, sly knowing gleam in his eyes — subtle mischief, never a full smile or grin. Keep-to-himself thief, not the outgoing one.
 Guild mark: geometric diamond tattoo (gallery/Objects/The_Tattoo.png) on forearm — include only when plot-relevant.
 
 ### Rocketcandy — Male Human Paladin (Andrew). Former Neverwinter nobility.
