@@ -1,0 +1,128 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Flux3 Klein"
+    },
+    "inputs": {
+      "unet_name": "flux3-image-klein-nvfp4.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Text encoder"
+    },
+    "inputs": {
+      "clip_name": "qwen3vl_4b_int8_convrot.safetensors",
+      "type": "flux3",
+      "device": "default"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "VAE"
+    },
+    "inputs": {
+      "vae_name": "flux2-vae.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Prompt verbatim from approved ref"
+    },
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "text": "solo full-body portrait of a single character, plain background With their unearthly grace and fine features, elves appear hauntingly beautiful to humans and members of many other races. They are slightly shorter than humans on average, ranging from well under 5 feet tall to just over 6 feet. They are more slender than humans, weighing only 100 to 145 pounds. Males and females are about the same height, and males are only marginally heavier than females. Elves’ coloration encompasses the normal human range and also includes skin in shades of copper, bronze, and almost bluish-white, hair of green or blue, and eyes like pools of liquid gold or silver. Elves have no facial and little body hair. They favor elegant clothing in bright colors, and they enjoy simple yet lovely jewelry. Although elves reach physical maturity at about the same age as humans, the elven understanding of adulthood goes beyond physical growth to encompass worldly experience. An elf typically claims adulthood and an adult name around the age of 100 and can live to be 750 years old. Elves range from under 5 to over 6 feet tall and have slender builds. Your size is Medium. As a wood elf, you have keen senses and intuition, and your fleet feet carry you quickly and stealthily through your native forests. Wood elves’ skin tends to be copperish in hue, sometimes with traces of green. Their hair tends toward browns and blacks, but it is occasionally blond or copper-colored. Their eyes are green, brown, or hazel. Wood Elf, Ranger 5, Folk Hero, Monster Hunter’s Longbow, +1, Leather, Shortsword, Arrows, Backpack, Clothes, Common, Pot, Iron, Pouch, Shovel, Potion of Healing, Obsidian, Key from dragon, anti-toxin, Wheel lever, Bedroll, Mess Kit, Rations (1 day), Rope, Hempen (50 feet), Tinderbox, Torch, Waterskin, Woodcarver's Tools, Pearl, Shortsword, Wood elves’ skin tends to be copperish in hue, sometimes with traces of green. Their hair tends toward browns and blacks, but it is occasionally blond or copper-colored. Their eyes are green, brown, or hazel. (boilerplate), Early Life — The Greenwood Son \nVadania was born beneath the emerald canopy of an ancient forest settlement known as Tel’Quessiriel, a quiet wood elf enclave hidden where the trees grow impossibly tall, and the light falls in soft green-gold shafts. The Amakiir family were wardens of the outer glades — not nobles, not warriors of renown, but trusted guardians of the balance between civilization and wild. \nHis mother, Lethariel, was a healer who spoke to plants as if they were old friends. \nHis father, Thalion Amakiir, taught Vadania how to read broken twigs like pages in a book. \n\nFrom childhood, Vadania preferred the hush of the wild to village chatter. He could track deer before he could braid his own hair. By 40 (barely adolescence for an elf), he could loose two arrows before most could draw one. \n\nHe believed his life would always be this simple: \n\t•\tGuard the borders. \n\t•\tProtect the herd paths. \n\t•\tReturn home to warm lamplight and laughter. \n\nHe was wrong. \n\nThe Night of Cinders \nThe bandits did not come like fools crashing through the brush.  They came guided.  Someone knew the old paths. Someone knew the watch rotations. Someone knew where the alarm glyphs were weakest.  Vadania was on the western ridge when the first smoke rose. \nBy the time he returned, the village was ash and screaming. These were not starving highwaymen — they carried alchemist’s fire, iron nets, and silvered blades. They hunted elves specifically. \n\nHe found he father among the fallen, still clutching a snapped bowstring. His mother’s healing satchel lay torn and blood-soaked.  Vadania survived because he was away.  That truth claws at he still., Sincerity. There’s no good in pretending to be something I’m not., I wish my childhood sweetheart had come with me to pursue my destiny., I’m convinced of the significance of my destiny, and blind to my shortcomings and the risk of failure."
+    }
+  },
+  "5": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Negative (unused)"
+    },
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "text": ""
+    }
+  },
+  "8": {
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "Sample"
+    },
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "seed": 424242,
+      "steps": 15,
+      "cfg": 1.0,
+      "sampler_name": "er_sde",
+      "scheduler": "simple",
+      "positive": [
+        "4",
+        0
+      ],
+      "negative": [
+        "5",
+        0
+      ],
+      "latent_image": [
+        "13",
+        0
+      ],
+      "denoise": 1.0
+    }
+  },
+  "13": {
+    "class_type": "EmptyFlux2LatentImage",
+    "_meta": {
+      "title": "1344x768"
+    },
+    "inputs": {
+      "width": 1344,
+      "height": 768,
+      "batch_size": 1
+    }
+  },
+  "9": {
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "Decode"
+    },
+    "inputs": {
+      "samples": [
+        "8",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "10": {
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save"
+    },
+    "inputs": {
+      "images": [
+        "9",
+        0
+      ],
+      "filename_prefix": "sheettest_vadania"
+    }
+  }
+}

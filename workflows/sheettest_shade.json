@@ -1,0 +1,128 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Flux3 Klein"
+    },
+    "inputs": {
+      "unet_name": "flux3-image-klein-nvfp4.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Text encoder"
+    },
+    "inputs": {
+      "clip_name": "qwen3vl_4b_int8_convrot.safetensors",
+      "type": "flux3",
+      "device": "default"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "VAE"
+    },
+    "inputs": {
+      "vae_name": "flux2-vae.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Prompt verbatim from approved ref"
+    },
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "text": "solo full-body portrait of a single character, plain background The diminutive halflings survive in a world full of larger creatures by avoiding notice or, barring that, avoiding offense. Standing about 3 feet tall, they appear relatively harmless and so have managed to survive for centuries in the shadow of empires and on the edges of wars and political strife. They are inclined to be stout, weighing between 40 and 45 pounds. Halflings’ skin ranges from tan to pale with a ruddy cast, and their hair is usually brown or sandy brown and wavy. They have brown or hazel eyes. Halfling men often sport long sideburns, but beards are rare among them and mustaches even more so. They like to wear simple, comfortable, and practical clothes, favoring bright colors. Halfling practicality extends beyond their clothing. They’re concerned with basic needs and simple pleasures and have little use for ostentation. Even the wealthiest of halflings keep their treasures locked in a cellar rather than on display for all to see. They have a knack for finding the most straightforward solution to a problem, and have little patience for dithering. A halfling reaches adulthood at the age of 20 and generally lives into the middle of his or her second century. Halflings average about 3 feet tall and weigh about 40 pounds. Your size is Small. Halfling, Rogue 5, Criminal, Potion of Healing (Greater), Shortbow, +2, Potion of Healing, Cloak of Distant Shadows, Leather, Boots of Elvenkind, turquoise stones, Windspore mushroom, Empty potion bottle, sewing kit, 1 yard black fabric, 3 yard 1\" minitar leather strap, black thread, green thread, ruby powder, Dagger, Shortbow, Shortsword, Bullseye Lantern, Thieves' Tools, Rapier, Pearl, Bottle, Glass, Very Normal Rock, Blank Form, Chicken Feathers, Shovel-Related Documentation, Very Important Letter, Suspicious Note, Dagger, Rapier, Shortbow, +2, Shortsword, Born in a quiet halfling village, you were always too curious for your own good. Locks were puzzles to be solved, and secrets were treasures to be uncovered. That curiosity eventually led you into the city’s underbelly, where you learned the arts of disguise, deception, and the quick hand of a thief. For a time, you worked as a spy-for-hire, slipping through shadows and gathering secrets for coin. But after a job went wrong — a mark discovered, a friend betrayed, a secret stolen too well — you had to disappear. Now you travel under a new name, smiling and joking like the world’s on your side, but always watching from the corner of the room. Whether your past will catch up to you or not is uncertain, but until then, you’re content to slip through the world as the party’s unseen shadow."
+    }
+  },
+  "5": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Negative (unused)"
+    },
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "text": ""
+    }
+  },
+  "8": {
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "Sample"
+    },
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "seed": 424242,
+      "steps": 15,
+      "cfg": 1.0,
+      "sampler_name": "er_sde",
+      "scheduler": "simple",
+      "positive": [
+        "4",
+        0
+      ],
+      "negative": [
+        "5",
+        0
+      ],
+      "latent_image": [
+        "13",
+        0
+      ],
+      "denoise": 1.0
+    }
+  },
+  "13": {
+    "class_type": "EmptyFlux2LatentImage",
+    "_meta": {
+      "title": "1344x768"
+    },
+    "inputs": {
+      "width": 1344,
+      "height": 768,
+      "batch_size": 1
+    }
+  },
+  "9": {
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "Decode"
+    },
+    "inputs": {
+      "samples": [
+        "8",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "10": {
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save"
+    },
+    "inputs": {
+      "images": [
+        "9",
+        0
+      ],
+      "filename_prefix": "sheettest_shade"
+    }
+  }
+}
