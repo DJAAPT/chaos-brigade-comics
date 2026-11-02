@@ -33,16 +33,15 @@ ARM_B_BLOCK = (
     "gold jewelry, NO wings, sharply pointed canines, a thick tiefling tail behind him, "
     "exactly two arms"
 )
-# Batch 14: horn posture — batch-13 verdict splits the defects (k01 splayed
-# wide, k04 oversized). Posture is word-addressable, size is not (canon says
-# "large"), so upright side-by-side goes in; k04's size is seed noise unless
-# it recurs under the new posture.
-BATCH14_BLOCK = (
+# Batch 16: geometry over anatomy — batch-15 verdict says horns are done
+# but eyes need work everywhere. Stop asking for eyes (which trigger the
+# sclera/pupil/glow machinery) and ask for spheres in the sockets instead.
+BATCH16_BLOCK = (
     "adult male tiefling warlock, warm bronze-tan skin with a faint red cast, "
     "long curly black hair, goatee, large curved bronze-brown horns rising upright "
     "side by side from the crown of his skull with bases buried deep in his thick "
-    "curly hair, solid matte purple eyes with no visible sclera or pupil, "
-    "male facial features, dark blue/gold robes, gold jewelry, NO wings, "
+    "curly hair, solid matte purple spheres instead of eyes with no visible sclera "
+    "or pupil, male facial features, dark blue/gold robes, gold jewelry, NO wings, "
     "sharply pointed canines, a thick tiefling tail behind him, exactly two arms"
 )
 
@@ -56,7 +55,7 @@ class TestKeechwahLabDescriptions(unittest.TestCase):
 
     def test_baseline_block_is_arm_b_verbatim(self):
         text, sources = self.load_block()
-        self.assertEqual(text, BATCH14_BLOCK, "batch-14 block must carry upright side-by-side horns")
+        self.assertEqual(text, BATCH16_BLOCK, "batch-16 block must carry spheres-instead-of-eyes")
         self.assertIn("character-bible/Sheets/Keechwah.pdf", sources)
         self.assertIn(KEECHWAH_URL, sources)
         self.assertTrue(any("bible.md locked chunks" in s for s in sources))
@@ -70,13 +69,13 @@ class TestKeechwahLabPrompts(unittest.TestCase):
 
     def test_lab_prompts_schema(self):
         prompts = self.load_prompts()
-        self.assertEqual(list(prompts), BATCH15_KEYS, "lab keys must be the batch-15 survey ladder in order")
+        self.assertEqual(list(prompts), KEYS, "lab keys must be the four-key ladder in order")
         text, _ = TestKeechwahLabDescriptions().load_block()
-        for i, key in enumerate(BATCH15_KEYS):
+        for i, key in enumerate(KEYS):
             entry = prompts[key]
             self.assertEqual(list(entry.keys()), PROMPT_KEYS, f"{key} key mismatch")
             self.assertEqual(entry["arm"], "C")
-            self.assertEqual(entry["seed"], BATCH15_SEEDS[i], f"{key} seed mismatch")
+            self.assertEqual(entry["seed"], SEEDS[i], f"{key} seed mismatch")
             self.assertEqual(entry["frame"], FRAME_C)
             self.assertEqual(entry["prompt"], f"{FRAME_C} {ADDENDUM} {text}", f"{key} not exact composition")
             self.assertIn(entry["output"], (None, f"img/{key}.png"))
@@ -87,9 +86,9 @@ class TestKeechwahLabPrompts(unittest.TestCase):
 
         stems = [os.path.splitext(os.path.basename(p))[0] for p in _glob.glob("workflows/keechwahlab_*.json")]
         found = {s.removeprefix("keechwahlab_") for s in stems}
-        self.assertEqual(found, set(BATCH15_KEYS), f"lab workflow set mismatch: {found}")
+        self.assertEqual(found, set(KEYS), f"lab workflow set mismatch: {found}")
         prompts = self.load_prompts()
-        for key in BATCH15_KEYS:
+        for key in KEYS:
             with open(f"workflows/keechwahlab_{key}.json", encoding="utf-8") as f:
                 g = json.load(f)
             seeds = [n["inputs"][k] for n in g.values() for k in ("seed", "noise_seed") if k in n.get("inputs", {})]
