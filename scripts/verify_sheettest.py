@@ -26,16 +26,16 @@ def parse_ihdr(path: str) -> tuple:
     return struct.unpack(">II", header[16:24])
 
 
-def problems(prompts: dict, img_dir: str) -> list:
+def problems(prompts: dict, img_dir: str, roster: tuple = ROSTER) -> list:
     """Every reason this run is not complete (empty list == COMPLETE)."""
     found = []
-    if set(prompts) != set(ROSTER):
-        missing = sorted(set(ROSTER) - set(prompts))
-        extra = sorted(set(prompts) - set(ROSTER))
+    if set(prompts) != set(roster):
+        missing = sorted(set(roster) - set(prompts))
+        extra = sorted(set(prompts) - set(roster))
         found.append(f"roster mismatch — missing: {missing or 'none'}, unexpected: {extra or 'none'}")
         return found
 
-    for slug in ROSTER:
+    for slug in roster:
         output = prompts[slug].get("output")
         expected = f"img/{slug}.png"
         if not output:
@@ -58,21 +58,26 @@ def problems(prompts: dict, img_dir: str) -> list:
     return found
 
 
-def complete(prompts: dict, img_dir: str) -> bool:
-    """True only for the full six-character run with correct recorded PNGs."""
-    return not problems(prompts, img_dir)
+def complete(prompts: dict, img_dir: str, roster: tuple = ROSTER) -> bool:
+    """True only for a full run of the given roster with correct recorded PNGs."""
+    return not problems(prompts, img_dir, roster=roster)
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--prompts", required=True)
     parser.add_argument("--img", required=True)
+    parser.add_argument(
+        "--roster", nargs="*", default=None,
+        help="expected slugs (default: the six arm characters)",
+    )
     args = parser.parse_args()
 
     with open(args.prompts, encoding="utf-8") as f:
         prompts = json.load(f)
+    roster = tuple(args.roster) if args.roster else ROSTER
 
-    issues = problems(prompts, args.img)
+    issues = problems(prompts, args.img, roster=roster)
     if issues:
         print("INCOMPLETE")
         for line in issues:
@@ -81,7 +86,7 @@ def main() -> None:
 
     print("COMPLETE")
     print(f"{'character':<14} {'output':<24} {'dims':<10}")
-    for slug in ROSTER:
+    for slug in roster:
         path = os.path.join(args.img, os.path.basename(prompts[slug]["output"]))
         w, h = parse_ihdr(path)
         print(f"{slug:<14} {prompts[slug]['output']:<24} {w}x{h}")

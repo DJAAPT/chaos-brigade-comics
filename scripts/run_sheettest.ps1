@@ -16,8 +16,8 @@ $base = "http://${HostName}:${Port}"
 $wfDir = 'workflows'
 
 $slugs = ((Get-Content $promptsPath -Raw | ConvertFrom-Json).PSObject.Properties.Name) | Sort-Object
-if ($slugs.Count -ne 6) {
-    Write-Host "FAILED setup: expected 6 characters in prompts.json, found $($slugs.Count)"
+if ($slugs.Count -lt 1) {
+    Write-Host "FAILED setup: no characters found in $PromptsPath"
     exit 1
 }
 

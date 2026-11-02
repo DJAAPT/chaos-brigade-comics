@@ -15,7 +15,7 @@ SEED = 424242
 SENTINEL = "{{PROMPT}}"
 
 
-def build_one(base, prompt, slug, prefix="sheettest_"):
+def build_one(base, prompt, slug, prefix="sheettest_", seed=SEED):
     graph = copy.deepcopy(base)
 
     prompt_nodes = [
@@ -38,7 +38,7 @@ def build_one(base, prompt, slug, prefix="sheettest_"):
         inputs = node.get("inputs", {})
         for key in ("seed", "noise_seed"):
             if key in inputs:
-                inputs[key] = SEED
+                inputs[key] = seed
     return graph
 
 
@@ -57,7 +57,7 @@ def main():
 
     os.makedirs(args.out_dir, exist_ok=True)
     for slug in sorted(prompts):
-        graph = build_one(base, prompts[slug]["prompt"], slug, prefix=args.prefix)
+        graph = build_one(base, prompts[slug]["prompt"], slug, prefix=args.prefix, seed=prompts[slug].get("seed", SEED))
         out_path = os.path.join(args.out_dir, f"{args.prefix}{slug}.json")
         with open(out_path, "w", encoding="utf-8") as f:
             json.dump(graph, f, indent=2, ensure_ascii=False)

@@ -113,6 +113,26 @@ class TestVerifySheettest(ImportGuard):
             make_png(os.path.join(tmp, "biggins.png"))
             self.assertFalse(mod.complete(prompts, tmp), "roster other than the six must never be complete")
 
+    def test_default_roster_unchanged(self):
+        # without an explicit roster, a four-entry lab-shaped run must NOT certify
+        mod = self.import_module("scripts.verify_sheettest", "scripts/verify_sheettest.py")
+        with tempfile.TemporaryDirectory() as tmp:
+            four = {f"shade_s{i}": {"output": f"img/shade_s{i}.png"} for i in range(4)}
+            for i in range(4):
+                make_png(os.path.join(tmp, f"shade_s{i}.png"))
+            self.assertFalse(mod.complete(four, tmp), "default roster must stay the exact six")
+
+    def test_custom_roster_gates_lab(self):
+        mod = self.import_module("scripts.verify_sheettest", "scripts/verify_sheettest.py")
+        roster = tuple(f"shade_s{i}" for i in range(4))
+        with tempfile.TemporaryDirectory() as tmp:
+            prompts = {f"shade_s{i}": {"output": f"img/shade_s{i}.png"} for i in range(4)}
+            for i in range(4):
+                make_png(os.path.join(tmp, f"shade_s{i}.png"))
+            self.assertTrue(mod.complete(prompts, tmp, roster=roster), "lab roster should certify a full lab run")
+            prompts["shade_s2"]["output"] = None
+            self.assertFalse(mod.complete(prompts, tmp, roster=roster), "missing output must fail lab gate")
+
     def test_complete_rejects_shared_output(self):
         mod = self.import_module("scripts.verify_sheettest", "scripts/verify_sheettest.py")
         with tempfile.TemporaryDirectory() as tmp:

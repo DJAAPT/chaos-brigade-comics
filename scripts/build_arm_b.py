@@ -14,6 +14,10 @@ import sys
 from datetime import datetime, timezone
 
 FRAME = "solo full-body portrait of a single character, plain background"
+FRAME_C = (
+    "solo full-body portrait of a single character, head-to-toe full body with feet visible "
+    "and empty space above the head, stationary camera at a fixed distance, plain background"
+)
 ADDENDUM = "standing neutral pose, both arms clearly visible, no shield, nothing held across the body"
 UNet_NAME = "flux3-image-klein-nvfp4.safetensors"
 WORKFLOW = "workflows/base_flux3.json"
