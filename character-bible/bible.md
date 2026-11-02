@@ -77,7 +77,7 @@ Behavior (transcript canon): coiled stillness — moves effortlessly, appraising
 
 ### Apothecary owner (S1 hooded figure) — NOT Biggins
 `kindly older gentleman, gray beard, dark hooded cloak, cob pipe` — fun-loving shopkeeper who owns a local apothecary. Keep distinct from Biggins.
-Three separate people (user canon 2026-11-03): this hooded gentleman ≠ the Colorful Creations owner (P5.5) ≠ Thumba (the proprietor's contact). Do not merge them.
+Two apothecaries in Neverwinter (transcript canon, user-confirmed 2026-11-03): this hooded gentleman ≠ Thumba, proprietor of Colorful Creations (Chip's favor-holder, theme-music quest giver). The proprietor's "find Thumba" contact and the P5.5 owner are the SAME man. Spelling: Thumba.
 
 ### Lady Filvenar — IS Lilly in disguise (Session 1, user canon)
 `adult woman, fire-red hair in a Celtic-knot braid to mid-back, gray eyes, pirate shirt + tight corset, trousers, ready stance — same face as Lilly (curly red hair, freckles)`
