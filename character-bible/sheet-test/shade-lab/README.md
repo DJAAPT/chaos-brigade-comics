@@ -29,7 +29,9 @@ despite facial hair — identity language fixed age on 3/4, size on 2/4.
 Batch 5 `shade_s2` (seed 777001): head size AND ears both good — **lab
 winner and locked base**. All other seeds still show oversized ears;
 s3 (314159) bad in every batch — retired as a hostile seed, not a
-wording signal.
+wording signal. Batch 6 (frozen batch-5 wording, new S1 seeds): heads
+better on all of s2/s4/s5/s6, still slightly large on s4–s6 but far
+from the old giant-head failures — wording generalizes; ears still open.
 
 **Locked base going forward (human, 2026-11-02): `shade_s2`, seed 777001 —
 best head proportions in every batch. Future Shade iterations run on this
