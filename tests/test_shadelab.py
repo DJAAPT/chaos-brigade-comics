@@ -12,9 +12,10 @@ LAB_PROMPTS = os.path.join(LAB_DIR, "prompts.json")
 LAB_WORKFLOW_DIR = "workflows"
 SEEDS = [424242, 424243, 777001, 314159]
 KEYS = [f"shade_s{i}" for i in range(4)]
-# Batch 10 ladder: merged Gemini additions on the batch-6 seeds
-BATCH10_KEYS = ["shade_s2", "shade_s4", "shade_s5", "shade_s6"]
-BATCH10_SEEDS = [777001, 1857761984156622644, 6120004243239096470, 8620240391160718909]
+# Batch 11 ladder: ear-silence test on the batch-6 seeds (same keys as
+# batches 6/7/8/10 for direct wording-only comparison)
+BATCH11_KEYS = ["shade_s2", "shade_s4", "shade_s5", "shade_s6"]
+BATCH11_SEEDS = [777001, 1857761984156622644, 6120004243239096470, 8620240391160718909]
 SHADE_URL = RACE_URL[SLUG_RACE["shade"]]
 SHADE_CHUNK = (
     "young adult halfling man, mid-20s, mature adult face, lean build, messy shaggy dark brown "
@@ -23,12 +24,11 @@ SHADE_CHUNK = (
     "rolled sleeves, scuffed brown leather vest, belt dagger at hips"
 )
 SCALED_CLAUSE = (
-    "full-size adult human features scaled down uniformly, exactly the same head-to-body and "
-    "ear-to-head proportions as a full-size grown man, he is a full-grown man who happens to "
+    "full-size adult human features scaled down uniformly, exactly the same head-to-body "
+    "proportions as a full-size grown man, he is a full-grown man who happens to "
     "stand three feet tall, enlarged to six feet he would be indistinguishable from an ordinary "
-    "human man, small adult head, small standard human ears lying completely flat against the "
-    "skull tucked beneath his hair below eye level, zero ear flair, small skull structure, "
-    "sleek adult facial proportions"
+    "human man, small adult head, thick shaggy hair covering the sides of his head completely, "
+    "small skull structure, sleek adult facial proportions"
 )
 
 
@@ -52,6 +52,11 @@ class TestShadeLabDescriptions(unittest.TestCase):
         self.assertIn("warm tan skin with a ruddy cast", text, "batch-10 species skin missing")
         self.assertIn("long sideburns", text, "batch-10 species sideburns missing")
         self.assertLess(text.index(SHADE_CHUNK), text.index("warm tan skin"))
+        # batch 11 ear-silence: the added clause must not name ears at all —
+        # only the locked chunk may mention them (verbatim contract)
+        post_chunk = text.split("belt dagger at hips,")[1]
+        self.assertNotRegex(post_chunk, r"(?i)ear",
+                            "batch-11 added text must be ear-silent")
         # batch 8 verdict stands: no ban words in the added clause (chunk's
         # "no beard" + addendum's "no shield" stay: verbatim + frame contract)
         for ban in ("NOT a baby", "NOT a toddler", "NOT a child", "no pointed tips",
@@ -80,13 +85,13 @@ class TestShadeLabPrompts(unittest.TestCase):
 
     def test_lab_prompts_schema(self):
         prompts = self.load_prompts()
-        self.assertEqual(list(prompts), BATCH10_KEYS, "lab keys must be the batch-10 ladder in order")
+        self.assertEqual(list(prompts), BATCH11_KEYS, "lab keys must be the batch-11 ladder in order")
         _, sources = TestShadeLabDescriptions().load_block()
-        for i, key in enumerate(BATCH10_KEYS):
+        for i, key in enumerate(BATCH11_KEYS):
             entry = prompts[key]
             self.assertEqual(list(entry.keys()), PROMPT_KEYS, f"{key} key mismatch")
             self.assertEqual(entry["arm"], "C")
-            self.assertEqual(entry["seed"], BATCH10_SEEDS[i], f"{key} seed mismatch")
+            self.assertEqual(entry["seed"], BATCH11_SEEDS[i], f"{key} seed mismatch")
             self.assertEqual(entry["frame"], FRAME_C)
             self.assertTrue(entry["prompt"].startswith(FRAME_C + " " + ADDENDUM), f"{key} frame/addendum order")
             self.assertIn(entry["output"], (None, f"img/{key}.png"), f"{key} output not null-or-recorded")
@@ -152,9 +157,9 @@ class TestShadeLabPrompts(unittest.TestCase):
 
         stems = [os.path.splitext(os.path.basename(p))[0] for p in _glob.glob("workflows/shadelab_*.json")]
         found = {s.removeprefix("shadelab_") for s in stems}
-        self.assertEqual(found, set(BATCH10_KEYS), f"lab workflow set mismatch: {found}")
+        self.assertEqual(found, set(BATCH11_KEYS), f"lab workflow set mismatch: {found}")
         prompts = self.load_prompts() if os.path.exists(LAB_PROMPTS) else None
-        for key in BATCH10_KEYS:
+        for key in BATCH11_KEYS:
             with open(f"workflows/shadelab_{key}.json", encoding="utf-8") as f:
                 g = json.load(f)
             seeds = [n["inputs"][k] for n in g.values() for k in ("seed", "noise_seed") if k in n.get("inputs", {})]
