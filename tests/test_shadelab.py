@@ -26,9 +26,10 @@ SCALED_CLAUSE = (
     "full-size adult human features scaled down uniformly, exactly the same head-to-body and "
     "ear-to-head proportions as a full-size grown man, he is a full-grown man who happens to "
     "stand three feet tall, enlarged to six feet he would be indistinguishable from an ordinary "
-    "human man, small adult head, small rounded human ears mostly tucked "
-    "under his hair, lying flat against the sides of his head below eye level, no pointed tips, "
-    "no elf ears, no large ears, no protruding ears, no oversized head, no chibi or doll-like proportions"
+    "human man, small adult head, small low-profile human ears pinned flat against the skull, "
+    "tucked beneath his hair below eye level, zero ear flair, small skull structure, sleek adult "
+    "facial proportions, no pointed tips, no elf ears, no large ears, no protruding ears, "
+    "no oversized head, no chibi or doll-like proportions"
 )
 
 
