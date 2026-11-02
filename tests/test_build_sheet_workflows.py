@@ -45,6 +45,28 @@ class TestBuildSheetWorkflows(unittest.TestCase):
         saves = [n for n in graph.values() if n["class_type"] == "SaveImage"]
         self.assertEqual(saves[0]["inputs"]["filename_prefix"], "sheettest_b_shade")
 
+    def test_round1_defaults_untouched(self):
+        # The default CLI must reproduce round-1 workflows byte-for-byte in a
+        # temp dir (filenames, prefixes, and graph content all identical).
+        import subprocess
+        import sys
+        import tempfile
+
+        with tempfile.TemporaryDirectory() as tmp:
+            proc = subprocess.run(
+                [sys.executable, "scripts/build_sheet_workflows.py",
+                 "--base", BASE, "--prompts", "character-bible/sheet-test/prompts.json",
+                 "--out-dir", tmp],
+                capture_output=True, text=True,
+            )
+            self.assertEqual(proc.returncode, 0, proc.stderr)
+            for slug in SLUGS:
+                produced = os.path.join(tmp, f"sheettest_{slug}.json")
+                committed = os.path.join("workflows", f"sheettest_{slug}.json")
+                self.assertTrue(os.path.exists(produced), f"missing {produced}")
+                with open(produced, "rb") as a, open(committed, "rb") as b:
+                    self.assertEqual(a.read(), b.read(), f"{slug} default output differs from committed round-1")
+
     def test_prompt_swap_and_untouched_graph(self):
         files = glob.glob("workflows/sheettest_*.json")
         self.assertTrue(files, "no sheettest_*.json workflow files (run build_sheet_workflows first)")

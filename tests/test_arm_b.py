@@ -3,35 +3,11 @@ import os
 import re
 import unittest
 
+from scripts.build_arm_b import parse_descriptions
 from tests.test_build_sheet_bible import MECHANICS_RE, RACE_URL, SLUG_RACE
 
 DESCRIPTIONS = "character-bible/sheet-test/arm_b/descriptions.md"
 SLUGS = {"chip", "gulgrim", "keechwah", "rocketcandy", "shade", "vadania"}
-
-
-def parse_descriptions(path):
-    """Return {slug: {"name": str, "text": str, "sources": [str]}} from the
-    authored markdown: '## Name (slug)' heading, one paragraph, Sources block."""
-    with open(path, encoding="utf-8") as f:
-        raw = f.read()
-    blocks = {}
-    sections = re.split(r"(?=^## )", raw, flags=re.M)
-    for section in sections:
-        lines = section.splitlines()
-        if not lines:
-            continue
-        m = re.match(r"^## (.+) \((\w+)\)$", lines[0].rstrip("\r"))
-        if not m:
-            continue
-        name, slug = m.group(1), m.group(2)
-        body = "\n".join(lines[1:])
-        if "Sources:" in body:
-            text_part, sources_part = body.split("Sources:", 1)
-        else:
-            text_part, sources_part = body, ""
-        sources = [ln.strip()[2:].strip() for ln in sources_part.splitlines() if ln.strip().startswith("- ")]
-        blocks[slug] = {"name": name, "text": text_part.strip(), "sources": sources}
-    return blocks
 
 
 class TestArmBDescriptions(unittest.TestCase):
@@ -65,8 +41,41 @@ class TestArmBDescriptions(unittest.TestCase):
         self.assertRegex(shade, r"(?i)adult", "shade must say adult")
         self.assertRegex(shade, r"(?i)not a child", "shade must carry the NOT a child win")
         self.assertRegex(blocks["keechwah"]["text"], r"(?i)no wings", "keechwah must carry NO wings")
+        self.assertRegex(blocks["vadania"]["text"], r"(?i)not female", "vadania must carry the NOT female win")
         for slug, block in blocks.items():
             self.assertRegex(block["text"], r"(?i)exactly two arms", f"{slug} missing exactly two arms")
+
+    def test_locked_chunks_verbatim(self):
+        # Plan Task 1: locked chunks are copied verbatim (the sole approved
+        # edit is Gulgrim's shield removal under the newer composition rule).
+        expected = {
+            "shade": "young adult halfling man, mid-20s, mature adult face, lean build, messy shaggy dark brown hair falling over and covering his ears, ears small and rounded beneath it, light stubble, no beard, warm brown eyes, subtle sly closed-mouth expression, worn dark linen shirt with rolled sleeves, scuffed brown leather vest, belt dagger at hips",
+            "rocketcandy": "adult male human paladin, short brown hair light stubble, shining plate armor with gold phoenix/eagle crest on chest, red cape, exactly two arms",
+            "keechwah": "adult male tiefling warlock, deep red skin, long curly black hair, goatee, large curved horns, glowing purple eyes, male facial features, dark blue/gold robes, gold jewelry, NO wings",
+            "gulgrim": "adult male hill dwarf cleric, short stocky, broad long white beard, heavy furs, frost-covered boots, warhammer",
+            "chip": "adult male human druid, wild long white hair and white beard, green/brown fur garb, holding wooden staff (HE holds it, never Vadania)",
+            "vadania": "adult male wood elf ranger, long brown hair, green eyes, pointed ears, masculine jaw stubble, green cloak, longbow on back, short swords at hips, scar on shoulder",
+        }
+        blocks = self.load_blocks()
+        for slug, chunk in expected.items():
+            self.assertIn(chunk, blocks[slug]["text"], f"{slug} locked chunk not present verbatim")
+        # Gulgrim specifically: the chunk appears minus exactly the shield segment
+        self.assertNotIn("large round shield with holy rune", blocks["gulgrim"]["text"])
+
+    def test_production_parser_and_builder(self):
+        # suite must exercise the real parser and entry builder, not test copies
+        from scripts.build_arm_b import ADDENDUM, FRAME, PROMPT_KEYS, build_entry
+
+        blocks = parse_descriptions(DESCRIPTIONS)
+        self.assertEqual(set(blocks), SLUGS)
+        for slug, block in blocks.items():
+            self.assertTrue(block["text"], f"{slug} production parser got empty text")
+        dummy = {"unet_name": "flux3-image-klein-nvfp4.safetensors", "sha256": "0" * 64}
+        entry = build_entry("keechwah", blocks["keechwah"], dummy, "T")
+        self.assertEqual(list(entry.keys()), PROMPT_KEYS)
+        self.assertTrue(entry["prompt"].startswith(f"{FRAME} {ADDENDUM} {blocks['keechwah']['text']}"))
+        self.assertEqual(entry["arm"], "B")
+        self.assertEqual(entry["seed"], 424242)
 
     def test_no_mechanics(self):
         for slug, block in self.load_blocks().items():
