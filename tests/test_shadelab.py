@@ -12,9 +12,12 @@ LAB_PROMPTS = os.path.join(LAB_DIR, "prompts.json")
 LAB_WORKFLOW_DIR = "workflows"
 SEEDS = [424242, 424243, 777001, 314159]
 KEYS = [f"shade_s{i}" for i in range(4)]
-# Batch 6 ladder: s2 control seed + three historic S1 panel seeds
-BATCH6_KEYS = ["shade_s2", "shade_s4", "shade_s5", "shade_s6"]
-BATCH6_SEEDS = [777001, 1857761984156622644, 6120004243239096470, 8620240391160718909]
+# Batch 9 ladder: 20-survey on the ban-free block (master seed 20261102)
+BATCH9_KEYS = [f"shade_r{i:02d}" for i in range(1, 21)]
+BATCH9_SEEDS = [284920717, 1619979211, 684665718, 522379440, 1780856183, 191971356,
+                871689552, 1740595775, 2005224150, 827958609, 799737179, 1750063048,
+                1900491461, 1391358387, 855812662, 237019732, 370738426, 443338883,
+                316535662, 16309065]
 SHADE_URL = RACE_URL[SLUG_RACE["shade"]]
 SHADE_CHUNK = (
     "young adult halfling man, mid-20s, mature adult face, lean build, messy shaggy dark brown "
@@ -76,13 +79,13 @@ class TestShadeLabPrompts(unittest.TestCase):
 
     def test_lab_prompts_schema(self):
         prompts = self.load_prompts()
-        self.assertEqual(list(prompts), BATCH6_KEYS, "lab keys must be the batch-6 ladder in order")
+        self.assertEqual(list(prompts), BATCH9_KEYS, "lab keys must be the batch-9 survey ladder in order")
         _, sources = TestShadeLabDescriptions().load_block()
-        for i, key in enumerate(BATCH6_KEYS):
+        for i, key in enumerate(BATCH9_KEYS):
             entry = prompts[key]
             self.assertEqual(list(entry.keys()), PROMPT_KEYS, f"{key} key mismatch")
             self.assertEqual(entry["arm"], "C")
-            self.assertEqual(entry["seed"], BATCH6_SEEDS[i], f"{key} seed mismatch")
+            self.assertEqual(entry["seed"], BATCH9_SEEDS[i], f"{key} seed mismatch")
             self.assertEqual(entry["frame"], FRAME_C)
             self.assertTrue(entry["prompt"].startswith(FRAME_C + " " + ADDENDUM), f"{key} frame/addendum order")
             self.assertIn(entry["output"], (None, f"img/{key}.png"), f"{key} output not null-or-recorded")
@@ -148,9 +151,9 @@ class TestShadeLabPrompts(unittest.TestCase):
 
         stems = [os.path.splitext(os.path.basename(p))[0] for p in _glob.glob("workflows/shadelab_*.json")]
         found = {s.removeprefix("shadelab_") for s in stems}
-        self.assertEqual(found, set(BATCH6_KEYS), f"lab workflow set mismatch: {found}")
+        self.assertEqual(found, set(BATCH9_KEYS), f"lab workflow set mismatch: {found}")
         prompts = self.load_prompts() if os.path.exists(LAB_PROMPTS) else None
-        for key in BATCH6_KEYS:
+        for key in BATCH9_KEYS:
             with open(f"workflows/shadelab_{key}.json", encoding="utf-8") as f:
                 g = json.load(f)
             seeds = [n["inputs"][k] for n in g.values() for k in ("seed", "noise_seed") if k in n.get("inputs", {})]

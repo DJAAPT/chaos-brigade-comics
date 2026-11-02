@@ -20,6 +20,7 @@ the batch commit); only the latest set lives in `workflows/`.
 | batch6 | _(this commit)_ | Seed generalization, wording frozen at batch 5: s2 control (777001) + three historic S1 seeds; s2 re-render hash-identical to batch 5 = pipeline deterministic | shade_s2, shade_s4/5/6 (1857761984156622644, 6120004243239096470, 8620240391160718909) |
 | batch7 | _(this commit)_ | Ear-anatomy positives from the Gemini consult (pinned-flat skull, zero flair, small skull, sleek proportions), bans KEPT — isolates the new positives | same s2/s4/s5/s6 |
 | batch8 | _(this commit)_ | Ban-strip test of Gemini's backfire claim: block-level NOT/no bans removed (chunk "no beard" + addendum "no shield" stay: verbatim + frame contract) — decisive pair vs batch 7, same seeds | same s2/s4/s5/s6 |
+| batch9 | _(this commit)_ | 20-seed survey on the ban-free block (master list seed 20261102): hit-rate read on the best wording so far | shade_r01–r20 (fixed random list in `tests/test_shadelab.py`) |
 
 Human verdicts so far: batch 2 `shade_s2` closest on head size; ears still
 sticking out through batch 3. Batch 4: explicit 1:7 ratio changed nothing —
@@ -34,6 +35,9 @@ s3 (314159) bad in every batch — retired as a hostile seed, not a
 wording signal. Batch 6 (frozen batch-5 wording, new S1 seeds): heads
 better on all of s2/s4/s5/s6, still slightly large on s4–s6 but far
 from the old giant-head failures — wording generalizes; ears still open.
+Batch 9 survey (20 random seeds, ban-free block): keepers are r07, r08,
+r09, r11, r14 — 5 of 20 close to the target. Hit rate is real but low;
+wording still the lever.
 Batch 7 vs 8 (same seeds, bans present vs stripped): batch 8 not worse,
 not much better — **bans retired as useless, not harmful; ban-free
 wording (batch-8 block) is the base going forward**.
