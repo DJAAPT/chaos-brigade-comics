@@ -21,7 +21,10 @@ the batch commit); only the latest set lives in `workflows/`.
 Human verdicts so far: batch 2 `shade_s2` closest on head size; ears still
 sticking out through batch 3. Batch 4: explicit 1:7 ratio changed nothing —
 s2 still the only correct head size (s3 terrible) — numeric ratios don't
-move this model; head-size wins remain seed lottery so far.
+move this model; head-size wins remain seed lottery so far. Batch 5
+(identity + anti-baby bans): s1 AND s2 both good head sizes, s0's age
+reads much better (head still large), s3 still HUGE head + toddler
+despite facial hair — identity language fixed age on 3/4, size on 2/4.
 
 **Locked base going forward (human, 2026-11-02): `shade_s2`, seed 777001 —
 best head proportions in every batch. Future Shade iterations run on this
