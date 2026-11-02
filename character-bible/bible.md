@@ -18,27 +18,32 @@ NEVER: child, boy, teen, elderly, gray hair, white hair, beard, wrinkles, pointe
 Default expression: lips sealed closed with a barely perceptible asymmetric lift on one side, sly knowing gleam in his eyes — subtle mischief, never a full smile or grin. Keep-to-himself thief, not the outgoing one.
 Guild mark: geometric diamond tattoo (gallery/Objects/The_Tattoo.png) on forearm — include only when plot-relevant.
 
-### Rocketcandy — Male Human Paladin (Andrew). Former Neverwinter nobility.
+### Rocketcandy — Male Human Paladin (Andrew). Lost nobility of Corlinn Hill (Neverwinter county), raised in Waterdeep, inherits only a title.
 `adult male human paladin, short brown hair light stubble, shining plate armor with gold phoenix/eagle crest on chest, red cape, exactly two arms`
 Refs: gallery/Scenes/City_Guards.png is CORRUPT guard look-alike — do NOT copy its helm/plume for Rocketcandy except crest shape. Gallery/Objects/Rocketcandy_Plot_Armor.png = his armor ref — use it.
 NEVER: extra arms, female, modern clothes.
+Weapon: +3 battleaxe (signature — sheet + transcript axe-to-face). Faith: Bahamut. Oath of the Open Sea. Props: signet ring, holy symbol.
 
 ### Keechwah — Male Tiefling Warlock (Aaron). MALE, no wings.
 `adult male tiefling warlock, deep red skin, long curly black hair, goatee, large curved horns, glowing purple eyes, male facial features, dark blue/gold robes, gold jewelry, NO wings`
 Refs: gallery/Scenes/Keechwah_and_Lilly_bonding.png (face, hair, jewelry locked), Verruth_and_Keechwah_make_a_deal.png (blue-hair variant = younger? use black-hair as canon unless flashback).
 NEVER: female, wings, hooves, female chest, duplicate Keechwahs. Keechwah has NO wings — Verruth (below) HAS wings, do not mix.
+Expression: loves a good mystery, convinced people are trying to steal his secrets. Props when plot-relevant: orb arcane focus, lute (Battle of the Bards), Book of Shadows.
 
 ### Gulgrim Frozenboots — Male Hill Dwarf Cleric (James)
 `adult male hill dwarf cleric, short stocky, broad long white beard, heavy furs, frost-covered boots, large round shield with holy rune, warhammer`
 NEVER: tall, thin, no-beard.
+Gear: Holy Symbol + Biggins manor key (plot item), Mason's tools. Soldier background (Mintarn → Neverwinter watch, quit over corruption). Faith: Marthammor Du. Warhammer is canon (user decision — sheet's mace ignored).
 
 ### Chip — Male Human Druid (Josh)
-`adult male human druid, wild long brown hair and beard, green/brown fur garb, holding wooden staff (HE holds it, never Vadania)`
-NEVER: give staff to Vadania, merge with Vadania, bat on shoulder (Celeste rarely pictured).
+`adult male human druid, wild long white hair and white beard, green/brown fur garb, holding wooden staff (HE holds it, never Vadania)`
+NEVER: give staff to Vadania, merge with Vadania, bat on shoulder (Celeste rarely pictured), brown hair or beard (canon is white per sheet).
+Expression: awkward observer — blurts insults without thinking, last to speak. Prop: his quarterstaff has the crystal Star Map slotted into it (Circle of the Stars).
 
 ### Vadania Amakiir — Male Wood Elf Ranger (Derek)
-`adult male wood elf ranger, long blonde hair, pointed ears, masculine jaw stubble, green cloak, longbow on back, short swords at hips, scar on shoulder`
-NEVER: female, dress, long blonde woman in green (that is a misrender — re-roll), duplicate Vadania as barmaid.
+`adult male wood elf ranger, long brown hair, green eyes, pointed ears, masculine jaw stubble, green cloak, longbow on back, short swords at hips, scar on shoulder`
+NEVER: female, dress, blonde hair (canon is brown per sheet — user decision 2026-11-01), long blonde woman in green (that is a misrender — re-roll), duplicate Vadania as barmaid.
+Expression: action over theory, blunt and sincere, follows through. Weapon: Monster Hunter's Longbow +1 (ornate named longbow) + twin shortswords.
 
 ### Lilly — Adult woman early 20s (NOT a child)
 `adult young woman early 20s, curly voluminous red hair, freckles, white ruffled shirt, red corset laced gold, cream skirt, brown boots, thigh dagger + rapier with mother-of-pearl handle`
@@ -72,6 +77,15 @@ Corrupt: `ornate helm with red plume, red cape, gold phoenix crest, geometric di
 
 ### Marigold / Sammy
 Marigold: female innkeeper, warm, tray. Sammy: adult male cook in apron, menu/label in hand, loud. NEVER gender-swap Sammy, NEVER make Lilly the screamer in S1P3.
+
+## Party sheet facts (canon — character-bible/Sheets/*.pdf, user-approved 2026-11-01)
+Non-visual canon for direction, dialogue, and props. Sheet-vs-gallery conflicts resolved by user: Chip white hair (sheet wins), Gulgrim warhammer (bible wins over sheet's mace), Vadania brown hair + green eyes (sheet wins over gallery blonde), Rocketcandy nobility precision adopted.
+- **Shade**: Rogue 5, Halfling, Criminal, Small. Custom nonchalant (DEX) skill; Thieves' Cant, Common Sign Language, Undercommon; Disguise Kit + Thieves' Tools. Spy-for-hire past — "the party's unseen shadow."
+- **Chip**: Druid 5, Human, Sage, age 35, 5'11", brown eyes. Circle of the Stars, master astronomer. Awkward observer who blurts insults, last to speak. Druidic, Elvish, Gnomish, Goblin; Herbalism Kit. Wild shapes: warhorse, giant weasel, frog, giant goat, giant seahorse, cat.
+- **Gulgrim**: Cleric 5, Hill Dwarf, Soldier (Mintarn island → Neverwinter city watch, quit over corruption), Life Domain, faith Marthammor Du, Neutral Good. Carries Holy Symbol + Biggins manor key (plot item). Mason's tools, playing cards; Dwarvish, Elvish, Goblin.
+- **Keechwah**: Warlock 5, Tiefling, Sage, Chaotic Neutral, patron The Fiend, Pact of the Tome (Book of Shadows). Sold his soul for knowledge; loves mysteries, paranoid about secrets. Orb focus + lute. Infernal, Giant, Elvish; reads all writing, telepathic.
+- **Rocketcandy**: Paladin 5, Human, Noble (lost Corlinn Hill — erased by Mount Hotenow), Lawful Good, faith Bahamut, Oath of the Open Sea (Marine Layer, Fury of the Tides). +3 battleaxe, Plate +2, signet ring. Draconic, Dwarvish, Giant; Sentinel feat.
+- **Vadania**: Ranger 5, Wood Elf, Folk Hero, Neutral, Hunter (Horde Breaker), favored enemy Giants, favored terrain Mountain. Monster Hunter's Longbow +1, twin shortswords. Action over theory, blunt sincerity. Backstory: Night of Cinders (organized bandits burned his enclave, parents killed). Elvish, Giant; Woodcarver's Tools.
 
 ## Panel composition rules (anti-drift)
 - Max 4 named characters per image. Split crowds into 2 panels.
