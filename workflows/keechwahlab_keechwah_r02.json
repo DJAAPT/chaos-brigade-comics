@@ -39,7 +39,7 @@
         "2",
         0
       ],
-      "text": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body adult male tiefling warlock, dark bronze skin with a deep red undertone, long curly black hair, goatee, large curved horns, glowing purple eyes, male facial features, dark blue/gold robes, gold jewelry, NO wings, sharply pointed canines, a thick tiefling tail behind him, exactly two arms"
+      "text": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body adult male tiefling warlock, warm bronze-tan skin with a faint red cast, long curly black hair, goatee, large curved horns growing naturally from his temples and emerging through his hair, glowing purple eyes, male facial features, dark blue/gold robes, gold jewelry, NO wings, sharply pointed canines, a thick tiefling tail behind him, exactly two arms"
     }
   },
   "5": {
@@ -65,7 +65,7 @@
         "1",
         0
       ],
-      "seed": 1387151110,
+      "seed": 648655267,
       "steps": 15,
       "cfg": 1.0,
       "sampler_name": "er_sde",
