@@ -40,7 +40,12 @@ batches of adjectives, placement, ratios, and bans. Agent review of
 batch 12: ears stay tucked in all four (no sideways protrusions); but
 s2/s4/s6 now read as full-size men — smallness did NOT survive the
 silence except on s5, which reads short-statured adult (closest to a
-halfling yet). The species word was load-bearing for scale after all.**
+halfling yet). The species word was load-bearing for scale after all.
+Batch 13 (halfling restored, ears silent): smallness back on s4/s5/s6
+(3 of 4 read short); ears show only small side nubs on s4/s5, nothing
+like the old protrusions — the word buys far more scale than it costs
+in ears. Only s2 still reads full-size. **Lab conclusion: batch-13
+block is Shade's pinned base wording.****
 Batch 5 `shade_s2` (seed 777001): head size AND ears both good — **lab
 winner and locked base**. All other seeds still show oversized ears;
 s3 (314159) bad in every batch — retired as a hostile seed, not a
