@@ -34,6 +34,9 @@ s3 (314159) bad in every batch — retired as a hostile seed, not a
 wording signal. Batch 6 (frozen batch-5 wording, new S1 seeds): heads
 better on all of s2/s4/s5/s6, still slightly large on s4–s6 but far
 from the old giant-head failures — wording generalizes; ears still open.
+Batch 7 vs 8 (same seeds, bans present vs stripped): batch 8 not worse,
+not much better — **bans retired as useless, not harmful; ban-free
+wording (batch-8 block) is the base going forward**.
 
 **Locked base going forward (human, 2026-11-02): `shade_s2`, seed 777001 —
 best head proportions in every batch. Future Shade iterations run on this
