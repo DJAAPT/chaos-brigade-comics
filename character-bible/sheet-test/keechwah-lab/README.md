@@ -15,7 +15,11 @@ overwrite — every generation snapshots to `batches/batch<N>/` with its
 | batch1 | Baseline: Arm B Keechwah block verbatim; k01 uses seed 424242 = byte-identical reproduction of Arm C's Keechwah (control) | keechwah_k01–k04 (424242, 424243, 777001, 424244) |
 | batch2 | Human-first skin per DDB's own ordering: `deep red skin` → `dark bronze skin with a deep red undertone` (batch 1 read full-demon) | same k01–k04 |
 | batch3 | 20-seed survey on the batch-2 block (master list seed 20261104, disjoint from all prior) — keeper/feature read | keechwah_r01–r20 |
+| batch4 | One step lighter still: `warm bronze-tan skin with a faint red cast` (batch 3 verdict: all tiefling, none great; horns tacked-on, red still heavy) | same k01–k04 |
 
 ## Verdicts
 
-- (pending batch-1 review)
+- Batch 3 (human verdict 2026-11-02): all twenty read as tiefling, none
+  really good. Two defects: horns look tacked-on rather than grown, and
+  the red still needs to go lighter. Batch 4 takes skin first, horns next
+  (one variable per batch).

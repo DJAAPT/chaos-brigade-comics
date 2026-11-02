@@ -25,10 +25,9 @@ ARM_B_BLOCK = (
     "gold jewelry, NO wings, sharply pointed canines, a thick tiefling tail behind him, "
     "exactly two arms"
 )
-# Batch 2: human-first skin per DDB's own ordering (human range first, red
-# shades second) — "deep red" rendered full-demon in batch 1
-BATCH2_BLOCK = ARM_B_BLOCK.replace(
-    "deep red skin", "dark bronze skin with a deep red undertone", 1
+# Batch 4: one step lighter still (batch 2 held, batch 3 says go lighter)
+BATCH4_BLOCK = ARM_B_BLOCK.replace(
+    "deep red skin", "warm bronze-tan skin with a faint red cast", 1
 )
 
 
@@ -41,8 +40,9 @@ class TestKeechwahLabDescriptions(unittest.TestCase):
 
     def test_baseline_block_is_arm_b_verbatim(self):
         text, sources = self.load_block()
-        self.assertEqual(text, BATCH2_BLOCK, "batch-2 block must be Arm B with the human-first skin swap")
-        self.assertNotIn("deep red skin", text, "batch 1's full-demon red must be gone")
+        self.assertEqual(text, BATCH4_BLOCK, "batch-4 block must be Arm B with the lighter skin swap")
+        self.assertNotIn("deep red skin", text, "full-demon red must be gone")
+        self.assertNotIn("deep red undertone", text, "batch-2 undertone superseded by the lighter cast")
         self.assertIn("character-bible/Sheets/Keechwah.pdf", sources)
         self.assertIn(KEECHWAH_URL, sources)
         self.assertTrue(any("bible.md locked chunks" in s for s in sources))
@@ -56,13 +56,13 @@ class TestKeechwahLabPrompts(unittest.TestCase):
 
     def test_lab_prompts_schema(self):
         prompts = self.load_prompts()
-        self.assertEqual(list(prompts), BATCH3_KEYS, "lab keys must be the batch-3 survey ladder in order")
+        self.assertEqual(list(prompts), KEYS, "lab keys must be the four-key ladder in order")
         text, _ = TestKeechwahLabDescriptions().load_block()
-        for i, key in enumerate(BATCH3_KEYS):
+        for i, key in enumerate(KEYS):
             entry = prompts[key]
             self.assertEqual(list(entry.keys()), PROMPT_KEYS, f"{key} key mismatch")
             self.assertEqual(entry["arm"], "C")
-            self.assertEqual(entry["seed"], BATCH3_SEEDS[i], f"{key} seed mismatch")
+            self.assertEqual(entry["seed"], SEEDS[i], f"{key} seed mismatch")
             self.assertEqual(entry["frame"], FRAME_C)
             self.assertEqual(entry["prompt"], f"{FRAME_C} {ADDENDUM} {text}", f"{key} not exact composition")
             self.assertIn(entry["output"], (None, f"img/{key}.png"))
@@ -73,9 +73,9 @@ class TestKeechwahLabPrompts(unittest.TestCase):
 
         stems = [os.path.splitext(os.path.basename(p))[0] for p in _glob.glob("workflows/keechwahlab_*.json")]
         found = {s.removeprefix("keechwahlab_") for s in stems}
-        self.assertEqual(found, set(BATCH3_KEYS), f"lab workflow set mismatch: {found}")
+        self.assertEqual(found, set(KEYS), f"lab workflow set mismatch: {found}")
         prompts = self.load_prompts()
-        for key in BATCH3_KEYS:
+        for key in KEYS:
             with open(f"workflows/keechwahlab_{key}.json", encoding="utf-8") as f:
                 g = json.load(f)
             seeds = [n["inputs"][k] for n in g.values() for k in ("seed", "noise_seed") if k in n.get("inputs", {})]
