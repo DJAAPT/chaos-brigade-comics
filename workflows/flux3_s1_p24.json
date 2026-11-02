@@ -1,0 +1,128 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Flux3 Klein"
+    },
+    "inputs": {
+      "unet_name": "flux3-image-klein-nvfp4.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Text encoder"
+    },
+    "inputs": {
+      "clip_name": "qwen3vl_4b_int8_convrot.safetensors",
+      "type": "flux3",
+      "device": "default"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "VAE"
+    },
+    "inputs": {
+      "vae_name": "flux2-vae.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Prompt verbatim from approved ref"
+    },
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "text": "cinematic fantasy film still, tavern doorway bursting open with motion: six adventurers hurrying out of Marigolds Inn, all six must be visible with Shade the short halfling prominent at the front left (Shade: short halfling rogue man, a fully grown adult man in his mid-20s with a mature masculine jaw and light stubble despite his 3-foot stature, clearly an adult not a child, messy dark brown hair, brown leather vest, subtle sly closed-mouth expression; Rocketcandy: human paladin man with short brown hair in plate armor with gold phoenix crest and red cape; Keechwah: male tiefling with deep red skin, long curly BLACK hair and large curved horns, wearing dark blue robes with gold trim covering his torso, fully robed, no bare chest; Gulgrim: short bald dwarf cleric with long white beard and heavy furs; Chip: tall human druid man with brown skin and long white hair; Vadania: MALE wood elf ranger with long brown hair, masculine stubble and green cloak), Marigold the short halfling innkeeper barely 3 feet tall, clearly half the height of the adventurers, waving goodbye in the doorway, empty mugs left on a table inside, a male cook in apron (Sammy) noticing from the kitchen, warm indoor light spilling into daylight, no duplicates, no conflation, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+    }
+  },
+  "5": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Negative (unused)"
+    },
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "text": ""
+    }
+  },
+  "8": {
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "Sample"
+    },
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "seed": 1857761984156622644,
+      "steps": 15,
+      "cfg": 1.0,
+      "sampler_name": "er_sde",
+      "scheduler": "simple",
+      "positive": [
+        "4",
+        0
+      ],
+      "negative": [
+        "5",
+        0
+      ],
+      "latent_image": [
+        "13",
+        0
+      ],
+      "denoise": 1.0
+    }
+  },
+  "13": {
+    "class_type": "EmptyFlux2LatentImage",
+    "_meta": {
+      "title": "1344x768"
+    },
+    "inputs": {
+      "width": 1344,
+      "height": 768,
+      "batch_size": 1
+    }
+  },
+  "9": {
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "Decode"
+    },
+    "inputs": {
+      "samples": [
+        "8",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "10": {
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save"
+    },
+    "inputs": {
+      "images": [
+        "9",
+        0
+      ],
+      "filename_prefix": "flux3_s1_p24"
+    }
+  }
+}
