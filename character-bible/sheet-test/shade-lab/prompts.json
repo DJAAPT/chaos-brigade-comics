@@ -13,8 +13,8 @@
       "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
     },
     "workflow": "workflows/base_flux3.json",
-    "output": null,
-    "timestamp": "2026-11-02T13:49:47+00:00"
+    "output": "img/shade_s0.png",
+    "timestamp": "2026-11-02T13:51:24Z"
   },
   "shade_s1": {
     "character": "shade_s1",
@@ -30,8 +30,8 @@
       "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
     },
     "workflow": "workflows/base_flux3.json",
-    "output": null,
-    "timestamp": "2026-11-02T13:49:47+00:00"
+    "output": "img/shade_s1.png",
+    "timestamp": "2026-11-02T13:51:30Z"
   },
   "shade_s2": {
     "character": "shade_s2",
@@ -47,8 +47,8 @@
       "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
     },
     "workflow": "workflows/base_flux3.json",
-    "output": null,
-    "timestamp": "2026-11-02T13:49:47+00:00"
+    "output": "img/shade_s2.png",
+    "timestamp": "2026-11-02T13:51:35Z"
   },
   "shade_s3": {
     "character": "shade_s3",
@@ -64,7 +64,7 @@
       "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
     },
     "workflow": "workflows/base_flux3.json",
-    "output": null,
-    "timestamp": "2026-11-02T13:49:47+00:00"
+    "output": "img/shade_s3.png",
+    "timestamp": "2026-11-02T13:51:40Z"
   }
 }
