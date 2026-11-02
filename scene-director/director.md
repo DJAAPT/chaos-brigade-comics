@@ -20,6 +20,9 @@ Score each 10-min transcript chunk 0-3 on funny/epic/fail/plot. Keep chunks scor
 ## Prompt assembly
 `[global style] + [bible block for each character present] + [action] + [location] + [composition] + [no duplicates, exactly two arms, adult faces]`
 
+## Identity rule (standing — validated 2026-11-02 on Shade, portrait→docks)
+Panels condition on approved portraits, not prose alone. Base graph: `workflows/base_flux3_multiref.json` (Flux3 Klein rig + `ReferenceMultiLatent`, one `LoadImage` slot, prompt sentinel `{{PROMPT}}`). Per panel: copy the base, point `LoadImage` at each in-frame character's approved portrait (add `LoadImage` nodes + `images.imageN` links for casts >1), replace the sentinel with the assembled prompt, keep rig byte-identical. Text-only `base_flux3.json` remains for no-face detail shots (tattoos, signage) and creatures with no portrait. Validated: single-ref face carry confirmed; multi-ref (>1 portrait) still unproven — verify likeness per face before approving any multi-ref panel.
+
 Always append character-bible anti-conflation footer.
 Word colors onto the right noun: `deep red skin, black hair`, never `red tiefling` — a loose color migrates (red skin became red hair in P2.1 v2-v3).
 If any character, outfit, object, or scene detail needed for a panel has no bible entry: STOP and ask the user before generating — never invent (bible: "ASK, DON'T GUESS").
