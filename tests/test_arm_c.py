@@ -63,6 +63,30 @@ class TestArmCFraming(unittest.TestCase):
             remainder_c = prompts_c[slug]["prompt"][len(FRAME_C) + 1:]
             self.assertEqual(remainder_c, remainder_b, f"{slug} remainder differs from Arm B — blocks/addendum drifted")
 
+    def test_nondefault_cli_round_trip(self):
+        # the documented Arm C rebuild command (--frame + --arm C) must
+        # reproduce the committed arm_c/prompts.json (runtime fields exempt)
+        with tempfile.TemporaryDirectory() as tmp:
+            proc = subprocess.run(
+                [sys.executable, "scripts/build_arm_b.py",
+                 "--descriptions", DESCRIPTIONS,
+                 "--out-dir", tmp,
+                 "--model-path", MODEL_PATH,
+                 "--frame", FRAME_C,
+                 "--arm", "C"],
+                capture_output=True, text=True,
+            )
+            self.assertEqual(proc.returncode, 0, proc.stderr)
+            with open(os.path.join(tmp, "prompts.json"), encoding="utf-8") as f:
+                produced = json.load(f)
+        with open(PROMPTS_C, encoding="utf-8") as f:
+            committed = json.load(f)
+        for slug in committed:
+            a, b = dict(produced[slug]), dict(committed[slug])
+            for runtime in ("timestamp", "output"):
+                a.pop(runtime), b.pop(runtime)
+            self.assertEqual(a, b, f"{slug} nondefault CLI rebuild differs from committed Arm C")
+
     def test_default_build_matches_arm_b(self):
         # builder WITHOUT --frame must reproduce Arm B prompts (timestamp exempt)
         with tempfile.TemporaryDirectory() as tmp:
