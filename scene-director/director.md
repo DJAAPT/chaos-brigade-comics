@@ -30,6 +30,16 @@ Always log: session id, panel #, prompt, seed, model versions, output file.
 - SFX for fails: `CLANG`, `WHIFF`, `THUD`.
 - Store text in `sessions/<id>/panels.json` alongside images: `{panel, image, narration, quotes:[{who,text}]}`.
 
+## Readability rules (standing — approved 2026-11-02, apply to every session)
+Goal: a stranger who never played can follow the comic. Adapting D&D to graphic-novel form takes precedence over beat-for-beat fidelity.
+- **Prologue montage**: every session opens with one page — each hero gets a mini-panel with one journal/downtime line from the transcript. Uses approved portraits. Introduces the cast before the plot moves.
+- **Dramatis personae**: every session includes the approved lineup image (or its update) as a cast page. New recurring characters (Lilly, Biggins, Filvenar, Marigold, Sammy) join it once approved.
+- **Seed visual plot language early**: recurring visual motifs (guard wrist tattoos, uniform differences, star = leader) get an explicit close-up panel at FIRST mention in the transcript, not just at the reveal. Never rely on dialogue alone for a visual payoff.
+- **Split threads get banners**: whenever the party splits, each thread's panels carry a `Meanwhile...` banner (or location tag). Threads rejoin with a matching tag.
+- **Mechanics become flavor**: dice rolls render as small d20 result badges; VTT/tech-support talk, IRL tangents, and audio-glitch stretches are CUT, never paneled. Keep player-character banter and roast jokes — they're the comedy engine.
+- **Restructure beats for reading order**: panels may be reordered, combined, or added (e.g. establishing shots) versus transcript order when the transcript's order confuses. The transcript is the source of events and quotes, not the layout.
+- **Quote discipline**: every speech line must be traceable to a transcript line (trimmed <20 words is fine). Narration may bridge gaps in DM voice but never puts new facts in a character's mouth.
+
 ## Next: auto script
 `scripts/new-session.ps1 -SessionId <id>` does:
 1. read transcript, chunk, score (LLM or keyword + manual review for v1)
