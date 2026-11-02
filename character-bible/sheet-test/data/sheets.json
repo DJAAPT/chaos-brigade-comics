@@ -64,19 +64,10 @@
       "pocket dust",
       "powdered iron",
       "Oak Bark",
-      "Sprig of Mistletoe",
-      "pocket sand",
-      "Star Map, Crystal",
-      "pocket dust",
-      "powdered iron",
-      "Oak Bark"
+      "Sprig of Mistletoe"
     ],
     "weapons": [
-      "Druids  Quarterstaff",
-      "Starry Wisp",
-      "Ray of Frost",
-      "Shillelagh",
-      "Unarmed Strike"
+      "Druids  Quarterstaff"
     ]
   },
   "gulgrim": {
@@ -121,14 +112,11 @@
       "Rope, Hempen (50 feet)",
       "Tinderbox",
       "Torch",
-      "Waterskin",
-      "Obsidian Chunk",
-      "Biggins manor key"
+      "Waterskin"
     ],
     "weapons": [
       "Handaxe",
-      "Mace",
-      "Unarmed Strike"
+      "Mace"
     ]
   },
   "keechwah": {
@@ -170,7 +158,6 @@
       "Spell Scroll (Level 2)",
       "Leather",
       "Dagger",
-      "Dagger",
       "Handaxe",
       "Sickle",
       "Crossbow, Light",
@@ -182,8 +169,6 @@
       "Pearl",
       "Potion of Healing (Greater)",
       "Elixir of Health",
-      "Potion of Healing",
-      "Potion of Healing",
       "Lute",
       "Lightning Struck Wood",
       "Book",
@@ -191,17 +176,12 @@
       "Ink Pen",
       "Parchment (one sheet)",
       "Little Bag of Sand",
-      "Small Knife",
-      "Lute",
-      "Lightning Struck Wood"
+      "Small Knife"
     ],
     "weapons": [
       "Crossbow, Light",
       "Dagger",
-      "Handaxe",
-      "Chill Touch",
-      "Fire Bolt",
-      "Unarmed Strike"
+      "Handaxe"
     ]
   },
   "rocketcandy": {
@@ -246,27 +226,17 @@
       "Rations (1 day)",
       "Rope, Hempen (50 feet)",
       "Tinderbox",
-      "Torch",
       "Waterskin",
       "Potion of Healing (Greater)",
       "Potion of Lightning Resistance",
       "Potion of Healing",
       "Ruby Morel",
-      "Bedroll",
-      "Mess Kit",
-      "Rations (1 day)",
-      "Rope, Hempen (50 feet)",
-      "Tinderbox",
-      "Waterskin",
       "Bomb",
-      "Pearl",
-      "Wine Bottle",
-      "Ruby Morel"
+      "Pearl"
     ],
     "weapons": [
       "Battleaxe, +3",
-      "Javelin",
-      "Unarmed Strike"
+      "Javelin"
     ]
   },
   "shade": {
@@ -300,7 +270,6 @@
       "Potion of Healing",
       "Cloak of Distant Shadows",
       "Leather",
-      "1-pound silver bars",
       "Boots of Elvenkind",
       "turquoise stones",
       "Windspore mushroom",
@@ -319,17 +288,6 @@
       "Rapier",
       "Pearl",
       "Bottle, Glass",
-      "1-pound silver bars",
-      "Boots of Elvenkind",
-      "turquoise stones",
-      "Windspore mushroom",
-      "Empty potion bottle",
-      "sewing kit",
-      "1 yard black fabric",
-      "3 yard 1\" minitar leather strap",
-      "black thread",
-      "green thread",
-      "ruby powder",
       "Very Normal Rock",
       "Blank Form",
       "Chicken Feathers",
@@ -341,8 +299,7 @@
       "Dagger",
       "Rapier",
       "Shortbow, +2",
-      "Shortsword",
-      "Unarmed Strike"
+      "Shortsword"
     ]
   },
   "vadania": {
@@ -386,7 +343,6 @@
       "Monster Hunter’s Longbow, +1",
       "Leather",
       "Shortsword",
-      "Shortsword",
       "Arrows",
       "Backpack",
       "Clothes, Common",
@@ -400,23 +356,16 @@
       "Wheel lever",
       "Bedroll",
       "Mess Kit",
-      "Potion of Healing",
       "Rations (1 day)",
       "Rope, Hempen (50 feet)",
       "Tinderbox",
       "Torch",
       "Waterskin",
       "Woodcarver's Tools",
-      "Pearl",
-      "Obsidian",
-      "Key from dragon",
-      "anti-toxin",
-      "Wheel lever"
+      "Pearl"
     ],
     "weapons": [
-      "Shortsword",
-      "Shortsword",
-      "Unarmed Strike"
+      "Shortsword"
     ]
   }
 }

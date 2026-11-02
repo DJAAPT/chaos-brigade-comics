@@ -45,6 +45,35 @@ DESCRIPTION_FIELDS = {
 }
 EQ_RE = re.compile(r"Eq Name\d*\Z")
 WPN_RE = re.compile(r"Wpn Name ?\d*\Z")
+SPELL_FIELD_RE = re.compile(r"spellname", re.I)
+CURRENCY_RE = re.compile(
+    r"(?i)(^|,\s*)\s*[\d.]+\s*[- ]\s*pound\b|\b(silver|gold|copper|electrum|platinum)\s+(bars?|coins?|pieces?)\b"
+)
+DENY_EXACT = {"unarmed strike"}
+
+
+def is_visible_item(value, spells):
+    """Spec: worn/visible equipment only — no carried spell attacks, no currency.
+
+    `spells` is the character's own spellName field set (normalized lowercase);
+    an item is dropped when its value starts with one of those names at a
+    word boundary (kills cantrip attack rows like "Chill Touch").
+    """
+    lowered = value.lower().strip()
+    if lowered in DENY_EXACT:
+        return False
+    if CURRENCY_RE.search(value):
+        return False
+    for spell in spells:
+        if re.match(re.escape(spell) + r"\b", lowered):
+            return False
+    return True
+
+
+def dedupe(values):
+    """Order-preserving unique — the PDF repeats inventory pages under
+    restarted field numbering, which would otherwise duplicate entries."""
+    return list(dict.fromkeys(values))
 
 
 def iter_widget_fields(pdf_path):
@@ -119,6 +148,7 @@ def extract_pdf(pdf_path, corpus):
     descriptions = {}
     equipment = []
     weapons = []
+    spells = set()
 
     for name, value in iter_widget_fields(pdf_path):
         if name in SCALAR_FIELDS:
@@ -127,10 +157,17 @@ def extract_pdf(pdf_path, corpus):
             physical[PHYSICAL_FIELDS[name]] = value
         elif name in DESCRIPTION_FIELDS:
             descriptions[DESCRIPTION_FIELDS[name]] = value
+        elif SPELL_FIELD_RE.match(name):
+            spell = value.strip().lower().split(" [")[0].strip()
+            if spell:
+                spells.add(spell)
         elif EQ_RE.fullmatch(name):
             equipment.append(value)
         elif WPN_RE.fullmatch(name):
             weapons.append(value)
+
+    equipment = dedupe(v for v in equipment if is_visible_item(v, spells))
+    weapons = dedupe(v for v in weapons if is_visible_item(v, spells))
 
     entry = {key: scalars.get(key, NO_TEXT) for key in SCALAR_FIELDS.values()}
     entry["physical"] = {key: physical.get(key, NO_TEXT) for key in PHYSICAL_FIELDS.values()}
