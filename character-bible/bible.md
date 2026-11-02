@@ -1,12 +1,13 @@
 # Chaos Brigade — Character Bible v2 (2026-11-01, gallery-grounded)
 Approved look: `character-bible/approved_S1P1_reference.png` + `O:\ExternalSites\html\DND\gallery\`
 Rule: NEVER invent new faces. Copy these blocks verbatim. Max 3-4 named characters per panel. Solo shots for introductions, groups only when script demands.
+Rule: ASK, DON'T GUESS — if a panel needs a character, outfit, object, or scene detail with no entry in this bible, STOP and ask before generating. A generated guess becomes canon in later panels. Applies to me when directing scenes and to any automated pipeline step.
 
 ## Why drift happens (Flux text-only)
 Flux 2 has no identity memory between prompts. Every panel re-rolls faces. Fixes: (1) identical prompt chunks every time, (2) fewer people per frame, (3) sex/age/species stated first, (4) ban list appended always, (5) approve one solo portrait per character, reuse as visual ref for future IP-Adapter/ReActor pass.
 
 Global suffix (append to EVERY prompt):
-`adult faces, no children, no teens, exactly two arms per humanoid, single character each, no duplicates, no conflation, no extra heads, no wings unless noted, photorealistic, highly detailed`
+`adult faces, no children, no teens, no gray hair, no white hair, exactly two arms per humanoid, single character each, no duplicates, no conflation, no extra heads, no wings unless noted, photorealistic, highly detailed`
 
 ## LOCKED PROMPT CHUNKS (copy verbatim)
 
