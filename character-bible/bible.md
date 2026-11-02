@@ -1,99 +1,78 @@
-# Chaos Brigade — Character Bible v1 (locked 2026-11-01)
+# Chaos Brigade — Character Bible v2 (2026-11-01, gallery-grounded)
+Approved look: `character-bible/approved_S1P1_reference.png` + `O:\ExternalSites\html\DND\gallery\`
+Rule: NEVER invent new faces. Copy these blocks verbatim. Max 3-4 named characters per panel. Solo shots for introductions, groups only when script demands.
 
-Approved reference: `character-bible/approved_S1P1_reference.png` (S1P1 v7)
-Gallery refs: `O:\ExternalSites\html\DND\gallery\`
+## Why drift happens (Flux text-only)
+Flux 2 has no identity memory between prompts. Every panel re-rolls faces. Fixes: (1) identical prompt chunks every time, (2) fewer people per frame, (3) sex/age/species stated first, (4) ban list appended always, (5) approve one solo portrait per character, reuse as visual ref for future IP-Adapter/ReActor pass.
 
-## Global style
-cinematic fantasy film still, photorealistic, highly detailed adult faces, no duplicates, no conflation, exactly two arms per humanoid, six distinct characters unless noted.
+Global suffix (append to EVERY prompt):
+`adult faces, no children, no teens, exactly two arms per humanoid, single character each, no duplicates, no conflation, no extra heads, no wings unless noted, photorealistic, highly detailed`
 
-## Flux 2 pin (remote 10.13.37.88:8188)
-- Template base: `image_flux2_text_to_image`
-- VAE: `flux2-vae.safetensors`
-- CLIP: `mistral_3_small_flux2_fp8.safetensors`, type `flux2`
-- UNET: `flux2_dev_fp8mixed.safetensors`
-- Size panels: 1344x768 | portraits: 768x1344
-- Steps: 20, sampler euler, guidance 4.0
-- Always specify: adult, male/female, no wings unless noted, single creature, no duplicates.
+## LOCKED PROMPT CHUNKS (copy verbatim)
 
-## Party
+### Shade — Male Halfling Rogue (St3v3D/David). SHORT adult man, NOT child.
+`adult halfling man, short stature, grown man in his 30s, light stubble, brown hair, leather rogue armor, dual daggers at hips`
+Refs: gallery/Scenes/Shade_joins_the_guild.png (tattoo scene, adult face), Shade_and_Brother_Sean.png, St3v3D_Chaos_Brigade.png (front, small size). NEVER: child, boy, teen, hobbit feet.
+Guild mark: geometric diamond tattoo (gallery/Objects/The_Tattoo.png) on forearm — include only when plot-relevant.
 
-### Shade (St3v3D / David) — Male Halfling / Rogue
-- Adult halfling man, SHORT stature but grown man face, stubble, NOT a child
-- Leather armor, dual daggers, Bullseye Lantern when scouting
-- Sly confident grin, Guild contacts
-- Prompt core: `adult halfling man short stature grown man face stubble leather armor dagger`
-- Do NOT: child, boy, teen, bare feet hobbit, wings
+### Rocketcandy — Male Human Paladin (Andrew). Former Neverwinter nobility.
+`adult male human paladin, short brown hair light stubble, shining plate armor with gold phoenix/eagle crest on chest, red cape, exactly two arms`
+Refs: gallery/Scenes/City_Guards.png is CORRUPT guard look-alike — do NOT copy its helm/plume for Rocketcandy except crest shape. Gallery/Objects/Rocketcandy_Plot_Armor.png = his armor ref — use it.
+NEVER: extra arms, female, modern clothes.
 
-### Rocketcandy (Andrew) — Male Human / Paladin
-- Adult man, shining plate armor with gold wing crest on chest, exactly two arms
-- Red cape / red plume on helm for formal scenes, holy symbol
-- Noble bearing, former nobility Neverwinter
-- Prompt core: `human paladin shining plate armor gold wing crest exactly two arms`
-- Do NOT: extra limbs, female, modern clothes
+### Keechwah — Male Tiefling Warlock (Aaron). MALE, no wings.
+`adult male tiefling warlock, deep red skin, long curly black hair, goatee, large curved horns, glowing purple eyes, male facial features, dark blue/gold robes, gold jewelry, NO wings`
+Refs: gallery/Scenes/Keechwah_and_Lilly_bonding.png (face, hair, jewelry locked), Verruth_and_Keechwah_make_a_deal.png (blue-hair variant = younger? use black-hair as canon unless flashback).
+NEVER: female, wings, hooves, female chest, duplicate Keechwahs. Keechwah has NO wings — Verruth (below) HAS wings, do not mix.
 
-### Keechwah (ABush1707 / Aaron) — Male Tiefling / Warlock
-- Adult MALE, deep red skin, large curved horns, glowing purple eyes, male facial features
-- Dark robes / armor, purple arcane glow, blue Witch Bolt lightning in hands
-- Patron voice in head, book that thrums
-- Prompt core: `male tiefling warlock red skin curved horns glowing purple eyes NO wings`
-- Do NOT: female, wings, hooves unless specified, duplicate Keechwahs
+### Gulgrim Frozenboots — Male Hill Dwarf Cleric (James)
+`adult male hill dwarf cleric, short stocky, broad long white beard, heavy furs, frost-covered boots, large round shield with holy rune, warhammer`
+NEVER: tall, thin, no-beard.
 
-### Gulgrim Frozenboots (Bearnuts / James) — Male Hill Dwarf / Cleric
-- Stout adult dwarf, broad white beard, heavy furs, frost-covered boots
-- Large round shield with holy rune, warhammer / mace
-- Warm kind eyes, protector
-- Prompt core: `hill dwarf cleric broad white beard heavy furs frost boots round shield`
-- Gallery note: `St3v3D_Chaos_Brigade.png` shows blue ice magic version — use sparingly.
+### Chip — Male Human Druid (Josh)
+`adult male human druid, wild long brown hair and beard, green/brown fur garb, holding wooden staff (HE holds it, never Vadania)`
+NEVER: give staff to Vadania, merge with Vadania, bat on shoulder (Celeste rarely pictured).
 
-### Chip (Byodan / Josh) — Male Human / Druid
-- Adult man, wild long brown hair and beard, wooden staff (HE holds it, not Vadania)
-- Green / fur garb, celestial glitter when transformed, Daylight crystal on staff
-- Companion: Water Bear owlbear, bat Celeste (tiny, rarely pictured)
-- Prompt core: `male human druid wild brown hair beard holding wooden staff`
-- Do NOT: give staff to Vadania, merge with Vadania
+### Vadania Amakiir — Male Wood Elf Ranger (Derek)
+`adult male wood elf ranger, long blonde hair, pointed ears, masculine jaw stubble, green cloak, longbow on back, short swords at hips, scar on shoulder`
+NEVER: female, dress, long blonde woman in green (that is a misrender — re-roll), duplicate Vadania as barmaid.
 
-### Vadania Amakiir (xenophase / Derek) — Male Wood Elf / Ranger
-- Adult MALE, long blonde hair (or long hair per player — no blond in v5 approved, keep long hair), pointed ears, green cloak
-- Longbow on back, short swords at hips, crossbow-bolt scar on shoulder
-- Prompt core: `male wood elf ranger long hair pointed ears green cloak holding longbow`
-- Do NOT: female, dress, duplicate Vadania as barmaid
+### Lilly — Adult woman early 20s (NOT a child)
+`adult young woman early 20s, curly voluminous red hair, freckles, white ruffled shirt, red corset laced gold, cream skirt, brown boots, thigh dagger + rapier with mother-of-pearl handle`
+Refs: gallery/NPCs/Lilly.png (LOCKED), Keechwah_and_Lilly_bonding.png. NEVER: child, little girl, schoolgirl.
 
-## NPCs
+### Water Bear — Owlbear, ONE creature
+`single owlbear creature, massive grizzly bear body with coarse brown fur and bear paws with claws, head REPLACED by owl head with round eyes and hooked beak and feathered ruff, no wings, no second head, no separate owl`
+NEVER: bear holding owl, two heads, wings, white snowy owl alone, bear head + owl head side by side.
 
-### Lilly
-- Adult young woman early 20s, curly voluminous red hair, white ruffled shirt, red corset laced gold, cream skirt, brown boots
-- Knife + thigh dagger, rapier with mother-of-pearl handle (gift from Gulgrim)
-- Prompt core: `adult young woman early 20s curly red hair white shirt red corset cream skirt`
-- Gallery: `gallery/NPCs/Lilly.png` — never a little girl
-- Do NOT: child, little girl
+### Biggins Aulswim — Lilly's protector, ex-Talons of Justice assassin
+`tall adult human man in his 40s, slicked gray-streaked dark hair, sharp cheekbones, blue eyes, black three-piece suit with long coat, white shirt black tie, white gloves, pocket-watch chain, holding bloody dagger when hunting`
+Ref: gallery/NPCs/Biggans_Aulswim.png (note filename typo Biggans). NOT old gentleman, NOT apothecary. First appears Session 2.
 
-### Water Bear (Chip companion)
-- ONE creature: grizzly bear body + owl head REPLACING bear head, no wings, no second head
-- Large, furry, owl eyes / beak, bear paws with claws
-- Prompt core: `owlbear Waterbear one creature grizzly bear body owl head replacing bear head no wings no second head`
-- Do NOT: bear holding owl, two heads, wings, white snowy owl alone
-
-### Guild Shadow Knight (recurring villain)
-- Hooded black cloak, glowing white eyes, antler / deer-skull emblem on chest, twin crossbows
-- Black smoke-wreathed blades
-- Gallery: `gallery/NPCs/Guild_Shadowknight.png`
-- Prompt core: `hooded black cloak glowing white eyes antler skull emblem twin crossbows black smoke blades`
-
-### Biggins Aulswim
-- Kindly old gentleman, gentle smile, dark hooded cloak + cob pipe when mysterious
-- Gallery: `gallery/NPCs/Biggans_Aulswim.png` (check spelling Biggins_Aulswim.png)
-- Former Talons of Justice, Lilly's adoptive father
+### Apothecary owner (S1 hooded figure) — NOT Biggins
+`kindly older gentleman, gray beard, dark hooded cloak, cob pipe` — fun-loving shopkeeper, owns local apothecary. Keep distinct from Biggins.
 
 ### Lady Filvenar
-- Adult woman, fire red Celtic-knot braided hair to mid-back, gray eyes, pirate shirt + tight corset
-- Regal but rough-and-tumble
+`adult woman, fire-red Celtic-knot braid to mid-back, gray eyes, pirate shirt + tight corset, trousers, ready stance`
 
-### Lady Elara Veyne / Lady Verruth / City Guards
-- See `gallery/NPCs/` — use reference images directly when introducing.
+### Lady Elara Veyne
+Ref gallery/NPCs/Lady_Elara_Veyne.png: `mature noblewoman dark hair updo, blue/silver court gown with lion crest, sapphire jewelry, throne room` — use ref image, do not freestyle.
 
-## Anti-conflation rules (learned from S1)
-- Always list headcount: `six distinct characters no duplicates`
-- Specify holder: `Chip holding wooden staff`, `Vadania holding longbow`
-- Separate NPCs: `one separate female human barmaid standing holding tray`
-- Ban wings on tieflings, ban extra arms, ban second heads on owlbear.
-- If duplicate appears, regenerate with `single X, no duplicates` added twice.
+### Lady Verruth, Matron of the Ashen Library
+`female demon, long black hair, upward-curved horns, bat wings, barbed tail, glasses, black-red corset, thigh-high boots, burning book` Ref gallery/NPCs/Lady_Verruth...png. HAS wings (unlike Keechwah). NEVER confuse with Keechwah.
+
+### Guild Shadow Knight (recurring villain)
+`hooded black cloak, glowing white eyes, antler/deer-skull emblem on chest, twin crossbows, black smoke-wreathed blades` Ref gallery/NPCs/Guild_Shadowknight.png.
+
+### City Guards (corrupt vs clean)
+Corrupt: `ornate helm with red plume, red cape, gold phoenix crest, geometric diamond forearm tattoo (gallery/Objects/The_Tattoo.png), star above tattoo = leader`. Clean guards: plain steel, NO tattoo. Ref gallery/NPCs/City_Guards.png = corrupt look.
+
+### Marigold / Sammy
+Marigold: female innkeeper, warm, tray. Sammy: adult male cook in apron, menu/label in hand, loud. NEVER gender-swap Sammy, NEVER make Lilly the screamer in S1P3.
+
+## Panel composition rules (anti-drift)
+- Max 4 named characters per image. Split crowds into 2 panels.
+- Name holders: `Chip holding wooden staff`, `Vadania holding longbow`, `Rocketcandy exactly two arms`.
+- Ban barmaids that look like Lilly/Vadania: `one separate female human barmaid with brown ponytail, plain blue dress, holding tray, distinct from party`.
+- If duplicate appears, re-roll SAME seed+1 with `single X, no duplicates` doubled — do not accept.
+- Log: prompt, seed, model hashes per panel in sessions/<id>/panels.json (add next).
