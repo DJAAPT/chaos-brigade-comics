@@ -1,0 +1,209 @@
+[
+  {
+    "panel": "panel0_docks.png",
+    "image": "panel0_docks.png",
+    "workflow": "flux3_s1_docks.json",
+    "seed": 1857761984156622644,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "cinematic fantasy film still, Neverwinter city docks in warm daylight, ships and market stalls behind: Rocketcandy, tall human paladin man, short brown hair light stubble, shining plate armor with gold phoenix crest on chest, red cape, confident composed bearing, clasping forearms in brotherly greeting with a corrupt city guard wearing an ornate helm with red plume, red cape, gold crest, the guard's inner wrist turned toward viewer showing a geometric diamond sigil tattoo close-up and clearly visible; to the side watches Shade, a halfling rogue man barely 3 feet tall, his head reaching only to Rocketcandy's waist, clearly half Rocketcandy's height, lean build, messy shaggy dark brown hair covering his ears, worn dark linen shirt, scuffed brown leather vest, sly knowing expression, eyes fixed on the tattoo; three distinct people, no duplicates, no conflation, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "panel1_tavern.png",
+    "image": "panel1_tavern.png",
+    "workflow": "flux3_p1_retest.json",
+    "seed": 1857761984156622644,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "cinematic fantasy film still, warm tavern interior with a wooden Marigolds Inn sign on the wall, six DIFFERENT adventurers sitting around a round wooden table eating and drinking in warm candlelight, seated from left to right in this exact order, six separate people, do not merge anyone: (1) Shade, short halfling rogue man, lean build, messy shaggy dark brown hair covering his ears, light stubble, worn dark linen shirt, scuffed brown leather vest, sly closed-mouth expression; (2) Rocketcandy, tall human paladin man, short brown hair light stubble, shining plate armor with gold phoenix crest, red cape, confident composed bearing; (3) Keechwah, tall male tiefling warlock, deep red skin, long curly black hair, goatee, large curved horns, glowing purple eyes, dark blue robes with gold trim, no wings, secretive intense expression; (4) Gulgrim, a SHORT DWARF cleric with a completely bald head, short but BROAD and SOLID and HEAVY, big barrel chest and thick arms, clearly bigger and heavier than Shade the slim halfling though shorter than the humans, broad long white beard, heavy furs, large round shield with holy rune leaning at his side, warhammer, steadfast resolute expression, he is a dwarf NOT a human, do not draw him tiny; (5) Chip, a TALL human druid man much taller than the dwarf next to him, brown skin, wild long flowing white head-hair and white beard, green and brown fur garb, straight wooden quarterstaff with crystal upright behind him, awkward earnest expression, he is a human NOT a dwarf; (6) Vadania, tall wood elf ranger man, long brown hair, green eyes, pointed ears, masculine stubble, green cloak, longbow on his back, blunt direct expression; plus Marigold the female innkeeper standing behind the table holding a tray, warm welcoming smile, plain brown dress; Gulgrim the dwarf and Chip the human are two different people sitting next to each other, never merged, no duplicates, no conflation, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "panel12_dragon.png",
+    "image": "panel12_dragon.png",
+    "workflow": "flux3_s1_p12.json",
+    "seed": 1857761984156622644,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "cinematic fantasy film still, warm tavern interior in Marigolds Inn, patrons at tables turning to stare: Marigold the female halfling innkeeper in her 40s, barely 3 feet tall and shorter than the bar, with tiny curls and a warm rosy happy face, standing frozen mid-step with a startled wide-eyed expression, hands to her chest, a young wood elf ranger man with long brown hair and green cloak (Vadania) just lowering his hand after saying one fateful word, nearby halfling patrons looking terrified, warm candlelight, three distinct people plus background patrons, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "panel13_hooded.png",
+    "image": "panel13_hooded.png",
+    "workflow": "flux3_s1_p13.json",
+    "seed": 1857761984156622644,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "cinematic fantasy film still, dark tavern corner table in Marigolds Inn: a mysterious hooded figure sitting alone, long cloak with deep green filigree patterns, face completely hidden inside the deep hood with faint mist obscuring it, a cob pipe with smoke curling up, black boots with silver buckles, a half-finished bowl of soup on the table, a short stocky dwarf cleric man with a bald head and long white beard in heavy furs (Gulgrim) approaching and pointing at the figure, warm candlelight from afar, two distinct people, no duplicates, each exactly two arms, adult faces, photorealistic, highly detailed"
+  },
+  {
+    "panel": "panel14_reveal.png",
+    "image": "panel14_reveal.png",
+    "workflow": "flux3_s1_p14.json",
+    "seed": 1857761984156622644,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "cinematic fantasy film still, warm tavern table in Marigolds Inn: a kindly old gentleman with a gray beard and warm laughing eyes, dark hooded merchant cloak pushed back off his shoulders, a cob pipe in one hand, gesturing welcome to a short stocky bald dwarf cleric with a long white beard wearing his heavy furs (Gulgrim) sitting across from him, two bowls of soup on the table, warm candlelight, friendly laughter, two distinct people, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "panel21_tip.png",
+    "image": "panel21_tip.png",
+    "workflow": "flux3_s1_p21.json",
+    "seed": 992244001122334455,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "cinematic fantasy film still, warm tavern interior in Marigolds Inn: Marigold the short female halfling innkeeper, a middle-aged adult woman in her 40s barely 3 feet tall with tiny curls and a warm lined adult face, definitely a grown woman not a child, leaning in conspiratorially and pointing toward the door and outside, speaking to seated adventurers (a human paladin in plate armor with gold phoenix crest and a tiefling warlock with deep red skin, long curly black hair and curved horns listening), kitchen doorway behind with a male cook in apron (Sammy) banging a label, warm candlelight, distinct people, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "panel22_board.png",
+    "image": "panel22_board.png",
+    "workflow": "flux3_s1_p22.json",
+    "seed": 1857761984156622644,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "cinematic fantasy film still, outdoor job board covered with dozens of overlapping notice papers next to a tavern beer garden: a prominent lost calico kitten poster, restaurant and construction work notices with coin amounts, a tall wood elf ranger man with long brown hair, green eyes, pointed ears and green cloak (Vadania) staring at the board with an overwhelmed decision-fatigue expression, hand on his head, daylight, no duplicates, exactly two arms, adult faces, photorealistic, highly detailed"
+  },
+  {
+    "panel": "panel23_quest.png",
+    "image": "panel23_quest.png",
+    "workflow": "flux3_s1_p23.json",
+    "seed": 1857761984156622644,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "cinematic fantasy film still, close view of a crowded outdoor job board: a tall male tiefling warlock with deep red skin, long curly black hair, large curved horns and glowing purple eyes (Keechwah) pulling aside a lost calico kitten poster to reveal a weathered old posting behind it with clearly legible correctly spelled text reading exactly 600 gold for those who are brave at heart, his companions (a human paladin and a wood elf ranger) leaning in to look, daylight, distinct people, no duplicates, each exactly two arms, adult faces, photorealistic, highly detailed"
+  },
+  {
+    "panel": "panel24_unpaid.png",
+    "image": "panel24_unpaid.png",
+    "workflow": "flux3_s1_p24.json",
+    "seed": 1857761984156622644,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "cinematic fantasy film still, tavern doorway bursting open with motion: six adventurers hurrying out of Marigolds Inn, all six must be visible with Shade the short halfling prominent at the front left (Shade: short halfling rogue man, a fully grown adult man in his mid-20s with a mature masculine jaw and light stubble despite his 3-foot stature, clearly an adult not a child, messy dark brown hair, brown leather vest, subtle sly closed-mouth expression; Rocketcandy: human paladin man with short brown hair in plate armor with gold phoenix crest and red cape; Keechwah: male tiefling with deep red skin, long curly BLACK hair and large curved horns, wearing dark blue robes with gold trim covering his torso, fully robed, no bare chest; Gulgrim: short bald dwarf cleric with long white beard and heavy furs; Chip: tall human druid man with brown skin and long white hair; Vadania: MALE wood elf ranger with long brown hair, masculine stubble and green cloak), Marigold the short halfling innkeeper barely 3 feet tall, clearly half the height of the adventurers, waving goodbye in the doorway, empty mugs left on a table inside, a male cook in apron (Sammy) noticing from the kitchen, warm indoor light spilling into daylight, no duplicates, no conflation, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "panel31_sammy.png",
+    "image": "panel31_sammy.png",
+    "workflow": "flux3_s1_p31.json",
+    "seed": 1857761984156622644,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "cinematic fantasy film still, tavern doors bursting open: Sammy, a loud adult male cook in his 40s with a stained apron over common clothes, bursting through the inn doors waving a bill menu high in one hand and screaming with his mouth wide open, market crowd and stalls behind turning to stare, daylight, distinct people, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "panel32_swords.png",
+    "image": "panel32_swords.png",
+    "workflow": "flux3_s1_p32.json",
+    "seed": 1857761984156622644,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "cinematic fantasy film still, outdoor market street: four city guards in ornate helms with red plumes, red capes and gold crests whipping around with swords drawn, marching toward the viewer, market merchants upset at stalls behind them, an adult male cook in apron visible in a tavern doorway behind, daylight, distinct people, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "panel33_marigold.png",
+    "image": "panel33_marigold.png",
+    "workflow": "flux3_s1_p33.json",
+    "seed": 1857761984156622644,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "cinematic fantasy film still, outside a tavern: Marigold, a middle-aged adult halfling woman barely 3 feet tall, clearly half the height of the men around her, with tiny curls, definitely a grown woman not a child, rushing out with one hand held out demanding coins while her other hand smacks the back of the head of Sammy, a sheepish adult male cook in apron holding a bill menu, shoving him back inside, one human paladin in plate armor watching with amusement, daylight, distinct people, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "panel34_stepup.png",
+    "image": "panel34_stepup.png",
+    "workflow": "flux3_s1_p34.json",
+    "seed": 1857761984156622644,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "cinematic fantasy film still, heroic close-up waist-up portrait: Rocketcandy, a tall human paladin man with short brown hair and light stubble, shining plate armor with a large gold phoenix crest on his chest, red cape, one hand raised authoritatively, confident composed noble bearing, calm lawful-good certainty on his face; behind him softly out of focus, city guards with red plumes sheathing their swords and stepping back, market street daylight blurred; a single adult man in sharp focus, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "panel35_tattoo.png",
+    "image": "panel35_tattoo.png",
+    "workflow": "flux3_s1_p35.json",
+    "seed": 1857761984156622644,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "extreme macro close-up photograph of a city guard's inner wrist and forearm: a geometric diamond sigil tattoo in dark ink on the skin inside the wrist, steel bracer pushed back, red cape fabric and ornate armor edge visible at the frame borders, shallow depth of field, no faces, no people visible except the arm, photorealistic, highly detailed"
+  },
+  {
+    "panel": "panel41_store.png",
+    "image": "panel41_store.png",
+    "workflow": "flux3_multiref_chip_store.json",
+    "seed": 20261103,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": "multiref_chip.png",
+    "prompt": "photorealistic scene, inside a cluttered general store with shelves of jars: Chip, adult male human druid with brown skin, wild long white hair and white beard, green and brown fur garb, sturdy leather boots on his own human feet, holding a straight wooden quarterstaff, beside him a single owlbear creature walking on all fours like a bear, massive grizzly bear body with exactly its own four clawed paws on the ground and no extra limbs anywhere, feathered owl head with round eyes and hooked beak, no wings, the owlbear shouldering against a low shelf so a vase wobbles mid-air, warm lamplight, adult faces, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "panel42_shakedown.png",
+    "image": "panel42_shakedown.png",
+    "workflow": "flux3_s1_p42.json",
+    "seed": 20261103,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": "multiref_chip.png",
+    "prompt": "photorealistic scene, inside a cluttered general store at the counter: three city guards in plain steel armor cornering Chip, adult male human druid with brown skin, wild long white hair and white beard, green and brown fur garb, one guard holding a sword up under his chin, Chip raising his hands defensively, a worried middle-aged male shop proprietor watching from behind the counter, warm lamplight, distinct people, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "panel43_pan.png",
+    "image": "panel43_pan.png",
+    "workflow": "flux3_s1_p43.json",
+    "seed": 20261103,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": "multiref_chip.png",
+    "prompt": "photorealistic action scene inside a general store: a middle-aged male shop proprietor swinging a heavy cast-iron pan mid-swing behind two city guards who are dropping unconscious, a third guard turning around still gripping the wrist of Chip, adult male human druid with brown skin, wild long white hair and white beard, green and brown fur garb, motion energy, warm lamplight, distinct people, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "panel44_hogtied.png",
+    "image": "panel44_hogtied.png",
+    "workflow": "flux3_s1_p44.json",
+    "seed": 774411009988,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": "multiref_chip.png",
+    "prompt": "photorealistic scene in a dark shop cellar with crates and barrels: three unconscious city guards in steel armor and helmets lying in a neat side-by-side row on the floor, thick rope tied around all three of them together, each guard clearly separate with exactly two arms and exactly two legs in correct human anatomy, six arms and six legs total across the row, no extra limbs, no missing limbs, no fused bodies, Chip, adult male human druid with brown skin, wild long white hair and white beard, green and brown fur garb, stands completely free with no ropes on him beside a big male shop proprietor who points accusingly at the tied guards, lantern light, distinct people, no duplicates, adult faces, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "panel51_mansion.png",
+    "image": "panel51_mansion.png",
+    "workflow": "flux3_s1_p51.json",
+    "seed": 5151515151,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "cinematic fantasy film still, exterior of an opulent gated marble mansion with a peacock in the front yard: a snooty butler with slicked gray-streaked dark hair, sharp cheekbones and blue eyes, wearing a butler uniform, holding the door; before him stand exactly six adventurers, all clearly grown adults, no children anywhere: (1) Rocketcandy, tall human paladin man with short brown hair and light stubble, shining plate armor with gold phoenix crest, red cape; (2) Keechwah, MALE tiefling warlock with deep red skin, long curly black hair, goatee, large curved horns, masculine features, dark blue robes; (3) Gulgrim, short bald dwarf cleric with long white beard and heavy furs, warhammer; (4) Chip, tall adult human druid man with brown skin, wild long white hair and white beard, fur garb; (5) Vadania, MALE wood elf ranger with long brown hair, masculine jaw stubble and green cloak, holding a bow; (6) Shade, short halfling rogue, a fully grown adult man with a mature masculine jaw and light stubble despite his small stature, messy dark brown hair, brown leather vest; daylight, seven distinct grown people total, no duplicates, no conflation, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "panel52_roast.png",
+    "image": "panel52_roast.png",
+    "workflow": "flux3_s1_p52.json",
+    "seed": 1857761984156622644,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "cinematic fantasy film still, mismatched opulent foyer with fine furniture in clashing styles: a tall wood elf ranger man with long brown hair, masculine stubble and green cloak (Vadania) smirking with arms crossed, a snooty thin butler with the face of Biggins (slicked gray-streaked dark hair, sharp cheekbones, blue eyes) and a raised eyebrow turning away dismissively, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "panel53_deadmagic.png",
+    "image": "panel53_deadmagic.png",
+    "workflow": "flux3_s1_p53.json",
+    "seed": 1857761984156622644,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "cinematic fantasy film still, dim opulent interior: Keechwah, a male tiefling warlock with deep red skin, long curly black hair, goatee, large curved horns and glowing purple eyes, wearing dark blue robes with gold trim, staring at his own empty outstretched hand in dismay as faint purple wisps dissolve away, his companions watching worriedly behind him, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "panel54_filvenar.png",
+    "image": "panel54_filvenar.png",
+    "workflow": "flux3_s1_p54.json",
+    "seed": 1857761984156622644,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "cinematic fantasy film still, opulent foyer doorway: Lady Filvenar, who is secretly Lilly in disguise: a young adult woman with Lilly's face (voluminous red hair pulled into a Celtic-knot braid to mid-back, freckles), piercing gray eyes, white pirate shirt under a tight dark corset, trousers and boots, confident ready stance addressing the viewer, a snooty butler with Biggins' face (slicked gray-streaked hair, sharp cheekbones) bowing beside the door, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "panel55_apothecary.png",
+    "image": "panel55_apothecary.png",
+    "workflow": "flux3_s1_p55.json",
+    "seed": 1857761984156622644,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "cinematic fantasy film still, inside a colorful cluttered apothecary shop with jars and a playing broadcast stone: Chip, a tall adult male human druid with brown skin, wild long white hair and white beard, green and brown fur garb, stepping through the door with a paper note in hand, greeted by a giddy sprightly older male shop owner bouncing with joy, warm lamplight, two distinct people, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+  }
+]

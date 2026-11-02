@@ -3,45 +3,113 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Chaos Brigade #1 — Marigold's Inn</title>
+<title>Chaos Brigade #1 — Neverwinter</title>
 <style>
-*{box-sizing:border-box}body{margin:0;background:#0d0d0d;color:#fff;font-family:'Comic Sans MS','Chalkboard SE',Georgia,serif}
+*{box-sizing:border-box}body{margin:0;background:#0d0d0d;color:#fff;font-family:Georgia,'Times New Roman',serif}
 header{text-align:center;padding:18px}header h1{margin:0;font-size:2.2rem;letter-spacing:.08em}header h1 span{color:#ffd76a}header p{opacity:.65}
 .page{max-width:1200px;margin:0 auto;padding:10px;display:grid;gap:10px}
+.pagetitle{font-size:1.2rem;letter-spacing:.1em;color:#ffd76a;margin:14px 0 2px}
 .row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
 .row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 @media(max-width:800px){.row3,.row2{grid-template-columns:1fr}}
 .panel{position:relative;background:#000;border:4px solid #000;overflow:hidden;min-height:320px}
 .panel img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(1.05)}
 .loc{position:absolute;top:0;left:0;background:#f5eeda;color:#111;font-weight:bold;font-size:.8rem;padding:4px 10px;letter-spacing:.05em;border-right:3px solid #000;border-bottom:3px solid #000;z-index:3}
+.narr{position:absolute;top:0;left:0;right:0;background:rgba(20,16,8,.88);color:#ffd76a;font-style:italic;font-size:.82rem;padding:6px 10px;z-index:3;border-bottom:2px solid #000}
 .bub{position:absolute;background:#fff;color:#111;border:2px solid #000;border-radius:14px;padding:6px 10px;font-size:.82rem;line-height:1.25;max-width:44%;z-index:2;box-shadow:2px 2px 0 #000}
 .bub:after{content:'';position:absolute;width:12px;height:12px;background:#fff;border-right:2px solid #000;border-bottom:2px solid #000;transform:rotate(45deg)}
-.bub.tl{top:34px;left:8px}.bub.tl:after{bottom:-8px;left:24px}
-.bub.tr{top:34px;right:8px}.bub.tr:after{bottom:-8px;right:24px}
+.bub.tl{top:40px;left:8px}.bub.tl:after{bottom:-8px;left:24px}
+.bub.tr{top:40px;right:8px}.bub.tr:after{bottom:-8px;right:24px}
 .bub.bl{bottom:8px;left:8px}.bub.bl:after{top:-8px;left:24px;transform:rotate(225deg)}
 .bub.br{bottom:8px;right:8px}.bub.br:after{top:-8px;right:24px;transform:rotate(225deg)}
-.think{border-style:dashed;border-radius:22px}
+.bub .who{font-weight:bold;font-size:.72rem;display:block;opacity:.6}
 .sfx{position:absolute;background:#b3261e;color:#fff;font-weight:bold;padding:2px 10px;border:2px solid #000;transform:rotate(-6deg);z-index:2}
+.badge{position:absolute;bottom:8px;left:50%;transform:translateX(-50%);background:#1b2a4a;color:#fff;border:2px solid #ffd76a;border-radius:20px;font-size:.72rem;padding:2px 12px;z-index:2;white-space:nowrap}
+.meanwhile{position:absolute;top:0;right:0;background:#3a2a10;color:#ffd76a;font-weight:bold;font-size:.75rem;letter-spacing:.08em;padding:4px 12px;border-left:3px solid #000;border-bottom:3px solid #000;z-index:3}
+.cast{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.cast figure{margin:0;background:#000;border:4px solid #000;text-align:center}
+.cast img{width:100%;height:220px;object-fit:cover;object-position:top;display:block}
+.cast figcaption{font-size:.75rem;padding:6px;background:#141414}
+.cast figcaption b{color:#ffd76a}
 .endcard{background:#f5eeda;color:#111;padding:20px;text-align:center;border:4px solid #000}
 .endcard h2{margin:0 0 8px;letter-spacing:.1em}
 footer{text-align:center;opacity:.5;padding:20px;font-size:.8rem}
 </style>
 </head>
 <body>
-<header><h1>THE CHAOS <span>BRIGADE</span></h1><p>#1 — Marigold's Inn, Neverwinter · Flux2 panels + transcript dialogue</p></header>
+<header><h1>THE CHAOS <span>BRIGADE</span></h1><p>#1 — Neverwinter · all panels Flux3 Klein · dialogue from the session transcript</p></header>
 <div class="page">
-<div class="row3">
-<div class="panel"><div class="loc">MARIGOLD'S INN...</div><img src="../sessions/session01/panel1_tavern.png"><div class="bub tl">That guy clearly knows something.</div><div class="bub br">Slew of opportunities for parties like yours!</div></div>
-<div class="panel"><div class="loc">DARK &amp; MYSTERIOUS...</div><img src="../sessions/session01/panel2_biggins.png"><div class="bub tr">Just going for the motif. Something to pass the time.</div></div>
-<div class="panel"><div class="loc">OUTSIDE — UNPAID BILL...</div><img src="../sessions/session01/panel3_sammy.png"><div class="sfx" style="top:40px;left:10px">THIEVES!!</div><div class="bub br">Sam — always overreacts. Two gold!</div></div>
+
+<div class="pagetitle">ONE MONTH LATER — WHERE THEY'VE BEEN</div>
+<div class="cast">
+<figure><img src="../character-bible/approved_rocketcandy_reference.png"><figcaption><b>ROCKETCANDY</b> — paladin. "I stayed to become a legend."</figcaption></figure>
+<figure><img src="../character-bible/approved_shade_reference.png"><figcaption><b>SHADE</b> — halfling rogue. "I do not intend to be a pawn."</figcaption></figure>
+<figure><img src="../character-bible/approved_gulgrim_reference.png"><figcaption><b>GULGRIM</b> — dwarf cleric. Meditated on what it means to heal and protect.</figcaption></figure>
+<figure><img src="../character-bible/approved_keechwah_reference.png"><figcaption><b>KEECHWAH</b> — tiefling warlock. "True power is constructed, not stumbled upon."</figcaption></figure>
+<figure><img src="../character-bible/approved_chip_reference.png"><figcaption><b>CHIP</b> — human druid. Built beginner stonehenges with his water bear.</figcaption></figure>
+<figure><img src="../character-bible/approved_vadania_reference.png"><figcaption><b>VADANIA</b> — elf ranger. "I finally feel like I have some friends."</figcaption></figure>
 </div>
-<div class="row3">
-<div class="panel"><div class="loc">THE PERSUASION...</div><img src="../sessions/session01/panel4_rocketcandy.png"><div class="bub tl">Former nobility here. These are my friends. We're good.</div></div>
-<div class="panel"><div class="loc">GOOD &amp; READY — SHAKEDOWN...</div><img src="../sessions/session01/panel5_chip.png"><div class="bub tl">Double for your bear. 40 gold!</div><div class="bub br think">Tie them up. Out back.</div></div>
-<div class="panel"><div class="loc">THE MANSION...</div><img src="../sessions/session01/panel6_filvenar.png"><div class="bub tl">Nice decorator, eh?</div><div class="bub tr">Pretend you have taste. [4 psychic]</div><div class="bub bl">Finally — take my quest. Sit.</div></div>
+
+<div class="pagetitle">THE PARTY</div>
+<div class="panel"><img src="../character-bible/approved_lineup_reference.png"><div class="narr">The Chaos Brigade, back together and bound for Neverwinter — plus two souls they'll pick up along the way.</div></div>
+
+<div class="pagetitle">THE DOCKS — ENTRY TAX</div>
+<div class="panel"><div class="narr">Neverwinter docks. Entry tax: ten gold. Rocketcandy has another idea.</div><img src="../sessions/session01/panel0_docks.png"><div class="bub tl"><span class="who">Rocketcandy</span>Have you not heard of the legendary Rocketcandy?</div><div class="bub br think"><span class="who">Shade, watching the guard's wrist</span>That sigil…</div><div class="badge">🎲 Persuasion 22 — success</div></div>
+
+<div class="pagetitle">PAGE 1 — MARIGOLD'S INN</div>
+<div class="row2">
+<div class="panel"><div class="narr">Neverwinter. Marigold's Inn. First night back together.</div><img src="../sessions/session01/panel1_tavern.png"><div class="bub tl"><span class="who">Marigold</span>What brings you all into Neverwinter?</div><div class="bub br"><span class="who">Vadania</span>We proceed to tell her our entire story.</div></div>
+<div class="panel"><div class="narr">One word clears the room.</div><img src="../sessions/session01/panel12_dragon.png"><div class="bub tl"><span class="who">Vadania</span>dragon.</div><div class="bub br"><span class="who">Marigold</span>How? What could possibly be next? My heart!</div></div>
 </div>
-<div class="endcard"><h2>THE CHAOS BRIGADE</h2>No plan is simple. No path is direct.<br>No tab goes unpaid.<br><br><b>ADVENTURE CONTINUES...</b></div>
+<div class="row2">
+<div class="panel"><div class="narr">Corner table. Pipe smoke. A face you can't quite see.</div><img src="../sessions/session01/panel13_hooded.png"><div class="bub br"><span class="who">Gulgrim</span>That guy clearly knows something.</div></div>
+<div class="panel"><div class="narr">The mystery lasts about thirty seconds.</div><img src="../sessions/session01/panel14_reveal.png"><div class="bub tl"><span class="who">Stranger</span>Dark and mysterious. It's my decision.</div><div class="bub br"><span class="who">Stranger</span>I own the local apothecary. Sit. Tell me your journeys.</div></div>
 </div>
-<footer>Session 1 · transcript dialogue + narration in bubbles · Flux2 Dev fp8mixed @ 10.13.37.88</footer>
+
+<div class="pagetitle">PAGE 2 — THE JOB BOARD</div>
+<div class="row2">
+<div class="panel"><div class="narr">Marigold points outside. Work for fabulous parties.</div><img src="../sessions/session01/panel21_tip.png"><div class="bub br"><span class="who">Marigold</span>Just outside — a whole slew of opportunities.</div></div>
+<div class="panel"><div class="narr">Hundreds of jobs. Vadania rolls a 1.</div><img src="../sessions/session01/panel22_board.png"><div class="bub tl"><span class="who">Vadania</span>Trying to get that ARad gold.</div><div class="badge">🎲 Perception 1 — fail</div></div>
+</div>
+<div class="row2">
+<div class="panel"><div class="narr">Behind the kitten poster — the real job.</div><img src="../sessions/session01/panel23_quest.png"><div class="bub br"><span class="who">Keechwah (17 perception)</span>Guys. Look at this.</div><div class="badge">🎲 Perception 17 — success</div></div>
+<div class="panel"><div class="narr">They run for the north gate. Nobody paid.</div><img src="../sessions/session01/panel24_unpaid.png"><div class="sfx" style="top:44px;left:10px">BANG</div></div>
+</div>
+
+<div class="pagetitle">PAGE 3 — THIEVES!!</div>
+<div class="row2">
+<div class="panel"><div class="narr">Sammy chooses violence.</div><img src="../sessions/session01/panel31_sammy.png"><div class="sfx" style="top:44px;left:10px">THIEVES!!</div></div>
+<div class="panel"><div class="narr">Every guard in earshot turns.</div><img src="../sessions/session01/panel32_swords.png"><div class="bub br"><span class="who">Guard</span>We don't take kindly to thieves.</div></div>
+</div>
+<div class="row2">
+<div class="panel"><div class="narr">Marigold has seen this episode before.</div><img src="../sessions/session01/panel33_marigold.png"><div class="bub tl"><span class="who">Marigold</span>Sam, you always overreact. That'll be two gold.</div><div class="bub br"><span class="who">Narration</span>Gulgrim pays four.</div></div>
+<div class="panel"><div class="narr">Crest out. Voice steady.</div><img src="../sessions/session01/panel34_stepup.png"><div class="bub br"><span class="who">Rocketcandy</span>I'm former nobility here. These are my friends. We're good.</div></div>
+</div>
+<div class="panel"><div class="narr">Shade sees it first. Then everyone does.</div><img src="../sessions/session01/panel35_tattoo.png"><div class="bub tl"><span class="who">Shade</span>Thieves guild. Protection tax — outside the magistrate's purview.</div></div>
+
+<div class="pagetitle">PAGE 4 — MEANWHILE: CHIP'S STORE</div>
+<div class="row2">
+<div class="panel"><div class="meanwhile">MEANWHILE…</div><div class="narr">While the rest head north, Chip resupplies. Bear included.</div><img src="../sessions/session01/panel41_store.png"></div>
+<div class="panel"><div class="meanwhile">MEANWHILE…</div><div class="narr">Same tattoos. Worse manners.</div><img src="../sessions/session01/panel42_shakedown.png"><div class="bub tl"><span class="who">Guard</span>Double for your bear. 40 gold.</div><div class="bub br"><span class="who">Chip</span>Just enough for supplies. Lowly druid.</div></div>
+</div>
+<div class="row2">
+<div class="panel"><div class="meanwhile">MEANWHILE…</div><div class="narr">The proprietor chooses a side.</div><img src="../sessions/session01/panel43_pan.png"><div class="sfx" style="top:44px;left:10px">BONK BONK</div></div>
+<div class="panel"><div class="meanwhile">MEANWHILE…</div><div class="narr">Athletics 16 vs 9. Textbook.</div><img src="../sessions/session01/panel44_hogtied.png"><div class="bub tl"><span class="who">Chip</span>Little out of my depths here — what was that?</div><div class="bub br"><span class="who">Proprietor</span>Take them out back. Tie them up. Then go find Thumba.</div><div class="badge">🎲 Athletics 16 vs 9 — success</div></div>
+</div>
+
+<div class="pagetitle">PAGE 5 — THE MANSION</div>
+<div class="row2">
+<div class="panel"><div class="narr">The address is rich. The butler is richer.</div><img src="../sessions/session01/panel51_mansion.png"><div class="bub br"><span class="who">Butler</span>May I help you?</div></div>
+<div class="panel"><div class="narr">Vadania can't help himself.</div><img src="../sessions/session01/panel52_roast.png"><div class="bub tl"><span class="who">Vadania</span>Paid real good money for an interior decorator, eh?</div><div class="bub br"><span class="who">Butler</span>Pardon me while I go pretend you have taste.</div><div class="badge">🧠 Vicious Mockery — 4 psychic</div></div>
+</div>
+<div class="row2">
+<div class="panel"><div class="narr">The well is dry.</div><img src="../sessions/session01/panel53_deadmagic.png"><div class="bub br"><span class="who">Keechwah</span>My magic comes from my patron. They're… absent.</div></div>
+<div class="panel"><div class="narr">The job giver arrives.</div><img src="../sessions/session01/panel54_filvenar.png"><div class="bub br"><span class="who">Filvenar</span>Ah. Finally somebody to take my quest. Have a seat.</div></div>
+</div>
+<div class="panel"><div class="meanwhile">MEANWHILE…</div><div class="narr">Across town, Chip delivers.</div><img src="../sessions/session01/panel55_apothecary.png"><div class="bub tl"><span class="who">Owner</span>I LIKE IT!! Thank you thank you thank you — 25% off, for life!</div></div>
+
+<div class="endcard"><h2>THE CHAOS BRIGADE</h2>No plan is simple. No path is direct.<br>No tab goes unpaid.<br><br><b>ADVENTURE CONTINUES…</b></div>
+</div>
+<footer>Session 1 · transcript dialogue + narration · Flux3 Klein @ 10.13.37.88/127.0.0.1 · prompts+seeds in sessions/session01/panels.json</footer>
 </body>
 </html>
