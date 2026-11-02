@@ -42,9 +42,11 @@ Gear: Holy Symbol + Biggins manor key (plot item), Mason's tools. Soldier backgr
 Default expression: steadfast and resolute — stern veteran soldier-cleric, no smile.
 
 ### Chip — Male Human Druid (Josh)
-`adult male human druid, brown skin, wild long white hair and white beard, brown eyes, green/brown fur garb, holding wooden staff (HE holds it, never Vadania)`
-NEVER: give staff to Vadania, merge with Vadania, bat on shoulder (Celeste rarely pictured), brown hair or beard (canon is white per sheet).
+`adult male human druid, brown skin, wild long white hair and white beard, brown eyes, green/brown fur garb, holding a straight wooden quarterstaff with a small crystal slotted into it (HE holds it, never Vadania)`
+Approved identity ref (2026-11-02, Flux3 Klein): `character-bible/approved_chip_reference.png` — copy this face; face, expression, and staff approved in the Flux3 v2 portrait.
+NEVER: give staff to Vadania, merge with Vadania, bat on shoulder (Celeste rarely pictured), brown hair or beard (canon is white per sheet), crooked or crook-topped staff.
 Expression: awkward observer — blurts insults without thinking, last to speak. Prop: his quarterstaff has the crystal Star Map slotted into it (Circle of the Stars).
+Default expression: awkward and earnest, slightly bewildered — quiet observer, never severe or formidable.
 
 ### Vadania Amakiir — Male Wood Elf Ranger (Derek)
 `adult male wood elf ranger, long brown hair, green eyes, pointed ears, masculine jaw stubble, green cloak, longbow on back, short swords at hips, scar on shoulder`
