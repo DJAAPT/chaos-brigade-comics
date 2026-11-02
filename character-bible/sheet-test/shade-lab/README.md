@@ -33,6 +33,9 @@ move this model; head-size wins remain seed lottery so far. Batch 5
 (identity + anti-baby bans): s1 AND s2 both good head sizes, s0's age
 reads much better (head still large), s3 still HUGE head + toddler
 despite facial hair — identity language fixed age on 3/4, size on 2/4.
+**Batch 12 breakthrough: no huge ears on any of the four, heads better
+sized across the board — silencing the species + ear words beat ten
+batches of adjectives, placement, ratios, and bans.**
 Batch 5 `shade_s2` (seed 777001): head size AND ears both good — **lab
 winner and locked base**. All other seeds still show oversized ears;
 s3 (314159) bad in every batch — retired as a hostile seed, not a
