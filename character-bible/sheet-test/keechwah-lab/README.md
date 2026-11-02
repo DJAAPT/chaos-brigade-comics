@@ -13,6 +13,7 @@ overwrite — every generation snapshots to `batches/batch<N>/` with its
 | Batch | Wording vs previous | Seeds |
 |---|---|---|
 | batch1 | Baseline: Arm B Keechwah block verbatim; k01 uses seed 424242 = byte-identical reproduction of Arm C's Keechwah (control) | keechwah_k01–k04 (424242, 424243, 777001, 424244) |
+| batch2 | Human-first skin per DDB's own ordering: `deep red skin` → `dark bronze skin with a deep red undertone` (batch 1 read full-demon) | same k01–k04 |
 
 ## Verdicts
 

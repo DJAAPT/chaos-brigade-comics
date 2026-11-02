@@ -18,6 +18,11 @@ ARM_B_BLOCK = (
     "gold jewelry, NO wings, sharply pointed canines, a thick tiefling tail behind him, "
     "exactly two arms"
 )
+# Batch 2: human-first skin per DDB's own ordering (human range first, red
+# shades second) — "deep red" rendered full-demon in batch 1
+BATCH2_BLOCK = ARM_B_BLOCK.replace(
+    "deep red skin", "dark bronze skin with a deep red undertone", 1
+)
 
 
 class TestKeechwahLabDescriptions(unittest.TestCase):
@@ -29,7 +34,8 @@ class TestKeechwahLabDescriptions(unittest.TestCase):
 
     def test_baseline_block_is_arm_b_verbatim(self):
         text, sources = self.load_block()
-        self.assertEqual(text, ARM_B_BLOCK, "batch-1 block must be the Arm B Keechwah block verbatim")
+        self.assertEqual(text, BATCH2_BLOCK, "batch-2 block must be Arm B with the human-first skin swap")
+        self.assertNotIn("deep red skin", text, "batch 1's full-demon red must be gone")
         self.assertIn("character-bible/Sheets/Keechwah.pdf", sources)
         self.assertIn(KEECHWAH_URL, sources)
         self.assertTrue(any("bible.md locked chunks" in s for s in sources))

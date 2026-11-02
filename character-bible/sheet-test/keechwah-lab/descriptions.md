@@ -8,7 +8,7 @@ hooves, duplicate Keechwahs.
 
 ## Keechwah (keechwah)
 
-adult male tiefling warlock, deep red skin, long curly black hair, goatee, large curved horns, glowing purple eyes, male facial features, dark blue/gold robes, gold jewelry, NO wings, sharply pointed canines, a thick tiefling tail behind him, exactly two arms
+adult male tiefling warlock, dark bronze skin with a deep red undertone, long curly black hair, goatee, large curved horns, glowing purple eyes, male facial features, dark blue/gold robes, gold jewelry, NO wings, sharply pointed canines, a thick tiefling tail behind him, exactly two arms
 
 Sources:
 - character-bible/Sheets/Keechwah.pdf
