@@ -25,9 +25,14 @@ ARM_B_BLOCK = (
     "gold jewelry, NO wings, sharply pointed canines, a thick tiefling tail behind him, "
     "exactly two arms"
 )
-# Batch 4: one step lighter still (batch 2 held, batch 3 says go lighter)
-BATCH4_BLOCK = ARM_B_BLOCK.replace(
-    "deep red skin", "warm bronze-tan skin with a faint red cast", 1
+# Batch 5: horns grown, not stuck on — batch 4 skin holds everywhere but
+# k03's leftover red, which reads seed-specific rather than wording
+BATCH5_BLOCK = (
+    "adult male tiefling warlock, warm bronze-tan skin with a faint red cast, "
+    "long curly black hair, goatee, large curved horns growing naturally from his "
+    "temples and emerging through his hair, glowing purple eyes, male facial features, "
+    "dark blue/gold robes, gold jewelry, NO wings, sharply pointed canines, "
+    "a thick tiefling tail behind him, exactly two arms"
 )
 
 
@@ -40,9 +45,7 @@ class TestKeechwahLabDescriptions(unittest.TestCase):
 
     def test_baseline_block_is_arm_b_verbatim(self):
         text, sources = self.load_block()
-        self.assertEqual(text, BATCH4_BLOCK, "batch-4 block must be Arm B with the lighter skin swap")
-        self.assertNotIn("deep red skin", text, "full-demon red must be gone")
-        self.assertNotIn("deep red undertone", text, "batch-2 undertone superseded by the lighter cast")
+        self.assertEqual(text, BATCH5_BLOCK, "batch-5 block must be batch-4 skin plus grown-horn wording")
         self.assertIn("character-bible/Sheets/Keechwah.pdf", sources)
         self.assertIn(KEECHWAH_URL, sources)
         self.assertTrue(any("bible.md locked chunks" in s for s in sources))

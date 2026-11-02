@@ -16,6 +16,7 @@ overwrite — every generation snapshots to `batches/batch<N>/` with its
 | batch2 | Human-first skin per DDB's own ordering: `deep red skin` → `dark bronze skin with a deep red undertone` (batch 1 read full-demon) | same k01–k04 |
 | batch3 | 20-seed survey on the batch-2 block (master list seed 20261104, disjoint from all prior) — keeper/feature read | keechwah_r01–r20 |
 | batch4 | One step lighter still: `warm bronze-tan skin with a faint red cast` (batch 3 verdict: all tiefling, none great; horns tacked-on, red still heavy) | same k01–k04 |
+| batch5 | Horns grown, not stuck on: `large curved horns growing naturally from his temples and emerging through his hair` (batch-4 skin held, k03's leftover red reads seed-specific) | same k01–k04 |
 
 ## Verdicts
 
