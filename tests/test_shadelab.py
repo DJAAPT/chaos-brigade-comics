@@ -80,7 +80,7 @@ class TestShadeLabDescriptions(unittest.TestCase):
 
 class TestShadeLabPrompts(unittest.TestCase):
     def load_prompts(self):
-        self.assertTrue(os.path.exists(LAB_PROMPTS), "shade-lab/prompts.json missing (run build_shadelab first)")
+        self.assertTrue(os.path.exists(LAB_PROMPTS), "shade-lab/prompts.json missing (run build_lab first)")
         with open(LAB_PROMPTS, encoding="utf-8") as f:
             return json.load(f)
 
@@ -114,7 +114,7 @@ class TestShadeLabPrompts(unittest.TestCase):
 
         with tempfile.TemporaryDirectory() as tmp:
             proc = subprocess.run(
-                [sys.executable, "scripts/build_shadelab.py",
+                [sys.executable, "scripts/build_lab.py",
                  "--descriptions", LAB_DESC,
                  "--out-dir", tmp,
                  "--model-path", MODEL_PATH,

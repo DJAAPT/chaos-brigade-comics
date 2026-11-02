@@ -25,6 +25,7 @@ curl.exe -m 30 "http://10.13.37.88:8188/view?filename=<file>&subfolder=&type=out
 See `scripts/new-session.ps1` skeleton.
 
 ## Conventions
+- Prompt-engineering rules (distilled from controlled image batches — read before writing prompts): `PROMPT-RULES.md`
 - Session transcripts: `O:\ExternalSites\html\DND\session\<id>.json` (`.transcript`)
 - Gallery refs: `O:\ExternalSites\html\DND\gallery\`
 - Outputs: `sessions/<id>/panel_N.png` + `panels.json`
