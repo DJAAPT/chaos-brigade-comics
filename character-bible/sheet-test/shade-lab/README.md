@@ -16,6 +16,7 @@ the batch commit); only the latest set lives in `workflows/`.
 | batch2 | `9551f52` | Ratio-anchored clause: identical head-to-body and ear-to-head proportions, anti-chibi bans | same four |
 | batch3 | `3339e44` | Ear-placement clause: ears tucked under hair, flat, below eye level, "no pointed tips" | same four |
 | batch4 | _(this commit)_ | Head-ratio anchor: "head one-seventh of total body height, small adult head" — pass criterion is correct head size on **all four seeds**, not just s2 | same four |
+| batch5 | _(this commit)_ | Identity over measurement: dead 1:7 ratio swapped for counterfactual ("full-grown man who happens to stand three feet tall, enlarged to six feet indistinguishable from an ordinary human man") + explicit NOT a baby / NOT a toddler bans (batch 4's s3 was a baby with a giant head) | same four |
 
 Human verdicts so far: batch 2 `shade_s2` closest on head size; ears still
 sticking out through batch 3. Batch 4: explicit 1:7 ratio changed nothing —
