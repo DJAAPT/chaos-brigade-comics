@@ -48,15 +48,14 @@ overwrite — every generation snapshots to `batches/batch<N>/` with its
   targets the finish with `matte`.
 - Batch 10 (human verdict): k03 best of the bunch, right mix of
   everything — surveying the batch-10 wording 20 wide next.
-- Batch 11 (agent review 2026-11-02): favorite r13 (1720663727) —
-  bronze skin with no red cast, upright crown horns with hair around the
-  bases, flat purple eyes with no halo, closed robe, goatee, tail.
-  Shortlist r03/r06/r10/r15/r17/r19/r20 (one seed each below). Hit rate
-  roughly 8–9 of 20 acceptable. Recurring rejects: red skin persists on
-  r01/r02/r04/r09/r14/r18 (~30%, bronze holds the rest); worst glow
-  spill on r08/r14/r18; bare-chest robe drift on r05/r16 (new watch
-  item — robe closure is unspecified); ram-sideways horn shape on
-  r07/r12 (canon-legal variety, but not the gallery ref shape).
+- Batch 11 (agent review 2026-11-02, CORRECTED by human): agent's ~8-keeper
+  count was overgenerous — human's true keepers are r07 + r10 only.
+  Agent favorite r13 demoted: its horns render GOLD, which reads wrong.
+  Finding: horn COLOR is unspecified in every prompt so far (canon and
+  gallery ref both show dark horns) — new variable for the next batch.
+- Batch 12 (human verdict 2026-11-02): standout r07 (seed 1826299574),
+  but many bad — horns still addon-like, eyes still bad on most. The
+  batch-11 hit rate did NOT replicate; wording not yet stable.
 - Batch 4 (human verdict): better, k03 still a little too red — reads
   seed-specific, not wording. Skin locked at the bronze-tan cast.
 - Batch 5 (human verdict 2026-11-02): k03 has the best horns of the batch
