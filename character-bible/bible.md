@@ -50,8 +50,10 @@ Default expression: awkward and earnest, slightly bewildered — quiet observer,
 
 ### Vadania Amakiir — Male Wood Elf Ranger (Derek)
 `adult male wood elf ranger, long brown hair, green eyes, pointed ears, masculine jaw stubble, green cloak, longbow on back, short swords at hips, scar on shoulder`
+Approved identity ref (2026-11-02, Flux3 Klein): `character-bible/approved_vadania_reference.png` — copy this face; face, expression, and gear approved in the Flux3 v1 portrait.
 NEVER: female, dress, blonde hair (canon is brown per sheet — user decision 2026-11-01), long blonde woman in green (that is a misrender — re-roll), duplicate Vadania as barmaid.
 Expression: action over theory, blunt and sincere, follows through. Weapon: Monster Hunter's Longbow +1 (ornate named longbow) + twin shortswords.
+Default expression: blunt and direct — a man of action, steady gaze, never soft or smiling.
 
 ### Lilly — Adult woman early 20s (NOT a child)
 `adult young woman early 20s, curly voluminous red hair, freckles, white ruffled shirt, red corset laced gold, cream skirt, brown boots, thigh dagger + rapier with mother-of-pearl handle`
