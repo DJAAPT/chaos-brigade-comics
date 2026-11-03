@@ -1,36 +1,70 @@
 {
-  "keechwah_f01": {
-    "character": "keechwah_f01",
+  "keechwah_k01": {
+    "character": "keechwah_k01",
     "arm": "C",
-    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body adult male tiefling warlock, warm bronze-tan skin with a faint red cast, long curly black hair, goatee, large curved bronze-brown horns rising upright side by side from the crown of his skull with bases buried deep in his thick curly hair, narrow almond-shaped human eyes under heavy eyelids, solid matte purple irises filling the entire visible eye with no visible sclera or pupil, male facial features, dark blue/gold robes, gold jewelry, NO wings, sharply pointed canines, a thick tiefling tail behind him, exactly two arms",
+    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body adult male tiefling warlock, warm bronze-tan skin with a faint red cast, long curly black hair, goatee, large curved bronze-brown horns rising upright side by side from the crown of his skull with bases buried deep in his thick curly hair, narrow almond-shaped human eyes under heavy eyelids, solid matte purple irises filling the entire visible eye with no visible sclera or pupil, male facial features, dark blue and gold wizard robes, gold jewelry, NO wings, sharply pointed canines, a thick tiefling tail behind him, exactly two arms",
     "frame": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background",
     "species_sources": {
       "7-tiefling": "https://www.dndbeyond.com/species/7-tiefling"
     },
-    "seed": 1602613270,
+    "seed": 424242,
     "model_hashes": {
       "unet_name": "flux3-image-klein-nvfp4.safetensors",
       "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
     },
     "workflow": "workflows/base_flux3.json",
-    "output": "img/keechwah_f01.png",
-    "timestamp": "2026-11-02T23:08:32Z"
+    "output": "img/keechwah_k01.png",
+    "timestamp": "2026-11-03T01:02:42Z"
   },
-  "keechwah_f02": {
-    "character": "keechwah_f02",
+  "keechwah_k02": {
+    "character": "keechwah_k02",
     "arm": "C",
-    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body adult male tiefling warlock, warm bronze-tan skin with a faint red cast, long curly black hair, goatee, large curved bronze-brown horns rising upright side by side from the crown of his skull with bases buried deep in his thick curly hair, narrow almond-shaped human eyes under heavy eyelids, solid matte purple irises filling the entire visible eye with no visible sclera or pupil, male facial features, dark blue/gold robes, gold jewelry, NO wings, sharply pointed canines, a thick tiefling tail behind him, exactly two arms",
+    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body adult male tiefling warlock, warm bronze-tan skin with a faint red cast, long curly black hair, goatee, large curved bronze-brown horns rising upright side by side from the crown of his skull with bases buried deep in his thick curly hair, narrow almond-shaped human eyes under heavy eyelids, solid matte purple irises filling the entire visible eye with no visible sclera or pupil, male facial features, dark blue and gold wizard robes, gold jewelry, NO wings, sharply pointed canines, a thick tiefling tail behind him, exactly two arms",
     "frame": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background",
     "species_sources": {
       "7-tiefling": "https://www.dndbeyond.com/species/7-tiefling"
     },
-    "seed": 1826299574,
+    "seed": 424243,
     "model_hashes": {
       "unet_name": "flux3-image-klein-nvfp4.safetensors",
       "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
     },
     "workflow": "workflows/base_flux3.json",
-    "output": "img/keechwah_f02.png",
-    "timestamp": "2026-11-02T23:08:42Z"
+    "output": "img/keechwah_k02.png",
+    "timestamp": "2026-11-03T01:02:47Z"
+  },
+  "keechwah_k03": {
+    "character": "keechwah_k03",
+    "arm": "C",
+    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body adult male tiefling warlock, warm bronze-tan skin with a faint red cast, long curly black hair, goatee, large curved bronze-brown horns rising upright side by side from the crown of his skull with bases buried deep in his thick curly hair, narrow almond-shaped human eyes under heavy eyelids, solid matte purple irises filling the entire visible eye with no visible sclera or pupil, male facial features, dark blue and gold wizard robes, gold jewelry, NO wings, sharply pointed canines, a thick tiefling tail behind him, exactly two arms",
+    "frame": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background",
+    "species_sources": {
+      "7-tiefling": "https://www.dndbeyond.com/species/7-tiefling"
+    },
+    "seed": 777001,
+    "model_hashes": {
+      "unet_name": "flux3-image-klein-nvfp4.safetensors",
+      "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
+    },
+    "workflow": "workflows/base_flux3.json",
+    "output": "img/keechwah_k03.png",
+    "timestamp": "2026-11-03T01:02:52Z"
+  },
+  "keechwah_k04": {
+    "character": "keechwah_k04",
+    "arm": "C",
+    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body adult male tiefling warlock, warm bronze-tan skin with a faint red cast, long curly black hair, goatee, large curved bronze-brown horns rising upright side by side from the crown of his skull with bases buried deep in his thick curly hair, narrow almond-shaped human eyes under heavy eyelids, solid matte purple irises filling the entire visible eye with no visible sclera or pupil, male facial features, dark blue and gold wizard robes, gold jewelry, NO wings, sharply pointed canines, a thick tiefling tail behind him, exactly two arms",
+    "frame": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background",
+    "species_sources": {
+      "7-tiefling": "https://www.dndbeyond.com/species/7-tiefling"
+    },
+    "seed": 424244,
+    "model_hashes": {
+      "unet_name": "flux3-image-klein-nvfp4.safetensors",
+      "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
+    },
+    "workflow": "workflows/base_flux3.json",
+    "output": "img/keechwah_k04.png",
+    "timestamp": "2026-11-03T01:02:57Z"
   }
 }
