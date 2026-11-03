@@ -14,6 +14,19 @@ Arm C reproduction; hostile seed 314159 already retired by the Shade
 lab, so 424244 takes its slot). Approved reference for judging:
 `character-bible/approved_gulgrim_reference.png`.
 
+## Judging baselines (apply to every verdict)
+
+- **Canon:** `character-bible/bible.md` — Gulgrim Frozenboots section:
+  NEVER tall, thin, no-beard, or missing his heavy furs (furs stay on in
+  every panel); warhammer beats the sheet's mace; holy symbol of
+  Marthammor Du; Cleric 5 / Soldier canon (Mintarn → Neverwinter).
+- **Approved look:** `character-bible/approved_gulgrim_reference.png`
+  (approved 2026-11-02, Flux3 v1) — face, gear, expression and frost
+  boots are the target. Known divergences for the human to adjudicate
+  as batches progress: the ref is **bald** (all lab renders have white
+  hair) and grips an **axe-like** weapon head-down (batch 2 moved to a
+  worn warhammer — the lab may be intentionally improving on the ref).
+
 ## Batch history
 
 | Batch | Wording vs previous | Seeds |

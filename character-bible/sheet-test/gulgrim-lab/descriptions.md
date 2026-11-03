@@ -18,3 +18,4 @@ Sources:
 - character-bible/Sheets/Gulgrim.pdf
 - https://www.dndbeyond.com/species/13-dwarf
 - bible.md locked chunks (main checkout)
+- character-bible/approved_gulgrim_reference.png (approved identity ref, 2026-11-02)

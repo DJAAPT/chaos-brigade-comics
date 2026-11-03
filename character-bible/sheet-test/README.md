@@ -20,7 +20,7 @@ Labs exist per character: `shade-lab/`, `keechwah-lab/`, `gulgrim-lab/`, …
 
 | File | Role |
 |---|---|
-| `descriptions.md` | Single authored block: `## Name (slug)` + prompt text + `Sources:`. **Must** include a `https://www.dndbeyond.com/species/…` URL (build fails without it), `character-bible/Sheets/<Name>.pdf`, and `bible.md locked chunks (main checkout)`. |
+| `descriptions.md` | Single authored block: `## Name (slug)` + prompt text + `Sources:`. **Must** include a `https://www.dndbeyond.com/species/…` URL (build fails without it), `character-bible/Sheets/<Name>.pdf`, and `bible.md locked chunks (main checkout)`; also add `character-bible/approved_<slug>_reference.png` when an approved reference exists, so every verdict has a look to judge against. |
 | `prompts.json` | Always the LATEST batch, generated — never hand-edit. |
 | `img/` | Latest batch's PNGs (1344×768), downloaded by the runner. |
 | `README.md` | Batch history table + verdicts (append-only). |
