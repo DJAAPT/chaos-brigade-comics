@@ -45,6 +45,15 @@
     "prompt": "photorealistic scene on a sunny mansion back patio: Gulgrim, a short bald dwarf cleric with white beard and heavy furs, handing a small dagger to Lilly, a young adult woman with voluminous curly red hair who receives it with explosive wide-eyed delight, both standing, Biggins the butler with slicked gray-streaked hair watching calmly in the background, warm daylight, three distinct grown adults, no duplicates, each exactly two arms, no children, photorealistic, highly detailed"
   },
   {
+    "panel": "s2e5dare_dare.png",
+    "image": "s2e5dare_dare.png",
+    "workflow": "flux3_s2e5dare.json",
+    "seed": 1414141414,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "photorealistic tense scene on a mansion patio at golden hour: Gulgrim, a short bald dwarf cleric with white beard and heavy furs, standing with one open hand held out toward Lilly, a young woman with curly red hair holding a small dagger uncertainly, daring her forward, Biggins the butler with slicked gray-streaked hair watching impassively in the background, held breath, warm light, three distinct grown adults, no duplicates, each exactly two arms, no children, photorealistic, highly detailed"
+  },
+  {
     "panel": "s2e5b_catch.png",
     "image": "s2e5b_catch.png",
     "workflow": "flux3_s2e5b.json",
