@@ -39,7 +39,7 @@
         "2",
         0
       ],
-      "text": "photorealistic scene in a dark shop cellar with crates and barrels: three unconscious city guards in steel armor and helmets lying in a neat side-by-side row on the floor, thick rope tied around all three of them together, each guard clearly separate with exactly two arms and exactly two legs in correct human anatomy, six arms and six legs total across the row, no extra limbs, no missing limbs, no fused bodies, Chip, adult male human druid with brown skin, wild long white hair and white beard, green and brown fur garb, stands completely free with no ropes on him beside a big male shop proprietor who points accusingly at the tied guards, lantern light, distinct people, no duplicates, adult faces, no children, photorealistic, highly detailed"
+      "text": "photorealistic scene in a dark shop cellar with crates and barrels: three unconscious city guards in steel armor and helmets lying in a neat side-by-side row on the floor, thick rope coils wrapped visibly around each guard's chest and around his ankles, each guard clearly separate with exactly two arms and exactly two legs in correct human anatomy, six arms and six legs total across the row, Chip, adult male human druid with brown skin, wild long white hair and white beard, green and brown fur garb with a plain leather belt, standing tall with bare empty hands relaxed at his sides, plainly unbound, beside a big male shop proprietor who points accusingly at the tied guards, all of the rope in the scene lies on the three guards on the floor, lantern light, distinct people, adult faces, photorealistic, highly detailed"
     }
   },
   "5": {
@@ -99,7 +99,7 @@
         "1",
         0
       ],
-      "seed": 6363636363,
+      "seed": 7575757575,
       "steps": 15,
       "cfg": 1.0,
       "sampler_name": "er_sde",
