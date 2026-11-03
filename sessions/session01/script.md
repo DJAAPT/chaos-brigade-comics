@@ -2,6 +2,7 @@
 Source: sessions/session01/transcript.txt (69a905e, 69k chars)
 Style: approved S1P1 v7 + character-bible/bible.md. 5 pages, 20 panels. Narration + trimmed transcript dialogue.
 CANON (user 2026-11-03): Chip is OFF ON HIS OWN all session (solo thread P4.1–P4.4 + P5.5 apothecary). He appears in NO party scene — not the tavern, not the job board, not the chase, not the mansion. Five-strong party everywhere else.
+RESOLVED CONTINUITY (revision 2, 2026-11-03): (1) Vadania appears throughout although Derek joined ~19:00 in — accepted dramatization, cast completeness wins. (2) Mechanics-first beats (Vicious Mockery, d4) stay with badges + legend. (3) PDF is user-exported HTML. (4) Concurrent lab work on main is independent — no shared-path conflicts with this rebuild.
 CANON (user 2026-11-03): the mansion holds ONLY the party-minus-Chip plus Biggins (as butler) and Lilly (as Filvenar) — eleven named souls, no strangers, no background occupants in any mansion panel.
 
 ## PAGE 1 — MARIGOLD'S INN
