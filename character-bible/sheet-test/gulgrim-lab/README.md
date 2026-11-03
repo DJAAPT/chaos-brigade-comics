@@ -18,7 +18,7 @@ lab, so 424244 takes its slot). Approved reference for judging:
 
 | Batch | Wording vs previous | Seeds |
 |---|---|---|
-| batch1 | Baseline: Arm B Gulgrim block verbatim | gulgrim_g01–g04 (424242, 424243, 777001, 424244) |
+| batch1 | Baseline: Arm B Gulgrim block verbatim — snapshot: `batches/batch1/` | gulgrim_g01–g04 (424242, 424243, 777001, 424244) |
 
 ## Verdicts
 
