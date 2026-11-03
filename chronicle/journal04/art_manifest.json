@@ -22,5 +22,29 @@
     "seed": 8308308304,
     "portrait_ref": null,
     "status": "new-approved"
+  },
+  {
+    "plate": "plate04_lightdagger.png",
+    "source": "new",
+    "workflow": "chr4_n4.json",
+    "seed": 8308308305,
+    "portrait_ref": null,
+    "status": "new-approved"
+  },
+  {
+    "plate": "plate05_witchbolt.png",
+    "source": "new",
+    "workflow": "chr4_n5.json",
+    "seed": 8308308306,
+    "portrait_ref": null,
+    "status": "new-approved"
+  },
+  {
+    "plate": "plate06_emblem.png",
+    "source": "new",
+    "workflow": "chr4_n6.json",
+    "seed": 8308308307,
+    "portrait_ref": null,
+    "status": "new-approved"
   }
 ]
