@@ -1,0 +1,101 @@
+[
+  {
+    "plate": "plate01_faceplant.png",
+    "source": "sessions/session03/s3e6b_fail.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "plate02_twirl.png",
+    "source": "sessions/session03/s3e1_walk.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "plate03_reunion.png",
+    "source": "sessions/session03/s3e2_reunion.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "plate04_bearmeet.png",
+    "source": "sessions/session03/s3e3_bearmeet.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "plate06_limbo.png",
+    "source": "sessions/session03/s3e6a_trick.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "plate07_goldspill.png",
+    "source": "sessions/session03/s3e13_gold.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "plate08_rapier.png",
+    "source": "sessions/session03/s3e14_rapier.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "plate09_huddle.png",
+    "source": "sessions/session03/s3e9_huddle.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "seq_minstrel.png",
+    "source": "sessions/session03/s3e8_minstrel.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "seq_stage.png",
+    "source": "sessions/session03/s3e10_stage.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "seq_deal.png",
+    "source": "sessions/session03/s3e11_deal.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "seq_lost.png",
+    "source": "sessions/session03/s3e12_lost.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "seq_stable.png",
+    "source": "sessions/session03/s3e15_stable.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "seq_rooms.png",
+    "source": "sessions/session03/s3e4b_rooms.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "seq_lom.png",
+    "source": "sessions/session03/s3e7_band.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "plate05_festival.png",
+    "source": "new",
+    "workflow": "chr3_fest2.json",
+    "seed": 2929292931,
+    "portrait_ref": null,
+    "status": "new-approved"
+  },
+  {
+    "plate": "plate10_note.png",
+    "source": "new",
+    "workflow": "chr3_note.json",
+    "seed": 4444444445,
+    "portrait_ref": null,
+    "status": "new-approved"
+  },
+  {
+    "plate": "seq_bandhunt.png",
+    "source": "new",
+    "workflow": "chr3_bandhunt2.json",
+    "seed": 3030303032,
+    "portrait_ref": null,
+    "status": "new-approved"
+  }
+]
