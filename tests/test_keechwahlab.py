@@ -58,6 +58,12 @@ BATCH30_SEEDS = [2065821486, 930887360, 88839317, 1090675945, 1905371701, 155467
 BATCH31_KEYS = [f"keechwah_r{i:02d}" for i in range(1, 11)]
 BATCH31_SEEDS = [1904530516, 1660372660, 1261258012, 914509270, 597283485, 1793141911,
                  455843947, 1822728617, 575196528, 542303531]
+# Batch 32 ladder: redder-skin check (harvest script
+# C:/Users/Andrew/AppData/Local/Temp/harvest27.py, master seed 20261121,
+# verified disjoint from all 274 previously used seeds)
+BATCH32_KEYS = [f"keechwah_r{i:02d}" for i in range(1, 11)]
+BATCH32_SEEDS = [750162285, 1206558873, 1496924836, 352959242, 1449593620, 316783734,
+                 17335413, 776038280, 688472172, 1552965976]
 # Batch 3 ladder: 20-seed survey on the batch-2 block (master list seed
 # 20261104, verified disjoint from all previously used seeds)
 BATCH3_KEYS = [f"keechwah_r{i:02d}" for i in range(1, 21)]
@@ -149,6 +155,23 @@ BATCH31_BLOCK = (
     "ornate gold jewelry including a purple orb pendant, the ankle-length hem of the "
     "robes trimmed in gold."
 )
+# Batch 32: redder skin (user's transcript find — Ben: "unnatural, not a
+# human-toned skin color"; Aaron: "a little dark complected"). "warm bronze-tan
+# human skin with a faint red cast" -> "deep reddish-bronze skin": drops the
+# literal word "human" and makes red integral rather than a faint cast. Reopens
+# the batches 1-4 path deliberately — watching for the demon-read return.
+BATCH32_BLOCK = (
+    "An adult male warlock with an athletic build, exactly two normal arms, and no wings. "
+    "He has deep reddish-bronze skin, sharp masculine facial features with a stern, "
+    "knowing expression, and sharply pointed canine teeth. His narrow, almond-shaped eyes "
+    "rest under heavy eyelids, featuring solid glowing purple irises that fill the entire "
+    "visible eye with no white sclera or pupil. Long, thick, curly black hair frames his "
+    "face alongside a neatly trimmed dark black goatee, and his ears come to slight points. "
+    "Rising from the crown of his skull are two large curved bronze-brown horns with a "
+    "ridged texture, their bases buried deep within his thick hair line. He wears elegant, "
+    "flowing dark blue and gold wizard robes with ornate gold jewelry including a purple "
+    "orb pendant, the ankle-length hem of the robes trimmed in gold."
+)
 
 
 class TestKeechwahLabDescriptions(unittest.TestCase):
@@ -160,9 +183,10 @@ class TestKeechwahLabDescriptions(unittest.TestCase):
 
     def test_baseline_block_is_arm_b_verbatim(self):
         text, sources = self.load_block()
-        self.assertEqual(text, BATCH31_BLOCK, "batch-31 block must be the ankle-length swap verbatim")
+        self.assertEqual(text, BATCH32_BLOCK, "batch-32 block must be the redder-skin swap verbatim")
         self.assertNotIn("tail", text)
-        self.assertIn("ankle-length hem", text)
+        self.assertNotIn("human skin", text)
+        self.assertIn("deep reddish-bronze skin", text)
         self.assertIn("character-bible/Sheets/Keechwah.pdf", sources)
         self.assertIn(KEECHWAH_URL, sources)
         self.assertTrue(any("bible.md locked chunks" in s for s in sources))
@@ -176,13 +200,13 @@ class TestKeechwahLabPrompts(unittest.TestCase):
 
     def test_lab_prompts_schema(self):
         prompts = self.load_prompts()
-        self.assertEqual(list(prompts), BATCH31_KEYS, "lab keys must be the batch-31 ladder in order")
+        self.assertEqual(list(prompts), BATCH32_KEYS, "lab keys must be the batch-32 ladder in order")
         text, _ = TestKeechwahLabDescriptions().load_block()
-        for i, key in enumerate(BATCH31_KEYS):
+        for i, key in enumerate(BATCH32_KEYS):
             entry = prompts[key]
             self.assertEqual(list(entry.keys()), PROMPT_KEYS, f"{key} key mismatch")
             self.assertEqual(entry["arm"], "C")
-            self.assertEqual(entry["seed"], BATCH31_SEEDS[i], f"{key} seed mismatch")
+            self.assertEqual(entry["seed"], BATCH32_SEEDS[i], f"{key} seed mismatch")
             self.assertEqual(entry["frame"], FRAME_C)
             self.assertEqual(entry["prompt"], f"{FRAME_C} {ADDENDUM} {text}", f"{key} not exact composition")
             self.assertIn(entry["output"], (None, f"img/{key}.png"))
@@ -193,9 +217,9 @@ class TestKeechwahLabPrompts(unittest.TestCase):
 
         stems = [os.path.splitext(os.path.basename(p))[0] for p in _glob.glob("workflows/keechwahlab_*.json")]
         found = {s.removeprefix("keechwahlab_") for s in stems}
-        self.assertEqual(found, set(BATCH31_KEYS), f"lab workflow set mismatch: {found}")
+        self.assertEqual(found, set(BATCH32_KEYS), f"lab workflow set mismatch: {found}")
         prompts = self.load_prompts()
-        for key in BATCH31_KEYS:
+        for key in BATCH32_KEYS:
             with open(f"workflows/keechwahlab_{key}.json", encoding="utf-8") as f:
                 g = json.load(f)
             seeds = [n["inputs"][k] for n in g.values() for k in ("seed", "noise_seed") if k in n.get("inputs", {})]
