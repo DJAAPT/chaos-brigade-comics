@@ -19,7 +19,16 @@ lab, so 424244 takes its slot). Approved reference for judging:
 | Batch | Wording vs previous | Seeds |
 |---|---|---|
 | batch1 | Baseline: Arm B Gulgrim block verbatim — snapshot: `batches/batch1/` | gulgrim_g01–g04 (424242, 424243, 777001, 424244) |
+| batch1 verdict (human 2026-11-03) | Furs/beard/stockiness/NEVER-list hold on all four; weapon fails everywhere (0/4 clean warhammer); g04 renders grey hands — kept in ladder pending batch-2 re-check | — |
 
 ## Verdicts
 
-_(pending batch 1)_
+- Batch 1 (human verdict 2026-11-03): base block holds — broad long
+  white beard, heavy furs, frost-covered boots, stocky dwarf silhouette
+  and NEVER-list clean on all four. **Weapon is the failure:** g01
+  double-bit axe, g02 tiny hammer at hip, g03 lumpy maul, g04 axe-pick —
+  not one clean warhammer from the bare word `warhammer`. **g04 (424244)
+  renders grey hands** on the gripping hand; first evidence for this
+  seed, NOT retired — batch 2 re-checks it under new grip wording before
+  any seed verdict (PROMPT-RULES #9). 777001 (g03) strongest overall
+  again, matching the other labs. **Batch 2 takes the weapon phrase.**
