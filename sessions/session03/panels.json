@@ -1,0 +1,173 @@
+[
+  {
+    "panel": "s3e1_walk.png",
+    "image": "s3e1_walk.png",
+    "workflow": "flux3_s3e1duo.json",
+    "seed": 2424242424,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": "multiref_lilly.png",
+    "prompt": "photorealistic scene on a busy fantasy city street in daylight: Lilly, a young adult woman with voluminous curly red hair, wearing a huge oversized rucksack twice her size, twirling giddily mid-step with pure joy, ahead of Rocketcandy, a tall human paladin man with short brown hair in shining plate armor who trails behind her with an exasperated bodyguard expression, market stalls and dragonborn shoppers around, the rest of their party implied farther behind out of focus, two distinct grown adults in focus, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "s3e2_reunion.png",
+    "image": "s3e2_reunion.png",
+    "workflow": "flux3_s3e2.json",
+    "seed": 2525252525,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": "multiref_chip.png",
+    "prompt": "photorealistic joyful reunion scene on a city street: Rocketcandy, a tall human paladin man with short brown hair in plate armor, scratching under the beaked chin of a huge owlbear creature with grizzly bear body on all fours and feathered owl head, the owlbear hooting softly with head tilted, Chip, a tall adult male human druid with brown skin and long white hair in fur garb, grinning beside them, daylight, three distinct figures, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "s3e3_bearmeet.png",
+    "image": "s3e3_bearmeet.png",
+    "workflow": "flux3_s3e3.json",
+    "seed": 2626262626,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": "multiref_lilly.png",
+    "prompt": "photorealistic comedic scene on a city street: Lilly, a young adult woman with voluminous curly red hair, rushing forward with one hand eagerly outstretched toward a huge owlbear creature STAYING on all fours with grizzly body and feathered owl head, all four paws on the ground, leaning its whole body away with raised feather ruff, Chip, a 35-year-old adult male human druid with brown skin, wild long flowing white hair and white beard, green and brown fur garb, calmly stepping between them with one hand raised to slow her down, daylight, three distinct figures, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "s3e4_festival.png",
+    "image": "s3e4_festival.png",
+    "workflow": "flux3_s3e4a.json",
+    "seed": 2929292929,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "photorealistic festival scene outside a riverside inn at dusk: a huge painted sign reading battle of the bards over a stage where a band performs, crowds of villagers and bards with instruments everywhere, tables with food and drink, an adventuring party arriving (Rocketcandy the tall human paladin man in plate armor; Gulgrim the short bald dwarf cleric; Keechwah the male red-skinned tiefling warlock; Vadania the male elf ranger; Chip the tall white-haired druid; Lilly the red-haired young woman with oversized pack; and Water Bear the huge owlbear with clearly visible owl head, round eyes and hooked beak facing the viewer, walking on all fours), lanterns and excitement, exactly six humanoid adults in the party and no more, no small boys, no children of any size, no duplicates, each exactly two arms, adult faces, On stage, bards play ONLY medieval period instruments (lutes, fiddles, hand drums, pipes); absolutely no modern instruments, no keyboards, no synthesizers, no drum kits, no speakers, no microphones. no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "s3e4b_rooms.png",
+    "image": "s3e4b_rooms.png",
+    "workflow": "flux3_s3e4b.json",
+    "seed": 2828282828,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "photorealistic scene inside a crowded inn bar: Gulgrim, a short bald dwarf cleric with white beard and heavy furs, turning and walking away from the bar with a disgusted wave while a barkeep watches, a chalked room price of 100 gold on a board behind the bar, jostling nightclub crowd with drinks, warm lamplight, two distinct grown men plus crowd, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "s3e5_bandhunt.png",
+    "image": "s3e5_bandhunt.png",
+    "workflow": "flux3_s3e5.json",
+    "seed": 3030303030,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "photorealistic scene at a crowded outdoor music festival at dusk: Vadania, a tall male wood elf ranger with brown hair and small pointed ears, spotting a gloomy band in dark leather outfits waiting near a roped-off backstage area, Rocketcandy the human paladin and Chip the white-haired druid beside him, Lilly the red-haired young woman following a waiter with an ale tray in the background, stringed medieval instruments only, crowd with lanterns, six distinct grown adults plus crowd, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "s3e6a_trick.png",
+    "image": "s3e6a_trick.png",
+    "workflow": "flux3_s3e6a.json",
+    "seed": 3131313131,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "photorealistic action scene at an outdoor festival at dusk: Rocketcandy, a tall human paladin man with short brown hair in shining plate armor, triumphantly spinning a heavy double-bladed steel battleaxe with a plain wide scarred blade around his body in a street-performer axe trick, unmistakably an axe with a handle and two blades, no swords, no ribbons, a cheering crowd in medieval peasant clothing giving him space in a circle, no modern clothes, no t-shirts, no caps, no glasses, a bard on a nearby stage playing lute along with the moves, motion energy, lanterns, one adult man in focus plus crowd, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "s3e6b_fail.png",
+    "image": "s3e6b_fail.png",
+    "workflow": "flux3_s3e6b.json",
+    "seed": 3232323232,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "photorealistic comedic scene at an outdoor festival at dusk: Rocketcandy, a tall human paladin man with short brown hair in shining plate armor, sprawled flat on his back in the dirt with arms spread after a failed backflip, a heavy double-bladed battleaxe lying across his body with its butt resting on his forehead, a small cartoonish bump swelling on his forehead, surrounding medieval peasants laughing and pointing, a bard with a lute laughing on a nearby stage, lanterns, one adult man plus crowd, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "s3e7_band.png",
+    "image": "s3e7_band.png",
+    "workflow": "flux3_s3e7band.json",
+    "seed": 3333333333,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "photorealistic scene at an outdoor festival at dusk: Vadania, a tall male wood elf ranger with brown hair and small pointed ears, talking with Lom, a lean dark-haired singer in black leather with no instrument, leader of a gloomy band in dark leathers with lutes waiting behind a rope barrier, Rocketcandy the paladin dabbing his bumped forehead nearby, lanterns, distinct grown men, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "s3e8_minstrel.png",
+    "image": "s3e8_minstrel.png",
+    "workflow": "flux3_s3e8minstrel.json",
+    "seed": 3434343434,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "photorealistic scene at an outdoor festival at dusk: a charismatic wandering minstrel with long brown hair, manicured beard and fine clothes, lute strung on his back, laughing heartily and waving off three gloomy dark-leather band members skulking away, only two listeners and nobody else prominent: Chip, a tall adult male human druid with long white hair and beard, and Vadania, a tall male elf ranger with brown hair and small pointed ears, lanterns, distinct grown men, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "s3e9_inst.png",
+    "image": "s3e9_inst.png",
+    "workflow": "flux3_s3e9inst.json",
+    "seed": 3535353535,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "photorealistic scene backstage at an outdoor festival at dusk: adventurers picking up instruments from a pile (a dwarf taking a wooden block and stick, Vadania, a tall MALE elf ranger with brown hair and small pointed ears, taking a fife, a paladin taking a fiddle, Shade, a short halfling rogue man and fully grown adult with stubble eyeing bagpipes), a laughing minstrel with a lute helping them, lanterns, six distinct grown adults, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed No women in this group, no children anywhere."
+  },
+  {
+    "panel": "s3e9_huddle.png",
+    "image": "s3e9_huddle.png",
+    "workflow": "flux3_s3e9huddle.json",
+    "seed": 3636363636,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "photorealistic emotional scene at an outdoor festival at dusk: a charismatic minstrel with long hair and lute pulling five adventurers into a tight huddle with hands stacked in the middle (paladin, halfling rogue, dwarf cleric, tiefling warlock, elf ranger), inspirational speech moment, lanterns, six distinct grown men, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "s3e10_stage.png",
+    "image": "s3e10_stage.png",
+    "workflow": "flux3_s3e10stage.json",
+    "seed": 3838383838,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "photorealistic wide shot of a wooden outdoor stage at dusk: six grown male adventurers performing music with comically mismatched instruments - Rocketcandy, a tall human paladin man sawing a fiddle; Gulgrim, a short bald dwarf cleric keeping time with a wooden block and stick like a metronome; Vadania, a tall MALE wood elf ranger with brown hair, masculine jaw and small pointed ears, tooting a fife; Shade, a short halfling rogue man and fully grown adult with stubble, squeezing bagpipes; Keechwah, a MALE red-skinned tiefling warlock with black hair, goatee and horns, strumming a lute; Chip, a tall white-haired druid man swaying with eyes closed; a cheering crowd before the stage, lanterns, absolutely no women on stage, no children anywhere, every performer a grown man, no duplicates, each exactly two arms, photorealistic, highly detailed"
+  },
+  {
+    "panel": "s3e11_deal.png",
+    "image": "s3e11_deal.png",
+    "workflow": "flux3_s3e11deal.json",
+    "seed": 3939393939,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "photorealistic backstage scene at an outdoor festival at night: Chip, a tall adult male human druid with brown skin and long white hair, handing a smooth oval palm-sized stone to a charismatic wandering minstrel with long brown hair and lute, shaking hands on a deal, lantern light, two distinct grown men, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "s3e12_lost.png",
+    "image": "s3e12_lost.png",
+    "workflow": "flux3_s3e12lost.json",
+    "seed": 4040404040,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "photorealistic tense scene at a crowded outdoor festival at night: Keechwah, a male red-skinned tiefling warlock with black hair and horns, standing on tiptoes craning his neck scanning the crowd with a worried expression, Rocketcandy the paladin and Vadania the male elf ranger beside him also searching, empty ale table with an abandoned oversized rucksack, lanterns, everyone in the crowd in medieval peasant clothing, no modern clothes, no jeans, no t-shirts, no caps, three distinct grown men, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "s3e13_gold.png",
+    "image": "s3e13_gold.png",
+    "workflow": "flux3_s3e13table.json",
+    "seed": 4141414141,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": "multiref_lilly.png",
+    "prompt": "photorealistic tense scene at an outdoor festival table at night: Lilly, a young adult woman with voluminous curly red hair, defensively showing an open satchel overflowing with gold coins on the table, Vadania, a tall male elf ranger with brown hair and small pointed ears, leaning in sternly lecturing her, Rocketcandy the paladin and Shade the halfling rogue watching, lantern light, four distinct grown adults, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "s3e14_rapier.png",
+    "image": "s3e14_rapier.png",
+    "workflow": "flux3_s3e14rapier.json",
+    "seed": 4242424242,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": "multiref_lilly.png",
+    "prompt": "photorealistic tense comedic scene at a festival table at night: Lilly, a young adult woman with voluminous curly red hair, proudly brandishing a gleaming rapier with a beautiful mother-of-pearl handle high, Vadania, a tall male elf ranger with brown hair and small pointed ears, lunging in to grab her elbow to stop her, surrounding adventurers shielding the scene with their bodies, lantern light, four distinct grown adults, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "s3e15_stable.png",
+    "image": "s3e15_stable.png",
+    "workflow": "flux3_s3e15stable.json",
+    "seed": 4343434343,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "photorealistic nighttime scene at a makeshift stable paddock: Chip, a tall adult male human druid with brown skin and long white hair, paying a gold piece to a stablehand while leading a huge owlbear with owl head toward horses and donkeys that shy away to the far fence, lantern light, two distinct grown men plus animals, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "s3e16_note.png",
+    "image": "s3e16_note.png",
+    "workflow": "flux3_s3e16note.json",
+    "seed": 4444444444,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "photorealistic ominous close-up at night: an empty festival table with an abandoned oversized rucksack, a dagger stabbed through a folded ransom note pinning it to the wooden tabletop, guttering lantern light, no people, no children, photorealistic, highly detailed"
+  }
+]
