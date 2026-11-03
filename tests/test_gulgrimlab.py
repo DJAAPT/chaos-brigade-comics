@@ -15,24 +15,23 @@ KEYS = [f"gulgrim_g{i:02d}" for i in range(1, 5)]
 # (verified disjoint from every ladder in the repo). Wording frozen at
 # BATCH2_BLOCK.
 SEEDS = [424242, 424243, 777001, 424245]
-# Batch 4 ladder: 20-seed survey on the frozen batch-2 block (wording
-# proven 4/4 on weapons in batch 2, ladder cleaned in batch 3) — hit-rate
-# read before the next wording variable. Master seed 20261121, harvest
-# script C:/Users/Andrew/AppData/Local/Temp/harvest_gulgrim04.py, verified
-# disjoint from all 319 previously used seeds repo-wide.
+# Batch 5 ladder: back to the 4-seed control ladder (same seeds as
+# batch 3) — filename-to-filename wording delta against batches/batch3/.
+# BATCH4_* hold the batch-4 survey ladder for reference.
+BATCH5_KEYS = [f"gulgrim_g{i:02d}" for i in range(1, 5)]
+BATCH5_SEEDS = [424242, 424243, 777001, 424245]
 BATCH4_KEYS = [f"gulgrim_r{i:02d}" for i in range(1, 21)]
 BATCH4_SEEDS = [750162285, 1206558873, 1496924836, 352959242, 1449593620, 316783734,
                 17335413, 776038280, 688472172, 1552965976, 1505368845, 733124982,
                 705257192, 1563623009, 1690805504, 1508036947, 1477778073, 495603372,
                 1051377175, 1756671735]
 GULGRIM_URL = RACE_URL[SLUG_RACE["gulgrim"]]
-# Batch 2: warhammer worn at the hip — batch-1 verdict was0/4 clean
-# warhammers from the bare word `warhammer` (improvised grips, axe-head
-# drift). Position is the single variable; future batches replace this
-# constant with their revised block; the assertion below is the lab's
-# wording ledger.
-BATCH2_BLOCK = (
-    "adult male hill dwarf cleric, short stocky, broad long white beard, heavy furs, "
+# Batch 5: Gulgrim is bald (human decision 2026-11-03, approved ref is
+# bald; batch-4 survey drifted bald twice, r08/r19) — the batch-2 block
+# plus one word. Future batches replace this constant with their revised
+# block; the assertion below is the lab's wording ledger.
+BATCH5_BLOCK = (
+    "adult male hill dwarf cleric, short stocky, bald, broad long white beard, heavy furs, "
     "frost-covered boots, his warhammer at his hip, standing well under five feet tall, "
     "broad and compact, holy symbol of Marthammor Du, exactly two arms"
 )
@@ -47,7 +46,7 @@ class TestGulgrimLabDescriptions(unittest.TestCase):
 
     def test_baseline_block_is_arm_b_verbatim(self):
         text, sources = self.load_block()
-        self.assertEqual(text, BATCH2_BLOCK, "block must be the pinned batch-2 wording")
+        self.assertEqual(text, BATCH5_BLOCK, "block must be the pinned batch-5 wording")
         self.assertIn("character-bible/Sheets/Gulgrim.pdf", sources)
         self.assertIn(GULGRIM_URL, sources)
         self.assertTrue(any("bible.md locked chunks" in s for s in sources))
@@ -61,14 +60,14 @@ class TestGulgrimLabPrompts(unittest.TestCase):
 
     def test_lab_prompts_schema(self):
         prompts = self.load_prompts()
-        self.assertEqual(list(prompts), BATCH4_KEYS, "lab keys must be the batch-4 survey ladder in order")
-        for i, key in enumerate(BATCH4_KEYS):
+        self.assertEqual(list(prompts), BATCH5_KEYS, "lab keys must be the batch-5 control ladder in order")
+        for i, key in enumerate(BATCH5_KEYS):
             entry = prompts[key]
             self.assertEqual(list(entry.keys()), PROMPT_KEYS, f"{key} key mismatch")
             self.assertEqual(entry["arm"], "C")
-            self.assertEqual(entry["seed"], BATCH4_SEEDS[i], f"{key} seed mismatch")
+            self.assertEqual(entry["seed"], BATCH5_SEEDS[i], f"{key} seed mismatch")
             self.assertEqual(entry["frame"], FRAME_C)
-            self.assertEqual(entry["prompt"], f"{FRAME_C} {ADDENDUM} {BATCH2_BLOCK}", f"{key} not exact composition")
+            self.assertEqual(entry["prompt"], f"{FRAME_C} {ADDENDUM} {BATCH5_BLOCK}", f"{key} not exact composition")
             self.assertIn(entry["output"], (None, f"img/{key}.png"))
             self.assertEqual(list(entry["species_sources"].values()), [GULGRIM_URL])
 
@@ -102,9 +101,9 @@ class TestGulgrimLabPrompts(unittest.TestCase):
 
         stems = [os.path.splitext(os.path.basename(p))[0] for p in _glob.glob("workflows/gulgrimlab_*.json")]
         found = {s.removeprefix("gulgrimlab_") for s in stems}
-        self.assertEqual(found, set(BATCH4_KEYS), f"lab workflow set mismatch: {found}")
+        self.assertEqual(found, set(BATCH5_KEYS), f"lab workflow set mismatch: {found}")
         prompts = self.load_prompts()
-        for key in BATCH4_KEYS:
+        for key in BATCH5_KEYS:
             with open(f"workflows/gulgrimlab_{key}.json", encoding="utf-8") as f:
                 g = json.load(f)
             seeds = [n["inputs"][k] for n in g.values() for k in ("seed", "noise_seed") if k in n.get("inputs", {})]

@@ -38,6 +38,8 @@ lab, so 424244 takes its slot). Approved reference for judging:
 | batch3 | Seed retirement: 424244 out (grey hands under two wordings), **424245 in** at `gulgrim_g04`; wording frozen at the batch-2 block — snapshot: `batches/batch3/` | gulgrim_g01–g04 (424242, 424243, 777001, 424245) |
 | batch4 | 20-seed survey on the frozen batch-2 block (hit-rate read; master list 20261121) — wording unchanged, ladder new — snapshot: `batches/batch4/` | gulgrim_r01–r20 |
 | batch4 verdict (agent review 2026-11-03, human pending) | Solid keepers r01, r02, r06, r11, r13, r16 (6/20) + keepers-with-notes r03, r07, r09, r10, r12, r18, r20 (7/20) — better than shade's 5/20 survey baseline. Axe drift essentially dead (1 partial in 20, r17); 424244-style grey hands never recur (r05/r15 mild frosting only). New variables for later batches: **r08 bald + bare midriff on white backdrop** (hair on head is unspecified in the block — drift source), weapon duplication r13/r14, polearm read r04, belt/symbol gibberish text r03/r15 | — |
+| batch5 | **Bald pinned:** human decision — `, broad long white beard,` → `, bald, broad long white beard,` (batch-4 survey drifted bald twice on unspecified head hair); warhammer clause untouched — snapshot: `batches/batch5/` | gulgrim_g01–g04 (424242, 424243, 777001, 424245) |
+| batch5 verdict (agent review 2026-11-03, human pending) | One word, 4/4 bald — clean sweep on the control ladder, no partials. Everything else holds: warhammers at hip, NEVER-list clean, hands natural on all four (424245 stays clean), holy symbols present. g03 (777001) best again. Lab wording now converges with the approved ref on the two recorded divergences (bald ✓, worn warhammer ✓) — ref replacement candidate once the human confirms | — |
 
 ## Verdicts
 

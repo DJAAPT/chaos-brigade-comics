@@ -1,342 +1,70 @@
 {
-  "gulgrim_r01": {
-    "character": "gulgrim_r01",
+  "gulgrim_g01": {
+    "character": "gulgrim_g01",
     "arm": "C",
-    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body adult male hill dwarf cleric, short stocky, broad long white beard, heavy furs, frost-covered boots, his warhammer at his hip, standing well under five feet tall, broad and compact, holy symbol of Marthammor Du, exactly two arms",
+    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body adult male hill dwarf cleric, short stocky, bald, broad long white beard, heavy furs, frost-covered boots, his warhammer at his hip, standing well under five feet tall, broad and compact, holy symbol of Marthammor Du, exactly two arms",
     "frame": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background",
     "species_sources": {
       "13-dwarf": "https://www.dndbeyond.com/species/13-dwarf"
     },
-    "seed": 750162285,
+    "seed": 424242,
     "model_hashes": {
       "unet_name": "flux3-image-klein-nvfp4.safetensors",
       "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
     },
     "workflow": "workflows/base_flux3.json",
-    "output": "img/gulgrim_r01.png",
-    "timestamp": "2026-11-03T14:31:59Z"
+    "output": "img/gulgrim_g01.png",
+    "timestamp": "2026-11-03T14:37:11Z"
   },
-  "gulgrim_r02": {
-    "character": "gulgrim_r02",
+  "gulgrim_g02": {
+    "character": "gulgrim_g02",
     "arm": "C",
-    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body adult male hill dwarf cleric, short stocky, broad long white beard, heavy furs, frost-covered boots, his warhammer at his hip, standing well under five feet tall, broad and compact, holy symbol of Marthammor Du, exactly two arms",
+    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body adult male hill dwarf cleric, short stocky, bald, broad long white beard, heavy furs, frost-covered boots, his warhammer at his hip, standing well under five feet tall, broad and compact, holy symbol of Marthammor Du, exactly two arms",
     "frame": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background",
     "species_sources": {
       "13-dwarf": "https://www.dndbeyond.com/species/13-dwarf"
     },
-    "seed": 1206558873,
+    "seed": 424243,
     "model_hashes": {
       "unet_name": "flux3-image-klein-nvfp4.safetensors",
       "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
     },
     "workflow": "workflows/base_flux3.json",
-    "output": "img/gulgrim_r02.png",
-    "timestamp": "2026-11-03T14:32:05Z"
+    "output": "img/gulgrim_g02.png",
+    "timestamp": "2026-11-03T14:37:16Z"
   },
-  "gulgrim_r03": {
-    "character": "gulgrim_r03",
+  "gulgrim_g03": {
+    "character": "gulgrim_g03",
     "arm": "C",
-    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body adult male hill dwarf cleric, short stocky, broad long white beard, heavy furs, frost-covered boots, his warhammer at his hip, standing well under five feet tall, broad and compact, holy symbol of Marthammor Du, exactly two arms",
+    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body adult male hill dwarf cleric, short stocky, bald, broad long white beard, heavy furs, frost-covered boots, his warhammer at his hip, standing well under five feet tall, broad and compact, holy symbol of Marthammor Du, exactly two arms",
     "frame": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background",
     "species_sources": {
       "13-dwarf": "https://www.dndbeyond.com/species/13-dwarf"
     },
-    "seed": 1496924836,
+    "seed": 777001,
     "model_hashes": {
       "unet_name": "flux3-image-klein-nvfp4.safetensors",
       "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
     },
     "workflow": "workflows/base_flux3.json",
-    "output": "img/gulgrim_r03.png",
-    "timestamp": "2026-11-03T14:32:10Z"
+    "output": "img/gulgrim_g03.png",
+    "timestamp": "2026-11-03T14:37:21Z"
   },
-  "gulgrim_r04": {
-    "character": "gulgrim_r04",
+  "gulgrim_g04": {
+    "character": "gulgrim_g04",
     "arm": "C",
-    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body adult male hill dwarf cleric, short stocky, broad long white beard, heavy furs, frost-covered boots, his warhammer at his hip, standing well under five feet tall, broad and compact, holy symbol of Marthammor Du, exactly two arms",
+    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body adult male hill dwarf cleric, short stocky, bald, broad long white beard, heavy furs, frost-covered boots, his warhammer at his hip, standing well under five feet tall, broad and compact, holy symbol of Marthammor Du, exactly two arms",
     "frame": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background",
     "species_sources": {
       "13-dwarf": "https://www.dndbeyond.com/species/13-dwarf"
     },
-    "seed": 352959242,
+    "seed": 424245,
     "model_hashes": {
       "unet_name": "flux3-image-klein-nvfp4.safetensors",
       "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
     },
     "workflow": "workflows/base_flux3.json",
-    "output": "img/gulgrim_r04.png",
-    "timestamp": "2026-11-03T14:32:15Z"
-  },
-  "gulgrim_r05": {
-    "character": "gulgrim_r05",
-    "arm": "C",
-    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body adult male hill dwarf cleric, short stocky, broad long white beard, heavy furs, frost-covered boots, his warhammer at his hip, standing well under five feet tall, broad and compact, holy symbol of Marthammor Du, exactly two arms",
-    "frame": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background",
-    "species_sources": {
-      "13-dwarf": "https://www.dndbeyond.com/species/13-dwarf"
-    },
-    "seed": 1449593620,
-    "model_hashes": {
-      "unet_name": "flux3-image-klein-nvfp4.safetensors",
-      "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
-    },
-    "workflow": "workflows/base_flux3.json",
-    "output": "img/gulgrim_r05.png",
-    "timestamp": "2026-11-03T14:32:20Z"
-  },
-  "gulgrim_r06": {
-    "character": "gulgrim_r06",
-    "arm": "C",
-    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body adult male hill dwarf cleric, short stocky, broad long white beard, heavy furs, frost-covered boots, his warhammer at his hip, standing well under five feet tall, broad and compact, holy symbol of Marthammor Du, exactly two arms",
-    "frame": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background",
-    "species_sources": {
-      "13-dwarf": "https://www.dndbeyond.com/species/13-dwarf"
-    },
-    "seed": 316783734,
-    "model_hashes": {
-      "unet_name": "flux3-image-klein-nvfp4.safetensors",
-      "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
-    },
-    "workflow": "workflows/base_flux3.json",
-    "output": "img/gulgrim_r06.png",
-    "timestamp": "2026-11-03T14:32:25Z"
-  },
-  "gulgrim_r07": {
-    "character": "gulgrim_r07",
-    "arm": "C",
-    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body adult male hill dwarf cleric, short stocky, broad long white beard, heavy furs, frost-covered boots, his warhammer at his hip, standing well under five feet tall, broad and compact, holy symbol of Marthammor Du, exactly two arms",
-    "frame": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background",
-    "species_sources": {
-      "13-dwarf": "https://www.dndbeyond.com/species/13-dwarf"
-    },
-    "seed": 17335413,
-    "model_hashes": {
-      "unet_name": "flux3-image-klein-nvfp4.safetensors",
-      "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
-    },
-    "workflow": "workflows/base_flux3.json",
-    "output": "img/gulgrim_r07.png",
-    "timestamp": "2026-11-03T14:32:31Z"
-  },
-  "gulgrim_r08": {
-    "character": "gulgrim_r08",
-    "arm": "C",
-    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body adult male hill dwarf cleric, short stocky, broad long white beard, heavy furs, frost-covered boots, his warhammer at his hip, standing well under five feet tall, broad and compact, holy symbol of Marthammor Du, exactly two arms",
-    "frame": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background",
-    "species_sources": {
-      "13-dwarf": "https://www.dndbeyond.com/species/13-dwarf"
-    },
-    "seed": 776038280,
-    "model_hashes": {
-      "unet_name": "flux3-image-klein-nvfp4.safetensors",
-      "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
-    },
-    "workflow": "workflows/base_flux3.json",
-    "output": "img/gulgrim_r08.png",
-    "timestamp": "2026-11-03T14:32:36Z"
-  },
-  "gulgrim_r09": {
-    "character": "gulgrim_r09",
-    "arm": "C",
-    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body adult male hill dwarf cleric, short stocky, broad long white beard, heavy furs, frost-covered boots, his warhammer at his hip, standing well under five feet tall, broad and compact, holy symbol of Marthammor Du, exactly two arms",
-    "frame": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background",
-    "species_sources": {
-      "13-dwarf": "https://www.dndbeyond.com/species/13-dwarf"
-    },
-    "seed": 688472172,
-    "model_hashes": {
-      "unet_name": "flux3-image-klein-nvfp4.safetensors",
-      "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
-    },
-    "workflow": "workflows/base_flux3.json",
-    "output": "img/gulgrim_r09.png",
-    "timestamp": "2026-11-03T14:32:41Z"
-  },
-  "gulgrim_r10": {
-    "character": "gulgrim_r10",
-    "arm": "C",
-    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body adult male hill dwarf cleric, short stocky, broad long white beard, heavy furs, frost-covered boots, his warhammer at his hip, standing well under five feet tall, broad and compact, holy symbol of Marthammor Du, exactly two arms",
-    "frame": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background",
-    "species_sources": {
-      "13-dwarf": "https://www.dndbeyond.com/species/13-dwarf"
-    },
-    "seed": 1552965976,
-    "model_hashes": {
-      "unet_name": "flux3-image-klein-nvfp4.safetensors",
-      "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
-    },
-    "workflow": "workflows/base_flux3.json",
-    "output": "img/gulgrim_r10.png",
-    "timestamp": "2026-11-03T14:32:46Z"
-  },
-  "gulgrim_r11": {
-    "character": "gulgrim_r11",
-    "arm": "C",
-    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body adult male hill dwarf cleric, short stocky, broad long white beard, heavy furs, frost-covered boots, his warhammer at his hip, standing well under five feet tall, broad and compact, holy symbol of Marthammor Du, exactly two arms",
-    "frame": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background",
-    "species_sources": {
-      "13-dwarf": "https://www.dndbeyond.com/species/13-dwarf"
-    },
-    "seed": 1505368845,
-    "model_hashes": {
-      "unet_name": "flux3-image-klein-nvfp4.safetensors",
-      "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
-    },
-    "workflow": "workflows/base_flux3.json",
-    "output": "img/gulgrim_r11.png",
-    "timestamp": "2026-11-03T14:32:51Z"
-  },
-  "gulgrim_r12": {
-    "character": "gulgrim_r12",
-    "arm": "C",
-    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body adult male hill dwarf cleric, short stocky, broad long white beard, heavy furs, frost-covered boots, his warhammer at his hip, standing well under five feet tall, broad and compact, holy symbol of Marthammor Du, exactly two arms",
-    "frame": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background",
-    "species_sources": {
-      "13-dwarf": "https://www.dndbeyond.com/species/13-dwarf"
-    },
-    "seed": 733124982,
-    "model_hashes": {
-      "unet_name": "flux3-image-klein-nvfp4.safetensors",
-      "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
-    },
-    "workflow": "workflows/base_flux3.json",
-    "output": "img/gulgrim_r12.png",
-    "timestamp": "2026-11-03T14:32:56Z"
-  },
-  "gulgrim_r13": {
-    "character": "gulgrim_r13",
-    "arm": "C",
-    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body adult male hill dwarf cleric, short stocky, broad long white beard, heavy furs, frost-covered boots, his warhammer at his hip, standing well under five feet tall, broad and compact, holy symbol of Marthammor Du, exactly two arms",
-    "frame": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background",
-    "species_sources": {
-      "13-dwarf": "https://www.dndbeyond.com/species/13-dwarf"
-    },
-    "seed": 705257192,
-    "model_hashes": {
-      "unet_name": "flux3-image-klein-nvfp4.safetensors",
-      "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
-    },
-    "workflow": "workflows/base_flux3.json",
-    "output": "img/gulgrim_r13.png",
-    "timestamp": "2026-11-03T14:33:02Z"
-  },
-  "gulgrim_r14": {
-    "character": "gulgrim_r14",
-    "arm": "C",
-    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body adult male hill dwarf cleric, short stocky, broad long white beard, heavy furs, frost-covered boots, his warhammer at his hip, standing well under five feet tall, broad and compact, holy symbol of Marthammor Du, exactly two arms",
-    "frame": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background",
-    "species_sources": {
-      "13-dwarf": "https://www.dndbeyond.com/species/13-dwarf"
-    },
-    "seed": 1563623009,
-    "model_hashes": {
-      "unet_name": "flux3-image-klein-nvfp4.safetensors",
-      "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
-    },
-    "workflow": "workflows/base_flux3.json",
-    "output": "img/gulgrim_r14.png",
-    "timestamp": "2026-11-03T14:33:07Z"
-  },
-  "gulgrim_r15": {
-    "character": "gulgrim_r15",
-    "arm": "C",
-    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body adult male hill dwarf cleric, short stocky, broad long white beard, heavy furs, frost-covered boots, his warhammer at his hip, standing well under five feet tall, broad and compact, holy symbol of Marthammor Du, exactly two arms",
-    "frame": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background",
-    "species_sources": {
-      "13-dwarf": "https://www.dndbeyond.com/species/13-dwarf"
-    },
-    "seed": 1690805504,
-    "model_hashes": {
-      "unet_name": "flux3-image-klein-nvfp4.safetensors",
-      "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
-    },
-    "workflow": "workflows/base_flux3.json",
-    "output": "img/gulgrim_r15.png",
-    "timestamp": "2026-11-03T14:33:12Z"
-  },
-  "gulgrim_r16": {
-    "character": "gulgrim_r16",
-    "arm": "C",
-    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body adult male hill dwarf cleric, short stocky, broad long white beard, heavy furs, frost-covered boots, his warhammer at his hip, standing well under five feet tall, broad and compact, holy symbol of Marthammor Du, exactly two arms",
-    "frame": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background",
-    "species_sources": {
-      "13-dwarf": "https://www.dndbeyond.com/species/13-dwarf"
-    },
-    "seed": 1508036947,
-    "model_hashes": {
-      "unet_name": "flux3-image-klein-nvfp4.safetensors",
-      "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
-    },
-    "workflow": "workflows/base_flux3.json",
-    "output": "img/gulgrim_r16.png",
-    "timestamp": "2026-11-03T14:33:17Z"
-  },
-  "gulgrim_r17": {
-    "character": "gulgrim_r17",
-    "arm": "C",
-    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body adult male hill dwarf cleric, short stocky, broad long white beard, heavy furs, frost-covered boots, his warhammer at his hip, standing well under five feet tall, broad and compact, holy symbol of Marthammor Du, exactly two arms",
-    "frame": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background",
-    "species_sources": {
-      "13-dwarf": "https://www.dndbeyond.com/species/13-dwarf"
-    },
-    "seed": 1477778073,
-    "model_hashes": {
-      "unet_name": "flux3-image-klein-nvfp4.safetensors",
-      "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
-    },
-    "workflow": "workflows/base_flux3.json",
-    "output": "img/gulgrim_r17.png",
-    "timestamp": "2026-11-03T14:33:22Z"
-  },
-  "gulgrim_r18": {
-    "character": "gulgrim_r18",
-    "arm": "C",
-    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body adult male hill dwarf cleric, short stocky, broad long white beard, heavy furs, frost-covered boots, his warhammer at his hip, standing well under five feet tall, broad and compact, holy symbol of Marthammor Du, exactly two arms",
-    "frame": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background",
-    "species_sources": {
-      "13-dwarf": "https://www.dndbeyond.com/species/13-dwarf"
-    },
-    "seed": 495603372,
-    "model_hashes": {
-      "unet_name": "flux3-image-klein-nvfp4.safetensors",
-      "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
-    },
-    "workflow": "workflows/base_flux3.json",
-    "output": "img/gulgrim_r18.png",
-    "timestamp": "2026-11-03T14:33:27Z"
-  },
-  "gulgrim_r19": {
-    "character": "gulgrim_r19",
-    "arm": "C",
-    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body adult male hill dwarf cleric, short stocky, broad long white beard, heavy furs, frost-covered boots, his warhammer at his hip, standing well under five feet tall, broad and compact, holy symbol of Marthammor Du, exactly two arms",
-    "frame": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background",
-    "species_sources": {
-      "13-dwarf": "https://www.dndbeyond.com/species/13-dwarf"
-    },
-    "seed": 1051377175,
-    "model_hashes": {
-      "unet_name": "flux3-image-klein-nvfp4.safetensors",
-      "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
-    },
-    "workflow": "workflows/base_flux3.json",
-    "output": "img/gulgrim_r19.png",
-    "timestamp": "2026-11-03T14:33:33Z"
-  },
-  "gulgrim_r20": {
-    "character": "gulgrim_r20",
-    "arm": "C",
-    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body adult male hill dwarf cleric, short stocky, broad long white beard, heavy furs, frost-covered boots, his warhammer at his hip, standing well under five feet tall, broad and compact, holy symbol of Marthammor Du, exactly two arms",
-    "frame": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background",
-    "species_sources": {
-      "13-dwarf": "https://www.dndbeyond.com/species/13-dwarf"
-    },
-    "seed": 1756671735,
-    "model_hashes": {
-      "unet_name": "flux3-image-klein-nvfp4.safetensors",
-      "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
-    },
-    "workflow": "workflows/base_flux3.json",
-    "output": "img/gulgrim_r20.png",
-    "timestamp": "2026-11-03T14:33:38Z"
+    "output": "img/gulgrim_g04.png",
+    "timestamp": "2026-11-03T14:37:26Z"
   }
 }
