@@ -52,13 +52,13 @@ class TestLineupLabWorkflows(unittest.TestCase):
         import glob as _glob
         stems = {__import__("os").path.splitext(__import__("os").path.basename(p))[0]
                  for p in _glob.glob("workflows/lineuplab_*.json")}
-        self.assertEqual(stems, {"lineuplab_wall_empty", "lineuplab_wall_shade"},
+        self.assertEqual(stems, {"lineuplab_wall_empty", "lineuplab_wall_shade_s1"},
                          f"lab workflow set mismatch: {stems}")
         with open("workflows/lineuplab_wall_empty.json", encoding="utf-8") as f:
             wall = json.load(f)
         wall_text = json.dumps(wall)
         self.assertNotIn("LoadImage", wall_text, "empty wall must not load a reference image")
-        with open("workflows/lineuplab_wall_shade.json", encoding="utf-8") as f:
+        with open("workflows/lineuplab_wall_shade_s1.json", encoding="utf-8") as f:
             shade = json.load(f)
         shade_text = json.dumps(shade)
         self.assertIn("lineup_shade_ref.png", shade_text, "insert must ref lineup Shade copy of approved PNG")
