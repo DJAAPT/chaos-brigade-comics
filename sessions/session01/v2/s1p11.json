@@ -1,0 +1,219 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Flux3 Klein generator"
+    },
+    "inputs": {
+      "unet_name": "flux3-image-klein-nvfp4.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load Flux3 text encoder"
+    },
+    "inputs": {
+      "clip_name": "qwen3vl_4b_int8_convrot.safetensors",
+      "type": "flux3",
+      "device": "default"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load Flux2 VAE"
+    },
+    "inputs": {
+      "vae_name": "flux2-vae.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Positive prompt"
+    },
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "text": "warm crowded tavern interior at night, Marigolds Inn, five adventurers seated around a wooden table eating and drinking, a middle-aged halfling woman innkeeper leaning in talking to them, fireplace and lantern glow, mugs and stew bowls, from left to right: a three-foot-tall male halfling rogue with messy shaggy dark brown hair, light stubble, worn dark linen shirt and scuffed brown leather vest, exactly two arms, both arms visible. a four-foot-tall male hill dwarf cleric with completely bald head, broad long white beard, heavy furs, exactly two arms, both arms visible. an over-six-foot-tall male human paladin with short brown hair, light stubble, shining plate armor with gold phoenix crest, red cape, exactly two arms, both arms visible. a six-foot-two male wood elf ranger with long brown hair, pointed ears, green cloak, exactly two arms, both arms visible. a six-foot-tall male tiefling warlock with deep red skin, long curly black hair, goatee, large curved horns, flat matte solid purple eyes with no sclera, dark blue and gold robes, exactly two arms, both arms visible. a barely-three-foot-tall middle-aged halfling woman innkeeper with tiny curly brown hair, warm rosy happy face, plain brown working dress with apron, holding a serving tray, exactly two arms, both arms visible. adult faces, no children, photorealistic, highly detailed"
+    }
+  },
+  "5": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Negative prompt (unused, cfg=1)"
+    },
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "text": ""
+    }
+  },
+  "6": {
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Character reference image"
+    },
+    "inputs": {
+      "image": "lineup_shade_ref.png"
+    }
+  },
+  "7": {
+    "class_type": "ReferenceMultiLatent",
+    "_meta": {
+      "title": "Apply reference images"
+    },
+    "inputs": {
+      "positive": [
+        "4",
+        0
+      ],
+      "resolution": "keep resolution",
+      "negative": [
+        "5",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ],
+      "images.image0": [
+        "20",
+        0
+      ],
+      "images.image1": [
+        "21",
+        0
+      ],
+      "images.image2": [
+        "22",
+        0
+      ],
+      "images.image3": [
+        "23",
+        0
+      ],
+      "images.image4": [
+        "24",
+        0
+      ],
+      "images.image5": [
+        "25",
+        0
+      ]
+    }
+  },
+  "8": {
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "Sample (distilled: 15 steps, cfg 1)"
+    },
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "seed": 610933,
+      "steps": 15,
+      "cfg": 1.0,
+      "sampler_name": "er_sde",
+      "scheduler": "simple",
+      "positive": [
+        "7",
+        0
+      ],
+      "negative": [
+        "7",
+        1
+      ],
+      "latent_image": [
+        "7",
+        2
+      ],
+      "denoise": 1.0
+    }
+  },
+  "9": {
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "Decode to image"
+    },
+    "inputs": {
+      "samples": [
+        "8",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "10": {
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save result"
+    },
+    "inputs": {
+      "images": [
+        "9",
+        0
+      ],
+      "filename_prefix": "s1p11"
+    }
+  },
+  "16": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "lineup_gulgrim_ref.png"
+    }
+  },
+  "17": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "lineup_rocketcandy_ref.png"
+    }
+  },
+  "20": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "lineup_shade_ref.png"
+    }
+  },
+  "21": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "lineup_gulgrim_ref.png"
+    }
+  },
+  "22": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "lineup_rocketcandy_ref.png"
+    }
+  },
+  "23": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "lineup_vadania_ref.png"
+    }
+  },
+  "24": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "lineup_keechwah_ref.png"
+    }
+  },
+  "25": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "lineup_marigold_ref.png"
+    }
+  }
+}

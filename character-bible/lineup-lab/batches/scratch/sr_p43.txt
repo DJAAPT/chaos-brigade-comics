@@ -1,0 +1,2 @@
+lineup_chip_ref.png
+lineup_roland_ref.png

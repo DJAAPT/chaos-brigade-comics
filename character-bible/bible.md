@@ -28,7 +28,7 @@ Default expression: confident composed noble bearing — calm, lawful-good certa
 
 ### Keechwah — Male Tiefling Warlock (Aaron). MALE, no wings.
 `adult male tiefling warlock, deep red skin, long curly black hair, goatee, large curved horns, glowing purple eyes, male facial features, dark blue/gold robes, gold jewelry, NO wings`
-Approved identity ref (2026-11-02, Flux3 Klein): `character-bible/approved_keechwah_reference.png` — copy this face; face, expression, and orb approved in the Flux3 v1 portrait.
+Approved identity ref (2026-11-02, Flux3 Klein): `character-bible/approved_keechwah_reference.png` — copy this face; face, expression, and orb approved in the Flux3 v1 portrait. Eyes are solid matte purple across the full sclera — full-purple sclera, no white, no pupils, no glow, no shine.
 Refs: gallery/Scenes/Keechwah_and_Lilly_bonding.png (face, hair, jewelry locked), Verruth_and_Keechwah_make_a_deal.png (blue-hair variant = younger? use black-hair as canon unless flashback).
 NEVER: female, wings, hooves, female chest, duplicate Keechwahs. Keechwah has NO wings — Verruth (below) HAS wings, do not mix.
 Expression: loves a good mystery, convinced people are trying to steal his secrets. Props when plot-relevant: orb arcane focus, lute (Battle of the Bards), Book of Shadows.

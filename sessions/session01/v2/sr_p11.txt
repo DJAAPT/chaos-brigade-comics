@@ -1,0 +1,6 @@
+lineup_shade_ref.png
+lineup_gulgrim_ref.png
+lineup_rocketcandy_ref.png
+lineup_vadania_ref.png
+lineup_keechwah_ref.png
+lineup_marigold_ref.png

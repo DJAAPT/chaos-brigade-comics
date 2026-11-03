@@ -1,0 +1,160 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "flux3-image-klein-nvfp4.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_4b_int8_convrot.safetensors",
+      "type": "flux3",
+      "device": "default"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "flux2-vae.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "text": "standing on the neutral lineup wall set, young adult halfling man, mid-20s, mature adult face, lean build, messy shaggy dark brown hair falling over the sides of his head, light stubble, no beard, warm brown eyes, subtle sly closed-mouth expression, worn dark linen shirt with rolled sleeves, scuffed brown leather vest, belt dagger at hips, warm tan skin with a ruddy cast, long sideburns, small adult stature about three feet tall, full-size adult human features scaled down uniformly, exactly the same head-to-body proportions as a full-size grown man, he is a full-grown man who happens to stand three feet tall, enlarged to six feet he would be indistinguishable from an ordinary human man, small adult head, thick shaggy hair covering the sides of his head completely, small skull structure, sleek adult facial proportions, exactly two arms, adult faces, no children, photorealistic, highly detailed"
+    }
+  },
+  "5": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "text": ""
+    }
+  },
+  "6": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "lineup_shade_ref.png"
+    }
+  },
+  "7": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "lineup_wall_empty.png"
+    }
+  },
+  "8": {
+    "class_type": "LoadImageMask",
+    "inputs": {
+      "image": "lineup_mask_shade_slot.png",
+      "channel": "red"
+    }
+  },
+  "9": {
+    "class_type": "ReferenceMultiLatent",
+    "inputs": {
+      "positive": [
+        "4",
+        0
+      ],
+      "resolution": "keep resolution",
+      "negative": [
+        "5",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ],
+      "images.image0": [
+        "6",
+        0
+      ]
+    }
+  },
+  "10": {
+    "class_type": "VAEEncode",
+    "inputs": {
+      "pixels": [
+        "7",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "11": {
+    "class_type": "SetLatentNoiseMask",
+    "inputs": {
+      "samples": [
+        "10",
+        0
+      ],
+      "mask": [
+        "8",
+        0
+      ]
+    }
+  },
+  "12": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "seed": 777001,
+      "steps": 15,
+      "cfg": 1.0,
+      "sampler_name": "er_sde",
+      "scheduler": "simple",
+      "positive": [
+        "9",
+        0
+      ],
+      "negative": [
+        "9",
+        1
+      ],
+      "latent_image": [
+        "11",
+        0
+      ],
+      "denoise": 1.0
+    }
+  },
+  "13": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "12",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "14": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "13",
+        0
+      ],
+      "filename_prefix": "lineuplab_b2b_shade_masked"
+    }
+  }
+}

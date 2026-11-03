@@ -1,0 +1,167 @@
+{
+  "1": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "lineup_green.png"
+    }
+  },
+  "2": {
+    "class_type": "LoadImageMask",
+    "inputs": {
+      "image": "lineup_mask_shade_solo_deep.png",
+      "channel": "red"
+    }
+  },
+  "3": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_4b_int8_convrot.safetensors",
+      "type": "flux3",
+      "device": "default"
+    }
+  },
+  "4": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": [
+        "3",
+        0
+      ],
+      "text": "one young adult halfling man standing on a deep concrete floor in front of a neutral lineup wall, mid-20s, mature adult face, lean build, messy shaggy dark brown hair falling over the sides of his head, light stubble, no beard, warm brown eyes, subtle sly closed-mouth expression, worn dark linen shirt with rolled sleeves, scuffed brown leather vest, warm tan skin with a ruddy cast, long sideburns, small adult stature about three feet tall, exactly two arms, both arms relaxed away from his body and fully visible, both hands open and visible at his sides, both boots flat on the concrete floor. adult faces, no children, photorealistic, highly detailed"
+    }
+  },
+  "5": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": [
+        "3",
+        0
+      ],
+      "text": ""
+    }
+  },
+  "6": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "flux3-image-klein-nvfp4.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "7": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "flux2-vae.safetensors",
+      "image": "lineup_wall_deep.png"
+    }
+  },
+  "8": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "lineup_mask_shade_solo_deep.png"
+    }
+  },
+  "9": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "lineup_gulgrim_ref.png"
+    }
+  },
+  "10": {
+    "class_type": "ReferenceMultiLatent",
+    "inputs": {
+      "positive": [
+        "4",
+        0
+      ],
+      "resolution": "keep resolution",
+      "negative": [
+        "5",
+        0
+      ],
+      "vae": [
+        "7",
+        0
+      ],
+      "images.image0": [
+        "8",
+        0
+      ]
+    }
+  },
+  "11": {
+    "class_type": "VAEEncode",
+    "inputs": {
+      "pixels": [
+        "1",
+        0
+      ],
+      "vae": [
+        "7",
+        0
+      ]
+    }
+  },
+  "12": {
+    "class_type": "SetLatentNoiseMask",
+    "inputs": {
+      "samples": [
+        "11",
+        0
+      ],
+      "mask": [
+        "2",
+        0
+      ]
+    }
+  },
+  "13": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "6",
+        0
+      ],
+      "seed": 424260,
+      "steps": 15,
+      "cfg": 1.0,
+      "sampler_name": "er_sde",
+      "scheduler": "simple",
+      "positive": [
+        "10",
+        0
+      ],
+      "negative": [
+        "10",
+        1
+      ],
+      "latent_image": [
+        "12",
+        0
+      ],
+      "denoise": 1.0
+    }
+  },
+  "14": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "13",
+        0
+      ],
+      "vae": [
+        "7",
+        0
+      ]
+    }
+  },
+  "15": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "14",
+        0
+      ],
+      "filename_prefix": "lineuplab_b9_green_shade"
+    }
+  }
+}
