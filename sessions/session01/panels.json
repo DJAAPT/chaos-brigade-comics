@@ -6,16 +6,16 @@
     "seed": 1857761984156622644,
     "model": "flux3-image-klein-nvfp4.safetensors",
     "portrait_ref": null,
-    "prompt": "cinematic fantasy film still, Neverwinter city docks in warm daylight, ships and market stalls behind: Rocketcandy, tall human paladin man, short brown hair light stubble, shining plate armor with gold phoenix crest on chest, red cape, confident composed bearing, clasping forearms in brotherly greeting with a corrupt city guard wearing an ornate helm with red plume, red cape, gold crest, the guard's inner wrist turned toward viewer showing a geometric diamond sigil tattoo close-up and clearly visible; to the side watches Shade, a halfling rogue man barely 3 feet tall, his head reaching only to Rocketcandy's waist, clearly half Rocketcandy's height, lean build, messy shaggy dark brown hair covering his ears, worn dark linen shirt, scuffed brown leather vest, sly knowing expression, eyes fixed on the tattoo; three distinct people, no duplicates, no conflation, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+    "prompt": "cinematic fantasy film still, Neverwinter city docks in warm daylight, ships and market stalls behind: Rocketcandy, tall human paladin man, short brown hair light stubble, shining plate armor with gold phoenix crest on chest, red cape, confident composed bearing, clasping forearms in brotherly greeting with a corrupt city guard wearing an ornate helm with red plume, red cape, gold crest, the guard's inner wrist turned toward viewer showing a geometric diamond sigil tattoo of fine interlocking lines close-up and clearly visible; to the side watches Shade, a halfling rogue man barely 3 feet tall, his head reaching only to Rocketcandy's waist, clearly half Rocketcandy's height, lean build, messy shaggy dark brown hair covering his ears, worn dark linen shirt, scuffed brown leather vest, sly knowing expression, eyes fixed on the tattoo; three distinct people, no duplicates, no conflation, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
   },
   {
     "panel": "panel0b_gate.png",
     "image": "panel0b_gate.png",
     "workflow": "flux3_s1_docksgate.json",
-    "seed": 8181818181,
+    "seed": 9292929292,
     "model": "flux3-image-klein-nvfp4.safetensors",
     "portrait_ref": null,
-    "prompt": "cinematic fantasy film still, Neverwinter city gate in warm daylight, ships masts behind: a corrupt city guard in ornate helm with red plume and red cape thrusting an open demanding hand toward the viewer collecting entry tax, gold coins visible in his palm, a geometric diamond sigil tattoo on his inner wrist, adventurers with packs waiting in line behind, morning bustle, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+    "prompt": "cinematic fantasy film still, Neverwinter city gate in warm daylight, ships masts behind: a corrupt city guard in ornate helm with red plume and red cape thrusting an open demanding hand toward the viewer collecting entry tax, gold coins visible in his palm, his other inner wrist turned toward the viewer in the foreground showing a large sharply focused geometric diamond sigil tattoo of fine interlocking lines in dark ink on the skin, adventurers with packs waiting in line behind, morning bustle, distinct people, each exactly two arms, adult faces, photorealistic, highly detailed"
   },
   {
     "panel": "panel1_tavern.png",
@@ -30,10 +30,10 @@
     "panel": "panel12_dragon.png",
     "image": "panel12_dragon.png",
     "workflow": "flux3_s1_p12.json",
-    "seed": 1857761984156622644,
+    "seed": 7778889991,
     "model": "flux3-image-klein-nvfp4.safetensors",
     "portrait_ref": null,
-    "prompt": "cinematic fantasy film still, warm tavern interior in Marigolds Inn, patrons at tables turning to stare: Marigold the female halfling innkeeper in her 40s, barely 3 feet tall and shorter than the bar, with tiny curls and a warm rosy happy face, standing frozen mid-step with a startled wide-eyed expression, hands to her chest, a young wood elf ranger man with long brown hair and green cloak (Vadania) just lowering his hand after saying one fateful word, nearby halfling patrons looking terrified, warm candlelight, three distinct people plus background patrons, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+    "prompt": "cinematic fantasy film still, warm tavern interior in Marigolds Inn in sudden panic: Marigold the female halfling innkeeper, a middle-aged adult woman in her 40s with a lined mature face, wrinkles and gray-streaked curly hair, enlarged to six feet she would be indistinguishable from an ordinary middle-aged human woman, barely 3 feet tall and shorter than the bar, standing frozen mid-step with a startled wide-eyed expression, hands to her chest, a young wood elf ranger man with long brown hair and green cloak (Vadania) just lowering his hand after saying one fateful word, behind them tavern patrons leaping up from their tables and rushing for the door in fright, chairs toppling, arms flung up in alarm, warm candlelight, distinct grown adults, each exactly two arms, adult faces, photorealistic, highly detailed"
   },
   {
     "panel": "panel13_hooded.png",
@@ -102,19 +102,19 @@
     "panel": "panel32_swords.png",
     "image": "panel32_swords.png",
     "workflow": "flux3_s1_p32.json",
-    "seed": 1857761984156622644,
+    "seed": 7373737373,
     "model": "flux3-image-klein-nvfp4.safetensors",
     "portrait_ref": null,
-    "prompt": "cinematic fantasy film still, outdoor market street: four city guards in ornate helms with red plumes, red capes and gold crests whipping around with swords drawn, marching toward the viewer, market merchants upset at stalls behind them, an adult male cook in apron visible in a tavern doorway behind, daylight, distinct people, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+    "prompt": "cinematic fantasy film still, outdoor market street: four city guards in ornate helms with red plumes, red capes and gold crests marching toward the viewer with swords drawn, four different men with four easily told-apart faces below their helms: a young clean-shaven guard with short blond hair, an older guard with a gray-streaked black beard, a heavyset guard with a thick brown mustache, a lean scarred guard with dark stubble, market merchants upset at stalls behind them, an adult male cook in apron visible in a tavern doorway behind, daylight, distinct people, each exactly two arms, adult faces, photorealistic, highly detailed"
   },
   {
     "panel": "panel33_marigold.png",
     "image": "panel33_marigold.png",
-    "workflow": "flux3_s1_p33.json",
-    "seed": 1857761984156622644,
+    "workflow": "flux3_s1_p33m.json",
+    "seed": 4242424242,
     "model": "flux3-image-klein-nvfp4.safetensors",
-    "portrait_ref": null,
-    "prompt": "cinematic fantasy film still, outside a tavern: Marigold, a middle-aged adult halfling woman barely 3 feet tall, clearly half the height of the men around her, with tiny curls, definitely a grown woman not a child, rushing out with one hand held out demanding coins while her other hand smacks the back of the head of Sammy, a sheepish adult male cook in apron holding a bill menu, shoving him back inside, one human paladin in plate armor watching with amusement, daylight, distinct people, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+    "portrait_ref": "multiref_marigold.png",
+    "prompt": "outside a tavern in daylight: Marigold, a middle-aged halfling woman innkeeper in her 40s with tiny curls and a lined adult face, barely 3 feet tall, her head reaching only to the waists of the men around her, clearly half their height, a grown woman, rushing out with one hand held out demanding coins while her other hand smacks the back of the head of Sammy, a sheepish adult male cook in apron holding a bill menu, a tall human paladin man with short brown hair in shining plate armor and red cape laughing beside them, distinct people, each exactly two arms, adult faces, photorealistic, highly detailed"
   },
   {
     "panel": "panel34_stepup.png",
@@ -132,7 +132,7 @@
     "seed": 1857761984156622644,
     "model": "flux3-image-klein-nvfp4.safetensors",
     "portrait_ref": null,
-    "prompt": "extreme macro close-up photograph of a city guard's inner wrist and forearm: a geometric diamond sigil tattoo in dark ink on the skin inside the wrist, steel bracer pushed back, red cape fabric and ornate armor edge visible at the frame borders, shallow depth of field, no faces, no people visible except the arm, photorealistic, highly detailed"
+    "prompt": "extreme macro close-up photograph of a city guard's inner wrist and forearm: a geometric diamond sigil tattoo of fine interlocking lines in dark ink on the skin inside the wrist, steel bracer pushed back, red cape fabric and ornate armor edge visible at the frame borders, shallow depth of field, no faces, no people visible except the arm, photorealistic, highly detailed"
   },
   {
     "panel": "panel41_store.png",
@@ -165,10 +165,10 @@
     "panel": "panel44_hogtied.png",
     "image": "panel44_hogtied.png",
     "workflow": "flux3_s1_p44m.json",
-    "seed": 6363636363,
+    "seed": 7575757575,
     "model": "flux3-image-klein-nvfp4.safetensors",
     "portrait_ref": "multiref_roland.png",
-    "prompt": "photorealistic scene in a dark shop cellar with crates and barrels: three unconscious city guards in steel armor and helmets lying in a neat side-by-side row on the floor, thick rope tied around all three of them together, each guard clearly separate with exactly two arms and exactly two legs in correct human anatomy, six arms and six legs total across the row, no extra limbs, no missing limbs, no fused bodies, Chip, adult male human druid with brown skin, wild long white hair and white beard, green and brown fur garb, stands completely free with no ropes on him beside a big male shop proprietor who points accusingly at the tied guards, lantern light, distinct people, no duplicates, adult faces, no children, photorealistic, highly detailed"
+    "prompt": "photorealistic scene in a dark shop cellar with crates and barrels: three unconscious city guards in steel armor and helmets lying in a neat side-by-side row on the floor, thick rope coils wrapped visibly around each guard's chest and around his ankles, each guard clearly separate with exactly two arms and exactly two legs in correct human anatomy, six arms and six legs total across the row, Chip, adult male human druid with brown skin, wild long white hair and white beard, green and brown fur garb with a plain leather belt, standing tall with bare empty hands relaxed at his sides, plainly unbound, beside a big male shop proprietor who points accusingly at the tied guards, all of the rope in the scene lies on the three guards on the floor, lantern light, distinct people, adult faces, photorealistic, highly detailed"
   },
   {
     "panel": "panel51_mansion.png",
@@ -192,10 +192,10 @@
     "panel": "panel53_deadmagic.png",
     "image": "panel53_deadmagic.png",
     "workflow": "flux3_s1_p53.json",
-    "seed": 7171717171,
+    "seed": 7676767676,
     "model": "flux3-image-klein-nvfp4.safetensors",
     "portrait_ref": null,
-    "prompt": "cinematic fantasy film still, dim opulent interior: Keechwah, a male tiefling warlock with deep red skin, long curly black hair, goatee, large curved horns and glowing purple eyes, wearing dark blue robes with gold trim, staring at his own empty outstretched hand in dismay as faint purple wisps dissolve away; behind him stand exactly three worried watchers and nobody else: Rocketcandy the human paladin in plate armor, Gulgrim the short bald dwarf cleric with white beard, and Biggins the butler with slicked gray-streaked hair; an empty dim room otherwise, no strangers, no one else present, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+    "prompt": "cinematic fantasy film still, dim opulent interior: Keechwah, a male tiefling warlock with deep red skin, long curly black hair, goatee, large curved horns and glowing purple eyes, wearing dark blue robes with gold trim, staring in dismay at his own upturned palm held bare and empty before him, fingers spread over empty air, only two thin fading purple wisps curling up and dissolving into nothing, his magic guttering out; behind him stand exactly three worried watchers and nobody else: Rocketcandy the human paladin in plate armor, Gulgrim the short bald dwarf cleric with white beard, and Biggins the butler with slicked gray-streaked hair; an empty dim room otherwise, no strangers, no one else present, each exactly two arms, adult faces, photorealistic, highly detailed"
   },
   {
     "panel": "panel54_filvenar.png",
