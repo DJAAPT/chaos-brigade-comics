@@ -1,0 +1,128 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Flux3 Klein"
+    },
+    "inputs": {
+      "unet_name": "flux3-image-klein-nvfp4.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Text encoder"
+    },
+    "inputs": {
+      "clip_name": "qwen3vl_4b_int8_convrot.safetensors",
+      "type": "flux3",
+      "device": "default"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "VAE"
+    },
+    "inputs": {
+      "vae_name": "flux2-vae.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Prompt verbatim from approved ref"
+    },
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "text": "photorealistic festival scene outside a riverside inn at dusk: a huge painted sign reading battle of the bards over a stage where a band performs, crowds of villagers and bards with instruments everywhere, tables with food and drink, an adventuring party arriving (Rocketcandy the tall human paladin man in plate armor; Gulgrim the short bald dwarf cleric; Keechwah the male red-skinned tiefling warlock; Vadania the male elf ranger; Chip the tall white-haired druid; Lilly the red-haired young woman with oversized pack; and Water Bear the huge owlbear with clearly visible owl head, round eyes and hooked beak facing the viewer, walking on all fours), lanterns and excitement, exactly six humanoid adults in the party and no more, no small boys, no children of any size, no duplicates, each exactly two arms, adult faces, On stage, bards play ONLY medieval period instruments (lutes, fiddles, hand drums, pipes); absolutely no modern instruments, no keyboards, no synthesizers, no drum kits, no speakers, no microphones. no children, photorealistic, highly detailed"
+    }
+  },
+  "5": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Negative (unused)"
+    },
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "text": ""
+    }
+  },
+  "8": {
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "Sample"
+    },
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "seed": 2929292929,
+      "steps": 15,
+      "cfg": 1.0,
+      "sampler_name": "er_sde",
+      "scheduler": "simple",
+      "positive": [
+        "4",
+        0
+      ],
+      "negative": [
+        "5",
+        0
+      ],
+      "latent_image": [
+        "13",
+        0
+      ],
+      "denoise": 1.0
+    }
+  },
+  "13": {
+    "class_type": "EmptyFlux2LatentImage",
+    "_meta": {
+      "title": "1344x768"
+    },
+    "inputs": {
+      "width": 1344,
+      "height": 768,
+      "batch_size": 1
+    }
+  },
+  "9": {
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "Decode"
+    },
+    "inputs": {
+      "samples": [
+        "8",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "10": {
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save"
+    },
+    "inputs": {
+      "images": [
+        "9",
+        0
+      ],
+      "filename_prefix": "flux3_s3e4a"
+    }
+  }
+}
