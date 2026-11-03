@@ -124,5 +124,23 @@
     "model": "flux3-image-klein-nvfp4.safetensors",
     "portrait_ref": "multiref_biggins.png",
     "prompt": "photorealistic tense close-up at a mansion door in evening light: Biggins, a tall man with slicked gray-streaked dark hair in a butler uniform, pressing his open hand firmly against the chest armor of Gulgrim, a short bald dwarf cleric with long white beard wearing heavy furs and cleric garb, no plate armor, looking down at the hand with narrowed suspicious eyes, unspoken warning, two distinct grown adults, no duplicates, each exactly two arms, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "s2huddle.png",
+    "image": "s2huddle.png",
+    "workflow": "flux3_s2_huddle.json",
+    "seed": 1919191919,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "photorealistic tense scene on a mansion porch: five adventurers huddled close whispering around a table - Rocketcandy, tall human paladin man with short brown hair in shining plate armor; Shade, short halfling rogue man with dark messy hair and light stubble, a grown adult man; Gulgrim, short bald dwarf cleric with long white beard and heavy furs; Keechwah, MALE tiefling warlock with deep red skin, long black hair, goatee and big curved horns; Vadania, MALE wood elf ranger with brown hair and small pointed ears - and Biggins the butler with slicked gray-streaked hair politely closing a door in the background, conspiratorial mood, daylight, six distinct grown men, no women present, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "s2sewer.png",
+    "image": "s2sewer.png",
+    "workflow": "flux3_s2_sewer.json",
+    "seed": 2020202020,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "photorealistic scene in an opulent sitting room: Gulgrim, a short bald dwarf cleric with long white beard and heavy furs, pitching a plan with enthusiastic gestures to Rocketcandy, a tall human paladin man with short brown hair in plate armor; Shade, a short halfling rogue man with dark hair and stubble; and Vadania, a MALE wood elf ranger with long brown hair falling over and completely covering his ears, ears hidden beneath his hair, masculine jaw stubble; a hand-drawn map with a circled sewer entrance on the table, scheming energy, warm lamplight, four distinct grown men, no women, no plate armor except the paladin's, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
   }
 ]
