@@ -34,6 +34,7 @@ lab, so 424244 takes its slot). Approved reference for judging:
 | batch1 | Baseline: Arm B Gulgrim block verbatim — snapshot: `batches/batch1/` | gulgrim_g01–g04 (424242, 424243, 777001, 424244) |
 | batch1 verdict (human 2026-11-03) | Furs/beard/stockiness/NEVER-list hold on all four; weapon fails everywhere (0/4 clean warhammer); g04 renders grey hands — kept in ladder pending batch-2 re-check | — |
 | batch2 | Weapon worn, not gripped: bare `warhammer` → `his warhammer at his hip` (batch-1 verdict); head shape untouched — single variable — snapshot: `batches/batch2/` | same gulgrim_g01–g04 |
+| batch2 verdict (agent review 2026-11-03, human pending) | Position fix works: **4/4 warhammers** (batch 1 was 0/4), zero axe drift, no improvised grips; NEVER-list clean, holy symbol on all four; g03 best again. **g04 grey hands persisted → recommend retire 424244, promote 424245** | — |
 
 ## Verdicts
 
@@ -46,3 +47,18 @@ lab, so 424244 takes its slot). Approved reference for judging:
   seed, NOT retired — batch 2 re-checks it under new grip wording before
   any seed verdict (PROMPT-RULES #9). 777001 (g03) strongest overall
   again, matching the other labs. **Batch 2 takes the weapon phrase.**
+- Batch 2 (agent review 2026-11-03, human pending): the single variable
+  did its job — warhammer reads on all four (batch 1: 0/4), zero axe
+  heads anywhere, no improvised grips, hands free with arms clearly
+  visible (frame addendum clean). Bible NEVER-list clean on all four;
+  holy symbol present on all four. g03 (777001) best again — third
+  strong batch running for that seed. Open items: g02's ornate silver
+  hammer head and bare knees (both seed-consistent from batch 1), g04's
+  weapon partly hidden behind belt pouches. **g04 (424244) grey hands
+  PERSISTED under empty-hands wording — batch 1 gripping hand, batch 2
+  both hands; same defect, two different wordings, other three seeds
+  normal in both batches → seed-specific per PROMPT-RULES #9.
+  Recommend retiring 424244 and promoting 424245 (verified disjoint
+  from every recorded ladder) into `gulgrim_g04` for batch 3.**
+  Approved-ref divergences unchanged: lab has white hair (ref is bald),
+  worn warhammer (ref grips an axe-like head) — human to adjudicate.
