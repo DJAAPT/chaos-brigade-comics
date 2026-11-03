@@ -39,7 +39,7 @@
         "2",
         0
       ],
-      "text": "cinematic fantasy film still, Neverwinter city gate in warm daylight, ships masts behind: a corrupt city guard in ornate helm with red plume and red cape thrusting an open demanding hand toward the viewer collecting entry tax, gold coins visible in his palm, a geometric diamond sigil tattoo of fine interlocking lines on his inner wrist, adventurers with packs waiting in line behind, morning bustle, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+      "text": "cinematic fantasy film still, Neverwinter city gate in warm daylight, ships masts behind: a corrupt city guard in ornate helm with red plume and red cape thrusting an open demanding hand toward the viewer collecting entry tax, gold coins visible in his palm, his other inner wrist turned toward the viewer in the foreground showing a large sharply focused geometric diamond sigil tattoo of fine interlocking lines in dark ink on the skin, adventurers with packs waiting in line behind, morning bustle, distinct people, each exactly two arms, adult faces, photorealistic, highly detailed"
     }
   },
   "5": {
@@ -65,7 +65,7 @@
         "1",
         0
       ],
-      "seed": 8181818181,
+      "seed": 9292929292,
       "steps": 15,
       "cfg": 1.0,
       "sampler_name": "er_sde",
