@@ -166,11 +166,10 @@ ladle, and they will solve the cook first. Correct order. The cook was louder.*
 
 ### Chapter 7 — Good and Ready (Chip, Alone)
 
-*Meanwhile — because while five adventurers walk north arguing about capes, the
-sixth walks straight into the session's best fight with both hands in his pockets.*
+*That morning — hours before anyone walks north arguing about capes, the sixth member of this book walks straight into the session's best fight with both hands in his pockets.*
 
-Chip comes back into Neverwinter from the eastern forest, alone except for several
-tons of owlbear, and re-enters through the old eastern ruins — a patched, half-ruined
+Chip had come overland to Neverwinter from the eastern forest that morning, alone except for several
+tons of owlbear, and entered through the old eastern ruins — a patched, half-ruined
 wall with no active work crew, the kind of civic project everyone has agreed to
 stop noticing. Below it sprawls a tent city of soldiers: legions camped on the
 march, watching a druid and his water bear walk past like a parade they were not
@@ -317,7 +316,7 @@ She is five and a half feet of intent: fire-red hair in a mid-back Celtic-knot
 braid, clean complexion, gray eyes — gray, in a human, which should not work and
 absolutely does — white pirate shirt under a tight corset, trousers, boots, a rapier
 with a mother-of-pearl grip. Ready, as I described her that night, to go out and do
-just about darn near anything. "Ah," she says, looking over six battered adventurers and one butler like a woman reading a menu she already ordered from.
+just about darn near anything. "Ah," she says, looking over five battered adventurers and one butler like a woman reading a menu she already ordered from.
 "Finally somebody here to take on my quest. Please have a seat."
 
 Cut across town. A bell dings over a shop door. "Colorful Creations" — Thumba's

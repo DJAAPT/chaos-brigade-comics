@@ -243,7 +243,7 @@ for who these people are instead of what I planned.*
 ### Chapter 2 — Ten Gold to Walk In
 
 Neverwinter holds thirty to forty thousand people, and charges ten gold a head to
-look at them. The party's ferry docks at midday. The guards want sixty gold. The
+look at them. The party's ferry docks at midday. The guards want forty gold. The
 party has just enough history with money to find this offensive.
 
 Rocketcandy steps forward. "Well, excuse me, guards. Have you guys not heard of
@@ -292,9 +292,8 @@ Marigold's Inn is the kind of place adventurers dream about between dungeons: lo
 beams, candlelight, a hostess built entirely out of welcome. Marigold herself is a
 halfling innkeeper with tiny curls and a warm rosy face, shorter than her own bar —
 the party realizes she is a halfling the way you realize a door is locked, by
-walking directly into the fact. She seats six armed weirdos and an owlbear's
-reputation, recites sandwiches, soups, and roasted meats from memory, and asks for
-their story.
+walking directly into the fact. She seats five armed weirdos, recites sandwiches,
+soups, and roasted meats from memory, and asks for their story.
 
  Reader, they give it. All of it. Vadania — nineteen minutes into knowing these
 people — announces, "We just happen to be here," and, and I quote the table,
