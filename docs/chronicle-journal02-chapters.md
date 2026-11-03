@@ -9,14 +9,14 @@
 
 ### Chapter 2 — What Can I Concoct for You Today (continued)
 
-Thuma reads the list. Thuma locks the front door. Thuma turns the sign around, pulls
+Thumba reads the list. Thumba locks the front door. Thumba turns the sign around, pulls
 Chip aside past the counter, and asks the question that rearranges the afternoon:
 "Do you know what these are used for?"
 
-Chip does not, which is exactly why he is the one asking. So Thuma tells him. What
+Chip does not, which is exactly why he is the one asking. So Thumba tells him. What
 Chip has brought him — roots and powders and pickled unmentionables, gathered on
 someone else's instructions — are the makings of a memory potion. A forgetting
-draft. And before he brews a single drop, Thuma needs the specifications, because
+draft. And before he brews a single drop, Thumba needs the specifications, because
 forgetting is precision work: how many people, how much time, what feeling. Chip
 counts on his fingers. About three men. A conversation in a shop. A shakedown.
 Getting knocked out. "No pain," he adds, "and forget the whole thing," and I need
@@ -25,25 +25,25 @@ dragged standing stones across a field for fun — calmly ordering precision
 amnesia before lunch.
 
 Then Chip volunteers the rest, and the room changes. Men pretending to be guards.
-Weird tattoos on the wrist. Thuma swears — "God damn it, this is the fourth time
+Weird tattoos on the wrist. Thumba swears — "God damn it, this is the fourth time
 this month, son of a bitch" — and suddenly the warm apothecary has a cold edge,
 because this is not a curiosity to him, this is inventory. Four times. He demands
 to know how Chip found the shop, and Chip produces the shopkeep's hand-drawn map,
-and Thuma takes it, sprinkles something like grains of sand across the ink, and
+and Thumba takes it, sprinkles something like grains of sand across the ink, and
 the map *moves*. Lines crawl. Drawings morph and shift like something deciding
 what it wants to be. Chip watches what he later describes as diligently, "as an
 intellectual," which is Chip for *I have no idea what is happening but I am taking
-notes with my eyes.* Then Thuma hands it back, and the moment it touches Chip's
+notes with my eyes.* Then Thumba hands it back, and the moment it touches Chip's
 hand the image snaps into place — clean, legible, with the route reversed to lead
-back to the general store. "He made this," Thuma says of whoever drew it. He does
+back to the general store. "He made this," Thumba says of whoever drew it. He does
 not say who *he* is. [Q4: mapmaker identity — flagged §10.]
 
 What follows is my favorite kind of scene to run and my least favorite kind to
 narrate, because it is ten minutes of two men being competent at alchemy while
-everyone at the table leans in like it is a heist. Thuma orders Chip to start
+everyone at the table leans in like it is a heist. Thumba orders Chip to start
 grabbing ingredients off the shelves. The back room is a museum of the trade:
 simmering cauldron, animal hides inside and out, jars of creature parts, alchemy
-gear spread like a workshop that never closes. Thuma brews and lectures as he goes
+gear spread like a workshop that never closes. Thumba brews and lectures as he goes
 — the dosage logic, the part I love: pinches of this for forgetting pain, droplets
 of some dark blood for how *long*, the recipe bending around the shape of what must
 vanish. Chip hauls jars. The cauldron bubbles. Somewhere across town, five
@@ -105,7 +105,8 @@ beautiful room they couldn't make worse.*
 
 ### Chapter 4 — A Thousand Gold to Walk Away
 
-Positions, as taken in whispers: Gulgrim leans no — no reason, he says, nothing
+Positions, as taken in whispers — all five of them: Gulgrim, Vadania, Rocketcandy,
+Keechwah, and Shade, quiet as furniture — Gulgrim leans no — no reason, he says, nothing
 malicious, it just doesn't make sense, which from James is practically a legal
 brief. Vadania votes yes, low-key after last time, and because — his words, on
 the record — "I like the crazy women." Rocketcandy is open to the Sword Coast
@@ -192,16 +193,18 @@ James plays pedagogy the way avalanches play downhill — Gulgrim holds out his 
 flat, no dodge, and says: "Like, right here. Go ahead. Stab, like. Put knife into
 flesh."
 
-Reader, she retches. She doubles over and vomits on my foyer floor, straightens
+Reader, she retches. She doubles over and vomits on the patio flagstones, straightens
 up, says "That's better," and *charges*. Full sprint, dagger leveled, screaming
-girl across a drawing room at a dwarf who is not moving. And Biggins — sixtyish,
-silver-haired, professional pourer of tepid water — crosses several meters of room
+girl across a sunny terrace at a dwarf who is not moving. And Biggins — sixtyish,
+silver-haired, professional pourer of tepid water — crosses several meters of patio
 before anyone finishes blinking and catches the blade *barehanded*. Blood trickles
-down his hand. Gulgrim staggers backward off a constitution save of fourteen,
-rocked by nothing but the wind of the intercept. Biggins examines the bleeding
+down his hand. Gulgrim staggers backward — constitution save, fourteen: roll to
+shrug off the shockwave, fourteen barely does it — rocked by nothing but the wind
+of the intercept. Biggins examines the bleeding
 palm the way other men examine receipts, turns to the dwarf, and asks to be excused
-to go clean the dagger. On his way out he hits Gulgrim with Vicious Mockery for
-six psychic damage — "if this was part of your grand plan, I hope you kept the
+to go clean the dagger. On his way out he hits Gulgrim with Vicious Mockery —
+a spell whose entire damage is one perfectly aimed insult, six points of psychic
+hurt — "if this was part of your grand plan, I hope you kept the
 receipt" — and keeps walking.
 
 The table detonates into the caged-bird debate. Gulgrim shouts it down the hall:
@@ -220,16 +223,16 @@ is the first plan that treats the girl like a person instead of a parcel.
 ### Chapter 6 — Salt-Shaker Vials
 
 Cut back across town, where the forgetfulness business is concluding without a
-single Warcraft reference. Thuma finishes the brew and hands Chip three vials the
+single Warcraft reference. Thumba finishes the brew and hands Chip three vials the
 size of salt shakers: one full bottle per man, each man drinks the whole thing,
 no pain, the emotion and the event go away, and the potion helpfully fills the
 hole with something plausible. Chip takes the vials, takes the reverse map, and
-Thuma — who has been warm and avuncular all afternoon — stands up, pulls on a
+Thumba — who has been warm and avuncular all afternoon — stands up, pulls on a
 cloak, raises the hood, and goes full theater: "Was that dark and mysterious?
 Because I was really going for that. This hood is awesome. I love this thing."
 Reader, the apothecary from the haunted corner table is *this* man. The mist, the
 pipe, the menace — community theater with a cauldron. Chip affirms the look
-sincerely, because Chip affirms everything sincerely, and Thuma beams, and asks
+sincerely, because Chip affirms everything sincerely, and Thumba beams, and asks
 only one favor in return, to be collected later: come back afterward, so he can
 extract it. Ominous. Delightful. Unpaid-foreshadowing, the most dangerous kind.
 
@@ -283,17 +286,19 @@ Josh's gold to say them out loud. Cheapest lore dump I will ever run.*
 
 Late afternoon, early evening — that bruised-gold hour when Neverwinter looks
 expensive — and Chip, errand complete, returns to the apothecary as instructed,
-because Thuma said to come back and Chip does what he is told when the telling
-involves magic. The favor, revealed: Thuma produces a stone. Palm-sized, oval,
+because Thumba said to come back and Chip does what he is told when the telling
+involves magic. The favor, revealed: Thumba produces a stone. Palm-sized, oval,
 smooth past lake-smooth, and wrong the way powerful things are wrong. Arcana
-twenty-three, and Aaron's read comes back clean: sending-stone-like, but modified
+twenty-three — roll to know magic things, and twenty-three knows plenty — and
+Aaron's read comes back clean: sending-stone-like (paired message-rocks wizards
+use to talk at distance), but modified
 to broadcast sound on its own, no paired stone, no partner on the other end —
-a loudspeaker with ambitions. The terms: Thuma wants drama. Theme music. A
+a loudspeaker with ambitions. The terms: Thumba wants drama. Theme music. A
 mysterious persona needs an entrance, and entrances need strings — fiddle, violin,
 gravitas you can bow — and would Chip kindly find a musician who can imbue the
 stone, starting with the evening taverns where the nightlife plays? Chip accepts
 the side quest the way Chip accepts everything: completely, immediately, and
-without asking what it pays. Thuma recommends the Inn of the Horned Rabbit, down
+without asking what it pays. Thumba recommends the Inn of the Horned Rabbit, down
 by the river — sunsets, the view, draws the most talent in town. Chip pockets the
 stone, steps out to Water Bear, and points himself at the river. The druid has a
 gig. The gig has a bear. Nobody at the table sees anything strange about this.
@@ -322,7 +327,7 @@ questions.
 Departure prep is logistics as comedy. Lily's rucksack is twice her size — below
 the butt, above the head, a leather continent with straps. Biggins recommends the
 Inn of the Horned Rabbit for the night: high quality, correct direction out of
-the city. Thuma recommended the same inn an hour earlier, across town, to a
+the city. Thumba recommended the same inn an hour earlier, across town, to a
 different adventurer, and I say nothing about this on the record except: "Are you
 metagaming me here?" Both threads. One inn. No railroad, just gravity. The party
 does not know Chip is headed there too. Chip does not know the party is headed
@@ -351,7 +356,7 @@ is not explaining this. Journal 03 can have it.*
 Plates (§7 of proposal) map to existing art as follows — generate ONLY what the
 audit cannot cover:
 - P1 catch, P6 pact, P7 Lily+dirk, P8 kids+bear, P10 hug: no prior art → NEW (5).
-- P2 Thuma greeting: `approved_thumba_reference` exists; prior session-01 apothecary
+- P2 Thumba greeting: `approved_thumba_reference` exists; prior session-01 apothecary
   art (`panel55_apothecary.png`, Thumba multiref) covers the shop — audit for reuse.
 - P3 morphing map, P4 water-by-door, P5 Lily+map: check `sessions/session02/*.png`
   prior outputs first — several mansion/store scenes were generated for the old comic.

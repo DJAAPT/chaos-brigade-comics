@@ -17,11 +17,11 @@ party at the mansion with Lily. Vadania tops up (Cure Wounds 11→24 HP). Shade 
 the intel gap (only Chip knows the "guards" are fake). Handouts: tattoo design,
 guard reference. NotesBot audio gone (2-week expiry, nobody downloaded).
 
-**Chip: Colorful Creations [7:38–18:36].** "Thuma" greets ("What can I concoct for
+**Chip: Colorful Creations [7:38–18:36].** "Thumba" greets ("What can I concoct for
 you today?"). Chip's Insight 18: the man is genuine. Ingredient list, no product
-named; Thuma locks the door — memory-potion makings; what exactly must be forgotten?
+named; Thumba locks the door — memory-potion makings; what exactly must be forgotten?
 Chip: ~3 men, a conversation, a shakedown, a knockout. Chip volunteers the wrist
-tattoos; Thuma swears — fourth time this month. Map interrogation: sand grains, ink
+tattoos; Thumba swears — fourth time this month. Map interrogation: sand grains, ink
 morphs, snaps back clean with the reverse route home. Brew montage (dosage logic:
 pinches vs. droplets). Chip watches "as an intellectual." Cut away.
 
@@ -55,7 +55,7 @@ fool"). Sewer-rats trial plan. DM, live: "did you grow up under power lines or e
 lead paint?"
 
 **Chip: salt-shaker vials [1:05:32–1:22:35].** Three vials, whole-bottle doses;
-plausible-memory fill. Thuma dons the hood — "Was that dark and mysterious?" Chip
+plausible-memory fill. Thumba dons the hood — "Was that dark and mysterious?" Chip
 affirms. Back alleys, general store: 3 guards tied by the stove, pan on top.
 Pinch-nose pours ×3; Medicine 13: awake in 5–10 minutes. Staging: guards slumped at
 the table; Chip to hide — problem: Water Bear out front, smothered in children
@@ -67,7 +67,7 @@ the guild mark; the old discounts-for-protection deal broke ~18 months ago; new
 guild master suspected; shakedowns 1–2% → ~40%/week; "get out of town as quickly
 as you could." Payment: the house is open; Chip restocks, quarterstaff hunted.
 
-**Theme music and goodbyes [1:22:47–1:42:35].** Thuma's favor: a palm-smooth oval
+**Theme music and goodbyes [1:22:47–1:42:35].** Thumba's favor: a palm-smooth oval
 stone — Arcana 23: solo-broadcast sending-stone. Terms: dramatic theme music for
 the mysterious persona; needs strings (fiddle/violin) to imbue it; start with
 evening taverns. Horned Rabbit recommended (river, sunsets, talent). Chip pockets
@@ -89,7 +89,7 @@ died."
    man at the table ("we will keep her safe or die trying"). Stakes, literalized.
 3. **"Stab me."** Gulgrim's pedagogy: hand out, live steel, a civilian. The vomit,
    the rally, the sprint, the impossible catch — best action beat of the session.
-4. **"Was that dark and mysterious?"** Thuma, playing an NPC who knows he's an NPC,
+4. **"Was that dark and mysterious?"** Thumba, playing an NPC who knows he's an NPC,
    fishing for feedback on his hood. Comedy and menace in four words.
 5. **Roland's 40%.** The guild plot graduates from wrist ink to economics: 1–2% →
    40%/week, 18 months, new master. The chronicle's conspiracy gets numbers.
@@ -101,7 +101,7 @@ died."
 ## 3. Chapter divisions (Journal 02)
 
 1. **"Still Split"** — cold open (the catch) + recap, handouts, lost audio.
-2. **What Can I Concoct for You Today** — Chip + Thuma: insight, locked door, fourth time, morphing map, brew lesson.
+2. **What Can I Concoct for You Today** — Chip + Thumba: insight, locked door, fourth time, morphing map, brew lesson.
 3. **The Phandalin Pitch** — tepid water, mediocrity insult, Sword Coast map, too many "adventurers."
 4. **A Thousand Gold to Walk Away** — huddle, eavesdropper, bribe, spite-accept, sincerity check, pact.
 5. **Stab Me** — manifesto, thumb magic, first knife, vomit-lunge, the catch, Mockery, caged bird.
@@ -131,11 +131,11 @@ died."
 > Gulgrim held out his hand — palm flat, no dodge, on purpose — and told a
 > sheltered noblewoman who had been holding a knife for approximately ninety
 > seconds to stab him. She retched. She recovered. She charged at full sprint
-> across my foyer with the dagger leveled like a lance.
+> across the sunny back patio with the dagger leveled like a lance.
 >
 > And Biggins — sixty-something, silver-haired, professional server of tepid
-> water — crossed several meters of drawing room before anyone finished blinking,
-> caught the blade barehanded, and bled onto my floor with perfect posture.
+> water — crossed several meters of patio flagstones before anyone finished blinking,
+> caught the blade barehanded, and bled onto the terrace with perfect posture.
 >
 > Then he asked to clean it.
 >
@@ -157,7 +157,16 @@ absolutely no details. This is the healthiest this party has ever been, which
 tells you the state of things.
 
 Vadania tops up first — eleven on the Cure Wounds, back to twenty-four, the ranger
-patching yesterday's damage before today's damage has even introduced itself. Then
+patching yesterday's damage before today's damage has even introduced itself.
+
+**DM NOTE — ROLLING 101, ONLY LESSON.** *New here? The whole game is this: roll a
+twenty-sided die, add a bonus, beat a difficulty number I set. Cure Wounds spends
+magic to restore health — eleven points back, twenty-four total in the tank.
+Insight checks are the same roll aimed at motives. Eighteen or better usually
+means the world cooperates. This paragraph is the entire rules education I intend
+to provide. Everything else you learn by watching people fail.*
+
+Then
 Shade says the thing nobody has said out loud: only Chip knows the guards were
 fake. The party walked north theorizing about guild ink and never confirmed the
 premise. The rogue files it the way he files everything — silently, permanently,
@@ -181,18 +190,18 @@ Cut across town. Chip is already inside — he arrived at the end of last sessio
 bell dinged, no time wasted — standing dusty in Colorful Creations with a map in
 a grimy paw and three men tied up in a cellar across town slowly waking up. The
 shop smells of parchment, sugar, and things that used to be alive. Behind the
-counter: "Greetings, traveler. I'm Thuma, proprietor of Colorful Creations. What
+counter: "Greetings, traveler. I'm Thumba, proprietor of Colorful Creations. What
 can I concoct for you today?"
 
 Chip does what Chip always does, which is trust first and inventory the
 consequences later. He asks, more or less, whether the man who sent him — the
 shopkeep, Roland, though Chip doesn't know the name yet — is trustworthy. Then he
-rolls insight, privately, to the DM: eighteen. The answer comes back clean. Thuma
+rolls insight, privately, to the DM: eighteen. The answer comes back clean. Thumba
 is genuine. He wants to help. Chip, satisfied the way only a druid can be
 satisfied by an eighteen he will never explain, hands over the ingredient list
 without naming the product.
 
-Thuma reads it. Thuma locks the front door. Thuma turns the sign around.
+Thumba reads it. Thumba locks the front door. Thumba turns the sign around.
 
 "Do you know what these are used for?"
 
@@ -205,8 +214,8 @@ theme music, goodbyes — Chapters 2 (rest) through 7.]*
 ## 7. Full-illustration moments (10 plates)
 
 1. **Cold-open plate:** the catch — Biggins blurred mid-lunge, blade in bare hand, blood trickling, Gulgrim staggering (Ch. 1).
-2. Thuma's greeting over the counter, bell ringing, Chip dusty with map (Ch. 2).
-3. Sand over the morphing map in Thuma's hands (Ch. 2).
+2. Thumba's greeting over the counter, bell ringing, Chip dusty with map (Ch. 2).
+3. Sand over the morphing map in Thumba's hands (Ch. 2).
 4. Biggins setting water by the door, matched glares with bow-ready Vadania (Ch. 3).
 5. Lily unrolling the Sword Coast map, quill tracing south past Waterdeep (Ch. 3).
 6. The pact grip: forearm-to-forearm, Gulgrim feeling the magic land (Ch. 4).
@@ -236,16 +245,16 @@ theme music, goodbyes — Chapters 2 (rest) through 7.]*
 
 ## 10. Open questions (need answers before final draft)
 
-1. Thuma vs. Thumba — transcript says both (also "Fuma"); which spelling is canon?
+1. ~~Thumba vs. Thumba — transcript says both (also "Fuma")~~ RESOLVED: **Thumba** (user call).
 2. Does the pact bind Gulgrim only or the whole party — and what is the price?
 3. Biggins' healed hand — regeneration, illusion, or early pact magic? (Canon call affects the closing note's framing.)
-4. Who is "he" in Thuma's "He made this" (mapmaker)? Known or mystery?
+4. Who is "he" in Thumba's "He made this" (mapmaker)? Known or mystery?
 5. Do the players know both threads converge on the Horned Rabbit, or is that DM-only dramatic irony?
 
 ## 11. Production plan
 
 - **Cast:** approved refs for Lilly, Biggins, Roland; Thumba via `multiref_thumba.png`
-  (on ComfyUI input) + lab wording; Thuma/Thumba spelling locked by user answer to Q1
+  (on ComfyUI input) + lab wording; Thumba/Thumba spelling locked by user answer to Q1
   before any art prompt is written.
 - **Reuse audit first:** prior `sessions/session02/*.png` flux outputs exist — audit which
   beats already have approved-quality art before generating anything new.

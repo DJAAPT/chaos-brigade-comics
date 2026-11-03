@@ -72,10 +72,10 @@
   {
     "plate": "plate01_catch.png",
     "source": "new",
-    "workflow": "chr2_catch.json",
-    "seed": 9696969697,
+    "workflow": "chr2_catch2.json",
+    "seed": 9696969698,
     "portrait_ref": null,
-    "status": "new-approved"
+    "status": "new-approved-v3"
   },
   {
     "plate": "plate04_waterdoor.png",
