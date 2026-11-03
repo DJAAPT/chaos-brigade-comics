@@ -21,8 +21,11 @@
   },
   {
     "plate": "plate07_firstknife.png",
-    "source": "sessions/session02/s2e5a_gift.png",
-    "status": "reused-approved"
+    "source": "new",
+    "status": "new-approved-canon-outfit",
+    "workflow": "chr2_gift2.json",
+    "seed": 9595959596,
+    "portrait_ref": "multiref_lilly.png"
   },
   {
     "plate": "plate09_roland.png",
@@ -31,8 +34,11 @@
   },
   {
     "plate": "plate10_hug.png",
-    "source": "sessions/session02/s2e10a_hug.png",
-    "status": "reused-approved"
+    "source": "new",
+    "status": "new-approved-canon-outfit",
+    "workflow": "chr2_hug2.json",
+    "seed": 1212121213,
+    "portrait_ref": "multiref_lilly.png"
   },
   {
     "plate": "plate10b_hand.png",
