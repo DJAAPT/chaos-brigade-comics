@@ -65,7 +65,7 @@
         "1",
         0
       ],
-      "seed": 625546482,
+      "seed": 875129475,
       "steps": 15,
       "cfg": 1.0,
       "sampler_name": "er_sde",
