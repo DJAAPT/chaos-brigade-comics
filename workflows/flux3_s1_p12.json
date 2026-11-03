@@ -39,7 +39,7 @@
         "2",
         0
       ],
-      "text": "cinematic fantasy film still, warm tavern interior in Marigolds Inn, patrons at tables turning to stare: Marigold the female halfling innkeeper in her 40s, barely 3 feet tall and shorter than the bar, with tiny curls and a warm rosy happy face, standing frozen mid-step with a startled wide-eyed expression, hands to her chest, a young wood elf ranger man with long brown hair and green cloak (Vadania) just lowering his hand after saying one fateful word, nearby halfling patrons looking terrified, warm candlelight, three distinct people plus background patrons, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+      "text": "cinematic fantasy film still, warm tavern interior in Marigolds Inn in sudden panic: Marigold the female halfling innkeeper, a middle-aged adult woman in her 40s with a lined mature face, wrinkles and gray-streaked curly hair, enlarged to six feet she would be indistinguishable from an ordinary middle-aged human woman, barely 3 feet tall and shorter than the bar, standing frozen mid-step with a startled wide-eyed expression, hands to her chest, a young wood elf ranger man with long brown hair and green cloak (Vadania) just lowering his hand after saying one fateful word, behind them tavern patrons leaping up from their tables and rushing for the door in fright, chairs toppling, arms flung up in alarm, warm candlelight, distinct grown adults, each exactly two arms, adult faces, photorealistic, highly detailed"
     }
   },
   "5": {
@@ -65,7 +65,7 @@
         "1",
         0
       ],
-      "seed": 1857761984156622644,
+      "seed": 7778889991,
       "steps": 15,
       "cfg": 1.0,
       "sampler_name": "er_sde",
