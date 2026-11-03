@@ -39,7 +39,7 @@
         "2",
         0
       ],
-      "text": "cinematic fantasy film still, outdoor market street: four city guards in ornate helms with red plumes, red capes and gold crests whipping around with swords drawn, marching toward the viewer, market merchants upset at stalls behind them, an adult male cook in apron visible in a tavern doorway behind, daylight, distinct people, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+      "text": "cinematic fantasy film still, outdoor market street: four city guards in ornate helms with red plumes, red capes and gold crests marching toward the viewer with swords drawn, four different men with four easily told-apart faces below their helms: a young clean-shaven guard with short blond hair, an older guard with a gray-streaked black beard, a heavyset guard with a thick brown mustache, a lean scarred guard with dark stubble, market merchants upset at stalls behind them, an adult male cook in apron visible in a tavern doorway behind, daylight, distinct people, each exactly two arms, adult faces, photorealistic, highly detailed"
     }
   },
   "5": {
@@ -65,7 +65,7 @@
         "1",
         0
       ],
-      "seed": 1857761984156622644,
+      "seed": 7373737373,
       "steps": 15,
       "cfg": 1.0,
       "sampler_name": "er_sde",
