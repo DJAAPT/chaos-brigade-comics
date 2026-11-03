@@ -24,7 +24,7 @@ Labs exist per character: `shade-lab/`, `keechwah-lab/`, `gulgrim-lab/`, …
 | `prompts.json` | Always the LATEST batch, generated — never hand-edit. |
 | `img/` | Latest batch's PNGs (1344×768), downloaded by the runner. |
 | `README.md` | Batch history table + verdicts (append-only). |
-| `batches/batch<N>/` | Snapshot of `prompts.json` + `descriptions.md` + `img/` per completed batch. **Never overwrite** (PROMPT-RULES #11); there is no snapshot script — copy the three items manually when a batch's verdict is recorded. |
+| `batches/batch<N>/` | Snapshot of `prompts.json` + `descriptions.md` + `img/` taken **as part of every run**, right after the verify gate and before the verdict — never gated on the verdict, never overwritten (PROMPT-RULES #11). No snapshot script exists; copy the three items manually. This folder is what makes batch-to-batch comparison possible. |
 | `../../tests/test_<slug>lab.py` | Pins the current block text, key/seed ladder, prompt composition, and workflow family. Updated every batch. |
 
 ## Batch lifecycle
@@ -50,8 +50,14 @@ python scripts/verify_sheettest.py --prompts character-bible/sheet-test/<slug>-l
 #    so list them explicitly:
 python -m unittest tests.test_<slug>lab tests.test_arm_c tests.test_build_sheet_workflows
 
-# 7. Human verdict -> append to <lab>/README.md -> snapshot to batches/batch<N>/
-#    -> update tests/test_<slug>lab.py to pin the new block + ladder -> commit
+# 7. SNAPSHOT NOW — before any verdict: copy prompts.json + descriptions.md +
+#    img/ to <lab>/batches/batch<N>/ (N = the batch number just run). Every run
+#    lands in its own batch folder so progress stays comparable; top-level files
+#    keep holding the latest for the tooling.
+# 8. Human verdict -> append to <lab>/README.md -> update tests/test_<slug>lab.py
+#    to pin the new block + ladder -> commit the batch (snapshot + top-level
+#    latest + README row + test + workflows in ONE commit, as batch17 did in
+#    keechwah-lab)
 ```
 
 ## Conventions

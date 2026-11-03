@@ -47,8 +47,11 @@ not by theory. Full records live in `character-bible/sheet-test/`.
     need N=20 with a recorded master seed list.
 11. **Never overwrite.** Every generation snapshots to
     `<lab>/batches/batch<N>/` (`prompts.json` + `descriptions.md` +
-    `img/`); top-level `img/` is always the latest. All pre-batch-9
-    Shade images were recovered from git history — never again.
+    `img/`) **immediately after the run verifies, before any verdict** —
+    the snapshot belongs to the run, not the review, so every batch stays
+    comparable later; top-level `img/` is always the latest. All
+    pre-batch-9 Shade images were recovered from git history — never
+    again.
 12. **Locked chunks stay verbatim unless the human approves a deviation.**
     Batch 12's chunk surgery was explicit, ledgered, and test-pinned as a
     deviation — the exception that proves the process.
