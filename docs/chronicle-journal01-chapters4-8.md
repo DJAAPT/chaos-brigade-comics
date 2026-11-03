@@ -193,7 +193,8 @@ once in the record and is never explained, and I have chosen to love it rather t
 solve it — to wait outside. The bear obeys. The bear is the most professional person
 in this building.
 
-Then three city guards walk in, and the temperature of the scene drops ten degrees.
+Then three city guards walk in — plain-steel patrol issue, none of the market
+square's red-plumed parade dress — and the temperature of the scene drops ten degrees.
 They go to the counter. They talk quietly with the proprietor. Chip, whose curiosity
 is a load-bearing character trait, tries to listen in: stealth seven (they notice),
 perception nine (he catches nothing but the tone, which is unpleasant the way smoke
@@ -223,7 +224,7 @@ BOOM. BOOM. Two guards drop like stage scenery.
 The third still has Chip's wrist. So Chip — who has spent the entire session being
 mild — narrates his own stunt: the guard turns to face the other way, and Chip's
 immediate reaction is "a behind-the-leg sweep, knock him straight to the ground."
-Opposed strength: Chip sixteen, the guard nine. Down he goes, pinned, and the
+An opposed roll — both sides roll, higher wins: Chip sixteen, the guard nine. Down he goes, pinned, and the
 proprietor steps in with the pan and finishes the set with a WHANG to the forehead.
 Three guards. One druid. One shopkeeper. One pan. Total party damage taken: a wrist
 that got grabbed.
@@ -237,15 +238,14 @@ The proprietor talks, fast, while the adrenaline holds: months of this, the same
 men, the tax that is not a tax. He shows Chip his own wrist — the ink — and points
 out the star etched on one guard's mark: the extortionist's badge, the one who runs
 it. Then the clerks come up from the cellar, stunned and game, and all three guards
-get hauled downstairs and hogtied back-to-back-to-back in one giant rope ball
-[final-art note: rerolled plate shows a neat side-by-side row, chest and ankle
-coils — matches the cellar, reads cleaner; narration adjusts accordingly], wrists
-and ankles bound together in case they wake. The proprietor writes a note — go find
+get hauled downstairs and trussed in a neat side-by-side row, thick rope coils
+around their chests and their ankles, wrists bound together in case they wake. The proprietor writes a note — go find
 Thumba, keeps an apothecary a few blocks over, come back with whatever fixes *this*
 — and shoves Chip out the back door into the evening.
 
-*[Transcript gap ~1:24–1:30: Chip's walk north and the party's mansion arrival are
-untranscribed. The journal bridges it in Ben's voice at the top of Chapter 8.]*
+The record skips about six minutes here — back door to mansion foyer — so you'll
+take my word for the walk uphill. It was dusk. The rich live at the top. Of course
+they do.
 
 ---
 
@@ -286,7 +286,8 @@ tailoring differences at fifty paces, defeated by interior lighting.
 
 Keechwah proposes Detect Magic — check for traps, check for loot, check for
 *stealable* loot, the usual warlock due diligence — and casts it, spending a real
-spell slot, and I ask Aaron to roll me a d4. Even, it works. Odd, it doesn't. The
+spell slot (a spell costs one, and they're gone till he sleeps), and I ask Aaron to
+roll me a d4 — a four-sided die. Even, it works. Odd, it doesn't. The
 die comes up odd. And here the session changes temperature, because what happens is
 not a fizzle. Keechwah reaches down for the wellspring his patron grants him — the
 place his magic comes from, the relationship he has spent the session cultivating

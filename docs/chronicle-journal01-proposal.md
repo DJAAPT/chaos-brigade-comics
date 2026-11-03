@@ -203,7 +203,7 @@ them is titled "Chronicles of Rocket Candy" and it is exactly as long as you fea
 
 Rocketcandy spent the month on cliff duty, hurling stirges like javelins off the
 observatory rocks, and reports all of this the way other people report the weather.
-Eighteen armor class. Stayed, in his words, "to become a legend." He then describes
+Eighteen armor class — how hard he is to hit, for the civilians — and stayed, in his words, "to become a legend." He then describes
 exiting a cave trailing marine layer behind him purely, and I quote, "because I
 enjoy the aesthetic of walking out of the mist like a storm made flesh." I did not
 ask him to read that part aloud. Nobody can stop him from reading things aloud.
@@ -218,15 +218,18 @@ Gulgrim stayed on the isle making potions and meditating on what it means to hea
 and protect people, which is the single healthiest month anyone in this party has
 ever had, and nobody has tried to replicate it since.
 
-Keechwah went to the archives. Bargained with traveling sages. Hunched over
+Keechwah went to the archives. Bargained with traveling sages — a horned tiefling
+warlock, skin an unnatural red-brown the table has agreed not to stare at. Hunched over
 candlelight comparing arcane theories, testing the pact magic instead of merely
-wielding it, recording everything in a growing grimoire. His thesis, boiled down:
+wielding it — a warlock's power comes through a patron, an otherworldly being he has
+a deal with, which is the whole arrangement — recording everything in a growing grimoire. His thesis, boiled down:
 true power is constructed, not stumbled upon. It is the most disciplined thing
 anyone at my table has ever said, and I need you to remember that, because within
 the week he will be staring at his own empty hand while his god ignores him.
 
 Chip left the isle early — for Neverwinter, for the stars. Star-maps. Beginner
-stonehenges, dragged into place by a water bear. Suspicious rope and horse tack he
+stonehenges, dragged into place by Water Bear — Albert on the bad days, same bear,
+and nobody has ever gotten an explanation. Suspicious rope and horse tack he
 declines to explain. Chip's months are indistinguishable from his days, which is
 either enlightenment or the druid lifestyle, and I have stopped trying to tell the
 difference.
@@ -264,14 +267,17 @@ Shade clocks it. Ben files it. The tax collector has it.
 rogue WILL find it in eleven minutes. Do not tattoo anything you are not prepared
 to explain before lunch.*
 
-Mid-ferry, a sixth player arrives. Derek — Vadania, wood elf ranger — joins the
+Mid-ferry, a sixth player arrives. Derek — that's the player; Vadania, wood elf
+ranger, is the character, and I will use whichever name the moment deserves — joins the
 table nineteen minutes into the session having missed the entire adventure to date,
 and covers it the way you cover a late arrival to a tavern: by announcing he has
 been training for revenge, alone, for his family, and is now, finally, peppy. "Since
 I met you guys, I've been pretty peppy in spirits. Now that I finally feel like I
 have some friends and been a loner for such a long time, it's nice to have you guys
 around." The party adopts him instantly. Loneliness is the one backstory nobody at
-this table is willing to fail a check against.
+this table is willing to fail a check against. Chip meets the ferry, hugs nobody,
+and peels off for supplies on the eastern edge of town — he will rejoin this story
+through the back door of a general store, and it will not go well.
 
 Then they walk into my city, past the dragonborn and the goliaths and the market
 crowds, and tell the innkeeper absolutely everything. But that is the next chapter.

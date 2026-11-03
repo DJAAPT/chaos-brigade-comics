@@ -94,9 +94,9 @@
   {
     "plate": "plate06_marigold_welcome.png",
     "source": "new",
-    "workflow": "chr_plate06.json",
-    "seed": 8108108105,
+    "workflow": "chr_plate06c.json",
+    "seed": 8108108110,
     "portrait_ref": "multiref_marigold.png",
-    "status": "new-approved"
+    "status": "new-approved-v3"
   }
 ]
