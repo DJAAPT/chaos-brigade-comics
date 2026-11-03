@@ -176,7 +176,9 @@ contemptuous — the affection is the joke's license. Operating rules:
 > It worked. I want that on the record. I set a price, the paladin countered with
 > being himself, and the dice said that was legal. Eighteen plus four: twenty-two.
 > The guards waived the tax, clasped forearms with him like a brother, and waved
-> six adventurers and one owlbear into Neverwinter free of charge.
+> four adventurers into Neverwinter free of charge. (Chip was already across town,
+> having left the isle early and walked in overland that morning with several tons
+> of owlbear. Vadania hadn't met us yet. Counting, as you will learn, is a theme.)
 >
 > This is the part of the story where I remind you that I am the Dungeon Master.
 > I built this city. I stationed those guards. I decided what the entry tax was.
@@ -267,7 +269,7 @@ Shade clocks it. Ben files it. The tax collector has it.
 rogue WILL find it in eleven minutes. Do not tattoo anything you are not prepared
 to explain before lunch.*
 
-Mid-ferry, a sixth player arrives. Derek — that's the player; Vadania, wood elf
+Partway through the afternoon, in the city, a fifth player arrives. Derek — that's the player; Vadania, wood elf
 ranger, is the character, and I will use whichever name the moment deserves — joins the
 table nineteen minutes into the session having missed the entire adventure to date,
 and covers it the way you cover a late arrival to a tavern: by announcing he has
@@ -275,9 +277,11 @@ been training for revenge, alone, for his family, and is now, finally, peppy. "S
 I met you guys, I've been pretty peppy in spirits. Now that I finally feel like I
 have some friends and been a loner for such a long time, it's nice to have you guys
 around." The party adopts him instantly. Loneliness is the one backstory nobody at
-this table is willing to fail a check against. Chip meets the ferry, hugs nobody,
-and peels off for supplies on the eastern edge of town — he will rejoin this story
-through the back door of a general store, and it will not go well.
+this table is willing to fail a check against. Chip, meanwhile, is already on the
+mainland — he left the isle early and walked into the city overland that morning,
+bear and all. He will rejoin this story through the back door of a general store,
+and it will not go well. He does not meet the rest of the party again until our
+next session; the group walks north as five, and stays five, for the rest of this book.
 
 Then they walk into my city, past the dragonborn and the goliaths and the market
 crowds, and tell the innkeeper absolutely everything. But that is the next chapter.

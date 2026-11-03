@@ -86,10 +86,10 @@
   {
     "plate": "plate05_ferry.png",
     "source": "new",
-    "workflow": "chr_plate05b.json",
-    "seed": 8108108108,
+    "workflow": "chr_plate05c.json",
+    "seed": 8108108111,
     "portrait_ref": null,
-    "status": "new-approved"
+    "status": "new-approved-v3-4figures"
   },
   {
     "plate": "plate06_marigold_welcome.png",
