@@ -2,18 +2,18 @@
   {
     "plate": "plate01_biggins.png",
     "source": "new",
-    "workflow": "chr4_n1.json",
-    "seed": 8308308301,
+    "workflow": "chr4_n1b.json",
+    "seed": 8308308314,
     "portrait_ref": "multiref_biggins.png",
-    "status": "new-approved"
+    "status": "new-approved-v2"
   },
   {
     "plate": "plate02_deadguards.png",
     "source": "new",
-    "workflow": "chr4_n2.json",
-    "seed": 8308308302,
+    "workflow": "chr4_n2b.json",
+    "seed": 8308308313,
     "portrait_ref": null,
-    "status": "new-approved"
+    "status": "new-approved-v2"
   },
   {
     "plate": "plate03_firstblood.png",

@@ -161,12 +161,9 @@ us take it. We earned it.
 
 We open split and close bloody, which for this party counts as a reunion. When
 we left them: seven heads around a festival table, one girl gone, one dagger in
-one note pointing south of town. Tonight those seven walk out the south gate
-with an owlbear and come back — well. That is the book. Tonight those seven walk
-out the south gate, and what walks back is a different number, and the difference
-is lying in the dirt with two death saves on the board. No. Wait. That gives it
-away, and the dice haven't earned it yet. Walk with me. South gate. Moon like a
-rumor. Bear in front.
+one note pointing south of town. Tonight six walk out the south gate
+with an owlbear and come back — well. That is the book. Walk with me. South gate.
+Moon like a rumor. Bear in front.
 
 The vote takes ninety seconds and tells you everything. Gulgrim: it's the guards
 or the butler, either way we go *now*, through the specified gate, immediately.
@@ -191,16 +188,9 @@ beautiful, and I wrote it down exactly.*
 
 ### Chapter 2 — South-ish Enough (part 1; sample ends at the wall)
 
-Out the south gate by scant moon — not full, never full when it matters — eight
-shapes and one shadow, if you count the bear separately, which everyone does,
-because the bear is doing most of the walking for all of them. Gulgrim is out
-front behind Water Bear, which is the correct place for a dwarf (low center of
-gravity, high center of purpose), and Gulgrim is therefore the first to see it,
-and Gulgrim stops, and the party stops behind him the way parties stop behind
-dwarves, which is all at once.
-
-Two guards. Pinned to the gate wall. Short swords through their chests, holding
-them up like specimens. Moonlight doing nothing for anybody.
+Out the south gate by scant moon — not full, never full when it matters. Gulgrim
+is out front behind Water Bear, which is the correct place for a dwarf (low center
+of gravity, high center of purpose).
 
 *[Sample continues in full production through: wrist check, tracks, pursuit vote,
 forest entry, first blood, the blob, lore bomb, owlbear justice, triage, Where

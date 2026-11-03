@@ -9,18 +9,7 @@
 
 ### Chapter 2 — South-ish Enough (continued)
 
-The stable first, because the bear sleeps nowhere without paperwork. Water Bear
-gets collected the way Water Bear gets collected everywhere: every horse and
-donkey in the building pressing itself into the far fence, the stablehands
-consulting the book for the owlbear rate the way other men consult scripture,
-one gold a night, ticket issued. Chip pays. Gets the ticket. And then — because
-this is Chip, and because druids budget time the way dragons budget treasure —
-they march. Out through streets still sticky with festival, past the coming-down
-lanterns, the whole party behind an owlbear that clears crowds the way weather
-clears fields: not threatening, just present, at scale. Thinner crowds now.
-Moon scant overhead. The Battle of the Bards is ending behind them and something
-else is beginning south of the walls, and the party walks toward it in diamond
-formation feeling watched, and here is the miserable part, again: they are right.
+Past the walls, the road narrows and the moon thins further. Six walkers and one bear.
 
 **DM NOTE — MOON.** *Scant. Never full when it matters. I control the weather,
 the calendar, and the moon, and I still scheduled the rescue for a dark night
@@ -55,7 +44,7 @@ which is very Chip: the right information, at the worst time, delivered
 cheerfully. The dirt path past the cobblestones gives them the rest of what the
 dead men can't: heavy boot prints, more than one set, exact number indiscernible,
 heading further south. Debate, brief and sharp: alert the city and risk
-questioning, lose the trail, lose the girl — or pursue, now, into the dark, eight
+questioning, lose the trail, lose the girl — or pursue, now, into the dark, seven
 shapes against unknown archers. They pursue. Of course they pursue. The butler
 theories walk with them: recruit him, he's strong; prove to him we can protect
 her; and Aaron's movie-logic special — maybe he faked the whole kidnapping to
@@ -80,7 +69,8 @@ torchlight and hope. Diamond formation, Rocketcandy spearheading out front, and
 then the forest demonstrates the problem with formations, which is that they
 assume the enemy will be where you are looking.
 
-The first bolt comes for Keechwah. Dexterity save: dirty twenty. He steps
+The first bolt comes for Keechwah. Dexterity save: dirty twenty — a twenty, total,
+dodge with math on top. He steps
 aside and the bolt buries itself in the dirt at his feet, and Aaron laughs the
 laugh of a man whose number came up, because a dirty twenty is the game winking
 at you. Keechwah strains for the shooter — perception three, natural two on the
@@ -102,7 +92,8 @@ will ever convince me dice don't have personalities.*
 
 ### Chapter 5 — Aim for That Blob
 
-Initiative gets rolled in the dark with everyone shouting numbers, and Vadania
+Initiative gets rolled in the dark with everyone shouting numbers — turn order,
+high goes first — and Vadania
 goes first — eighteen — and does the disciplined thing: bow readied on
 visibility, finger off the string until there is something to hit. Rules check,
 confirmed, loaded gun placed on the table. Chip, bleeding poison in the dirt,
@@ -188,7 +179,8 @@ exactly this moment of certainty to spend it.
 Twenty-two on Chip. Seven piercing, eight piercing, ten poison — twenty-five,
 called out one number at a time the way executioners read sentences — and Chip
 goes down to zero in the dirt. The starry light snuffs out like a stepped-on
-candle. Death saves start, and the table does the quiet math that no one says
+candle. Death saves start — three rolls, three failures and he dies, three
+successes and he holds — and the table does the quiet math that no one says
 aloud: two failures and the druid dies in the mud while the bear watches. And
 the bear — Water Bear, who failed every perception check all night, who sniffed
 a nine and a ten and found nothing, who the table has been joking about for an
@@ -205,8 +197,10 @@ says the line the transcript will keep forever — "there are no eyes in D, but
 there are seven eyes in I don't care how big the room is, I cast Fireball" —
 and then everybody remembers the rescue target is *somewhere* and stands down
 from arson, which is growth, of a kind. Detect Magic, thirty feet: nothing.
-Gulgrim runs the engine — Healing Word on Rocketcandy for ten mid-dash, then
-the long run to Chip, then Cure Wounds level two for sixteen: stable, no more
+Gulgrim runs the engine — Healing Word on Rocketcandy for ten mid-dash (a word
+that heals, cast as a bonus alongside everything else), then
+the long run to Chip, then Cure Wounds level two for sixteen (hands-on, bigger):
+stable, no more
 death saves, breathing — plus a bonus-action Healing Word on Keechwah for ten in
 the same round, because James has decided healing is a full-time job with
 overtime. Vadania double-dashes east. Chip's death save: fourteen. Alive.
@@ -252,7 +246,8 @@ throat. And then, to the captive, to the night, to the ring of battered
 adventurers staring up at the boulder in the dagger-light: "I never should have
 trusted a cut-rate brand of adventurers like you." And then he turns that
 disgust on *us* — the whole gathered party, the rescuers, the victims of the
-evening — and casts Vicious Mockery, four psychic damage, and the session ends.
+evening — and casts Vicious Mockery — one perfect insult, magically wounding,
+four psychic damage — and the session ends.
 Gulgrim gets a Healing Word onto Keechwah for eight just in time — timed to the
 second, spared the insult by magic and reflexes — and the rest of us take the
 four. All of it. Every point. We earned it. We left a girl alone at a festival
