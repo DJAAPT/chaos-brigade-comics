@@ -21,11 +21,12 @@ lab, so 424244 takes its slot). Approved reference for judging:
   every panel); warhammer beats the sheet's mace; holy symbol of
   Marthammor Du; Cleric 5 / Soldier canon (Mintarn → Neverwinter).
 - **Approved look:** `character-bible/approved_gulgrim_reference.png`
-  (approved 2026-11-02, Flux3 v1) — face, gear, expression and frost
-  boots are the target. Known divergences for the human to adjudicate
-  as batches progress: the ref is **bald** (all lab renders have white
-  hair) and grips an **axe-like** weapon head-down (batch 2 moved to a
-  worn warhammer — the lab may be intentionally improving on the ref).
+  (approved 2026-11-02, Flux3 v1; **replaced 2026-11-03 by gulgrim-lab
+  batch-5 g03, seed 777001** — bald, warhammer worn at hip) — face,
+  gear, expression and frost boots are the target. The two divergences
+  tracked during the lab are resolved: the lab wording converged with
+  the old ref on baldness, and improved on it with a proper worn
+  warhammer where the old ref gripped an axe-like head.
 
 ## Batch history
 
@@ -40,6 +41,7 @@ lab, so 424244 takes its slot). Approved reference for judging:
 | batch4 verdict (agent review 2026-11-03, human pending) | Solid keepers r01, r02, r06, r11, r13, r16 (6/20) + keepers-with-notes r03, r07, r09, r10, r12, r18, r20 (7/20) — better than shade's 5/20 survey baseline. Axe drift essentially dead (1 partial in 20, r17); 424244-style grey hands never recur (r05/r15 mild frosting only). New variables for later batches: **r08 bald + bare midriff on white backdrop** (hair on head is unspecified in the block — drift source), weapon duplication r13/r14, polearm read r04, belt/symbol gibberish text r03/r15 | — |
 | batch5 | **Bald pinned:** human decision — `, broad long white beard,` → `, bald, broad long white beard,` (batch-4 survey drifted bald twice on unspecified head hair); warhammer clause untouched — snapshot: `batches/batch5/` | gulgrim_g01–g04 (424242, 424243, 777001, 424245) |
 | batch5 verdict (agent review 2026-11-03, human pending) | One word, 4/4 bald — clean sweep on the control ladder, no partials. Everything else holds: warhammers at hip, NEVER-list clean, hands natural on all four (424245 stays clean), holy symbols present. g03 (777001) best again. Lab wording now converges with the approved ref on the two recorded divergences (bald ✓, worn warhammer ✓) — ref replacement candidate once the human confirms | — |
+| batch5 verdict (human 2026-11-03) | **LOCKED: g03 is Gulgrim's new approved identity ref** — `character-bible/approved_gulgrim_reference.png` replaced (2026-11-03, Flux3 Klein, seed 777001); bible.md approved-ref line updated. Bald + worn warhammer now canon in pixels, matching the lab wording | — |
 
 ## Verdicts
 

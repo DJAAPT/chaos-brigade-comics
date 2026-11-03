@@ -36,7 +36,7 @@ Default expression: secretive knowing intensity — guards his secrets, stern ra
 
 ### Gulgrim Frozenboots — Male Hill Dwarf Cleric (James)
 `adult male hill dwarf cleric, short stocky, completely bald head, broad long white beard, heavy furs, frost-covered boots, large round shield with holy rune, warhammer`
-Approved identity ref (2026-11-02, Flux3 Klein): `character-bible/approved_gulgrim_reference.png` — copy this look; face, gear, and expression approved in the Flux3 v1 portrait (full-body framing shows the frost boots).
+Approved identity ref (2026-11-03, Flux3 Klein): `character-bible/approved_gulgrim_reference.png` — copy this look; face, gear, and expression approved in the gulgrim-lab batch-5 portrait (seed 777001, bald, warhammer worn at hip). Replaces the 2026-11-02 Flux3 v1 ref, which gripped an axe-like weapon head-down.
 NEVER: tall, thin, no-beard, missing his heavy furs (furs stay on in every panel, indoors or out).
 Gear: Holy Symbol + Biggins manor key (plot item), Mason's tools. Soldier background (Mintarn → Neverwinter watch, quit over corruption). Faith: Marthammor Du. Warhammer is canon (user decision — sheet's mace ignored).
 Default expression: steadfast and resolute — stern veteran soldier-cleric, no smile.
