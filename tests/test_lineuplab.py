@@ -47,5 +47,23 @@ class TestLineupLabLedger(unittest.TestCase):
         self.assertTrue(slots_has_six_with_shade_3ft(), "slots.json must hold six slots with Shade at 3ft")
 
 
+class TestLineupLabWorkflows(unittest.TestCase):
+    def test_lineuplab_workflows_family(self):
+        import glob as _glob
+        stems = {__import__("os").path.splitext(__import__("os").path.basename(p))[0]
+                 for p in _glob.glob("workflows/lineuplab_*.json")}
+        self.assertEqual(stems, {"lineuplab_wall_empty", "lineuplab_wall_shade"},
+                         f"lab workflow set mismatch: {stems}")
+        with open("workflows/lineuplab_wall_empty.json", encoding="utf-8") as f:
+            wall = json.load(f)
+        wall_text = json.dumps(wall)
+        self.assertNotIn("LoadImage", wall_text, "empty wall must not load a reference image")
+        with open("workflows/lineuplab_wall_shade.json", encoding="utf-8") as f:
+            shade = json.load(f)
+        shade_text = json.dumps(shade)
+        self.assertIn("lineup_shade_ref.png", shade_text, "insert must ref lineup Shade copy of approved PNG")
+        self.assertIn("ReferenceMultiLatent", shade_text)
+
+
 if __name__ == "__main__":
     unittest.main()
