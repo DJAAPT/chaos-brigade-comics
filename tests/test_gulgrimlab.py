@@ -12,13 +12,15 @@ LAB_PROMPTS = os.path.join(LAB_DIR, "prompts.json")
 KEYS = [f"gulgrim_g{i:02d}" for i in range(1, 5)]
 SEEDS = [424242, 424243, 777001, 424244]
 GULGRIM_URL = RACE_URL[SLUG_RACE["gulgrim"]]
-# Batch 1: Arm B Gulgrim block verbatim — the starting point both other
-# labs used. Future batches replace this constant with their revised
-# block; the assertion below is the lab's wording ledger.
-BATCH1_BLOCK = (
+# Batch 2: warhammer worn at the hip — batch-1 verdict was0/4 clean
+# warhammers from the bare word `warhammer` (improvised grips, axe-head
+# drift). Position is the single variable; future batches replace this
+# constant with their revised block; the assertion below is the lab's
+# wording ledger.
+BATCH2_BLOCK = (
     "adult male hill dwarf cleric, short stocky, broad long white beard, heavy furs, "
-    "frost-covered boots, warhammer, standing well under five feet tall, broad and compact, "
-    "holy symbol of Marthammor Du, exactly two arms"
+    "frost-covered boots, his warhammer at his hip, standing well under five feet tall, "
+    "broad and compact, holy symbol of Marthammor Du, exactly two arms"
 )
 
 
@@ -31,7 +33,7 @@ class TestGulgrimLabDescriptions(unittest.TestCase):
 
     def test_baseline_block_is_arm_b_verbatim(self):
         text, sources = self.load_block()
-        self.assertEqual(text, BATCH1_BLOCK, "batch 1 must be the Arm B Gulgrim block verbatim")
+        self.assertEqual(text, BATCH2_BLOCK, "block must be the pinned batch-2 wording")
         self.assertIn("character-bible/Sheets/Gulgrim.pdf", sources)
         self.assertIn(GULGRIM_URL, sources)
         self.assertTrue(any("bible.md locked chunks" in s for s in sources))
@@ -52,7 +54,7 @@ class TestGulgrimLabPrompts(unittest.TestCase):
             self.assertEqual(entry["arm"], "C")
             self.assertEqual(entry["seed"], SEEDS[i], f"{key} seed mismatch")
             self.assertEqual(entry["frame"], FRAME_C)
-            self.assertEqual(entry["prompt"], f"{FRAME_C} {ADDENDUM} {BATCH1_BLOCK}", f"{key} not exact composition")
+            self.assertEqual(entry["prompt"], f"{FRAME_C} {ADDENDUM} {BATCH2_BLOCK}", f"{key} not exact composition")
             self.assertIn(entry["output"], (None, f"img/{key}.png"))
             self.assertEqual(list(entry["species_sources"].values()), [GULGRIM_URL])
 

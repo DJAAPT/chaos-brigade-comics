@@ -20,6 +20,7 @@ lab, so 424244 takes its slot). Approved reference for judging:
 |---|---|---|
 | batch1 | Baseline: Arm B Gulgrim block verbatim — snapshot: `batches/batch1/` | gulgrim_g01–g04 (424242, 424243, 777001, 424244) |
 | batch1 verdict (human 2026-11-03) | Furs/beard/stockiness/NEVER-list hold on all four; weapon fails everywhere (0/4 clean warhammer); g04 renders grey hands — kept in ladder pending batch-2 re-check | — |
+| batch2 | Weapon worn, not gripped: bare `warhammer` → `his warhammer at his hip` (batch-1 verdict); head shape untouched — single variable — snapshot: `batches/batch2/` | same gulgrim_g01–g04 |
 
 ## Verdicts
 
