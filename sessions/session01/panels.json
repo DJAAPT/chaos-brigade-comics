@@ -214,5 +214,14 @@
     "model": "flux3-image-klein-nvfp4.safetensors",
     "portrait_ref": "multiref_thumba.png",
     "prompt": "cinematic fantasy film still, inside a colorful cluttered apothecary shop with jars and a playing broadcast stone: Chip, a tall adult male human druid with brown skin, wild long white hair and white beard, green and brown fur garb, stepping through the door with a paper note in hand, greeted by a giddy sprightly older male shop owner bouncing with joy, warm lamplight, two distinct people, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "est_north.png",
+    "image": "est_north.png",
+    "workflow": "flux3_est_north.json",
+    "seed": 1857761984156622644,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "cinematic fantasy film still, wide establishing shot: a cobbled Neverwinter street climbing north toward a rich hillside district with marble mansions, small figures of adventurers walking away from the viewer in the distance, market stalls and city bustle behind them, warm afternoon light, no readable faces needed, no children, photorealistic, highly detailed"
   }
 ]

@@ -44,6 +44,9 @@ Goal: a stranger who never played can follow the comic. Adapting D&D to graphic-
 - **Restructure beats for reading order**: panels may be reordered, combined, or added (e.g. establishing shots) versus transcript order when the transcript's order confuses. The transcript is the source of events and quotes, not the layout.
 - **Quote discipline**: every speech line must be traceable to a transcript line (trimmed <20 words is fine). Narration may bridge gaps in DM voice but never puts new facts in a character's mouth.
 
+## Narrator voice (standing — user 2026-11-03)
+The narration boxes speak in Ben's voice: the warm, snarky DM storyteller who keeps things moving and openly roasts the Brigade for dumb decisions. Affectionate, never mean; funny to strangers, funnier to players. Narration bridges motive and travel gaps in 1–2 sentences — never paragraphs, never restating what the art shows.
+
 ## Self-approval authority (standing — user grant 2026-11-03)
 The executor approves panels WITHOUT a user verdict when all of these hold: every face matches its approved reference, locked chunks/NEVER lists respected, figure counts match the beat, no children/marigold-scale/ear/hair failure modes present. Save + commit approved work with the same checks. Escalate to the user only: new-look approvals (portraits), canon decisions, story confusion or holes, defects surviving two re-rolls, and anything the bible doesn't cover (ask-don't-guess).
 
