@@ -1,0 +1,8 @@
+lineup_vadania_ref.png
+lineup_chip_ref.png
+lineup_rocketcandy_ref.png
+lineup_keechwah_ref.png
+lineup_biggins_ref.png
+lineup_lilly_ref.png
+lineup_gulgrim_ref.png
+lineup_shade_ref.png

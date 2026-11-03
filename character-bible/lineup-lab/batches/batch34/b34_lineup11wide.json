@@ -1,0 +1,277 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Flux3 Klein generator"
+    },
+    "inputs": {
+      "unet_name": "flux3-image-klein-nvfp4.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load Flux3 text encoder"
+    },
+    "inputs": {
+      "clip_name": "qwen3vl_4b_int8_convrot.safetensors",
+      "type": "flux3",
+      "device": "default"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load Flux2 VAE"
+    },
+    "inputs": {
+      "vae_name": "flux2-vae.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Positive prompt"
+    },
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "text": "wide panoramic police lineup group mugshot, landscape composition, eleven people standing shoulder to shoulder in a single straight row facing camera, spaced evenly across a wide frame, full-body frontal view, neutral gray police lineup wall with height chart markings behind them, even studio lighting, boots flat on the floor, feet visible, from left to right: a six-foot-two adult male wood elf ranger with long brown hair, pointed ears, masculine jaw stubble, green cloak, longbow on back, exactly two arms, both arms visible, both hands visible. a five-foot-eleven adult male human druid with brown skin, wild long white hair and white beard, brown eyes, green and brown fur garb, holding a plain straight wooden quarterstaff, exactly two arms, both arms visible, both hands visible. an over-six-foot-tall adult male human paladin with short brown hair, light stubble, shining plate armor with gold phoenix crest on chest, red cape, exactly two arms, both arms visible, both hands visible. a six-foot-tall adult male tiefling warlock with deep red skin, long curly black hair, goatee, large curved horns, flat matte solid purple eyes with no sclera, dark blue and gold robes, exactly two arms, both arms visible, both hands visible. a tall adult human man in his 40s with slicked gray-streaked dark hair, sharp cheekbones, blue eyes, black three-piece suit with long coat, white shirt black tie, white gloves, exactly two arms, both arms visible, both hands visible. a warm theatrical middle-aged gentleman apothecary with neat gray-streaked hair, fine embroidered robes with alchemical stains, exactly two arms, both arms visible, both hands visible. a tired middle-aged male shopkeeper in his 50s, balding with receding salt-and-pepper hair, tired bags under his eyes, plain common clothes with shop apron, exactly two arms, both arms visible, both hands visible. a four-foot-tall adult male hill dwarf cleric with completely bald head, broad long white beard, heavy furs, frost-covered boots, warhammer at hip, exactly two arms, both arms visible, both hands visible. an adult young woman early 20s with curly voluminous red hair, freckles, white ruffled shirt, red corset laced gold, cream skirt, brown boots, exactly two arms, both arms visible, both hands visible. a barely-three-foot-tall middle-aged halfling woman innkeeper in her 40s with tiny curly brown hair, warm rosy happy face with laugh lines, plain brown working dress with apron, holding a serving tray, exactly two arms, both arms visible, both hands visible. a three-foot-tall young adult halfling man with messy shaggy dark brown hair, light stubble, no beard, worn dark linen shirt with rolled sleeves, scuffed brown leather vest, exactly two arms, both arms visible, both hands visible. adult faces, no children, all eleven people fully visible, wide landscape photo, photorealistic, highly detailed"
+    }
+  },
+  "5": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Negative prompt (unused, cfg=1)"
+    },
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "text": ""
+    }
+  },
+  "6": {
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Character reference image"
+    },
+    "inputs": {
+      "image": "lineup_shade_ref.png"
+    }
+  },
+  "7": {
+    "class_type": "ReferenceMultiLatent",
+    "_meta": {
+      "title": "Apply reference images"
+    },
+    "inputs": {
+      "positive": [
+        "4",
+        0
+      ],
+      "resolution": "keep resolution",
+      "negative": [
+        "5",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ],
+      "images.image0": [
+        "20",
+        0
+      ],
+      "images.image1": [
+        "21",
+        0
+      ],
+      "images.image2": [
+        "22",
+        0
+      ],
+      "images.image3": [
+        "23",
+        0
+      ],
+      "images.image4": [
+        "24",
+        0
+      ],
+      "images.image5": [
+        "25",
+        0
+      ],
+      "images.image6": [
+        "26",
+        0
+      ],
+      "images.image7": [
+        "27",
+        0
+      ],
+      "images.image8": [
+        "28",
+        0
+      ],
+      "images.image9": [
+        "29",
+        0
+      ],
+      "images.image10": [
+        "30",
+        0
+      ]
+    }
+  },
+  "8": {
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "Sample (distilled: 15 steps, cfg 1)"
+    },
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "seed": 610934,
+      "steps": 15,
+      "cfg": 1.0,
+      "sampler_name": "er_sde",
+      "scheduler": "simple",
+      "positive": [
+        "7",
+        0
+      ],
+      "negative": [
+        "7",
+        1
+      ],
+      "latent_image": [
+        "11",
+        0
+      ],
+      "denoise": 1.0
+    }
+  },
+  "9": {
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "Decode to image"
+    },
+    "inputs": {
+      "samples": [
+        "8",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "10": {
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save result"
+    },
+    "inputs": {
+      "images": [
+        "9",
+        0
+      ],
+      "filename_prefix": "b34_lineup11wide"
+    }
+  },
+  "16": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "lineup_gulgrim_ref.png"
+    }
+  },
+  "17": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "lineup_rocketcandy_ref.png"
+    }
+  },
+  "20": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "lineup_vadania_ref.png"
+    }
+  },
+  "21": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "lineup_chip_ref.png"
+    }
+  },
+  "22": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "lineup_rocketcandy_ref.png"
+    }
+  },
+  "23": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "lineup_keechwah_ref.png"
+    }
+  },
+  "24": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "lineup_biggins_ref.png"
+    }
+  },
+  "25": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "lineup_thumba_ref.png"
+    }
+  },
+  "26": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "lineup_roland_ref.png"
+    }
+  },
+  "27": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "lineup_gulgrim_ref.png"
+    }
+  },
+  "28": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "lineup_lilly_ref.png"
+    }
+  },
+  "29": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "lineup_marigold_ref.png"
+    }
+  },
+  "30": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "lineup_shade_ref.png"
+    }
+  },
+  "11": {
+    "class_type": "EmptyLatentImage",
+    "inputs": {
+      "width": 1216,
+      "height": 832,
+      "batch_size": 1
+    }
+  }
+}
