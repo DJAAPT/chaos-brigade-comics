@@ -8,7 +8,8 @@
       "unet_name": "flux3-image-klein-nvfp4.safetensors"
     },
     "workflow": "workflows/lineuplab_wall_empty.json",
-    "output": "img/wall_empty.png"
+    "output": "img/wall_empty.png",
+    "timestamp": "2026-11-03T14:45:27Z"
   },
   "wall_shade_s1": {
     "character": "shade",
@@ -20,6 +21,7 @@
     },
     "reference": "character-bible/approved_shade_reference.png",
     "workflow": "workflows/lineuplab_wall_shade_s1.json",
-    "output": "img/wall_shade_s1.png"
+    "output": "img/wall_shade_s1.png",
+    "timestamp": "2026-11-03T14:45:37Z"
   }
 }
