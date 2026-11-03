@@ -34,19 +34,19 @@ ARM_B_BLOCK = (
     "gold jewelry, NO wings, sharply pointed canines, a thick tiefling tail behind him, "
     "exactly two arms"
 )
-# Batch 24: tail origin + tip — tails still misread after the skin-match
-# (batch 23 verdict pending human read, but the mechanism search continues:
-# origin at the spine separates tail from head-horns; rounded tip breaks the
-# pointed-horn silhouette match)
-BATCH24_BLOCK = (
-    "adult male tiefling warlock, warm bronze-tan skin with a faint red cast, "
-    "long curly black hair, goatee, large curved bronze-brown horns rising upright "
-    "side by side from the crown of his skull with bases buried deep in his thick "
-    "curly hair, narrow almond-shaped human eyes under heavy eyelids, solid matte "
-    "purple irises filling the entire visible eye with no visible sclera or pupil, "
-    "male facial features, dark blue and gold wizard robes, gold jewelry, NO wings, "
-    "sharply pointed canines, a thick warm bronze-tan tail growing from the base of "
-    "his spine, hanging straight down behind one leg to a rounded tip, exactly two arms"
+# Batch 25: user's full rewrite (sentence prose, no species word, smooth
+# horns, hem-hidden spade tail) — tests the tiefling-drop + concealment
+BATCH25_BLOCK = (
+    "An adult male warlock with an athletic build and exactly two normal arms. "
+    "He has warm bronze-tan human skin with a faint red cast, sharp masculine facial "
+    "features, and sharply pointed canine teeth. His narrow, almond-shaped eyes rest "
+    "under heavy eyelids, featuring solid matte purple irises that fill the entire "
+    "visible eye with no white sclera or pupil. Long, thick, curly black hair frames "
+    "his face alongside a neatly trimmed dark black goatee. Rising straight upright "
+    "side by side from the crown of his skull are two smooth bronze-brown horns, their "
+    "bases buried deep within his thick hair line. He wears elegant, flowing dark blue "
+    "and gold wizard robes with ornate gold jewelry, and the spade tip of his thick "
+    "bronze-tan tail peeks out from beneath the trailing hem of his robe on one side."
 )
 
 
@@ -59,9 +59,7 @@ class TestKeechwahLabDescriptions(unittest.TestCase):
 
     def test_baseline_block_is_arm_b_verbatim(self):
         text, sources = self.load_block()
-        self.assertEqual(text, BATCH24_BLOCK, "batch-24 block must carry tail origin + rounded tip")
-        self.assertIn("base of his spine", text)
-        self.assertIn("rounded tip", text)
+        self.assertEqual(text, BATCH25_BLOCK, "batch-25 block must be the user's rewrite verbatim")
         self.assertIn("character-bible/Sheets/Keechwah.pdf", sources)
         self.assertIn(KEECHWAH_URL, sources)
         self.assertTrue(any("bible.md locked chunks" in s for s in sources))
@@ -75,13 +73,13 @@ class TestKeechwahLabPrompts(unittest.TestCase):
 
     def test_lab_prompts_schema(self):
         prompts = self.load_prompts()
-        self.assertEqual(list(prompts), BATCH24_KEYS, "lab keys must be the batch-24 ladder in order")
+        self.assertEqual(list(prompts), KEYS, "lab keys must be the four-key ladder in order")
         text, _ = TestKeechwahLabDescriptions().load_block()
-        for i, key in enumerate(BATCH24_KEYS):
+        for i, key in enumerate(KEYS):
             entry = prompts[key]
             self.assertEqual(list(entry.keys()), PROMPT_KEYS, f"{key} key mismatch")
             self.assertEqual(entry["arm"], "C")
-            self.assertEqual(entry["seed"], BATCH24_SEEDS[i], f"{key} seed mismatch")
+            self.assertEqual(entry["seed"], SEEDS[i], f"{key} seed mismatch")
             self.assertEqual(entry["frame"], FRAME_C)
             self.assertEqual(entry["prompt"], f"{FRAME_C} {ADDENDUM} {text}", f"{key} not exact composition")
             self.assertIn(entry["output"], (None, f"img/{key}.png"))
@@ -92,9 +90,9 @@ class TestKeechwahLabPrompts(unittest.TestCase):
 
         stems = [os.path.splitext(os.path.basename(p))[0] for p in _glob.glob("workflows/keechwahlab_*.json")]
         found = {s.removeprefix("keechwahlab_") for s in stems}
-        self.assertEqual(found, set(BATCH24_KEYS), f"lab workflow set mismatch: {found}")
+        self.assertEqual(found, set(KEYS), f"lab workflow set mismatch: {found}")
         prompts = self.load_prompts()
-        for key in BATCH24_KEYS:
+        for key in KEYS:
             with open(f"workflows/keechwahlab_{key}.json", encoding="utf-8") as f:
                 g = json.load(f)
             seeds = [n["inputs"][k] for n in g.values() for k in ("seed", "noise_seed") if k in n.get("inputs", {})]
