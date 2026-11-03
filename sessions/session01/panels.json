@@ -223,5 +223,23 @@
     "model": "flux3-image-klein-nvfp4.safetensors",
     "portrait_ref": null,
     "prompt": "cinematic fantasy film still, wide establishing shot: a cobbled Neverwinter street climbing north toward a rich hillside district with marble mansions, small figures of adventurers walking away from the viewer in the distance, market stalls and city bustle behind them, warm afternoon light, no readable faces needed, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "panel22b_confident.png",
+    "image": "panel22b_confident.png",
+    "workflow": "flux3_s1_p22b.json",
+    "seed": 1515151515,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "photorealistic scene at a crowded outdoor job board covered in notices: Vadania, a tall male wood elf ranger with long brown hair and green cloak, pointing confidently at a high-paying posting near the top of the board while Keechwah the tiefling warlock watches skeptically behind him, daylight, two distinct grown men, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
+  },
+  {
+    "panel": "panel42b_caught.png",
+    "image": "panel42b_caught.png",
+    "workflow": "flux3_s1_p42b.json",
+    "seed": 1616161616,
+    "model": "flux3-image-klein-nvfp4.safetensors",
+    "portrait_ref": null,
+    "prompt": "photorealistic tense close-up inside a general store: a city guard in plain steel armor gripping the wrist of Chip, a tall adult male human druid with brown skin and white beard, gripping the wrist of Chip, a tall adult male human druid with very long flowing white hair and long white beard wearing green and brown fur garb, yanking open his bulging gold pouch so coins glint and spill, Chip caught mid-lie with a nervous grimace, warm lamplight, two distinct grown men, no duplicates, each exactly two arms, adult faces, no children, photorealistic, highly detailed"
   }
 ]
