@@ -65,7 +65,7 @@
         "1",
         0
       ],
-      "seed": 424243,
+      "seed": 352959242,
       "steps": 15,
       "cfg": 1.0,
       "sampler_name": "er_sde",
@@ -122,7 +122,7 @@
         "9",
         0
       ],
-      "filename_prefix": "gulgrimlab_gulgrim_g02"
+      "filename_prefix": "gulgrimlab_gulgrim_r04"
     }
   }
 }

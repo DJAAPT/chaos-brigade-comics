@@ -15,6 +15,16 @@ KEYS = [f"gulgrim_g{i:02d}" for i in range(1, 5)]
 # (verified disjoint from every ladder in the repo). Wording frozen at
 # BATCH2_BLOCK.
 SEEDS = [424242, 424243, 777001, 424245]
+# Batch 4 ladder: 20-seed survey on the frozen batch-2 block (wording
+# proven 4/4 on weapons in batch 2, ladder cleaned in batch 3) — hit-rate
+# read before the next wording variable. Master seed 20261121, harvest
+# script C:/Users/Andrew/AppData/Local/Temp/harvest_gulgrim04.py, verified
+# disjoint from all 319 previously used seeds repo-wide.
+BATCH4_KEYS = [f"gulgrim_r{i:02d}" for i in range(1, 21)]
+BATCH4_SEEDS = [750162285, 1206558873, 1496924836, 352959242, 1449593620, 316783734,
+                17335413, 776038280, 688472172, 1552965976, 1505368845, 733124982,
+                705257192, 1563623009, 1690805504, 1508036947, 1477778073, 495603372,
+                1051377175, 1756671735]
 GULGRIM_URL = RACE_URL[SLUG_RACE["gulgrim"]]
 # Batch 2: warhammer worn at the hip — batch-1 verdict was0/4 clean
 # warhammers from the bare word `warhammer` (improvised grips, axe-head
@@ -51,25 +61,50 @@ class TestGulgrimLabPrompts(unittest.TestCase):
 
     def test_lab_prompts_schema(self):
         prompts = self.load_prompts()
-        self.assertEqual(list(prompts), KEYS, "lab keys must be the batch-1 ladder in order")
-        for i, key in enumerate(KEYS):
+        self.assertEqual(list(prompts), BATCH4_KEYS, "lab keys must be the batch-4 survey ladder in order")
+        for i, key in enumerate(BATCH4_KEYS):
             entry = prompts[key]
             self.assertEqual(list(entry.keys()), PROMPT_KEYS, f"{key} key mismatch")
             self.assertEqual(entry["arm"], "C")
-            self.assertEqual(entry["seed"], SEEDS[i], f"{key} seed mismatch")
+            self.assertEqual(entry["seed"], BATCH4_SEEDS[i], f"{key} seed mismatch")
             self.assertEqual(entry["frame"], FRAME_C)
             self.assertEqual(entry["prompt"], f"{FRAME_C} {ADDENDUM} {BATCH2_BLOCK}", f"{key} not exact composition")
             self.assertIn(entry["output"], (None, f"img/{key}.png"))
             self.assertEqual(list(entry["species_sources"].values()), [GULGRIM_URL])
+
+    def test_batch3_ladder_retired_seed(self):
+        # pins the batch-3 retirement: the control ladder must have
+        # dropped 424244 for 424245 at gulgrim_g04, wording frozen
+        import subprocess
+        import sys
+        import tempfile
+
+        self.assertEqual(SEEDS, [424242, 424243, 777001, 424245], "batch-3 ladder keeps the replacement seed")
+        with tempfile.TemporaryDirectory() as tmp:
+            proc = subprocess.run(
+                [sys.executable, "scripts/build_lab.py",
+                 "--descriptions", LAB_DESC,
+                 "--out-dir", tmp,
+                 "--model-path", MODEL_PATH,
+                 "--slug", "gulgrim",
+                 "--seeds", "424242", "424243", "777001", "424245",
+                 "--keys", "gulgrim_g01", "gulgrim_g02", "gulgrim_g03", "gulgrim_g04"],
+                capture_output=True, text=True,
+            )
+            self.assertEqual(proc.returncode, 0, proc.stderr)
+            import json as _json
+            with open(os.path.join(tmp, "prompts.json"), encoding="utf-8") as f:
+                produced = _json.load(f)
+        self.assertNotIn(424244, [e["seed"] for e in produced.values()], "retired seed must not return")
 
     def test_lab_workflows_family(self):
         import glob as _glob
 
         stems = [os.path.splitext(os.path.basename(p))[0] for p in _glob.glob("workflows/gulgrimlab_*.json")]
         found = {s.removeprefix("gulgrimlab_") for s in stems}
-        self.assertEqual(found, set(KEYS), f"lab workflow set mismatch: {found}")
+        self.assertEqual(found, set(BATCH4_KEYS), f"lab workflow set mismatch: {found}")
         prompts = self.load_prompts()
-        for key in KEYS:
+        for key in BATCH4_KEYS:
             with open(f"workflows/gulgrimlab_{key}.json", encoding="utf-8") as f:
                 g = json.load(f)
             seeds = [n["inputs"][k] for n in g.values() for k in ("seed", "noise_seed") if k in n.get("inputs", {})]

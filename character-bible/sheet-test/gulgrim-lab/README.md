@@ -36,6 +36,8 @@ lab, so 424244 takes its slot). Approved reference for judging:
 | batch2 | Weapon worn, not gripped: bare `warhammer` → `his warhammer at his hip` (batch-1 verdict); head shape untouched — single variable — snapshot: `batches/batch2/` | same gulgrim_g01–g04 |
 | batch2 verdict (agent review 2026-11-03, human pending) | Position fix works: **4/4 warhammers** (batch 1 was 0/4), zero axe drift, no improvised grips; NEVER-list clean, holy symbol on all four; g03 best again. **g04 grey hands persisted → recommend retire 424244, promote 424245** | — |
 | batch3 | Seed retirement: 424244 out (grey hands under two wordings), **424245 in** at `gulgrim_g04`; wording frozen at the batch-2 block — snapshot: `batches/batch3/` | gulgrim_g01–g04 (424242, 424243, 777001, 424245) |
+| batch4 | 20-seed survey on the frozen batch-2 block (hit-rate read; master list 20261121) — wording unchanged, ladder new — snapshot: `batches/batch4/` | gulgrim_r01–r20 |
+| batch4 verdict (agent review 2026-11-03, human pending) | Solid keepers r01, r02, r06, r11, r13, r16 (6/20) + keepers-with-notes r03, r07, r09, r10, r12, r18, r20 (7/20) — better than shade's 5/20 survey baseline. Axe drift essentially dead (1 partial in 20, r17); 424244-style grey hands never recur (r05/r15 mild frosting only). New variables for later batches: **r08 bald + bare midriff on white backdrop** (hair on head is unspecified in the block — drift source), weapon duplication r13/r14, polearm read r04, belt/symbol gibberish text r03/r15 | — |
 
 ## Verdicts
 
