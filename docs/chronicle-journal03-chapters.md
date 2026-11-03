@@ -12,17 +12,7 @@
 
 ### Chapter 2 — Doodly Doodly Doo (continued)
 
-Vadania's background check continues down its checklist — any assassin signs,
-anyone watching her, anything wrong with the help — and Lilly answers all of it
-with the breezy confidence of someone describing weather. Biggins balances on the
-backs of chairs to dust up high. Catches things before they fall. Ruffians flee
-from him in the street, which Lilly has always assumed is shyness. She says all
-this fondly. She has no idea what any of it sounds like. Vadania rolls a ten on
-the whole line of inquiry and concludes, officially, that she finds it perfectly
-normal. The thread stalls there. A ten is where threads go to wait — but I am
-keeping chair backs, falling objects, and fleeing ruffians in a small box marked
-*normal Biggins behavior*, because one day that box is going to open, and on that
-day I want witnesses.
+Filed. Moving on.
 
 **DM NOTE — FILING.** *Assassin lore, filed under "shy." My ranger investigated
 a bodyguard and closed the case. The case is not closed. The case will never be
@@ -71,7 +61,7 @@ The crowds thicken as evening comes on, and then the street opens up and there
 it is: lanterns, tables, barmaids with trays held high, a band on a stage, and
 over all of it a giant sign reading BATTLE OF THE BARDS. A festival that happens
 to have a quest in it, or a quest that happens to have a festival in it — either
-way the party walks in with eight heads and one beak and starts casing the joint
+way the party walks in with eight heads total, beak included, and starts casing the joint
 like it owes them money. Chip and Rocketcandy clock it first, together, the two
 highest perceptions at the table arriving at the same conclusion from opposite
 directions: people carrying instruments. People *strumming*. Somewhere in this
@@ -112,13 +102,14 @@ He walks up to the roped-off band area with an axe and a grin and performs:
 spin, catch, jump-rope *with the axe*, behind the back, limbo under the spinning
 handle while the stage bard — a professional, mid-set, derailed in real time —
 starts vamping along behind him, scatting nonsense to keep up. Dirty twenty on
-performance. The crowd comes to *us*. The moody band notices. Auggie from the bar
+performance — a natural twenty with bonuses stacked on top, the best roll the game
+allows. The crowd comes to *us*. The moody band notices. Auggie from the bar
 notices. The whole festival tilts ten degrees toward the paladin, and for one
 shining minute the plan is working exactly as no one planned it.
 
 Then — because this table cannot leave perfection alone — he tries a
 back-handspring. In full plate. Acrobatics two. He goes over like a felled keep,
-faceplate into the flagstones, and the dexterity save comes up seven, which means
+face-first into the flagstones, helmet somewhere behind him, and the dexterity save comes up seven, which means
 he fails *at* falling, and the axe comes down butt-first onto his own forehead
 for four bludgeoning damage, to enormous laughter. Byodan's assessment from the
 sidelines: "impressive part is he had the room to do this." Aaron, helpfully:
@@ -219,7 +210,7 @@ And the bearded man turns to our table, loot in hand, and introduces himself as
 Bearnuts.
 
 Yes. *Bearnuts.* That is his name. That is also James's name — Bearnuts [James],
-dwarf cleric, metronome, poop-in-a-hole.jpeg. No, I don't know either. No, the
+dwarf cleric, metronome, poop-in-a-hole.jpeg. No, the
 table never resolves it. Yes, I have chosen to love it rather than solve it, the
 same way I loved Albert. Moving on.
 
@@ -234,20 +225,24 @@ metronome with a grudge. Shade on bagpipes — volunteered sight unseen, which
 tells you everything about David's confidence and nothing about his musicality.
 Rocketcandy on fiddle. Vadania on fife. Chip on backup and vibes, with one firm
 condition: no animal act. Lilly is designated crowd groupie and woo-girl, a title
-she accepts like a knighthood. Bardic Inspiration d6s all around, Guidance d4 on
-top, and the band takes its name the only way it could: the Chaos Brigade.
+she accepts like a knighthood. Bardic Inspiration d6s all around — borrowed luck,
+a six-sided bonus for everyone — Guidance d4 on top — a little druid encouragement —
+and the band takes its name the only way it could: the Chaos Brigade.
 Huddle speech — music from the heart — hands in. Even the bear would have joined
 if the bear had hands, which, no animal act, fine.
 
 The set, because you are wondering and because the transcript kept receipts:
-Chip's Druidcraft snuffs every third candle and puts a breeze in everyone's hair.
+Chip's Druidcraft — a free baby spell, this one for weather and candlelight —
+snuffs every third candle and puts a breeze in everyone's hair.
 The minstrel announces the Chaos Brigade. They play. Keechwah adds Thaumaturgy
+— same weight class, this one for tremors — under the bass so the ground itself
+keeps time.
 tremors under the bass so the ground itself keeps time. Scores come in scattered
 — thirteen here, sixteen there, a twenty from Keechwah (twelve plus four plus
 four, rerolled fourteen with advantage and kept honest), an eleven from Shade, a
 six from Vadania (three plus one plus two, and no, I don't know what the two was
 either), a seventeen from Rocketcandy — and it averages to fourteen. DC was
-twelve. Fifteen would have been frenzy, twenty would have been Beatles. Fourteen
+twelve — Difficulty Class, the number to beat. Fifteen would have been frenzy, twenty would have been Beatles. Fourteen
 is: competent, joyful, standing ovation, ushered off before anyone asks for an
 encore. Good. Not Beatles. The distinction matters to history.
 

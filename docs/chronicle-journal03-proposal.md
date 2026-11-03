@@ -128,7 +128,7 @@ back." End.
 >
 > Then he tried a back-handspring.
 >
-> Acrobatics two. Faceplate into the flagstones. Dexterity save seven, which in
+> Acrobatics two. Face-first into the flagstones, helmet somewhere behind him. Dexterity save seven, which in
 > this game means you fail *at* falling, and the axe came down butt-first on his
 > own forehead for four bludgeoning damage, to laughter. He bought the band three
 > drinks with one hand and held the other hand to his head for the rest of the
@@ -138,7 +138,7 @@ back." End.
 >
 > My name is Ben. I run the game. Last session my players weaponized a frying
 > pan and negotiated with a butler. This session they formed a band. Pour
-> something. We begin with eight heads, one bear, and a missing girl by the end.
+> something. We begin with eight total, bear included, and a missing girl by the end.
 
 ---
 
@@ -163,7 +163,7 @@ mechanism has shown up yet. The magic is patient. So am I. So, unfortunately for
 everyone, is the night.
 
 **DM NOTE — HEADCOUNT.** *Eight tonight: six, one, and one bear. I will count
-heads in every scene of this journal the way other DMs count arrows. The last
+heads in most scenes of this journal the way other DMs count arrows. The last
 headcount is the whole book. Count with me.*
 
 ### Chapter 2 — Doodly Doodly Doo (part 1; sample ends at the butler lore)
@@ -177,12 +177,14 @@ sound of a sheltered twenty-two-year-old discovering the world, and I am keeping
 it as the chapter title because it is also the sound this whole session makes.
 
 Rocketcandy, walking beside all that joy, asks whether she can carry his axe.
-Reader, she has eight hit points. Eight. The paladin is asking a woman with eight
+Reader, she has eight hit points. Eight — hit points being how much hurt you can
+take before you stop. The paladin is asking a woman with eight
 hit points to carry his axe, and Chip — who is not present, who is across town,
 who can nevertheless hear axe-related danger the way other druids hear weather —
 interjects to object. Then someone does the armor math, and the table goes quiet
 in the particular way tables go quiet when the numbers stop making sense: AC
-twenty-three. Twenty-three. Higher than the paladins. The girl with eight hit
+twenty-three — armor class, how hard you are to hit, higher is better.
+Twenty-three. Higher than the paladins. The girl with eight hit
 points is harder to hit than the tank, because her clothes cost more than his
 training. She is, as I tell them, a normal human being wearing really great
 stuff — take the gear off and she is just another regular human, because not
