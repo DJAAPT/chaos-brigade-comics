@@ -52,13 +52,19 @@
   },
   {
     "plate": "seq_dare.png",
-    "source": "sessions/session02/s2e5dare_dare.png",
-    "status": "reused-approved"
+    "source": "new",
+    "status": "new-approved-canon-outfit",
+    "workflow": "chr2_dare2.json",
+    "seed": 1414141415,
+    "portrait_ref": "multiref_lilly.png"
   },
   {
     "plate": "seq_boot.png",
-    "source": "sessions/session02/s2e9a_boot.png",
-    "status": "reused-approved"
+    "source": "new",
+    "status": "new-approved-canon-outfit",
+    "workflow": "chr2_boot2.json",
+    "seed": 1010101011,
+    "portrait_ref": "multiref_lilly.png"
   },
   {
     "plate": "seq_armory.png",
@@ -78,10 +84,10 @@
   {
     "plate": "plate01_catch.png",
     "source": "new",
-    "workflow": "chr2_catch2.json",
-    "seed": 9696969698,
-    "portrait_ref": null,
-    "status": "new-approved-v3"
+    "workflow": "chr2_catch4.json",
+    "seed": 9696969700,
+    "portrait_ref": "multiref_lilly.png",
+    "status": "new-approved-canon-outfit"
   },
   {
     "plate": "plate04_waterdoor.png",
