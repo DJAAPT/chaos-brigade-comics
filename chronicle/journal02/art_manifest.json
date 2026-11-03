@@ -1,0 +1,96 @@
+[
+  {
+    "plate": "plate02_greeting.png",
+    "source": "sessions/session01/panel55_apothecary.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "plate03_morphmap.png",
+    "source": "sessions/session02/s2e1_map.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "plate05_lillymap.png",
+    "source": "sessions/session02/s2e2_audience.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "plate06_pact.png",
+    "source": "sessions/session02/s2e4_pact.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "plate07_firstknife.png",
+    "source": "sessions/session02/s2e5a_gift.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "plate09_roland.png",
+    "source": "sessions/session02/s2e8_drinks.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "plate10_hug.png",
+    "source": "sessions/session02/s2e10a_hug.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "plate10b_hand.png",
+    "source": "sessions/session02/s2e10b_hand.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "seq_bribe.png",
+    "source": "sessions/session02/s2e3_refusal.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "seq_dare.png",
+    "source": "sessions/session02/s2e5dare_dare.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "seq_boot.png",
+    "source": "sessions/session02/s2e9a_boot.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "seq_armory.png",
+    "source": "sessions/session02/s2e9b_armory.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "seq_huddle.png",
+    "source": "sessions/session02/s2huddle.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "seq_stone.png",
+    "source": "sessions/session02/s2e7_favor.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "plate01_catch.png",
+    "source": "new",
+    "workflow": "chr2_catch.json",
+    "seed": 9696969697,
+    "portrait_ref": null,
+    "status": "new-approved"
+  },
+  {
+    "plate": "plate04_waterdoor.png",
+    "source": "new",
+    "workflow": "chr2_plate04.json",
+    "seed": 8208208201,
+    "portrait_ref": null,
+    "status": "new-approved"
+  },
+  {
+    "plate": "plate08_kidsbear.png",
+    "source": "new",
+    "workflow": "chr2_plate08b.json",
+    "seed": 8208208203,
+    "portrait_ref": null,
+    "status": "new-approved"
+  }
+]
