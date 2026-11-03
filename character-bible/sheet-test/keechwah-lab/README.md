@@ -33,6 +33,11 @@ overwrite — every generation snapshots to `batches/batch<N>/` with its
 | batch18 | 20-seed survey on the batch-17 block (master list seed 20261110) - purple-hold rate read | keechwah_r01-r20 |
 | batch19 | Robe closure specified (bare-chest drift recurred batches 11+17) + 10-seed eye verification on the batch-17 block | keechwah_r01-r10 (new ladder) |
 | batch19 verdict (human 2026-11-02) | FRAMING REGRESSION: r04 waist-up crop, r07 shin-cut - frame clause ignored on 2 of 10. Suspect: new 'worn closed over the chest' pulls composition toward the torso. Batch 20 tests causality: batch-17 block (no robe phrase) x the same 2 seeds. | - |
+| batch20 | Framing causality probe: batch-17 block (no robe phrase) x the 2 cropped seeds | keechwah_f01-f02 (1602613270, 1826299574) |
+| batch20 verdict (agent review 2026-11-02) | CONVICTED: both seeds return full-body with feet visible - the robe phrase caused the crops. Torso-focus wording drags composition tighter; framing words belong in the frame clause, never in garment descriptions. | - |
+| batch21 | Archetype noun instead of closure phrase: 'dark blue and gold wizard robes', no chest wording (closed invites a V-neck to close) | keechwah_k01-k04 (424242, 424243, 777001, 424244) |
+| batch22 | 25-seed survey on the batch-21 block (human-approved finished wording) | keechwah_r01-r25 (master list 20261112) |
+| batch22 verdict (agent review 2026-11-02) | User keepers r11/r14/r19/r25 all legit - closed robes held 4/4, full bodies, tails, no wings. Favorite r19 (cleanest horn roots), r11 second. r14 reddest skin, r25 ram-swept horn shape (canon-legal, differs from gallery upright silhouette). Wording done - remaining variance is seed selection. | - |
 | batch17 verdict (agent review 2026-11-02) | Lids fixed the orbs everywhere - no bug eyes on any of the four. Purple held on k01/k03/k04, failed on k02 (blue-gray eyes). k04 best full package (lidded purple eyes, rooted bronze horns, closed robe, goatee, tail). k03 good face but bare-chest drift again. | - |
 | batch17 verdict (human 2026-11-02) | k04 closest but the only one that kept purple - k01-k03 tossed the entire iris replacement (normal/dark eyes). Purple itself is seed-fragile, not just the finish. Batch 18 surveys the batch-17 block 20 wide for purple-holders. | - |
 
