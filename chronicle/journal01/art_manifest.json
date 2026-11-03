@@ -1,0 +1,102 @@
+[
+  {
+    "plate": "plate01_clasp.png",
+    "source": "sessions/session01/panel0_docks.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "plate07_dragonscream.png",
+    "source": "sessions/session01/panel12_dragon.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "plate08a_hooded.png",
+    "source": "sessions/session01/panel13_hooded.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "plate08b_kindly.png",
+    "source": "sessions/session01/panel14_reveal.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "plate09a_overwhelmed.png",
+    "source": "sessions/session01/panel22_board.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "plate09b_hiddenpost.png",
+    "source": "sessions/session01/panel23_quest.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "plate10a_sammy.png",
+    "source": "sessions/session01/panel31_sammy.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "plate11_pan.png",
+    "source": "sessions/session01/panel43_pan.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "plate12b_fizzle.png",
+    "source": "sessions/session01/panel53_deadmagic.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "plate12_filvenar.png",
+    "source": "sessions/session01/panel54_filvenar.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "plate11b_hogtie.png",
+    "source": "sessions/session01/panel44_hogtied.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "plate10b_vase.png",
+    "source": "sessions/session01/panel41_store.png",
+    "status": "reused-approved"
+  },
+  {
+    "plate": "plate02_rocketcandy_cliff.png",
+    "source": "new",
+    "workflow": "chr_plate02.json",
+    "seed": 8108108101,
+    "portrait_ref": null,
+    "status": "new-approved"
+  },
+  {
+    "plate": "plate03_shade_coin.png",
+    "source": "new",
+    "workflow": "chr_plate03b.json",
+    "seed": 8108108106,
+    "portrait_ref": null,
+    "status": "new-approved"
+  },
+  {
+    "plate": "plate04_stonehenge.png",
+    "source": "new",
+    "workflow": "chr_plate04b.json",
+    "seed": 8108108107,
+    "portrait_ref": null,
+    "status": "new-approved"
+  },
+  {
+    "plate": "plate05_ferry.png",
+    "source": "new",
+    "workflow": "chr_plate05b.json",
+    "seed": 8108108108,
+    "portrait_ref": null,
+    "status": "new-approved"
+  },
+  {
+    "plate": "plate06_marigold_welcome.png",
+    "source": "new",
+    "workflow": "chr_plate06.json",
+    "seed": 8108108105,
+    "portrait_ref": "multiref_marigold.png",
+    "status": "new-approved"
+  }
+]
