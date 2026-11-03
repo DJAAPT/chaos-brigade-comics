@@ -35,6 +35,7 @@ lab, so 424244 takes its slot). Approved reference for judging:
 | batch1 verdict (human 2026-11-03) | Furs/beard/stockiness/NEVER-list hold on all four; weapon fails everywhere (0/4 clean warhammer); g04 renders grey hands — kept in ladder pending batch-2 re-check | — |
 | batch2 | Weapon worn, not gripped: bare `warhammer` → `his warhammer at his hip` (batch-1 verdict); head shape untouched — single variable — snapshot: `batches/batch2/` | same gulgrim_g01–g04 |
 | batch2 verdict (agent review 2026-11-03, human pending) | Position fix works: **4/4 warhammers** (batch 1 was 0/4), zero axe drift, no improvised grips; NEVER-list clean, holy symbol on all four; g03 best again. **g04 grey hands persisted → recommend retire 424244, promote 424245** | — |
+| batch3 | Seed retirement: 424244 out (grey hands under two wordings), **424245 in** at `gulgrim_g04`; wording frozen at the batch-2 block — snapshot: `batches/batch3/` | gulgrim_g01–g04 (424242, 424243, 777001, 424245) |
 
 ## Verdicts
 

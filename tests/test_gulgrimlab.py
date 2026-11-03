@@ -10,7 +10,11 @@ LAB_DIR = "character-bible/sheet-test/gulgrim-lab"
 LAB_DESC = os.path.join(LAB_DIR, "descriptions.md")
 LAB_PROMPTS = os.path.join(LAB_DIR, "prompts.json")
 KEYS = [f"gulgrim_g{i:02d}" for i in range(1, 5)]
-SEEDS = [424242, 424243, 777001, 424244]
+# Batch 3 ladder: seed 424244 RETIRED (grey hands persisted across two
+# wordings — batches 1+2 verdict); 424245 promoted into gulgrim_g04
+# (verified disjoint from every ladder in the repo). Wording frozen at
+# BATCH2_BLOCK.
+SEEDS = [424242, 424243, 777001, 424245]
 GULGRIM_URL = RACE_URL[SLUG_RACE["gulgrim"]]
 # Batch 2: warhammer worn at the hip — batch-1 verdict was0/4 clean
 # warhammers from the bare word `warhammer` (improvised grips, axe-head

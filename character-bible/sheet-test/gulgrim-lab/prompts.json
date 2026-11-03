@@ -14,7 +14,7 @@
     },
     "workflow": "workflows/base_flux3.json",
     "output": "img/gulgrim_g01.png",
-    "timestamp": "2026-11-03T13:31:04Z"
+    "timestamp": "2026-11-03T14:30:06Z"
   },
   "gulgrim_g02": {
     "character": "gulgrim_g02",
@@ -31,7 +31,7 @@
     },
     "workflow": "workflows/base_flux3.json",
     "output": "img/gulgrim_g02.png",
-    "timestamp": "2026-11-03T13:31:09Z"
+    "timestamp": "2026-11-03T14:30:11Z"
   },
   "gulgrim_g03": {
     "character": "gulgrim_g03",
@@ -48,7 +48,7 @@
     },
     "workflow": "workflows/base_flux3.json",
     "output": "img/gulgrim_g03.png",
-    "timestamp": "2026-11-03T13:31:14Z"
+    "timestamp": "2026-11-03T14:30:16Z"
   },
   "gulgrim_g04": {
     "character": "gulgrim_g04",
@@ -58,13 +58,13 @@
     "species_sources": {
       "13-dwarf": "https://www.dndbeyond.com/species/13-dwarf"
     },
-    "seed": 424244,
+    "seed": 424245,
     "model_hashes": {
       "unet_name": "flux3-image-klein-nvfp4.safetensors",
       "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
     },
     "workflow": "workflows/base_flux3.json",
     "output": "img/gulgrim_g04.png",
-    "timestamp": "2026-11-03T13:31:20Z"
+    "timestamp": "2026-11-03T14:30:21Z"
   }
 }
