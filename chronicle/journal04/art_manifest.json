@@ -46,5 +46,29 @@
     "seed": 8308308307,
     "portrait_ref": null,
     "status": "new-approved"
+  },
+  {
+    "plate": "plate07_maul.png",
+    "source": "new",
+    "workflow": "chr4_n7b.json",
+    "seed": 8308308311,
+    "portrait_ref": null,
+    "status": "new-approved"
+  },
+  {
+    "plate": "plate08_triage.png",
+    "source": "new",
+    "workflow": "chr4_n8.json",
+    "seed": 8308308309,
+    "portrait_ref": null,
+    "status": "new-approved"
+  },
+  {
+    "plate": "plate09_mockery.png",
+    "source": "new",
+    "workflow": "chr4_n9b.json",
+    "seed": 8308308312,
+    "portrait_ref": "multiref_biggins.png",
+    "status": "new-approved"
   }
 ]
