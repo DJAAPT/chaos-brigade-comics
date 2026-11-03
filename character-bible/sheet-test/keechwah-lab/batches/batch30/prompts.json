@@ -1,0 +1,172 @@
+{
+  "keechwah_r01": {
+    "character": "keechwah_r01",
+    "arm": "C",
+    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body An adult male warlock with an athletic build, exactly two normal arms, and no wings. He has warm bronze-tan human skin with a faint red cast, sharp masculine facial features with a stern, knowing expression, and sharply pointed canine teeth. His narrow, almond-shaped eyes rest under heavy eyelids, featuring solid glowing purple irises that fill the entire visible eye with no white sclera or pupil. Long, thick, curly black hair frames his face alongside a neatly trimmed dark black goatee, and his ears come to slight points. Rising from the crown of his skull are two large curved bronze-brown horns with a ridged texture, their bases buried deep within his thick hair line. He wears elegant, flowing dark blue and gold wizard robes with ornate gold jewelry including a purple orb pendant, the trailing hem of the robes trimmed in gold.",
+    "frame": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background",
+    "species_sources": {
+      "7-tiefling": "https://www.dndbeyond.com/species/7-tiefling"
+    },
+    "seed": 2065821486,
+    "model_hashes": {
+      "unet_name": "flux3-image-klein-nvfp4.safetensors",
+      "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
+    },
+    "workflow": "workflows/base_flux3.json",
+    "output": "img/keechwah_r01.png",
+    "timestamp": "2026-11-03T13:26:48Z"
+  },
+  "keechwah_r02": {
+    "character": "keechwah_r02",
+    "arm": "C",
+    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body An adult male warlock with an athletic build, exactly two normal arms, and no wings. He has warm bronze-tan human skin with a faint red cast, sharp masculine facial features with a stern, knowing expression, and sharply pointed canine teeth. His narrow, almond-shaped eyes rest under heavy eyelids, featuring solid glowing purple irises that fill the entire visible eye with no white sclera or pupil. Long, thick, curly black hair frames his face alongside a neatly trimmed dark black goatee, and his ears come to slight points. Rising from the crown of his skull are two large curved bronze-brown horns with a ridged texture, their bases buried deep within his thick hair line. He wears elegant, flowing dark blue and gold wizard robes with ornate gold jewelry including a purple orb pendant, the trailing hem of the robes trimmed in gold.",
+    "frame": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background",
+    "species_sources": {
+      "7-tiefling": "https://www.dndbeyond.com/species/7-tiefling"
+    },
+    "seed": 930887360,
+    "model_hashes": {
+      "unet_name": "flux3-image-klein-nvfp4.safetensors",
+      "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
+    },
+    "workflow": "workflows/base_flux3.json",
+    "output": "img/keechwah_r02.png",
+    "timestamp": "2026-11-03T13:26:54Z"
+  },
+  "keechwah_r03": {
+    "character": "keechwah_r03",
+    "arm": "C",
+    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body An adult male warlock with an athletic build, exactly two normal arms, and no wings. He has warm bronze-tan human skin with a faint red cast, sharp masculine facial features with a stern, knowing expression, and sharply pointed canine teeth. His narrow, almond-shaped eyes rest under heavy eyelids, featuring solid glowing purple irises that fill the entire visible eye with no white sclera or pupil. Long, thick, curly black hair frames his face alongside a neatly trimmed dark black goatee, and his ears come to slight points. Rising from the crown of his skull are two large curved bronze-brown horns with a ridged texture, their bases buried deep within his thick hair line. He wears elegant, flowing dark blue and gold wizard robes with ornate gold jewelry including a purple orb pendant, the trailing hem of the robes trimmed in gold.",
+    "frame": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background",
+    "species_sources": {
+      "7-tiefling": "https://www.dndbeyond.com/species/7-tiefling"
+    },
+    "seed": 88839317,
+    "model_hashes": {
+      "unet_name": "flux3-image-klein-nvfp4.safetensors",
+      "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
+    },
+    "workflow": "workflows/base_flux3.json",
+    "output": "img/keechwah_r03.png",
+    "timestamp": "2026-11-03T13:26:59Z"
+  },
+  "keechwah_r04": {
+    "character": "keechwah_r04",
+    "arm": "C",
+    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body An adult male warlock with an athletic build, exactly two normal arms, and no wings. He has warm bronze-tan human skin with a faint red cast, sharp masculine facial features with a stern, knowing expression, and sharply pointed canine teeth. His narrow, almond-shaped eyes rest under heavy eyelids, featuring solid glowing purple irises that fill the entire visible eye with no white sclera or pupil. Long, thick, curly black hair frames his face alongside a neatly trimmed dark black goatee, and his ears come to slight points. Rising from the crown of his skull are two large curved bronze-brown horns with a ridged texture, their bases buried deep within his thick hair line. He wears elegant, flowing dark blue and gold wizard robes with ornate gold jewelry including a purple orb pendant, the trailing hem of the robes trimmed in gold.",
+    "frame": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background",
+    "species_sources": {
+      "7-tiefling": "https://www.dndbeyond.com/species/7-tiefling"
+    },
+    "seed": 1090675945,
+    "model_hashes": {
+      "unet_name": "flux3-image-klein-nvfp4.safetensors",
+      "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
+    },
+    "workflow": "workflows/base_flux3.json",
+    "output": "img/keechwah_r04.png",
+    "timestamp": "2026-11-03T13:27:04Z"
+  },
+  "keechwah_r05": {
+    "character": "keechwah_r05",
+    "arm": "C",
+    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body An adult male warlock with an athletic build, exactly two normal arms, and no wings. He has warm bronze-tan human skin with a faint red cast, sharp masculine facial features with a stern, knowing expression, and sharply pointed canine teeth. His narrow, almond-shaped eyes rest under heavy eyelids, featuring solid glowing purple irises that fill the entire visible eye with no white sclera or pupil. Long, thick, curly black hair frames his face alongside a neatly trimmed dark black goatee, and his ears come to slight points. Rising from the crown of his skull are two large curved bronze-brown horns with a ridged texture, their bases buried deep within his thick hair line. He wears elegant, flowing dark blue and gold wizard robes with ornate gold jewelry including a purple orb pendant, the trailing hem of the robes trimmed in gold.",
+    "frame": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background",
+    "species_sources": {
+      "7-tiefling": "https://www.dndbeyond.com/species/7-tiefling"
+    },
+    "seed": 1905371701,
+    "model_hashes": {
+      "unet_name": "flux3-image-klein-nvfp4.safetensors",
+      "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
+    },
+    "workflow": "workflows/base_flux3.json",
+    "output": "img/keechwah_r05.png",
+    "timestamp": "2026-11-03T13:27:09Z"
+  },
+  "keechwah_r06": {
+    "character": "keechwah_r06",
+    "arm": "C",
+    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body An adult male warlock with an athletic build, exactly two normal arms, and no wings. He has warm bronze-tan human skin with a faint red cast, sharp masculine facial features with a stern, knowing expression, and sharply pointed canine teeth. His narrow, almond-shaped eyes rest under heavy eyelids, featuring solid glowing purple irises that fill the entire visible eye with no white sclera or pupil. Long, thick, curly black hair frames his face alongside a neatly trimmed dark black goatee, and his ears come to slight points. Rising from the crown of his skull are two large curved bronze-brown horns with a ridged texture, their bases buried deep within his thick hair line. He wears elegant, flowing dark blue and gold wizard robes with ornate gold jewelry including a purple orb pendant, the trailing hem of the robes trimmed in gold.",
+    "frame": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background",
+    "species_sources": {
+      "7-tiefling": "https://www.dndbeyond.com/species/7-tiefling"
+    },
+    "seed": 1554671163,
+    "model_hashes": {
+      "unet_name": "flux3-image-klein-nvfp4.safetensors",
+      "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
+    },
+    "workflow": "workflows/base_flux3.json",
+    "output": "img/keechwah_r06.png",
+    "timestamp": "2026-11-03T13:27:14Z"
+  },
+  "keechwah_r07": {
+    "character": "keechwah_r07",
+    "arm": "C",
+    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body An adult male warlock with an athletic build, exactly two normal arms, and no wings. He has warm bronze-tan human skin with a faint red cast, sharp masculine facial features with a stern, knowing expression, and sharply pointed canine teeth. His narrow, almond-shaped eyes rest under heavy eyelids, featuring solid glowing purple irises that fill the entire visible eye with no white sclera or pupil. Long, thick, curly black hair frames his face alongside a neatly trimmed dark black goatee, and his ears come to slight points. Rising from the crown of his skull are two large curved bronze-brown horns with a ridged texture, their bases buried deep within his thick hair line. He wears elegant, flowing dark blue and gold wizard robes with ornate gold jewelry including a purple orb pendant, the trailing hem of the robes trimmed in gold.",
+    "frame": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background",
+    "species_sources": {
+      "7-tiefling": "https://www.dndbeyond.com/species/7-tiefling"
+    },
+    "seed": 236894354,
+    "model_hashes": {
+      "unet_name": "flux3-image-klein-nvfp4.safetensors",
+      "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
+    },
+    "workflow": "workflows/base_flux3.json",
+    "output": "img/keechwah_r07.png",
+    "timestamp": "2026-11-03T13:27:19Z"
+  },
+  "keechwah_r08": {
+    "character": "keechwah_r08",
+    "arm": "C",
+    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body An adult male warlock with an athletic build, exactly two normal arms, and no wings. He has warm bronze-tan human skin with a faint red cast, sharp masculine facial features with a stern, knowing expression, and sharply pointed canine teeth. His narrow, almond-shaped eyes rest under heavy eyelids, featuring solid glowing purple irises that fill the entire visible eye with no white sclera or pupil. Long, thick, curly black hair frames his face alongside a neatly trimmed dark black goatee, and his ears come to slight points. Rising from the crown of his skull are two large curved bronze-brown horns with a ridged texture, their bases buried deep within his thick hair line. He wears elegant, flowing dark blue and gold wizard robes with ornate gold jewelry including a purple orb pendant, the trailing hem of the robes trimmed in gold.",
+    "frame": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background",
+    "species_sources": {
+      "7-tiefling": "https://www.dndbeyond.com/species/7-tiefling"
+    },
+    "seed": 1180323667,
+    "model_hashes": {
+      "unet_name": "flux3-image-klein-nvfp4.safetensors",
+      "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
+    },
+    "workflow": "workflows/base_flux3.json",
+    "output": "img/keechwah_r08.png",
+    "timestamp": "2026-11-03T13:27:25Z"
+  },
+  "keechwah_r09": {
+    "character": "keechwah_r09",
+    "arm": "C",
+    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body An adult male warlock with an athletic build, exactly two normal arms, and no wings. He has warm bronze-tan human skin with a faint red cast, sharp masculine facial features with a stern, knowing expression, and sharply pointed canine teeth. His narrow, almond-shaped eyes rest under heavy eyelids, featuring solid glowing purple irises that fill the entire visible eye with no white sclera or pupil. Long, thick, curly black hair frames his face alongside a neatly trimmed dark black goatee, and his ears come to slight points. Rising from the crown of his skull are two large curved bronze-brown horns with a ridged texture, their bases buried deep within his thick hair line. He wears elegant, flowing dark blue and gold wizard robes with ornate gold jewelry including a purple orb pendant, the trailing hem of the robes trimmed in gold.",
+    "frame": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background",
+    "species_sources": {
+      "7-tiefling": "https://www.dndbeyond.com/species/7-tiefling"
+    },
+    "seed": 216049632,
+    "model_hashes": {
+      "unet_name": "flux3-image-klein-nvfp4.safetensors",
+      "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
+    },
+    "workflow": "workflows/base_flux3.json",
+    "output": "img/keechwah_r09.png",
+    "timestamp": "2026-11-03T13:27:30Z"
+  },
+  "keechwah_r10": {
+    "character": "keechwah_r10",
+    "arm": "C",
+    "prompt": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background standing neutral pose, both arms clearly visible, no shield, nothing held across the body An adult male warlock with an athletic build, exactly two normal arms, and no wings. He has warm bronze-tan human skin with a faint red cast, sharp masculine facial features with a stern, knowing expression, and sharply pointed canine teeth. His narrow, almond-shaped eyes rest under heavy eyelids, featuring solid glowing purple irises that fill the entire visible eye with no white sclera or pupil. Long, thick, curly black hair frames his face alongside a neatly trimmed dark black goatee, and his ears come to slight points. Rising from the crown of his skull are two large curved bronze-brown horns with a ridged texture, their bases buried deep within his thick hair line. He wears elegant, flowing dark blue and gold wizard robes with ornate gold jewelry including a purple orb pendant, the trailing hem of the robes trimmed in gold.",
+    "frame": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain background",
+    "species_sources": {
+      "7-tiefling": "https://www.dndbeyond.com/species/7-tiefling"
+    },
+    "seed": 782838461,
+    "model_hashes": {
+      "unet_name": "flux3-image-klein-nvfp4.safetensors",
+      "sha256": "15d421e2558443fcf83ba46f3cd884d9d181c2c7a0a7bdcd2974af234a2d4f5c"
+    },
+    "workflow": "workflows/base_flux3.json",
+    "output": "img/keechwah_r10.png",
+    "timestamp": "2026-11-03T13:27:35Z"
+  }
+}
