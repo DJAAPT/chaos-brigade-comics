@@ -1,0 +1,966 @@
+{
+  "100": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "b40_3596691034_d35.png"
+    }
+  },
+  "110": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "flux3-image-klein-nvfp4.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "111": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_4b_int8_convrot.safetensors",
+      "type": "flux3",
+      "device": "default"
+    }
+  },
+  "112": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "flux2-vae.safetensors"
+    }
+  },
+  "114": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": [
+        "111",
+        0
+      ],
+      "text": ""
+    }
+  },
+  "200": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "b39c_vadania.png"
+    }
+  },
+  "201": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": [
+        "111",
+        0
+      ],
+      "text": "adult male wood elf face, long brown hair, green eyes, pointed ears, masculine jaw stubble, blunt direct sincere gaze, detailed natural face, sharp clear eyes, natural skin texture, photorealistic, highly detailed"
+    }
+  },
+  "202": {
+    "class_type": "ReferenceMultiLatent",
+    "inputs": {
+      "positive": [
+        "201",
+        0
+      ],
+      "resolution": "keep resolution",
+      "negative": [
+        "114",
+        0
+      ],
+      "vae": [
+        "112",
+        0
+      ],
+      "images.image0": [
+        "200",
+        0
+      ]
+    }
+  },
+  "203": {
+    "class_type": "VAEEncode",
+    "inputs": {
+      "pixels": [
+        "100",
+        0
+      ],
+      "vae": [
+        "112",
+        0
+      ]
+    }
+  },
+  "204": {
+    "class_type": "LoadImageMask",
+    "inputs": {
+      "image": "b40_3596691034_mask_vadania.png",
+      "channel": "red"
+    }
+  },
+  "205": {
+    "class_type": "SetLatentNoiseMask",
+    "inputs": {
+      "samples": [
+        "203",
+        0
+      ],
+      "mask": [
+        "204",
+        0
+      ]
+    }
+  },
+  "206": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "110",
+        0
+      ],
+      "seed": 3596691034,
+      "steps": 15,
+      "cfg": 1.0,
+      "sampler_name": "er_sde",
+      "scheduler": "simple",
+      "positive": [
+        "202",
+        0
+      ],
+      "negative": [
+        "202",
+        1
+      ],
+      "latent_image": [
+        "205",
+        0
+      ],
+      "denoise": 0.5
+    }
+  },
+  "207": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "206",
+        0
+      ],
+      "vae": [
+        "112",
+        0
+      ]
+    }
+  },
+  "210": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "b39c_chip.png"
+    }
+  },
+  "211": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": [
+        "111",
+        0
+      ],
+      "text": "adult male weathered face, brown skin, wild long white hair and white beard, brown eyes, awkward earnest expression, detailed natural face, sharp clear eyes, natural skin texture, photorealistic, highly detailed"
+    }
+  },
+  "212": {
+    "class_type": "ReferenceMultiLatent",
+    "inputs": {
+      "positive": [
+        "211",
+        0
+      ],
+      "resolution": "keep resolution",
+      "negative": [
+        "114",
+        0
+      ],
+      "vae": [
+        "112",
+        0
+      ],
+      "images.image0": [
+        "210",
+        0
+      ]
+    }
+  },
+  "213": {
+    "class_type": "VAEEncode",
+    "inputs": {
+      "pixels": [
+        "100",
+        0
+      ],
+      "vae": [
+        "112",
+        0
+      ]
+    }
+  },
+  "214": {
+    "class_type": "LoadImageMask",
+    "inputs": {
+      "image": "b40_3596691034_mask_chip.png",
+      "channel": "red"
+    }
+  },
+  "215": {
+    "class_type": "SetLatentNoiseMask",
+    "inputs": {
+      "samples": [
+        "213",
+        0
+      ],
+      "mask": [
+        "214",
+        0
+      ]
+    }
+  },
+  "216": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "110",
+        0
+      ],
+      "seed": 3596691034,
+      "steps": 15,
+      "cfg": 1.0,
+      "sampler_name": "er_sde",
+      "scheduler": "simple",
+      "positive": [
+        "212",
+        0
+      ],
+      "negative": [
+        "212",
+        1
+      ],
+      "latent_image": [
+        "215",
+        0
+      ],
+      "denoise": 0.5
+    }
+  },
+  "217": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "216",
+        0
+      ],
+      "vae": [
+        "112",
+        0
+      ]
+    }
+  },
+  "220": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "b39c_rocketcandy.png"
+    }
+  },
+  "221": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": [
+        "111",
+        0
+      ],
+      "text": "adult male noble face, short brown hair, light stubble, confident composed expression, detailed natural face, sharp clear eyes, natural skin texture, photorealistic, highly detailed"
+    }
+  },
+  "222": {
+    "class_type": "ReferenceMultiLatent",
+    "inputs": {
+      "positive": [
+        "221",
+        0
+      ],
+      "resolution": "keep resolution",
+      "negative": [
+        "114",
+        0
+      ],
+      "vae": [
+        "112",
+        0
+      ],
+      "images.image0": [
+        "220",
+        0
+      ]
+    }
+  },
+  "223": {
+    "class_type": "VAEEncode",
+    "inputs": {
+      "pixels": [
+        "100",
+        0
+      ],
+      "vae": [
+        "112",
+        0
+      ]
+    }
+  },
+  "224": {
+    "class_type": "LoadImageMask",
+    "inputs": {
+      "image": "b40_3596691034_mask_rocketcandy.png",
+      "channel": "red"
+    }
+  },
+  "225": {
+    "class_type": "SetLatentNoiseMask",
+    "inputs": {
+      "samples": [
+        "223",
+        0
+      ],
+      "mask": [
+        "224",
+        0
+      ]
+    }
+  },
+  "226": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "110",
+        0
+      ],
+      "seed": 3596691034,
+      "steps": 15,
+      "cfg": 1.0,
+      "sampler_name": "er_sde",
+      "scheduler": "simple",
+      "positive": [
+        "222",
+        0
+      ],
+      "negative": [
+        "222",
+        1
+      ],
+      "latent_image": [
+        "225",
+        0
+      ],
+      "denoise": 0.5
+    }
+  },
+  "227": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "226",
+        0
+      ],
+      "vae": [
+        "112",
+        0
+      ]
+    }
+  },
+  "230": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "b39c_keechwah.png"
+    }
+  },
+  "231": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": [
+        "111",
+        0
+      ],
+      "text": "adult male tiefling face, deep red skin, long curly black hair, goatee, large curved horns, flat matte solid purple eyes, full-purple sclera, no white, no pupils, no glow, secretive intense gaze, detailed natural face, sharp clear eyes, natural skin texture, photorealistic, highly detailed"
+    }
+  },
+  "232": {
+    "class_type": "ReferenceMultiLatent",
+    "inputs": {
+      "positive": [
+        "231",
+        0
+      ],
+      "resolution": "keep resolution",
+      "negative": [
+        "114",
+        0
+      ],
+      "vae": [
+        "112",
+        0
+      ],
+      "images.image0": [
+        "230",
+        0
+      ]
+    }
+  },
+  "233": {
+    "class_type": "VAEEncode",
+    "inputs": {
+      "pixels": [
+        "100",
+        0
+      ],
+      "vae": [
+        "112",
+        0
+      ]
+    }
+  },
+  "234": {
+    "class_type": "LoadImageMask",
+    "inputs": {
+      "image": "b40_3596691034_mask_keechwah.png",
+      "channel": "red"
+    }
+  },
+  "235": {
+    "class_type": "SetLatentNoiseMask",
+    "inputs": {
+      "samples": [
+        "233",
+        0
+      ],
+      "mask": [
+        "234",
+        0
+      ]
+    }
+  },
+  "236": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "110",
+        0
+      ],
+      "seed": 3596691034,
+      "steps": 15,
+      "cfg": 1.0,
+      "sampler_name": "er_sde",
+      "scheduler": "simple",
+      "positive": [
+        "232",
+        0
+      ],
+      "negative": [
+        "232",
+        1
+      ],
+      "latent_image": [
+        "235",
+        0
+      ],
+      "denoise": 0.5
+    }
+  },
+  "237": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "236",
+        0
+      ],
+      "vae": [
+        "112",
+        0
+      ]
+    }
+  },
+  "240": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "b39c_lilly.png"
+    }
+  },
+  "241": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": [
+        "111",
+        0
+      ],
+      "text": "adult young woman face, curly voluminous red hair, freckles across nose and cheeks, warm confident expression, detailed natural face, sharp clear eyes, natural skin texture, photorealistic, highly detailed"
+    }
+  },
+  "242": {
+    "class_type": "ReferenceMultiLatent",
+    "inputs": {
+      "positive": [
+        "241",
+        0
+      ],
+      "resolution": "keep resolution",
+      "negative": [
+        "114",
+        0
+      ],
+      "vae": [
+        "112",
+        0
+      ],
+      "images.image0": [
+        "240",
+        0
+      ]
+    }
+  },
+  "243": {
+    "class_type": "VAEEncode",
+    "inputs": {
+      "pixels": [
+        "100",
+        0
+      ],
+      "vae": [
+        "112",
+        0
+      ]
+    }
+  },
+  "244": {
+    "class_type": "LoadImageMask",
+    "inputs": {
+      "image": "b40_3596691034_mask_lilly.png",
+      "channel": "red"
+    }
+  },
+  "245": {
+    "class_type": "SetLatentNoiseMask",
+    "inputs": {
+      "samples": [
+        "243",
+        0
+      ],
+      "mask": [
+        "244",
+        0
+      ]
+    }
+  },
+  "246": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "110",
+        0
+      ],
+      "seed": 3596691034,
+      "steps": 15,
+      "cfg": 1.0,
+      "sampler_name": "er_sde",
+      "scheduler": "simple",
+      "positive": [
+        "242",
+        0
+      ],
+      "negative": [
+        "242",
+        1
+      ],
+      "latent_image": [
+        "245",
+        0
+      ],
+      "denoise": 0.5
+    }
+  },
+  "247": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "246",
+        0
+      ],
+      "vae": [
+        "112",
+        0
+      ]
+    }
+  },
+  "250": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "b39c_gulgrim.png"
+    }
+  },
+  "251": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": [
+        "111",
+        0
+      ],
+      "text": "dwarf face beneath steel helmet with cheek guards, angular weathered features, calm bemused eyes, one brow lifted, black beard mass around face, detailed natural face, sharp clear eyes, natural skin texture, photorealistic, highly detailed"
+    }
+  },
+  "252": {
+    "class_type": "ReferenceMultiLatent",
+    "inputs": {
+      "positive": [
+        "251",
+        0
+      ],
+      "resolution": "keep resolution",
+      "negative": [
+        "114",
+        0
+      ],
+      "vae": [
+        "112",
+        0
+      ],
+      "images.image0": [
+        "250",
+        0
+      ]
+    }
+  },
+  "253": {
+    "class_type": "VAEEncode",
+    "inputs": {
+      "pixels": [
+        "100",
+        0
+      ],
+      "vae": [
+        "112",
+        0
+      ]
+    }
+  },
+  "254": {
+    "class_type": "LoadImageMask",
+    "inputs": {
+      "image": "b40_3596691034_mask_gulgrim.png",
+      "channel": "red"
+    }
+  },
+  "255": {
+    "class_type": "SetLatentNoiseMask",
+    "inputs": {
+      "samples": [
+        "253",
+        0
+      ],
+      "mask": [
+        "254",
+        0
+      ]
+    }
+  },
+  "256": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "110",
+        0
+      ],
+      "seed": 3596691034,
+      "steps": 15,
+      "cfg": 1.0,
+      "sampler_name": "er_sde",
+      "scheduler": "simple",
+      "positive": [
+        "252",
+        0
+      ],
+      "negative": [
+        "252",
+        1
+      ],
+      "latent_image": [
+        "255",
+        0
+      ],
+      "denoise": 0.5
+    }
+  },
+  "257": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "256",
+        0
+      ],
+      "vae": [
+        "112",
+        0
+      ]
+    }
+  },
+  "260": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "b39c_shade.png"
+    }
+  },
+  "261": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": [
+        "111",
+        0
+      ],
+      "text": "young adult halfling man face, messy shaggy dark brown hair over the sides, light stubble, warm brown eyes with sly gleam, lips sealed in a subtle sly smirk, detailed natural face, sharp clear eyes, natural skin texture, photorealistic, highly detailed"
+    }
+  },
+  "262": {
+    "class_type": "ReferenceMultiLatent",
+    "inputs": {
+      "positive": [
+        "261",
+        0
+      ],
+      "resolution": "keep resolution",
+      "negative": [
+        "114",
+        0
+      ],
+      "vae": [
+        "112",
+        0
+      ],
+      "images.image0": [
+        "260",
+        0
+      ]
+    }
+  },
+  "263": {
+    "class_type": "VAEEncode",
+    "inputs": {
+      "pixels": [
+        "100",
+        0
+      ],
+      "vae": [
+        "112",
+        0
+      ]
+    }
+  },
+  "264": {
+    "class_type": "LoadImageMask",
+    "inputs": {
+      "image": "b40_3596691034_mask_shade.png",
+      "channel": "red"
+    }
+  },
+  "265": {
+    "class_type": "SetLatentNoiseMask",
+    "inputs": {
+      "samples": [
+        "263",
+        0
+      ],
+      "mask": [
+        "264",
+        0
+      ]
+    }
+  },
+  "266": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "110",
+        0
+      ],
+      "seed": 3596691034,
+      "steps": 15,
+      "cfg": 1.0,
+      "sampler_name": "er_sde",
+      "scheduler": "simple",
+      "positive": [
+        "262",
+        0
+      ],
+      "negative": [
+        "262",
+        1
+      ],
+      "latent_image": [
+        "265",
+        0
+      ],
+      "denoise": 0.5
+    }
+  },
+  "267": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "266",
+        0
+      ],
+      "vae": [
+        "112",
+        0
+      ]
+    }
+  },
+  "300": {
+    "class_type": "ImageCompositeMasked",
+    "inputs": {
+      "destination": [
+        "100",
+        0
+      ],
+      "source": [
+        "207",
+        0
+      ],
+      "x": 0,
+      "y": 0,
+      "resize_source": false,
+      "mask": [
+        "204",
+        0
+      ]
+    }
+  },
+  "301": {
+    "class_type": "ImageCompositeMasked",
+    "inputs": {
+      "destination": [
+        "300",
+        0
+      ],
+      "source": [
+        "217",
+        0
+      ],
+      "x": 0,
+      "y": 0,
+      "resize_source": false,
+      "mask": [
+        "214",
+        0
+      ]
+    }
+  },
+  "302": {
+    "class_type": "ImageCompositeMasked",
+    "inputs": {
+      "destination": [
+        "301",
+        0
+      ],
+      "source": [
+        "227",
+        0
+      ],
+      "x": 0,
+      "y": 0,
+      "resize_source": false,
+      "mask": [
+        "224",
+        0
+      ]
+    }
+  },
+  "303": {
+    "class_type": "ImageCompositeMasked",
+    "inputs": {
+      "destination": [
+        "302",
+        0
+      ],
+      "source": [
+        "237",
+        0
+      ],
+      "x": 0,
+      "y": 0,
+      "resize_source": false,
+      "mask": [
+        "234",
+        0
+      ]
+    }
+  },
+  "304": {
+    "class_type": "ImageCompositeMasked",
+    "inputs": {
+      "destination": [
+        "303",
+        0
+      ],
+      "source": [
+        "247",
+        0
+      ],
+      "x": 0,
+      "y": 0,
+      "resize_source": false,
+      "mask": [
+        "244",
+        0
+      ]
+    }
+  },
+  "305": {
+    "class_type": "ImageCompositeMasked",
+    "inputs": {
+      "destination": [
+        "304",
+        0
+      ],
+      "source": [
+        "257",
+        0
+      ],
+      "x": 0,
+      "y": 0,
+      "resize_source": false,
+      "mask": [
+        "254",
+        0
+      ]
+    }
+  },
+  "306": {
+    "class_type": "ImageCompositeMasked",
+    "inputs": {
+      "destination": [
+        "305",
+        0
+      ],
+      "source": [
+        "267",
+        0
+      ],
+      "x": 0,
+      "y": 0,
+      "resize_source": false,
+      "mask": [
+        "264",
+        0
+      ]
+    }
+  },
+  "400": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "306",
+        0
+      ],
+      "filename_prefix": "b40_3596691034_p2"
+    }
+  }
+}
