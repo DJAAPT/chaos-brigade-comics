@@ -31,12 +31,20 @@ How we generate consistent-character comic art. Proven across lineup-lab batches
 3. **FaceDetailer (mandatory for eyes-facing-camera).** `FaceDetailer` node, bbox model
    `bbox/face_yolov8m.pt`, denoise `0.35`, feather 5, guide 512/max 1024. Compares as faces-only:
    verify before/after pairs — if anything beyond faces moves, drop denoise to `0.2` (note: soft
-   settings can re-crop framing; check composition after).
-4. **Per-character eye wording where canon demands it.** The generic detail prompt washes out
+   settings can re-crop framing; check composition after). FaceDetailer takes NO reference image —
+   for ref-conditioned faces, use masked `ReferenceMultiLatent` passes instead (next).
+4. **Multi-face ref pass (one graph, never chained).** All faces in ONE submission: parallel branches off
+   the SAME base pixels, each branch = `VAEEncode` base + `SetLatentNoiseMask` (feathered face mask) +
+   `KSampler` at denoise `0.5` conditioned by `ReferenceMultiLatent` (that face's closeup ref + face-specific
+   prompt), merged with lossless `ImageCompositeMasked` pixel composites. Proven template:
+   `character-bible/lineup-lab/batches/batch39/b39_faces_onepass.json` (user-verified WAY better than
+   chained per-face submissions, which accumulate VAE roundtrip loss down the chain). Face boxes: measure
+   from the image (faceband strips), verify with a contact sheet BEFORE painting.
+5. **Per-character eye wording where canon demands it.** The generic detail prompt washes out
    special eyes. Keechwah: "flat matte solid purple eyes, full-purple sclera, no white, no pupils,
    no glow, no shine, no light spill" (bible.md, 2026-11-03). If the detailer still leaves white,
    run a dedicated masked eye/face pass at denoise 0.4–0.6 with the character ref.
-5. **Prop policing.** Gear tokens hijack generations: Gulgrim's shield rendered without him twice;
+6. **Prop policing.** Gear tokens hijack generations: Gulgrim's shield rendered without him twice;
    Chip's staff grew axe heads and spear tips across four batches. When a prop crowds out its owner,
    strip gear tokens from the prompt first (person-only wording), reintroduce minimally.
 
