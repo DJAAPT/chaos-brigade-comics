@@ -1,0 +1,128 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Flux3 Klein"
+    },
+    "inputs": {
+      "unet_name": "flux3-image-klein-nvfp4.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Text encoder"
+    },
+    "inputs": {
+      "clip_name": "qwen3vl_4b_int8_convrot.safetensors",
+      "type": "flux3",
+      "device": "default"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "VAE"
+    },
+    "inputs": {
+      "vae_name": "flux2-vae.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Prompt verbatim from approved ref"
+    },
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "text": "solo full-body portrait of a single character, head-to-toe full body with feet visible and empty space above the head, stationary camera at a fixed distance, plain dark neutral background, standing neutral pose, facing camera, even lighting, nobody else in frame: adult male hill dwarf cleric, short stocky with natural realistic dwarf proportions, head normal-sized and proportionate to his short body, no oversized head, no caricature, no bobblehead, classic dwarf look with tons of hair, long thick flowing wild unkempt black hair covering his head and shoulders, plain steel dwarven helmet with cheek guards, masses of unkempt black hair flowing from beneath the helmet, face half-hidden between the helmet rim and a huge bushy unkempt black mustache and wild untrimmed black beard, hygiene clearly not a priority, angular sharp weathered face with gaunt hard cheeks, lean severe features, not round, not soft, not jolly, calm bemused curiosity in his eyes, quirky odd fellow, relaxed brow, not angry, no scowl, no frown, heavy furs, scarred leather bracers on both forearms, wide leather belt with brass buckle, frost-covered boots, standing well under five feet tall, broad and compact, holy symbol of Marthammor Du, hands empty at his sides, no weapon, no hammer, no axe, exactly two arms, adult faces, no children, no teens, single character each, no duplicates, no conflation, no extra heads, no wings unless noted, photorealistic, highly detailed"
+    }
+  },
+  "5": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Negative (unused)"
+    },
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "text": ""
+    }
+  },
+  "8": {
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "Sample"
+    },
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "seed": 777001,
+      "steps": 15,
+      "cfg": 1.0,
+      "sampler_name": "er_sde",
+      "scheduler": "simple",
+      "positive": [
+        "4",
+        0
+      ],
+      "negative": [
+        "5",
+        0
+      ],
+      "latent_image": [
+        "13",
+        0
+      ],
+      "denoise": 1.0
+    }
+  },
+  "13": {
+    "class_type": "EmptyFlux2LatentImage",
+    "_meta": {
+      "title": "1344x768"
+    },
+    "inputs": {
+      "width": 1344,
+      "height": 768,
+      "batch_size": 1
+    }
+  },
+  "9": {
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "Decode"
+    },
+    "inputs": {
+      "samples": [
+        "8",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "10": {
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save"
+    },
+    "inputs": {
+      "images": [
+        "9",
+        0
+      ],
+      "filename_prefix": "b38_gulgrim_fullbody_hairy_r8"
+    }
+  }
+}

@@ -35,11 +35,11 @@ Expression: loves a good mystery, convinced people are trying to steal his secre
 Default expression: secretive knowing intensity — guards his secrets, stern rather than smiling.
 
 ### Gulgrim Frozenboots — Male Hill Dwarf Cleric (James)
-`adult male hill dwarf cleric, short stocky, completely bald head, broad long white beard, heavy furs, frost-covered boots, large round shield with holy rune, warhammer`
-Approved identity ref (2026-11-03, Flux3 Klein): `character-bible/approved_gulgrim_reference.png` — copy this look; face, gear, and expression approved in the gulgrim-lab batch-5 portrait (seed 777001, bald, warhammer worn at hip). Replaces the 2026-11-02 Flux3 v1 ref, which gripped an axe-like weapon head-down.
-NEVER: tall, thin, no-beard, missing his heavy furs (furs stay on in every panel, indoors or out).
-Gear: Holy Symbol + Biggins manor key (plot item), Mason's tools. Soldier background (Mintarn → Neverwinter watch, quit over corruption). Faith: Marthammor Du. Warhammer is canon (user decision — sheet's mace ignored).
-Default expression: steadfast and resolute — stern veteran soldier-cleric, no smile.
+`adult male hill dwarf cleric, short stocky, long thick wild unkempt black hair, plain steel helmet with cheek guards, huge bushy unkempt black mustache and wild black beard, heavy furs, frost-covered boots, warhammer`
+Approved identity ref (2026-11-04, Flux3 Klein): `character-bible/approved_gulgrim_reference.png` — copy this look; full-body approved in lineup-lab batch38 (seed 777001, hairy helmet pivot per James — NOT bald, black hair). Face closeup: `character-bible/approved_gulgrim_closeup.png` (same seed, use for FaceDetailer and masked face passes). Previous bald/white-beard ref retired to `character-bible/approved_gulgrim_reference_bald_retired.png`. Refs carry no warhammer (doubles every time — reintroduce it in scene prompts only).
+NEVER: bald, tall, thin, trimmed beard, missing his heavy furs (furs stay on in every panel, indoors or out).
+Gear: Holy Symbol (medallion: upright mace in front of a tall boot — verified FR canon; buckle-shaped in ref) + Biggins manor key (plot item), Mason's tools. Soldier background (Mintarn → Neverwinter watch, quit over corruption). Faith: Marthammor Du. Warhammer is canon (user decision — sheet's mace ignored).
+Default expression: calm bemused curiosity, quirky odd fellow — one brow lifted a fraction, heavy-lidded steady eyes, no smile, fully sane.
 Note: "Bearnuts" is James's Discord handle, never a character name — the S3 minstrel is unnamed (transcript gives none). Do not label any bard Bearnuts.
 
 ### Chip — Male Human Druid (Josh)
