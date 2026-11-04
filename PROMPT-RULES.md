@@ -15,10 +15,12 @@ not by theory. Full records live in `character-bible/sheet-test/`.
    ("enlarged to six feet he would be indistinguishable from an ordinary
    human man") moved age/size where ratios (`one-seventh`), adjectives,
    and placement never did (batches 4–5).
-3. **Bans are dead weight, not poison.** Batch 7 vs 8 (same seeds, bans
+3. **Bans are dead weight, not poison — with one flag.** Batch 7 vs 8 (same seeds, bans
    present vs stripped): no worse, no better. Prompt space spent on
    `NOT`/`no` is better spent on positive anatomy. Keep bans out of new
-   wording; leave existing locked-chunk bans alone unless testing them.
+   wording; leave existing locked-chunk bans alone unless testing them. FLAG 2026-11-04 (single-seed, Gulgrim n2r2 vs nobans):
+   stripping `no oversized head / no large head / no bobblehead` visibly shrank the head on the same seed — bans may actively
+   hurt on head-size wording, not just waste space. Needs controls before it touches this rule.
 4. **Official species canon can feed the prior.** DDB halfling text
    ("diminutive", "appear relatively harmless") pushes the baby schema —
    quote canon selectively, never wholesale.

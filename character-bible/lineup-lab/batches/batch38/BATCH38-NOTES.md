@@ -4,7 +4,7 @@
 All approved refs carry embedded ComfyUI prompts+seeds. Companions built from each ref's own graph + seed, framing swapped:
 - Full-bodies from waist-up seeds (1857761984156622644): vadania, chip, rocketcandy, keechwah, lilly (r3 pleated skirt fix approved)
 - Closeups from full-body seeds: gulgrim (superseded by pivot below), shade r3 (approved, sly closed-mouth)
-- Naming (pending user approval to execute): current waist-ups -> approved_<slug>_closeup.png, new full-bodies take approved_<slug>_reference.png. NOT DONE YET.
+- Naming (executed 2026-11-04): former waist-ups are now `approved_<slug>_closeup.png`, new full-bodies took the `approved_<slug>_reference.png` names (vadania, chip, rocketcandy, keechwah, lilly r3). Shade kept `_reference` (already full-body) and gained `_closeup` (r3). Bible + ComfyUI inputs updated, SHA-verified, committed.
 
 ## Gulgrim pivot (James): bald/white -> hairy black helmet dwarf
 Seeds: 777001 (original) + fresh 6472508315 / 7976038896 / 8342583591 / 1490431410 / 4620677048.

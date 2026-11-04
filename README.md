@@ -6,7 +6,7 @@ Base workflow: workflows/base_flux3.json — Flux3 Image Klein text-to-image 134
 1. **Character bible** — `character-bible/bible.md` (LOCKED, update only with approval)
 2. **Scene director** — `scene-director/director.md` + `sessions/<id>/plan.json`
 3. **Flux 3 generation** — `generate/` + `workflows/` (pinned JSON, seed log)
-4. **Refinement** — re-roll bad limbs/duplicates, face detail pass (manual for v1)
+4. **Refinement** — re-roll bad limbs/duplicates, then the locked finish: masked closeup ref pass + FaceDetailer 0.35 (see `PIPELINE.md` recipe; worked example in `sessions/session01/v3/`)
 5. **Comic production** — `comics/<id>.html` multipanel, narration + transcript quotes
 
 ## Quickstart (manual v1, what we did for S1)

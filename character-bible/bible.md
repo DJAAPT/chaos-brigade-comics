@@ -13,14 +13,14 @@ Global suffix (append to EVERY prompt):
 
 ### Shade — Male Halfling Rogue (St3v3D/David). Young adult halfling man, NOT child, NOT elderly.
 `young adult halfling man, mid-20s, mature adult face, lean build, messy shaggy dark brown hair falling over the sides of his head, light stubble, no beard, warm brown eyes, subtle sly closed-mouth expression, worn dark linen shirt with rolled sleeves, scuffed brown leather vest, belt dagger at hips, warm tan skin with a ruddy cast, long sideburns, small adult stature about three feet tall, full-size adult human features scaled down uniformly, exactly the same head-to-body proportions as a full-size grown man, he is a full-grown man who happens to stand three feet tall, enlarged to six feet he would be indistinguishable from an ordinary human man, small adult head, thick shaggy hair covering the sides of his head completely, small skull structure, sleek adult facial proportions, exactly two arms`
-Approved identity ref (2026-11-02, Flux3 Klein): `character-bible/approved_shade_reference.png` — shade-lab batch-14 keeper q13 (seed 1395696223); copy this face for any new Shade portrait. Lab rules that produced it: name the species for scale, never name the ears (see `character-bible/sheet-test/shade-lab/README.md`).
+Approved identity ref (2026-11-02, Flux3 Klein): `character-bible/approved_shade_reference.png` — shade-lab batch-14 keeper q13 (seed 1395696223); copy this face for any new Shade portrait. Lab rules that produced it: name the species for scale, never name the ears (see `character-bible/sheet-test/shade-lab/README.md`). Face closeup (2026-11-04): `character-bible/approved_shade_closeup.png` (seed 1395696224) — the face canon for masked face passes.
 NEVER: child, boy, teen, elderly, gray hair, white hair, beard, wrinkles, pointed ears, elf ears, large ears, protruding ears, hobbit feet, bare feet, blond hair, big friendly smile by default.
 Default expression: lips sealed closed with a barely perceptible asymmetric lift on one side, sly knowing gleam in his eyes — subtle mischief, never a full smile or grin. Keep-to-himself thief, not the outgoing one.
 Guild mark: geometric diamond tattoo (gallery/Objects/The_Tattoo.png) on forearm — include only when plot-relevant.
 
 ### Rocketcandy — Male Human Paladin (Andrew). Lost nobility of Corlinn Hill (Neverwinter county), raised in Waterdeep, inherits only a title.
 `adult male human paladin, short brown hair light stubble, shining plate armor with gold phoenix/eagle crest on chest, red cape, exactly two arms, holding a heavy battle-worn steel battleaxe with a plain wide scarred blade, no gaudy ornamentation`
-Approved identity ref (2026-11-02, Flux3 Klein): `character-bible/approved_rocketcandy_reference.png` — copy this face; face, expression, and axe approved in the Flux3 v2 portrait.
+Approved identity ref (2026-11-04, Flux3 Klein): `character-bible/approved_rocketcandy_reference.png` — full-body companion from the original seed (batch38); face, expression, axe and full kit. Face closeup: `character-bible/approved_rocketcandy_closeup.png` (the former waist-up reference) — the face canon for masked face passes.
 Refs: gallery/Scenes/City_Guards.png is CORRUPT guard look-alike — do NOT copy its helm/plume for Rocketcandy except crest shape. Gallery/Objects/Rocketcandy_Plot_Armor.png = his armor ref — use it.
 NEVER: extra arms, female, modern clothes, helm, plume, gaudy gold-decorated battleaxe.
 Weapon: +3 battleaxe (signature — sheet + transcript axe-to-face). Faith: Bahamut. Oath of the Open Sea. Props: signet ring, holy symbol.
@@ -28,7 +28,7 @@ Default expression: confident composed noble bearing — calm, lawful-good certa
 
 ### Keechwah — Male Tiefling Warlock (Aaron). MALE, no wings.
 `adult male tiefling warlock, deep red skin, long curly black hair, goatee, large curved horns, glowing purple eyes, male facial features, dark blue/gold robes, gold jewelry, NO wings`
-Approved identity ref (2026-11-02, Flux3 Klein): `character-bible/approved_keechwah_reference.png` — copy this face; face, expression, and orb approved in the Flux3 v1 portrait. Eyes are solid matte purple across the full sclera — full-purple sclera, no white, no pupils, no glow, no shine.
+Approved identity ref (2026-11-04, Flux3 Klein): `character-bible/approved_keechwah_reference.png` — full-body companion from the original seed (batch38); face, expression, orb and robes. Face closeup: `character-bible/approved_keechwah_closeup.png` (the former waist-up reference) — the face canon for masked face/eye passes. Eyes are solid matte purple across the full sclera — full-purple sclera, no white, no pupils, no glow, no shine.
 Refs: gallery/Scenes/Keechwah_and_Lilly_bonding.png (face, hair, jewelry locked), Verruth_and_Keechwah_make_a_deal.png (blue-hair variant = younger? use black-hair as canon unless flashback).
 NEVER: female, wings, hooves, female chest, duplicate Keechwahs. Keechwah has NO wings — Verruth (below) HAS wings, do not mix.
 Expression: loves a good mystery, convinced people are trying to steal his secrets. Props when plot-relevant: orb arcane focus, lute (Battle of the Bards), Book of Shadows.
@@ -44,21 +44,21 @@ Note: "Bearnuts" is James's Discord handle, never a character name — the S3 mi
 
 ### Chip — Male Human Druid (Josh)
 `adult male human druid, brown skin, wild long white hair and white beard, brown eyes, green/brown fur garb, holding a straight wooden quarterstaff with a small crystal slotted into it (HE holds it, never Vadania)`
-Approved identity ref (2026-11-02, Flux3 Klein): `character-bible/approved_chip_reference.png` — copy this face; face, expression, and staff approved in the Flux3 v2 portrait.
+Approved identity ref (2026-11-04, Flux3 Klein): `character-bible/approved_chip_reference.png` — full-body companion from the original seed (batch38); face, expression, staff and full garb. Face closeup: `character-bible/approved_chip_closeup.png` (the former waist-up reference) — the face canon for masked face passes.
 NEVER: give staff to Vadania, merge with Vadania, bat on shoulder (Celeste rarely pictured), brown hair or beard (canon is white per sheet), crooked or crook-topped staff.
 Expression: awkward observer — blurts insults without thinking, last to speak. Prop: his quarterstaff has the crystal Star Map slotted into it (Circle of the Stars).
 Default expression: awkward and earnest, slightly bewildered — quiet observer, never severe or formidable.
 
 ### Vadania Amakiir — Male Wood Elf Ranger (Derek)
 `adult male wood elf ranger, long brown hair, green eyes, pointed ears, masculine jaw stubble, green cloak, longbow on back, short swords at hips, scar on shoulder`
-Approved identity ref (2026-11-02, Flux3 Klein): `character-bible/approved_vadania_reference.png` — copy this face; face, expression, and gear approved in the Flux3 v1 portrait.
+Approved identity ref (2026-11-04, Flux3 Klein): `character-bible/approved_vadania_reference.png` — full-body companion from the original seed (batch38); face, expression, bow, swords and full kit. Face closeup: `character-bible/approved_vadania_closeup.png` (the former waist-up reference) — the face canon for masked face passes.
 NEVER: female, dress, blonde hair (canon is brown per sheet — user decision 2026-11-01), long blonde woman in green (that is a misrender — re-roll), duplicate Vadania as barmaid.
 Expression: action over theory, blunt and sincere, follows through. Weapon: Monster Hunter's Longbow +1 (ornate named longbow) + twin shortswords.
 Default expression: blunt and direct — a man of action, steady gaze, never soft or smiling.
 
 ### Lilly — Adult woman early 20s (NOT a child)
 `adult young woman early 20s, curly voluminous red hair, freckles, white ruffled shirt, red corset laced gold, cream skirt, brown boots, thigh dagger + rapier with mother-of-pearl handle`
-Approved identity ref (2026-11-02, Flux3 Klein): `character-bible/approved_lilly_reference.png` — copy this face; adult likeness approved in the Flux3 v1 portrait.
+Approved identity ref (2026-11-04, Flux3 Klein): `character-bible/approved_lilly_reference.png` — full-body companion from the original seed (batch38 r3, pleated short skirt fix); adult likeness, corset, rapier and full kit. Face closeup: `character-bible/approved_lilly_closeup.png` (the former waist-up reference) — the face canon for masked face passes.
 Refs: gallery/NPCs/Lilly.png (LOCKED), Keechwah_and_Lilly_bonding.png. NEVER: child, little girl, schoolgirl.
 Default expression: warm and confident — friendly, self-assured young woman.
 Behavior (transcript canon): sheltered manor upbringing — wide-eyed wonder at everything new, physical exuberance (hugs, skipping, door-crashing enthusiasm), blurts endless questions, brave resolve underneath. As Filvenar: regal pose stretched over giddy core — the mask visibly slips when excited.
