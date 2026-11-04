@@ -1,0 +1,311 @@
+{
+  "100": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "v3_s1p43base.png"
+    }
+  },
+  "110": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "flux3-image-klein-nvfp4.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "111": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_4b_int8_convrot.safetensors",
+      "type": "flux3",
+      "device": "default"
+    }
+  },
+  "112": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "flux2-vae.safetensors"
+    }
+  },
+  "114": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": [
+        "111",
+        0
+      ],
+      "text": ""
+    }
+  },
+  "200": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "v3c_chip.png"
+    }
+  },
+  "201": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": [
+        "111",
+        0
+      ],
+      "text": "adult male weathered face, brown skin, wild long white hair and white beard, brown eyes, awkward earnest expression, detailed natural face, sharp clear eyes, natural skin texture, photorealistic, highly detailed"
+    }
+  },
+  "202": {
+    "class_type": "ReferenceMultiLatent",
+    "inputs": {
+      "positive": [
+        "201",
+        0
+      ],
+      "resolution": "keep resolution",
+      "negative": [
+        "114",
+        0
+      ],
+      "vae": [
+        "112",
+        0
+      ],
+      "images.image0": [
+        "200",
+        0
+      ]
+    }
+  },
+  "203": {
+    "class_type": "VAEEncode",
+    "inputs": {
+      "pixels": [
+        "100",
+        0
+      ],
+      "vae": [
+        "112",
+        0
+      ]
+    }
+  },
+  "204": {
+    "class_type": "LoadImageMask",
+    "inputs": {
+      "image": "v3_s1p43_mask_chip.png",
+      "channel": "red"
+    }
+  },
+  "205": {
+    "class_type": "SetLatentNoiseMask",
+    "inputs": {
+      "samples": [
+        "203",
+        0
+      ],
+      "mask": [
+        "204",
+        0
+      ]
+    }
+  },
+  "206": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "110",
+        0
+      ],
+      "seed": 610933,
+      "steps": 15,
+      "cfg": 1.0,
+      "sampler_name": "er_sde",
+      "scheduler": "simple",
+      "positive": [
+        "202",
+        0
+      ],
+      "negative": [
+        "202",
+        1
+      ],
+      "latent_image": [
+        "205",
+        0
+      ],
+      "denoise": 0.5
+    }
+  },
+  "207": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "206",
+        0
+      ],
+      "vae": [
+        "112",
+        0
+      ]
+    }
+  },
+  "210": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "v3c_roland.png"
+    }
+  },
+  "211": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": [
+        "111",
+        0
+      ],
+      "text": "tired middle-aged male face, balding with receding salt-and-pepper hair, deep wear lines, tired bags under eyes, weary warmth, detailed natural face, sharp clear eyes, natural skin texture, photorealistic, highly detailed"
+    }
+  },
+  "212": {
+    "class_type": "ReferenceMultiLatent",
+    "inputs": {
+      "positive": [
+        "211",
+        0
+      ],
+      "resolution": "keep resolution",
+      "negative": [
+        "114",
+        0
+      ],
+      "vae": [
+        "112",
+        0
+      ],
+      "images.image0": [
+        "210",
+        0
+      ]
+    }
+  },
+  "213": {
+    "class_type": "VAEEncode",
+    "inputs": {
+      "pixels": [
+        "100",
+        0
+      ],
+      "vae": [
+        "112",
+        0
+      ]
+    }
+  },
+  "214": {
+    "class_type": "LoadImageMask",
+    "inputs": {
+      "image": "v3_s1p43_mask_roland.png",
+      "channel": "red"
+    }
+  },
+  "215": {
+    "class_type": "SetLatentNoiseMask",
+    "inputs": {
+      "samples": [
+        "213",
+        0
+      ],
+      "mask": [
+        "214",
+        0
+      ]
+    }
+  },
+  "216": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "110",
+        0
+      ],
+      "seed": 610933,
+      "steps": 15,
+      "cfg": 1.0,
+      "sampler_name": "er_sde",
+      "scheduler": "simple",
+      "positive": [
+        "212",
+        0
+      ],
+      "negative": [
+        "212",
+        1
+      ],
+      "latent_image": [
+        "215",
+        0
+      ],
+      "denoise": 0.5
+    }
+  },
+  "217": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "216",
+        0
+      ],
+      "vae": [
+        "112",
+        0
+      ]
+    }
+  },
+  "300": {
+    "class_type": "ImageCompositeMasked",
+    "inputs": {
+      "destination": [
+        "100",
+        0
+      ],
+      "source": [
+        "207",
+        0
+      ],
+      "x": 0,
+      "y": 0,
+      "resize_source": false,
+      "mask": [
+        "204",
+        0
+      ]
+    }
+  },
+  "301": {
+    "class_type": "ImageCompositeMasked",
+    "inputs": {
+      "destination": [
+        "300",
+        0
+      ],
+      "source": [
+        "217",
+        0
+      ],
+      "x": 0,
+      "y": 0,
+      "resize_source": false,
+      "mask": [
+        "214",
+        0
+      ]
+    }
+  },
+  "400": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "301",
+        0
+      ],
+      "filename_prefix": "v3_s1p43_faces"
+    }
+  }
+}

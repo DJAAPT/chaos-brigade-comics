@@ -1,0 +1,280 @@
+{
+  "100": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "v3_s1p11_helmetbase.png"
+    }
+  },
+  "110": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "flux3-image-klein-nvfp4.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "111": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_4b_int8_convrot.safetensors",
+      "type": "flux3",
+      "device": "default"
+    }
+  },
+  "112": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "flux2-vae.safetensors"
+    }
+  },
+  "114": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": [
+        "111",
+        0
+      ],
+      "text": ""
+    }
+  },
+  "210": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "v3c_gulgrim.png"
+    }
+  },
+  "211": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": [
+        "111",
+        0
+      ],
+      "text": "dwarf face beneath steel helmet with cheek guards, angular weathered features, calm bemused eyes, one brow lifted, black beard mass around face, detailed natural face, sharp clear eyes, natural skin texture, photorealistic, highly detailed"
+    }
+  },
+  "212": {
+    "class_type": "ReferenceMultiLatent",
+    "inputs": {
+      "positive": [
+        "211",
+        0
+      ],
+      "resolution": "keep resolution",
+      "negative": [
+        "114",
+        0
+      ],
+      "vae": [
+        "112",
+        0
+      ],
+      "images.image0": [
+        "210",
+        0
+      ]
+    }
+  },
+  "213": {
+    "class_type": "VAEEncode",
+    "inputs": {
+      "pixels": [
+        "100",
+        0
+      ],
+      "vae": [
+        "112",
+        0
+      ]
+    }
+  },
+  "214": {
+    "class_type": "LoadImageMask",
+    "inputs": {
+      "image": "v3_s1p11_beardmask.png",
+      "channel": "red"
+    }
+  },
+  "215": {
+    "class_type": "SetLatentNoiseMask",
+    "inputs": {
+      "samples": [
+        "213",
+        0
+      ],
+      "mask": [
+        "214",
+        0
+      ]
+    }
+  },
+  "216": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "110",
+        0
+      ],
+      "seed": 610933,
+      "steps": 15,
+      "cfg": 1.0,
+      "sampler_name": "er_sde",
+      "scheduler": "simple",
+      "positive": [
+        "212",
+        0
+      ],
+      "negative": [
+        "212",
+        1
+      ],
+      "latent_image": [
+        "215",
+        0
+      ],
+      "denoise": 0.6
+    }
+  },
+  "217": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "216",
+        0
+      ],
+      "vae": [
+        "112",
+        0
+      ]
+    }
+  },
+  "300": {
+    "class_type": "ImageCompositeMasked",
+    "inputs": {
+      "destination": [
+        "100",
+        0
+      ],
+      "source": [
+        "217",
+        0
+      ],
+      "x": 0,
+      "y": 0,
+      "resize_source": false,
+      "mask": [
+        "214",
+        0
+      ]
+    }
+  },
+  "301": {
+    "class_type": "ImageCompositeMasked",
+    "inputs": {
+      "destination": [
+        "300",
+        0
+      ],
+      "source": [
+        "217",
+        0
+      ],
+      "x": 0,
+      "y": 0,
+      "resize_source": false,
+      "mask": [
+        "214",
+        0
+      ]
+    }
+  },
+  "302": {
+    "class_type": "ImageCompositeMasked",
+    "inputs": {
+      "destination": [
+        "301",
+        0
+      ],
+      "source": [
+        "227",
+        0
+      ],
+      "x": 0,
+      "y": 0,
+      "resize_source": false,
+      "mask": [
+        "224",
+        0
+      ]
+    }
+  },
+  "303": {
+    "class_type": "ImageCompositeMasked",
+    "inputs": {
+      "destination": [
+        "302",
+        0
+      ],
+      "source": [
+        "237",
+        0
+      ],
+      "x": 0,
+      "y": 0,
+      "resize_source": false,
+      "mask": [
+        "234",
+        0
+      ]
+    }
+  },
+  "304": {
+    "class_type": "ImageCompositeMasked",
+    "inputs": {
+      "destination": [
+        "303",
+        0
+      ],
+      "source": [
+        "247",
+        0
+      ],
+      "x": 0,
+      "y": 0,
+      "resize_source": false,
+      "mask": [
+        "244",
+        0
+      ]
+    }
+  },
+  "305": {
+    "class_type": "ImageCompositeMasked",
+    "inputs": {
+      "destination": [
+        "304",
+        0
+      ],
+      "source": [
+        "257",
+        0
+      ],
+      "x": 0,
+      "y": 0,
+      "resize_source": false,
+      "mask": [
+        "254",
+        0
+      ]
+    }
+  },
+  "400": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "300",
+        0
+      ],
+      "filename_prefix": "v3_s1p11_beard"
+    }
+  }
+}
