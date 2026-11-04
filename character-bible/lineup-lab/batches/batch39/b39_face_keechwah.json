@@ -1,0 +1,160 @@
+{
+  "110": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "flux3-image-klein-nvfp4.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "111": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_4b_int8_convrot.safetensors",
+      "type": "flux3",
+      "device": "default"
+    }
+  },
+  "112": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "flux2-vae.safetensors"
+    }
+  },
+  "113": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": [
+        "111",
+        0
+      ],
+      "text": "adult male tiefling face, deep red skin, long curly black hair, goatee, large curved horns, flat matte solid purple eyes, full-purple sclera, no white, no pupils, no glow, secretive intense gaze, detailed natural face, sharp clear eyes, natural skin texture, photorealistic, highly detailed"
+    }
+  },
+  "114": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": [
+        "111",
+        0
+      ],
+      "text": ""
+    }
+  },
+  "100": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "b39_faceout_rocketcandy.png"
+    }
+  },
+  "101": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "b39c_keechwah.png"
+    }
+  },
+  "115": {
+    "class_type": "ReferenceMultiLatent",
+    "inputs": {
+      "positive": [
+        "113",
+        0
+      ],
+      "resolution": "keep resolution",
+      "negative": [
+        "114",
+        0
+      ],
+      "vae": [
+        "112",
+        0
+      ],
+      "images.image0": [
+        "101",
+        0
+      ]
+    }
+  },
+  "116": {
+    "class_type": "VAEEncode",
+    "inputs": {
+      "pixels": [
+        "100",
+        0
+      ],
+      "vae": [
+        "112",
+        0
+      ]
+    }
+  },
+  "117": {
+    "class_type": "LoadImageMask",
+    "inputs": {
+      "image": "b39_mask_keechwah.png",
+      "channel": "red"
+    }
+  },
+  "118": {
+    "class_type": "SetLatentNoiseMask",
+    "inputs": {
+      "samples": [
+        "116",
+        0
+      ],
+      "mask": [
+        "117",
+        0
+      ]
+    }
+  },
+  "119": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "110",
+        0
+      ],
+      "seed": 2508750076,
+      "steps": 15,
+      "cfg": 1.0,
+      "sampler_name": "er_sde",
+      "scheduler": "simple",
+      "positive": [
+        "115",
+        0
+      ],
+      "negative": [
+        "115",
+        1
+      ],
+      "latent_image": [
+        "118",
+        0
+      ],
+      "denoise": 0.5
+    }
+  },
+  "120": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "119",
+        0
+      ],
+      "vae": [
+        "112",
+        0
+      ]
+    }
+  },
+  "121": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "120",
+        0
+      ],
+      "filename_prefix": "b39_face_keechwah"
+    }
+  }
+}
