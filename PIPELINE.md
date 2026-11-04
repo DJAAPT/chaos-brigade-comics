@@ -33,13 +33,12 @@ How we generate consistent-character comic art. Proven across lineup-lab batches
    verify before/after pairs — if anything beyond faces moves, drop denoise to `0.2` (note: soft
    settings can re-crop framing; check composition after). FaceDetailer takes NO reference image —
    for ref-conditioned faces, use masked `ReferenceMultiLatent` passes instead (next).
-4. **Targeted ref pass, only where canon demands it (never blanket).** A masked `ReferenceMultiLatent`
-   pass (`VAEEncode` base + `SetLatentNoiseMask` with a feathered face mask + `KSampler` at denoise `0.5`
-   conditioned by that face's closeup ref + face-specific prompt) runs ONLY on faces with canon features the
-   generic stages can't reproduce (Keechwah's matte-purple eyes). Verified template for the single-face form:
-   `character-bible/lineup-lab/batches/batch39/b39_keechwah_only.json`. Do NOT run the all-faces variant
-   (`b39_faces_onepass.json`, retired — user verdict: touch only what needs touching). One submission per
-   targeted face; each repaints only inside its mask. Face boxes: measure
+4. **Ref pass: full 7-face one-pass plus FaceDetailer (user-verified winners).** The two winning finishes
+   both run the 7-face masked `ReferenceMultiLatent` graph (`b39_faces_onepass.json`: parallel branches off shared
+   base pixels, per-face closeup ref + face-specific prompt at denoise `0.5`, lossless `ImageCompositeMasked`
+   merges) AND `FaceDetailer` — user judged FaceDetailer-only and targeted-only variants inferior head-to-head.
+   Contenders: `b39_faces_onepass.png` (detailer 0.35 first) vs `b39_faces_rawbase_soft.png` (7-face on raw first,
+   soft detailer 0.2 after). Face boxes: measure
    from the image (faceband strips), verify with a contact sheet BEFORE painting.
 5. **Per-character eye wording where canon demands it.** The generic detail prompt washes out
    special eyes. Keechwah: "flat matte solid purple eyes, full-purple sclera, no white, no pupils,
