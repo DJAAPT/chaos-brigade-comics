@@ -28,17 +28,16 @@ How we generate consistent-character comic art. Proven across lineup-lab batches
    inside the mask, including the backdrop — use them only for single-figure plates, never groups.
 2. **Master seed.** One seed per issue for every panel (Session 1: `610933`). Failures re-roll
    at seed+1, +2. Same prompt + seed + graph = hash-identical pixels (deterministic, verified).
-3. **FaceDetailer (mandatory for eyes-facing-camera).** `FaceDetailer` node, bbox model
+3. **FaceDetailer — runs AFTER the ref pass, at full 0.35.** `FaceDetailer` node, bbox model
    `bbox/face_yolov8m.pt`, denoise `0.35`, feather 5, guide 512/max 1024. Compares as faces-only:
    verify before/after pairs — if anything beyond faces moves, drop denoise to `0.2` (note: soft
-   settings can re-crop framing; check composition after). FaceDetailer takes NO reference image —
-   for ref-conditioned faces, use masked `ReferenceMultiLatent` passes instead (next).
-4. **Ref pass: full 7-face one-pass plus FaceDetailer (user-verified winners).** The two winning finishes
-   both run the 7-face masked `ReferenceMultiLatent` graph (`b39_faces_onepass.json`: parallel branches off shared
-   base pixels, per-face closeup ref + face-specific prompt at denoise `0.5`, lossless `ImageCompositeMasked`
-   merges) AND `FaceDetailer` — user judged FaceDetailer-only and targeted-only variants inferior head-to-head.
-   Contenders: `b39_faces_onepass.png` (detailer 0.35 first) vs `b39_faces_rawbase_soft.png` (7-face on raw first,
-   soft detailer 0.2 after). Face boxes: measure
+   settings can re-crop framing; check composition after).
+4. **Ref pass runs BEFORE the detailer: full 7-face one-pass, then FaceDetailer 0.35.** Batch40 ran
+   all 4 order×strength combos × 5 seeds (20 images): 7-face-first won 4/5 boards outright (0.35 detailer after
+   won 3 clear + 2 close-seconds; detailer-first won only 1). The masked `ReferenceMultiLatent` graph
+   (`b39_faces_onepass.json` pattern: parallel branches off shared base pixels, per-face closeup ref +
+   face-specific prompt at denoise `0.5`, lossless `ImageCompositeMasked` merges), THEN FaceDetailer 0.35 over
+   the top. Face boxes: measure
    from the image (faceband strips), verify with a contact sheet BEFORE painting.
 5. **Per-character eye wording where canon demands it.** The generic detail prompt washes out
    special eyes. Keechwah: "flat matte solid purple eyes, full-purple sclera, no white, no pupils,
